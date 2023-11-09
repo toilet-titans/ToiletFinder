@@ -1,4 +1,30 @@
 body {
-  padding: 10px;
+  justify-content: center;
+  display: flex;
   font-family: sans-serif;
+  margin: 5px;
 }
+
+.bathroom-buttons {
+  display: flex;
+}
+
+.bathroom-button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #888;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+

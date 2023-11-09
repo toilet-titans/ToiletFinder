@@ -1,21 +1,17 @@
 import React from 'react';
-import { Nav, Navbar, Row, Image, Col } from 'react-bootstrap';
+import { Nav, Navbar, Row } from 'react-bootstrap';
 
-const navBar = () => (
+const NavBar = () => (
   <Row>
-    <Col className="justify-items-start"><Image src="/images/jisho-logo-v4-dark@2x-e676613b426d34187b61928823730a225b52165aaef99f948bd3dc5fc16fa787.png" className="image-border" />
-    </Col>
-    <Col className=" justify-items-end mr-auto">
-      <Navbar>
-        <Nav>
-          <Nav.Link>Forum</Nav.Link>
-          <Nav.Link>About</Nav.Link>
-          <Nav.Link>Theme</Nav.Link>
-          <Nav.Link>Log in / Sign up</Nav.Link>
-        </Nav>
-      </Navbar>
-    </Col>
+    <Navbar>
+      <Nav className="me-auto justify-content-start">
+        <Nav.Link>Home Page</Nav.Link>
+      </Nav>
+      <Nav className="justify-content-end">
+        <Nav.Link>Sign Out</Nav.Link>
+      </Nav>
+    </Navbar>
   </Row>
 );
 
-export default navBar;
+export default NavBar;
