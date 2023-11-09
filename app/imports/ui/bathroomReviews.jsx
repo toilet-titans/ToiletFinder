@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 import { Table, Button } from 'react-bootstrap';
 import { HandThumbsUp, HandThumbsDown } from 'react-bootstrap-icons';
+import Col from 'react-bootstrap/Col';
+
 
 const BathroomReviews = () => {
   const [reviews, setReviews] = useState([
@@ -34,13 +36,13 @@ const BathroomReviews = () => {
   return (
     <div>
       <h1>Your bathroom reviews:</h1>
-    <Table striped bordered responsive>
-      <thead>
+      <Table className="table table-hover">
+        <thead className="thead-dark">
       <tr>
-        <th>Building Name</th>
-        <th>Bathroom Number</th>
-        <th>Rating</th>
-        <th>Recommended</th>
+        <th scope="col">Building Name</th>
+        <th scope="col">Bathroom Number</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Recommended</th>
       </tr>
       </thead>
       <tbody>
