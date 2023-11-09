@@ -53,7 +53,7 @@ const BathroomReviews = () => {
           <td>{review.bathroomNumber}</td>
           <td>
             <Stack spacing={1}>
-              <Rating name="bathroom--rating" value={review.rating} precision={1} readOnly />
+              <Rating name="bathroom--rating" defaultValue={review.rating} precision={1} />
             </Stack>
           </td>
           <td>
