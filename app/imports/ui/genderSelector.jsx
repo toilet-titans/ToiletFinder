@@ -9,7 +9,7 @@ const GenderSelector = () => {
 
   return (
     <div className="gender-selector">
-      <p>Type of Bathroom:</p>
+      <h1>Type of Bathroom:</h1>
       <div className="bathroom-buttons">
         <button
           className={`bathroom-button ${selectedGender === 'male' ? 'selected' : ''}`}

@@ -5,7 +5,7 @@ import GenderSelector from './genderSelector.jsx';
 import BathroomReviews from './bathroomReviews.jsx';
 import Schedule from './schedule.jsx';
 import Footer from './footer.jsx';
-
+import Search from './search.jsx';
 export const App = () => (
   <Container>
     <NavBar />
