@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import StarRatingComponent from 'react-star-rating-component';
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 import { Table, Button } from 'react-bootstrap';
 import { HandThumbsUp, HandThumbsDown } from 'react-bootstrap-icons';
 import Col from 'react-bootstrap/Col';
@@ -51,12 +52,9 @@ const BathroomReviews = () => {
           <td>{review.buildingName}</td>
           <td>{review.bathroomNumber}</td>
           <td>
-            <StarRatingComponent
-              name="bathroomRating"
-              value={review.rating}
-              starCount={5}
-              editing={false}
-            />
+            <Stack spacing={1}>
+              <Rating name="bathroom--rating" value={review.rating} precision={1} readOnly />
+            </Stack>
           </td>
           <td>
             <div className="recommendation-buttons">

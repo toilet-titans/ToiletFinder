@@ -1,34 +1,20 @@
-import React, { useState } from 'react';
-import Input from '@mui/base/Input';
+import * as React from 'react';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 
-const data = [
-  { id: 1, name: 'John Doe' },
-  { id: 2, name: 'Jane Doe' },
-  { id: 3, name: 'Peter Jones' },
-];
-
-const Search = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const filteredData = data.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
-
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
+export default function ComboBox() {
   return (
-    <div>
-      <Input
-        placeholder="Search"
-        value={searchTerm}
-        onChange={handleSearchChange}
-      />
-      {filteredData.map((item) => (
-        <div key={item.id}>
-          {item.name}
-        </div>
-      ))}
-    </div>
+    <Autocomplete
+      disablePortal
+      id="combo-box-buildings"
+      options={test}
+      sx={{ width: 300 }}
+      renderInput={(params) => <TextField {...params} label="Building" />}
+    />
   );
-};
-
-export default Search;
+}
+const test = [
+  {label: "Building A"},
+  {label: "Building B"},
+  {label: "Building C"}
+];
