@@ -1,17 +1,15 @@
 import React from 'react';
-import { Nav, Navbar, Row } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 const NavBar = () => (
-  <Row>
-    <Navbar>
-      <Nav className="me-auto justify-content-start">
-        <Nav.Link>Home Page</Nav.Link>
-      </Nav>
-      <Nav className="justify-content-end">
-        <Nav.Link>Sign Out</Nav.Link>
-      </Nav>
-    </Navbar>
-  </Row>
+  <Navbar style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Nav>
+      <Nav.Link>Home Page</Nav.Link>
+    </Nav>
+    <Nav>
+      <Nav.Link>Sign Out</Nav.Link>
+    </Nav>
+  </Navbar>
 );
 
 export default NavBar;

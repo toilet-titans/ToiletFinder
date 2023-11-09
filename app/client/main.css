@@ -2,7 +2,7 @@ body {
   justify-content: center;
   display: flex;
   font-family: sans-serif;
-  margin: 5px;
+  margin: 100px;
 }
 
 .bathroom-buttons {
@@ -26,5 +26,10 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.column-spacing {
+  margin-right: 100px; /* Adjust the margin as needed */
+}
+
 
 

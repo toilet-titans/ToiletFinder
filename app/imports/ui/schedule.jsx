@@ -35,7 +35,7 @@ const Schedule = () => {
       <Table striped bordered responsive>
         <thead>
         <tr>
-          <th rowSpan={3}>Building</th>
+          <th>Building</th>
           <th>Bathroom Count</th>
           <th>Average Bathroom Rating</th>
         </tr>
