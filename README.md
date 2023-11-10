@@ -1,1 +1,1 @@
-Please read [Documentation Page](toilet-titans.github.io/).
+Please read [Documentation Page](https://toilet-titans.github.io/).
