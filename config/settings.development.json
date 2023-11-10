@@ -1,13 +1,18 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    { "email": "admin@foo.com", "password": "changeme1", "role": "admin" },
+    { "email": "marquesb@hawaii.edu", "password": "changeme1", "role": "admin" },
+    { "email": "ryderhs@hawaii.edu", "password": "changeme1", "role": "admin" },
+    { "email": "liujl@hawaii.edu", "password": "changeme1", "role": "admin" },
+    { "email": "reynseki@hawaii.edu", "password": "changeme1", "role": "admin" },
+    { "email": "marquesbatoon@gmail.com", "password": "changeme1" },
+    { "email": "john@foo.com", "password": "changeme1" }
   ],
 
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent", "value": 5.5 },
+    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor", "value": 5.5 },
+    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good", "value": 5.5 },
+    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent", "value": 5.5 }
   ]
 }
