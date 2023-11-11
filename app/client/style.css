@@ -26,3 +26,12 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  padding-bottom: 50px;
+}

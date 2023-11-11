@@ -16,7 +16,28 @@ const Landing = () => (
         <p>Everyone's password is: changeme1</p>
         <p><strong>NEVER EDIT ON MAIN BRANCH.</strong> Always work on your own branch and never pull request into main without making sure nobody else will be affected.</p>
       </Col>
+    </Row>
 
+    <Row className="justify-content-end separator">
+      <Col xs={9} className="d-flex flex-column justify-content-center">
+        <h1>Featured Bathroom of the Day!</h1>
+        <div className="flex-container">
+          <Image src="/images/FeaturedRestroomExample.jpeg" width="650px" />
+          <Col className="d-flex flex-column">
+            <p className="px-3"><strong>Location:</strong></p>
+            <p className="px-3"><strong>Floor:</strong></p>
+            <p className="px-3"><strong>Rating:</strong></p>
+            <p className="px-3"><strong>Random Review:</strong></p>
+          </Col>
+        </div>
+      </Col>
+    </Row>
+
+    <Row className="justify-content-end">
+      <Col xs={9} className="d-flex flex-column justify-content-center">
+        <h1>Campus Map</h1>
+        <Image src="/images/campusmap.jpg" width="750px" />
+      </Col>
     </Row>
   </Container>
 );
