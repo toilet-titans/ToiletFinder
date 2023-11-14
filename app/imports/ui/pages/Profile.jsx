@@ -2,6 +2,8 @@ import React from 'react';
 // import { Meteor } from 'meteor/meteor';
 // import { useTracker } from 'meteor/react-meteor-data';
 import { Container, Row, Col } from 'react-bootstrap';
+import SavedTables from '../components/TestTable';
+import Rating from '../components/personalRating';
 // import { Stuffs } from '../../api/stuff/Stuff';
 // import StuffItem from '../components/StuffItem';
 // import LoadingSpinner from '../components/LoadingSpinner';
@@ -14,7 +16,10 @@ const Profile = () => (
       <Col md={7}>
         <Col className="text-center">
           <h2>Profile</h2>
-          <p>Use this component to work on profile page. (Copy and paste your profile code from your branch onto this page and continue editing. We'll move access to profile page off of the nav item soon.</p>
+          <h2>Your Reviews:</h2>
+          <Rating />
+          <h2>Saved Bathrooms:</h2>
+          <SavedTables />
         </Col>
       </Col>
     </Row>
