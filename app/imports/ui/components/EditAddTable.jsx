@@ -295,7 +295,7 @@ function useUpdateUser() {
     onMutate: (newUserInfo) => {
       queryClient.setQueryData(['users'], (prevUsers) =>
         prevUsers?.map((prevUser) =>
-          prevUser.id === newUserInfo.id ? newUserInfo : prevUser,
+          prevUser.Rating === newUserInfo.Rating ? newUserInfo : prevUser,
         ),
       );
     },
@@ -343,10 +343,5 @@ const validateEmail = (email) => {
 
 function validateUser(user) {
   return {
-    firstName: !validateRequired(user.firstName)
-      ? 'First Name is Required'
-      : '',
-    lastName: !validateRequired(user.lastName) ? 'Last Name is Required' : '',
-    email: !validateEmail(user.email) ? 'Incorrect Email Format' : '',
   };
 }
