@@ -4,12 +4,13 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SavedTables from '../components/TestTable';
 import Rating from '../components/personalRating';
+import ExampleWithProviders from '../components/EditAddTable';
 // import { Stuffs } from '../../api/stuff/Stuff';
 // import StuffItem from '../components/StuffItem';
 // import LoadingSpinner from '../components/LoadingSpinner';
 
 // File copied from ListStuff.jsx
-/* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/* Renders a table containing all Stuff documents. Use <StuffItem> to render each row. */
 const Profile = () => (
   <Container className="py-3">
     <Row className="justify-content-center">
@@ -20,6 +21,8 @@ const Profile = () => (
           <Rating />
           <h2>Saved Bathrooms:</h2>
           <SavedTables />
+          <h1> Test</h1>
+          <ExampleWithProviders />
         </Col>
       </Col>
     </Row>
