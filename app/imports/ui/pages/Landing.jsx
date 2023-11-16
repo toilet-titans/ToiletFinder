@@ -14,7 +14,7 @@ const Landing = () => (
         <p>Admins, log in to see what users see!</p>
         <p>I've initialized Mongo DB with your hawaii.edu email addresses.</p>
         <p>Everyone's password is: changeme1</p>
-        <p><strong>NEVER EDIT ON MAIN BRANCH.</strong> Always work on your own branch and never pull request into main without making sure nobody else will be affected.</p>
+        <p>Dr. Moore, please log in with<br/>User: admin@foo.com<br/>Password: changeme1</p>
       </Col>
     </Row>
 
