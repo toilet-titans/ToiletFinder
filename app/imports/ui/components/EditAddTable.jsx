@@ -163,7 +163,7 @@ const Example = () => {
       ),
       labels: { confirm: 'Delete', cancel: 'Cancel' },
       confirmProps: { color: 'red' },
-      onConfirm: () => deleteUser(row.original.id),
+      onConfirm: () => deleteUser(row.original.Rating),
     });
 
   const table = useMantineReactTable({
@@ -315,7 +315,7 @@ function useDeleteUser() {
     // client side optimistic update
     onMutate: (userId) => {
       queryClient.setQueryData(['users'], (prevUsers) =>
-        prevUsers?.filter((user) => user.id !== userId),
+        prevUsers?.filter((user) => user.Rating !== userId),
       );
     },
     // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
