@@ -2,8 +2,8 @@ import React from 'react';
 // import { Meteor } from 'meteor/meteor';
 // import { useTracker } from 'meteor/react-meteor-data';
 import { Container, Row, Col } from 'react-bootstrap';
-import ExampleWithProviders from '../components/EditAddTable';
-import Example2 from '../components/personalEditTable';
+import Schedule from '../components/EditAddTable';
+import Personal from '../components/personalEditTable';
 // import { Stuffs } from '../../api/stuff/Stuff';
 // import StuffItem from '../components/StuffItem';
 // import LoadingSpinner from '../components/LoadingSpinner';
@@ -17,9 +17,9 @@ const Profile = () => (
         <Col className="text-center">
           <h2>Profile</h2>
           <h2>Your Reviews:</h2>
-          <Example2 />
+          <Personal />
           <h2>Saved Bathrooms:</h2>
-          <ExampleWithProviders />
+          <Schedule />
         </Col>
       </Col>
     </Row>

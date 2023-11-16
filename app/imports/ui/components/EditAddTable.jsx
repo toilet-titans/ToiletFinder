@@ -150,7 +150,10 @@ const Example = () => {
       ),
       labels: { confirm: 'Delete', cancel: 'Cancel' },
       confirmProps: { color: 'red' },
-      onConfirm: () => deleteUser(row.original.Rating),
+      deleteUser: (rating) => {
+        const uniqueKey = `${rating}-${row.id}`;
+        deleteUser(uniqueKey);
+      },
     });
 
   const table = useMantineReactTable({
@@ -311,7 +314,7 @@ function useDeleteUser() {
 
 const queryClient = new QueryClient();
 
-const ExampleWithProviders = () => (
+const Schedule = () => (
   // Put this with your other react-query providers near root of your app
   <QueryClientProvider client={queryClient}>
     <ModalsProvider>
@@ -320,7 +323,7 @@ const ExampleWithProviders = () => (
   </QueryClientProvider>
 );
 
-export default ExampleWithProviders;
+export default Schedule;
 
 const validateRequired = (value) => !!value.length;
 const validateEmail = (email) => {

@@ -312,7 +312,7 @@ function useDeleteUser() {
 
 const queryClient = new QueryClient();
 
-const Example2 = () => (
+const Personal = () => (
   // Put this with your other react-query providers near root of your app
   <QueryClientProvider client={queryClient}>
     <ModalsProvider>
@@ -321,7 +321,7 @@ const Example2 = () => (
   </QueryClientProvider>
 );
 
-export default Example2;
+export default Personal;
 
 const validateRequired = (value) => !!value.length;
 const validateEmail = (email) => {
