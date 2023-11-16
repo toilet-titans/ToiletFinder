@@ -18,7 +18,7 @@ const Landing = () => (
       </Col>
     </Row>
 
-    <Row className="justify-content-end separator">
+    <Row className="justify-content-end separator row-coloring1">
       <Col xs={9} className="d-flex flex-column justify-content-center">
         <h1>Featured Bathroom of the Day!</h1>
         <div className="flex-container">
@@ -33,7 +33,7 @@ const Landing = () => (
       </Col>
     </Row>
 
-    <Row className="justify-content-end">
+    <Row className="justify-content-end row-coloring1">
       <Col xs={9} className="d-flex flex-column justify-content-center">
         <h1>Campus Map</h1>
         <Image src="/images/campusmap.jpg" width="750px" />
