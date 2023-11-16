@@ -19,7 +19,7 @@ import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
 import Directory from '../pages/Directory';
 import Profile from '../pages/Profile';
-import Rating from '../pages/Rating';
+import Rating from '../pages/RatingPage';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
