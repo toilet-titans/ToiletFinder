@@ -23,7 +23,7 @@ import {
   useQuery,
   useQueryClient,
 } from '@tanstack/react-query';
-import { Floors, Buildings, Genders, data } from './Data';
+import { Floors, Buildings, Genders, personalData } from './Data';
 
 const Example = () => {
   const [validationErrors, setValidationErrors] = useState({});
@@ -90,20 +90,9 @@ const Example = () => {
         },
       },
       {
-        accessorKey: 'AverageRatingOfBuilding',
-        header: 'Average Rating Of Building',
-        filterVariant: 'range',
-        mantineEditTextInputProps: {
-          type: 'email',
-          required: true,
-          error: validationErrors?.email,
-          // remove any previous validation errors when user focuses on the input
-          onFocus: () =>
-            setValidationErrors({
-              ...validationErrors,
-              email: undefined,
-            }),
-        },
+        accessorKey: 'Comment',
+        header: 'Comment',
+        enableColumnFilterModes: false,
       },
     ],
     [validationErrors],
@@ -189,7 +178,7 @@ const Example = () => {
     onEditingRowSave: handleSaveUser,
     renderCreateRowModalContent: ({ table, row, internalEditComponents }) => (
       <Stack>
-        <Title order={3}>Create New Bathroom</Title>
+        <Title order={3}>Create New Review</Title>
         {internalEditComponents}
         <Flex justify="flex-end" mt="xl">
           <MRT_EditActionButtons variant="text" table={table} row={row} />
@@ -231,7 +220,7 @@ const Example = () => {
           // );
         }}
       >
-        Create New Bathroom
+        Create New Review
       </Button>
     ),
     state: {
@@ -275,7 +264,7 @@ function useGetUsers() {
     queryFn: async () => {
       // send api request here
       await new Promise((resolve) => setTimeout(resolve, 1000)); // fake api call
-      return Promise.resolve(data);
+      return Promise.resolve(personalData);
     },
     refetchOnWindowFocus: false,
   });
@@ -323,7 +312,7 @@ function useDeleteUser() {
 
 const queryClient = new QueryClient();
 
-const ExampleWithProviders = () => (
+const Example2 = () => (
   // Put this with your other react-query providers near root of your app
   <QueryClientProvider client={queryClient}>
     <ModalsProvider>
@@ -332,7 +321,7 @@ const ExampleWithProviders = () => (
   </QueryClientProvider>
 );
 
-export default ExampleWithProviders;
+export default Example2;
 
 const validateRequired = (value) => !!value.length;
 const validateEmail = (email) => {
