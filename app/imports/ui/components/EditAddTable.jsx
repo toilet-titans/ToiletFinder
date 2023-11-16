@@ -1,125 +1,114 @@
 import React, { useMemo, useState } from 'react';
-import { MRT_EditActionButtons, MantineReactTable, useMantineReactTable } from 'mantine-react-table';
-import { ActionIcon, Button, Flex, Stack, Text, Title, Tooltip } from '@mantine/core';
+import {
+  MRT_EditActionButtons,
+  MantineReactTable,
+  // createRow,
+  useMantineReactTable,
+} from 'mantine-react-table';
+import {
+  ActionIcon,
+  Button,
+  Flex,
+  Stack,
+  Text,
+  Title,
+  Tooltip,
+} from '@mantine/core';
 import { ModalsProvider, modals } from '@mantine/modals';
 import { IconEdit, IconTrash } from '@tabler/icons-react';
-import { QueryClient, QueryClientProvider, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { data } from './Data';
+import {
+  QueryClient,
+  QueryClientProvider,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from '@tanstack/react-query';
+import { Floors, Buildings, personalData, Genders, data } from './Data';
+import { fakeData } from './makeData';
 
 const Example = () => {
+  const [validationErrors, setValidationErrors] = useState({});
+
   const columns = useMemo(
     () => [
       {
         accessorKey: 'Gender',
         header: 'Gender',
-        filterFn: 'equals',
-        mantineFilterSelectProps: {
-          data: ['Male', 'Female'],
+        editVariant: 'select',
+        mantineEditSelectProps: {
+          data: Genders,
+          error: validationErrors?.state,
         },
-        filterVariant: 'select',
       },
       {
         accessorKey: 'Building',
-        header: 'Building Name',
+        header: 'Building',
+        editVariant: 'select',
+        mantineEditSelectProps: {
+          data: Buildings,
+          error: validationErrors?.state,
+        },
       },
       {
         accessorKey: 'Floor',
         header: 'Floor',
+        editVariant: 'select',
+        mantineEditSelectProps: {
+          data: Floors,
+          error: validationErrors?.state,
+        },
       },
       {
         accessorKey: 'BathroomNumber',
         header: 'Bathroom Number',
+        mantineEditTextInputProps: {
+          type: 'email',
+          required: true,
+          error: validationErrors?.firstName,
+          // remove any previous validation errors when user focuses on the input
+          onFocus: () =>
+            setValidationErrors({
+              ...validationErrors,
+              firstName: undefined,
+            }),
+          // optionally add validation checking for onBlur or onChange
+        },
       },
       {
         accessorKey: 'Rating',
         header: 'Rating',
         filterVariant: 'range',
+        mantineEditTextInputProps: {
+          type: 'email',
+          required: true,
+          error: validationErrors?.lastName,
+          // remove any previous validation errors when user focuses on the input
+          onFocus: () =>
+            setValidationErrors({
+              ...validationErrors,
+              lastName: undefined,
+            }),
+        },
       },
       {
         accessorKey: 'AverageRatingOfBuilding',
         header: 'Average Rating Of Building',
         filterVariant: 'range',
-        editVariant: 'select',
-        mantineEditSelectProps: {
-          data: data.Building,
+        mantineEditTextInputProps: {
+          type: 'email',
+          required: true,
+          error: validationErrors?.email,
+          // remove any previous validation errors when user focuses on the input
+          onFocus: () =>
+            setValidationErrors({
+              ...validationErrors,
+              email: undefined,
+            }),
         },
       },
     ],
-    [],
+    [validationErrors],
   );
-  // CREATE hook (post new user to api)
-  function useCreateUser() {
-    const queryClient = useQueryClient();
-    return useMutation({
-      mutationFn: async (user) => {
-        // send api update request here
-        await new Promise((resolve) => setTimeout(resolve, 1000)); //fake api call
-        return Promise.resolve();
-      },
-      // client side optimistic update
-      onMutate: (newUserInfo) => {
-        queryClient.setQueryData(['users'], (prevUsers) => [
-          ...prevUsers,
-          {
-            ...newUserInfo,
-            id: (Math.random() + 1).toString(36).substring(7),
-          },
-        ]);
-      },
-      // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
-    });
-  }
-
-  // READ hook (get users from api)
-  function useGetUsers() {
-    return useQuery({
-      queryKey: ['users'],
-      queryFn: async () => {
-        // send api request here
-        await new Promise((resolve) => setTimeout(resolve, 1000)); //fake api call
-        return Promise.resolve(fakeData);
-      },
-      refetchOnWindowFocus: false,
-    });
-  }
-
-  // UPDATE hook (put user in api)
-  function useUpdateUser() {
-    const queryClient = useQueryClient();
-    return useMutation({
-      mutationFn: async (user) => {
-        // send api update request here
-        await new Promise((resolve) => setTimeout(resolve, 1000)); //fake api call
-        return Promise.resolve();
-      },
-      // client side optimistic update
-      onMutate: (newUserInfo) => {
-        queryClient.setQueryData(['users'], (prevUsers) =>
-          prevUsers?.map((prevUser) =>
-            prevUser.id === newUserInfo.id ? newUserInfo : prevUser,
-          ),
-        );
-      },
-      // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
-    });
-  }
-
-  // DELETE hook (delete user in api)
-  function useDeleteUser() {
-    const queryClient = useQueryClient();
-    return useMutation({
-      mutationFn: async (userId) => {
-        // send api update request here
-        await new Promise((resolve) => setTimeout(resolve, 1000)); //fake api call
-        return Promise.resolve();
-      },
-      // client side optimistic update
-      onMutate: (userId) => {
-        queryClient.setQueryData(['users'], (prevUsers) =>prevUsers?.filter((user) => user.id !== userId));
-      },
-      // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
-    });
-  }
 
   // call CREATE hook
   const { mutateAsync: createUser, isLoading: isCreatingUser } =
@@ -140,14 +129,26 @@ const Example = () => {
 
   // CREATE action
   const handleCreateUser = async ({ values, exitCreatingMode }) => {
+    const newValidationErrors = validateUser(values);
+    if (Object.values(newValidationErrors).some((error) => error)) {
+      setValidationErrors(newValidationErrors);
+      return;
+    }
+    setValidationErrors({});
     await createUser(values);
     exitCreatingMode();
   };
 
   // UPDATE action
   const handleSaveUser = async ({ values, table }) => {
+    const newValidationErrors = validateUser(values);
+    if (Object.values(newValidationErrors).some((error) => error)) {
+      setValidationErrors(newValidationErrors);
+      return;
+    }
+    setValidationErrors({});
     await updateUser(values);
-    table.setEditingRow(null); // exit editing mode
+    table.setEditingRow(null); //exit editing mode
   };
 
   // DELETE action
@@ -183,7 +184,9 @@ const Example = () => {
         minHeight: '500px',
       },
     },
+    onCreatingRowCancel: () => setValidationErrors({}),
     onCreatingRowSave: handleCreateUser,
+    onEditingRowCancel: () => setValidationErrors({}),
     onEditingRowSave: handleSaveUser,
     renderCreateRowModalContent: ({ table, row, internalEditComponents }) => (
       <Stack>
@@ -243,6 +246,81 @@ const Example = () => {
   return <MantineReactTable table={table} />;
 };
 
+// CREATE hook (post new user to api)
+function useCreateUser() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (user) => {
+      // send api update request here
+      await new Promise((resolve) => setTimeout(resolve, 1000)); //fake api call
+      return Promise.resolve();
+    },
+    // client side optimistic update
+    onMutate: (newUserInfo) => {
+      queryClient.setQueryData(['users'], (prevUsers) => [
+        ...prevUsers,
+        {
+          ...newUserInfo,
+          id: (Math.random() + 1).toString(36).substring(7),
+        },
+      ]);
+    },
+    // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
+  });
+}
+
+// READ hook (get users from api)
+function useGetUsers() {
+  return useQuery({
+    queryKey: ['users'],
+    queryFn: async () => {
+      // send api request here
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // fake api call
+      return Promise.resolve(data);
+    },
+    refetchOnWindowFocus: false,
+  });
+}
+
+// UPDATE hook (put user in api)
+function useUpdateUser() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (user) => {
+      // send api update request here
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // fake api call
+      return Promise.resolve();
+    },
+    // client side optimistic update
+    onMutate: (newUserInfo) => {
+      queryClient.setQueryData(['users'], (prevUsers) =>
+        prevUsers?.map((prevUser) =>
+          prevUser.id === newUserInfo.id ? newUserInfo : prevUser,
+        ),
+      );
+    },
+    // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
+  });
+}
+
+// DELETE hook (delete user in api)
+function useDeleteUser() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (userId) => {
+      // send api update request here
+      await new Promise((resolve) => setTimeout(resolve, 1000)); //fake api call
+      return Promise.resolve();
+    },
+    // client side optimistic update
+    onMutate: (userId) => {
+      queryClient.setQueryData(['users'], (prevUsers) =>
+        prevUsers?.filter((user) => user.id !== userId),
+      );
+    },
+    // onSettled: () => queryClient.invalidateQueries({ queryKey: ['users'] }), //refetch users after mutation, disabled for demo
+  });
+}
 
 const queryClient = new QueryClient();
 
@@ -256,3 +334,19 @@ const ExampleWithProviders = () => (
 );
 
 export default ExampleWithProviders;
+
+const validateRequired = (value) => !!value.length;
+const validateEmail = (email) => {
+  const regex = /^([1-5](\.[0-9])?)$/;
+  return !!email.length && regex.test(email);
+};
+
+function validateUser(user) {
+  return {
+    firstName: !validateRequired(user.firstName)
+      ? 'First Name is Required'
+      : '',
+    lastName: !validateRequired(user.lastName) ? 'Last Name is Required' : '',
+    email: !validateEmail(user.email) ? 'Incorrect Email Format' : '',
+  };
+}

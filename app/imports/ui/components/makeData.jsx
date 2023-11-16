@@ -1,12 +1,4 @@
-export type User = {
-  id: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  state: string;
-};
-
-export const fakeData: User[] = [
+export const fakeData = [
   {
     id: '9s41rp',
     firstName: 'Kelvin',
@@ -65,7 +57,7 @@ export const fakeData: User[] = [
   },
 ];
 
-//50 us states array
+// 50 us states array
 export const usStates = [
   'Alabama',
   'Alaska',
