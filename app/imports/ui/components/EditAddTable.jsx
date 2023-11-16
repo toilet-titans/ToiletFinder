@@ -60,18 +60,6 @@ const Example = () => {
       {
         accessorKey: 'BathroomNumber',
         header: 'Bathroom Number',
-        mantineEditTextInputProps: {
-          type: 'email',
-          required: true,
-          error: validationErrors?.firstName,
-          // remove any previous validation errors when user focuses on the input
-          onFocus: () =>
-            setValidationErrors({
-              ...validationErrors,
-              firstName: undefined,
-            }),
-          // optionally add validation checking for onBlur or onChange
-        },
       },
       {
         accessorKey: 'Rating',

@@ -3,7 +3,7 @@ export const data = [
     Gender: 'Female',
     Building: 'Moore Hall',
     Floor: '2',
-    BathroomNumber: '1',
+    BathroomNumber: 1,
     Rating: '5',
     AverageRatingOfBuilding: '4',
   },
