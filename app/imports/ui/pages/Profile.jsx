@@ -2,14 +2,14 @@ import React from 'react';
 // import { Meteor } from 'meteor/meteor';
 // import { useTracker } from 'meteor/react-meteor-data';
 import { Container, Row, Col } from 'react-bootstrap';
-import SavedTables from '../components/TestTable';
-import Rating from '../components/personalRating';
+import Schedule from '../components/EditAddTable';
+import Personal from '../components/personalEditTable';
 // import { Stuffs } from '../../api/stuff/Stuff';
 // import StuffItem from '../components/StuffItem';
 // import LoadingSpinner from '../components/LoadingSpinner';
 
 // File copied from ListStuff.jsx
-/* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/* Renders a table containing all Stuff documents. Use <StuffItem> to render each row. */
 const Profile = () => (
   <Container className="py-3">
     <Row className="justify-content-center">
@@ -17,9 +17,9 @@ const Profile = () => (
         <Col className="text-center">
           <h2>Profile</h2>
           <h2>Your Reviews:</h2>
-          <Rating />
+          <Personal />
           <h2>Saved Bathrooms:</h2>
-          <SavedTables />
+          <Schedule />
         </Col>
       </Col>
     </Row>
