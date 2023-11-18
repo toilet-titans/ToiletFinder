@@ -6,7 +6,7 @@ table:
 	Defaults: user, role
 
 	user (Not edited it yet, have to create new example data)
-		-_id:  str
+		-_id:  key, str
 		-email: str
 		-firstname: str
 		-lastname: str
@@ -15,26 +15,29 @@ table:
 
 	role:
 		
-	building
-		-_id:  str
+	building:
+		-_id:  key, str
 		-name: str
 		-floor_id: [String], a list of all floor
 		-floor_count: int
 		
 	floor:
-		-_id:  str
+		-_id:  key, str
 		-bathroom: [String], stores all individual bathroom._id of this floor.
 		-floor_number: int
+		-building: key, str
 
-	bathroom
-		-_id: str
+	bathroom:
+		-_id: key, str
 		-average_rating: int
 		-gender: str
-		-bathroom number: int
+		-bathroom_number: int
 		-floor_id: key, the belonging floor
-
+		-building_id: key 
+	
 	review:
+		-_id: key, str
 		-user_id: key, owner of this review
-		-bathroom: key, review target
+		-bathroom_id: key, review target
 		-rating: int
-		-comment: str
+		-content: str

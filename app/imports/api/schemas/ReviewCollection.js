@@ -18,7 +18,7 @@ class ReviewCollection {
       rating: {
         type: Number,
       },
-      comment: {
+      content: {
         type: String,
       },
     });

@@ -16,6 +16,9 @@ class FloorCollection {
       'bathroom.$': {
         type: String,
       },
+      building: {
+        type: String,
+      },
     });
 
     // attach to MongoDB for data validation.
