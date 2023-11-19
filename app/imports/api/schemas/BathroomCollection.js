@@ -10,7 +10,8 @@ class BathroomCollection {
     // Define the schema
     this.schema = new SimpleSchema({
       // make a auto execute function for updating this review.bathroom.id/review.bathroom.id.length
-      average_rating: {
+      rating: Array,
+      'rating.$': {
         type: Number,
       },
       gender: {

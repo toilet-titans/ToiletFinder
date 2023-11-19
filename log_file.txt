@@ -1,0 +1,352 @@
+
+> meteor-application-template-react@ start /home/john/Desktop/final-project/ToiletFinder/app
+> meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
+
+[[[[[ ~/Desktop/final-project/ToiletFinder/app ]]]]]
+
+=> Started proxy.
+=> Started HMR server.
+=> Started MongoDB.
+I20231118-00:56:37.243(-10)? Creating the default user(s)
+I20231118-00:56:37.249(-10)?   Creating user admin@foo.com.
+I20231118-00:56:37.455(-10)?   Creating user marquesb@hawaii.edu.
+I20231118-00:56:37.521(-10)?   Creating user ryderhs@hawaii.edu.
+I20231118-00:56:37.579(-10)?   Creating user liujl@hawaii.edu.
+I20231118-00:56:37.639(-10)?   Creating user reynseki@hawaii.edu.
+I20231118-00:56:37.692(-10)?   Creating user marquesbatoon@gmail.com.
+I20231118-00:56:37.739(-10)?   Creating user john@foo.com.
+I20231118-00:56:37.797(-10)? Creating default data.
+I20231118-00:56:37.798(-10)?   Adding: Basket (john@foo.com)
+I20231118-00:56:37.807(-10)?   Adding: Bicycle (john@foo.com)
+I20231118-00:56:37.809(-10)?   Adding: Banana (admin@foo.com)
+I20231118-00:56:37.813(-10)?   Adding: Boogie Board (admin@foo.com)
+I20231118-00:56:37.816(-10)? 
+I20231118-00:56:37.816(-10)? addBathroom method called.
+I20231118-00:56:37.816(-10)? data validated
+I20231118-00:56:37.817(-10)? query executed for building lookup, building_data: []
+I20231118-00:56:37.818(-10)? start constructing a new building...
+I20231118-00:56:37.824(-10)? constructed building base:  WTc6PPo2nSkfHcQmj
+I20231118-00:56:37.834(-10)? new building base:  [
+I20231118-00:56:37.835(-10)?   {
+I20231118-00:56:37.835(-10)?     _id: 'WTc6PPo2nSkfHcQmj',
+I20231118-00:56:37.835(-10)?     name: 'building A',
+I20231118-00:56:37.835(-10)?     floor_count: 3,
+I20231118-00:56:37.835(-10)?     floor_id: []
+I20231118-00:56:37.835(-10)?   }
+I20231118-00:56:37.835(-10)? ]
+I20231118-00:56:37.835(-10)? new floors constructed:  [ 'EusmHzBM3kTFNThXE', 'j3wdQYN8Eys9drbxD', 'rmzw2drRRsEdvqBWp' ]
+I20231118-00:56:37.839(-10)? assembled new floors to building. building data:  [
+I20231118-00:56:37.839(-10)?   {
+I20231118-00:56:37.839(-10)?     _id: 'WTc6PPo2nSkfHcQmj',
+I20231118-00:56:37.839(-10)?     name: 'building A',
+I20231118-00:56:37.839(-10)?     floor_count: 3,
+I20231118-00:56:37.839(-10)?     floor_id: [ 'EusmHzBM3kTFNThXE', 'j3wdQYN8Eys9drbxD', 'rmzw2drRRsEdvqBWp' ]
+I20231118-00:56:37.839(-10)?   }
+I20231118-00:56:37.839(-10)? ]
+I20231118-00:56:37.839(-10)? new building constructed, id:  WTc6PPo2nSkfHcQmj
+I20231118-00:56:37.840(-10)? get bathroom id...
+I20231118-00:56:37.840(-10)? check existing bathroom... bathroom_id:  undefined
+I20231118-00:56:37.840(-10)? no bathroom found.
+I20231118-00:56:37.840(-10)? start constructing new bathroom...
+I20231118-00:56:37.847(-10)? bathroom construction successful:  Cursor {
+I20231118-00:56:37.848(-10)?   _mongo: <ref *1> MongoConnection {
+I20231118-00:56:37.848(-10)?     _observeMultiplexers: {},
+I20231118-00:56:37.848(-10)?     _onFailoverHook: Hook {
+I20231118-00:56:37.848(-10)?       nextCallbackId: 0,
+I20231118-00:56:37.848(-10)?       callbacks: [Object: null prototype] {},
+I20231118-00:56:37.848(-10)?       bindEnvironment: true,
+I20231118-00:56:37.848(-10)?       wrapAsync: true
+I20231118-00:56:37.848(-10)?     },
+I20231118-00:56:37.848(-10)?     db: Db { s: [Object] },
+I20231118-00:56:37.848(-10)?     _oplogHandle: OplogHandle {
+I20231118-00:56:37.848(-10)?       _oplogUrl: 'mongodb://127.0.0.1:3001/local',
+I20231118-00:56:37.848(-10)?       _dbName: 'meteor',
+I20231118-00:56:37.848(-10)?       _oplogLastEntryConnection: [MongoConnection],
+I20231118-00:56:37.849(-10)?       _oplogTailConnection: [MongoConnection],
+I20231118-00:56:37.849(-10)?       _stopped: false,
+I20231118-00:56:37.849(-10)?       _tailHandle: [Object],
+I20231118-00:56:37.849(-10)?       _readyFuture: [Object],
+I20231118-00:56:37.849(-10)?       _crossbar: [Object],
+I20231118-00:56:37.849(-10)?       _baseOplogSelector: [Object],
+I20231118-00:56:37.849(-10)?       _catchingUpFutures: [],
+I20231118-00:56:37.849(-10)?       _lastProcessedTS: new Timestamp({ t: 1700304997, i: 115 }),
+I20231118-00:56:37.849(-10)?       _onSkippedEntriesHook: [Hook],
+I20231118-00:56:37.849(-10)?       _entryQueue: [Denque],
+I20231118-00:56:37.849(-10)?       _workerActive: false
+I20231118-00:56:37.849(-10)?     },
+I20231118-00:56:37.849(-10)?     _docFetcher: DocFetcher {
+I20231118-00:56:37.850(-10)?       _mongoConnection: [Circular *1],
+I20231118-00:56:37.850(-10)?       _callbacksForOp: Map(0) {}
+I20231118-00:56:37.850(-10)?     },
+I20231118-00:56:37.850(-10)?     client: MongoClient {
+I20231118-00:56:37.850(-10)?       _events: [Object: null prototype],
+I20231118-00:56:37.850(-10)?       _eventsCount: 1,
+I20231118-00:56:37.850(-10)?       _maxListeners: undefined,
+I20231118-00:56:37.850(-10)?       mongoLogger: [MongoLogger],
+I20231118-00:56:37.850(-10)?       s: [Object],
+I20231118-00:56:37.850(-10)?       topology: [Topology],
+I20231118-00:56:37.850(-10)?       [Symbol(kCapture)]: false,
+I20231118-00:56:37.850(-10)?       [Symbol(options)]: [Object: null prototype]
+I20231118-00:56:37.850(-10)?     }
+I20231118-00:56:37.850(-10)?   },
+I20231118-00:56:37.850(-10)?   _cursorDescription: CursorDescription {
+I20231118-00:56:37.851(-10)?     collectionName: 'bathroom',
+I20231118-00:56:37.851(-10)?     selector: { _id: 'HPe9GqkLpj8aTzX27' },
+I20231118-00:56:37.851(-10)?     options: { transform: null }
+I20231118-00:56:37.851(-10)?   },
+I20231118-00:56:37.851(-10)?   _synchronousCursor: null
+I20231118-00:56:37.851(-10)? }
+I20231118-00:56:37.851(-10)? 
+I20231118-00:56:37.851(-10)? addBathroom method called.
+I20231118-00:56:37.851(-10)? data validated
+I20231118-00:56:37.851(-10)? undefined
+I20231118-00:56:37.851(-10)? query executed for building lookup, building_data: []
+I20231118-00:56:37.852(-10)? start constructing a new building...
+I20231118-00:56:37.852(-10)? constructed building base:  qmZ7DMLLcwnmjJf3N
+I20231118-00:56:37.852(-10)? new building base:  [
+I20231118-00:56:37.852(-10)?   {
+I20231118-00:56:37.852(-10)?     _id: 'qmZ7DMLLcwnmjJf3N',
+I20231118-00:56:37.852(-10)?     name: 'building B',
+I20231118-00:56:37.852(-10)?     floor_count: 2,
+I20231118-00:56:37.852(-10)?     floor_id: []
+I20231118-00:56:37.852(-10)?   }
+I20231118-00:56:37.853(-10)? ]
+I20231118-00:56:37.853(-10)? new floors constructed:  [ '8WhCQx6NNCKgsHygR', 'PKuiTsiznDMFkNgJR' ]
+I20231118-00:56:37.854(-10)? assembled new floors to building. building data:  [
+I20231118-00:56:37.854(-10)?   {
+I20231118-00:56:37.854(-10)?     _id: 'qmZ7DMLLcwnmjJf3N',
+I20231118-00:56:37.854(-10)?     name: 'building B',
+I20231118-00:56:37.854(-10)?     floor_count: 2,
+I20231118-00:56:37.854(-10)?     floor_id: [ '8WhCQx6NNCKgsHygR', 'PKuiTsiznDMFkNgJR' ]
+I20231118-00:56:37.854(-10)?   }
+I20231118-00:56:37.855(-10)? ]
+I20231118-00:56:37.855(-10)? new building constructed, id:  qmZ7DMLLcwnmjJf3N
+I20231118-00:56:37.855(-10)? get bathroom id...
+I20231118-00:56:37.855(-10)? check existing bathroom... bathroom_id:  undefined
+I20231118-00:56:37.855(-10)? no bathroom found.
+I20231118-00:56:37.855(-10)? start constructing new bathroom...
+I20231118-00:56:37.856(-10)? bathroom construction successful:  Cursor {
+I20231118-00:56:37.856(-10)?   _mongo: <ref *1> MongoConnection {
+I20231118-00:56:37.856(-10)?     _observeMultiplexers: {},
+I20231118-00:56:37.856(-10)?     _onFailoverHook: Hook {
+I20231118-00:56:37.857(-10)?       nextCallbackId: 0,
+I20231118-00:56:37.857(-10)?       callbacks: [Object: null prototype] {},
+I20231118-00:56:37.857(-10)?       bindEnvironment: true,
+I20231118-00:56:37.857(-10)?       wrapAsync: true
+I20231118-00:56:37.857(-10)?     },
+I20231118-00:56:37.857(-10)?     db: Db { s: [Object] },
+I20231118-00:56:37.857(-10)?     _oplogHandle: OplogHandle {
+I20231118-00:56:37.857(-10)?       _oplogUrl: 'mongodb://127.0.0.1:3001/local',
+I20231118-00:56:37.857(-10)?       _dbName: 'meteor',
+I20231118-00:56:37.857(-10)?       _oplogLastEntryConnection: [MongoConnection],
+I20231118-00:56:37.857(-10)?       _oplogTailConnection: [MongoConnection],
+I20231118-00:56:37.857(-10)?       _stopped: false,
+I20231118-00:56:37.857(-10)?       _tailHandle: [Object],
+I20231118-00:56:37.858(-10)?       _readyFuture: [Object],
+I20231118-00:56:37.858(-10)?       _crossbar: [Object],
+I20231118-00:56:37.858(-10)?       _baseOplogSelector: [Object],
+I20231118-00:56:37.858(-10)?       _catchingUpFutures: [],
+I20231118-00:56:37.858(-10)?       _lastProcessedTS: new Timestamp({ t: 1700304997, i: 121 }),
+I20231118-00:56:37.858(-10)?       _onSkippedEntriesHook: [Hook],
+I20231118-00:56:37.858(-10)?       _entryQueue: [Denque],
+I20231118-00:56:37.858(-10)?       _workerActive: false
+I20231118-00:56:37.858(-10)?     },
+I20231118-00:56:37.858(-10)?     _docFetcher: DocFetcher {
+I20231118-00:56:37.858(-10)?       _mongoConnection: [Circular *1],
+I20231118-00:56:37.858(-10)?       _callbacksForOp: Map(0) {}
+I20231118-00:56:37.858(-10)?     },
+I20231118-00:56:37.858(-10)?     client: MongoClient {
+I20231118-00:56:37.859(-10)?       _events: [Object: null prototype],
+I20231118-00:56:37.859(-10)?       _eventsCount: 1,
+I20231118-00:56:37.859(-10)?       _maxListeners: undefined,
+I20231118-00:56:37.859(-10)?       mongoLogger: [MongoLogger],
+I20231118-00:56:37.859(-10)?       s: [Object],
+I20231118-00:56:37.859(-10)?       topology: [Topology],
+I20231118-00:56:37.859(-10)?       [Symbol(kCapture)]: false,
+I20231118-00:56:37.859(-10)?       [Symbol(options)]: [Object: null prototype]
+I20231118-00:56:37.859(-10)?     }
+I20231118-00:56:37.859(-10)?   },
+I20231118-00:56:37.859(-10)?   _cursorDescription: CursorDescription {
+I20231118-00:56:37.859(-10)?     collectionName: 'bathroom',
+I20231118-00:56:37.859(-10)?     selector: { _id: 'Mx6LDu5ZnDNNjRC94' },
+I20231118-00:56:37.859(-10)?     options: { transform: null }
+I20231118-00:56:37.860(-10)?   },
+I20231118-00:56:37.860(-10)?   _synchronousCursor: null
+I20231118-00:56:37.860(-10)? }
+I20231118-00:56:37.860(-10)? 
+I20231118-00:56:37.860(-10)? addBathroom method called.
+I20231118-00:56:37.860(-10)? data validated
+I20231118-00:56:37.860(-10)? undefined
+I20231118-00:56:37.860(-10)? query executed for building lookup, building_data: []
+I20231118-00:56:37.860(-10)? start constructing a new building...
+I20231118-00:56:37.860(-10)? constructed building base:  ZdXEyFrbnYdDm34Qb
+I20231118-00:56:37.863(-10)? new building base:  [
+I20231118-00:56:37.863(-10)?   {
+I20231118-00:56:37.863(-10)?     _id: 'ZdXEyFrbnYdDm34Qb',
+I20231118-00:56:37.863(-10)?     name: 'building C',
+I20231118-00:56:37.863(-10)?     floor_count: 4,
+I20231118-00:56:37.863(-10)?     floor_id: []
+I20231118-00:56:37.863(-10)?   }
+I20231118-00:56:37.863(-10)? ]
+I20231118-00:56:37.863(-10)? new floors constructed:  [
+I20231118-00:56:37.863(-10)?   'XoAk2sDBdzcSn7o6d',
+I20231118-00:56:37.863(-10)?   'Tgjx3eWKcbYhJoYS7',
+I20231118-00:56:37.864(-10)?   'kS4893p3MH24EMxA9',
+I20231118-00:56:37.864(-10)?   'CsuZtByeWHeZphwg5'
+I20231118-00:56:37.864(-10)? ]
+I20231118-00:56:37.865(-10)? assembled new floors to building. building data:  [
+I20231118-00:56:37.865(-10)?   {
+I20231118-00:56:37.865(-10)?     _id: 'ZdXEyFrbnYdDm34Qb',
+I20231118-00:56:37.865(-10)?     name: 'building C',
+I20231118-00:56:37.865(-10)?     floor_count: 4,
+I20231118-00:56:37.865(-10)?     floor_id: [
+I20231118-00:56:37.865(-10)?       'XoAk2sDBdzcSn7o6d',
+I20231118-00:56:37.865(-10)?       'Tgjx3eWKcbYhJoYS7',
+I20231118-00:56:37.866(-10)?       'kS4893p3MH24EMxA9',
+I20231118-00:56:37.866(-10)?       'CsuZtByeWHeZphwg5'
+I20231118-00:56:37.866(-10)?     ]
+I20231118-00:56:37.866(-10)?   }
+I20231118-00:56:37.866(-10)? ]
+I20231118-00:56:37.866(-10)? new building constructed, id:  ZdXEyFrbnYdDm34Qb
+I20231118-00:56:37.866(-10)? get bathroom id...
+I20231118-00:56:37.866(-10)? check existing bathroom... bathroom_id:  undefined
+I20231118-00:56:37.866(-10)? no bathroom found.
+I20231118-00:56:37.866(-10)? start constructing new bathroom...
+I20231118-00:56:37.867(-10)? bathroom construction successful:  Cursor {
+I20231118-00:56:37.868(-10)?   _mongo: <ref *1> MongoConnection {
+I20231118-00:56:37.868(-10)?     _observeMultiplexers: {},
+I20231118-00:56:37.868(-10)?     _onFailoverHook: Hook {
+I20231118-00:56:37.868(-10)?       nextCallbackId: 0,
+I20231118-00:56:37.868(-10)?       callbacks: [Object: null prototype] {},
+I20231118-00:56:37.868(-10)?       bindEnvironment: true,
+I20231118-00:56:37.868(-10)?       wrapAsync: true
+I20231118-00:56:37.868(-10)?     },
+I20231118-00:56:37.868(-10)?     db: Db { s: [Object] },
+I20231118-00:56:37.869(-10)?     _oplogHandle: OplogHandle {
+I20231118-00:56:37.869(-10)?       _oplogUrl: 'mongodb://127.0.0.1:3001/local',
+I20231118-00:56:37.869(-10)?       _dbName: 'meteor',
+I20231118-00:56:37.869(-10)?       _oplogLastEntryConnection: [MongoConnection],
+I20231118-00:56:37.869(-10)?       _oplogTailConnection: [MongoConnection],
+I20231118-00:56:37.869(-10)?       _stopped: false,
+I20231118-00:56:37.869(-10)?       _tailHandle: [Object],
+I20231118-00:56:37.869(-10)?       _readyFuture: [Object],
+I20231118-00:56:37.869(-10)?       _crossbar: [Object],
+I20231118-00:56:37.869(-10)?       _baseOplogSelector: [Object],
+I20231118-00:56:37.869(-10)?       _catchingUpFutures: [],
+I20231118-00:56:37.869(-10)?       _lastProcessedTS: new Timestamp({ t: 1700304997, i: 128 }),
+I20231118-00:56:37.869(-10)?       _onSkippedEntriesHook: [Hook],
+I20231118-00:56:37.870(-10)?       _entryQueue: [Denque],
+I20231118-00:56:37.870(-10)?       _workerActive: false
+I20231118-00:56:37.870(-10)?     },
+I20231118-00:56:37.870(-10)?     _docFetcher: DocFetcher {
+I20231118-00:56:37.870(-10)?       _mongoConnection: [Circular *1],
+I20231118-00:56:37.870(-10)?       _callbacksForOp: Map(0) {}
+I20231118-00:56:37.870(-10)?     },
+I20231118-00:56:37.870(-10)?     client: MongoClient {
+I20231118-00:56:37.870(-10)?       _events: [Object: null prototype],
+I20231118-00:56:37.870(-10)?       _eventsCount: 1,
+I20231118-00:56:37.870(-10)?       _maxListeners: undefined,
+I20231118-00:56:37.870(-10)?       mongoLogger: [MongoLogger],
+I20231118-00:56:37.870(-10)?       s: [Object],
+I20231118-00:56:37.870(-10)?       topology: [Topology],
+I20231118-00:56:37.871(-10)?       [Symbol(kCapture)]: false,
+I20231118-00:56:37.871(-10)?       [Symbol(options)]: [Object: null prototype]
+I20231118-00:56:37.871(-10)?     }
+I20231118-00:56:37.871(-10)?   },
+I20231118-00:56:37.871(-10)?   _cursorDescription: CursorDescription {
+I20231118-00:56:37.871(-10)?     collectionName: 'bathroom',
+I20231118-00:56:37.871(-10)?     selector: { _id: 'p5CWvxsrQfncKnX5c' },
+I20231118-00:56:37.871(-10)?     options: { transform: null }
+I20231118-00:56:37.871(-10)?   },
+I20231118-00:56:37.871(-10)?   _synchronousCursor: null
+I20231118-00:56:37.871(-10)? }
+I20231118-00:56:37.872(-10)? undefined
+=> Started your app.
+
+=> App running at: http://localhost:3000/
+=> Server modified -- restarting...                                   I20231118-01:18:07.682(-10)? 
+I20231118-01:18:07.682(-10)? addBathroom method called.
+I20231118-01:18:07.682(-10)? data validated
+I20231118-01:18:07.683(-10)? query executed for building lookup, building_data: [
+I20231118-01:18:07.683(-10)?   {
+I20231118-01:18:07.683(-10)?     _id: 'WTc6PPo2nSkfHcQmj',
+I20231118-01:18:07.683(-10)?     name: 'building A',
+I20231118-01:18:07.683(-10)?     floor_count: 3,
+I20231118-01:18:07.683(-10)?     floor_id: [ 'EusmHzBM3kTFNThXE', 'j3wdQYN8Eys9drbxD', 'rmzw2drRRsEdvqBWp' ]
+I20231118-01:18:07.684(-10)?   }
+I20231118-01:18:07.684(-10)? ]
+I20231118-01:18:07.684(-10)? constructing new floors...
+I20231118-01:18:07.684(-10)? new floors constructed:  []
+I20231118-01:18:07.684(-10)? renovate building WTc6PPo2nSkfHcQmj to include floors 
+I20231118-01:18:07.688(-10)? building renovated successful:  [
+I20231118-01:18:07.688(-10)?   {
+I20231118-01:18:07.688(-10)?     _id: 'WTc6PPo2nSkfHcQmj',
+I20231118-01:18:07.688(-10)?     name: 'building A',
+I20231118-01:18:07.688(-10)?     floor_count: 3,
+I20231118-01:18:07.688(-10)?     floor_id: [ 'EusmHzBM3kTFNThXE', 'j3wdQYN8Eys9drbxD', 'rmzw2drRRsEdvqBWp' ]
+I20231118-01:18:07.688(-10)?   }
+I20231118-01:18:07.688(-10)? ]
+I20231118-01:18:07.688(-10)? get bathroom id...
+I20231118-01:18:07.689(-10)? check existing bathroom... bathroom_id:  HPe9GqkLpj8aTzX27
+I20231118-01:18:07.689(-10)? 
+I20231118-01:18:07.689(-10)? addBathroom method called.
+I20231118-01:18:07.689(-10)? data validated
+I20231118-01:18:07.690(-10)? This bathroom is in the database.
+I20231118-01:18:07.690(-10)? query executed for building lookup, building_data: [
+I20231118-01:18:07.690(-10)?   {
+I20231118-01:18:07.690(-10)?     _id: 'qmZ7DMLLcwnmjJf3N',
+I20231118-01:18:07.690(-10)?     name: 'building B',
+I20231118-01:18:07.690(-10)?     floor_count: 2,
+I20231118-01:18:07.690(-10)?     floor_id: [ '8WhCQx6NNCKgsHygR', 'PKuiTsiznDMFkNgJR' ]
+I20231118-01:18:07.690(-10)?   }
+I20231118-01:18:07.690(-10)? ]
+I20231118-01:18:07.691(-10)? constructing new floors...
+I20231118-01:18:07.691(-10)? new floors constructed:  []
+I20231118-01:18:07.691(-10)? renovate building qmZ7DMLLcwnmjJf3N to include floors 
+I20231118-01:18:07.692(-10)? building renovated successful:  [
+I20231118-01:18:07.692(-10)?   {
+I20231118-01:18:07.692(-10)?     _id: 'qmZ7DMLLcwnmjJf3N',
+I20231118-01:18:07.692(-10)?     name: 'building B',
+I20231118-01:18:07.692(-10)?     floor_count: 2,
+I20231118-01:18:07.692(-10)?     floor_id: [ '8WhCQx6NNCKgsHygR', 'PKuiTsiznDMFkNgJR' ]
+I20231118-01:18:07.692(-10)?   }
+I20231118-01:18:07.692(-10)? ]
+I20231118-01:18:07.692(-10)? get bathroom id...
+I20231118-01:18:07.693(-10)? check existing bathroom... bathroom_id:  Mx6LDu5ZnDNNjRC94
+I20231118-01:18:07.693(-10)? 
+I20231118-01:18:07.693(-10)? addBathroom method called.
+I20231118-01:18:07.693(-10)? data validated
+I20231118-01:18:07.693(-10)? This bathroom is in the database.
+I20231118-01:18:07.694(-10)? query executed for building lookup, building_data: [
+I20231118-01:18:07.694(-10)?   {
+I20231118-01:18:07.694(-10)?     _id: 'ZdXEyFrbnYdDm34Qb',
+I20231118-01:18:07.694(-10)?     name: 'building C',
+I20231118-01:18:07.694(-10)?     floor_count: 4,
+I20231118-01:18:07.694(-10)?     floor_id: [
+I20231118-01:18:07.694(-10)?       'XoAk2sDBdzcSn7o6d',
+I20231118-01:18:07.694(-10)?       'Tgjx3eWKcbYhJoYS7',
+I20231118-01:18:07.694(-10)?       'kS4893p3MH24EMxA9',
+I20231118-01:18:07.694(-10)?       'CsuZtByeWHeZphwg5'
+I20231118-01:18:07.694(-10)?     ]
+I20231118-01:18:07.694(-10)?   }
+I20231118-01:18:07.694(-10)? ]
+I20231118-01:18:07.694(-10)? constructing new floors...
+I20231118-01:18:07.694(-10)? new floors constructed:  []
+I20231118-01:18:07.694(-10)? renovate building ZdXEyFrbnYdDm34Qb to include floors 
+I20231118-01:18:07.698(-10)? building renovated successful:  [
+I20231118-01:18:07.698(-10)?   {
+I20231118-01:18:07.698(-10)?     _id: 'ZdXEyFrbnYdDm34Qb',
+I20231118-01:18:07.698(-10)?     name: 'building C',
+I20231118-01:18:07.698(-10)?     floor_count: 4,
+I20231118-01:18:07.698(-10)?     floor_id: [
+I20231118-01:18:07.698(-10)?       'XoAk2sDBdzcSn7o6d',
+I20231118-01:18:07.698(-10)?       'Tgjx3eWKcbYhJoYS7',
+I20231118-01:18:07.698(-10)?       'kS4893p3MH24EMxA9',
+I20231118-01:18:07.698(-10)?       'CsuZtByeWHeZphwg5'
+I20231118-01:18:07.698(-10)?     ]
+I20231118-01:18:07.698(-10)?   }
+I20231118-01:18:07.698(-10)? ]
+I20231118-01:18:07.698(-10)? get bathroom id...
+I20231118-01:18:07.699(-10)? check existing bathroom... bathroom_id:  p5CWvxsrQfncKnX5c
+I20231118-01:18:07.701(-10)? This bathroom is in the database.
+=> Meteor server restarted at: http://localhost:3000/

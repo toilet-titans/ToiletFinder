@@ -15,7 +15,9 @@ class BuildingCollection {
       floor_count: {
         type: Number,
       },
-      floor_id: Array,
+      floor_id: {
+        type: Array,
+      },
       'floor_id.$': {
         type: String,
       },

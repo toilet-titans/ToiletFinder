@@ -17,7 +17,7 @@ table:
 		
 	building:
 		-_id:  key, str
-		-name: str
+		-name: str, unique
 		-floor_id: [String], a list of all floor
 		-floor_count: int
 		
@@ -29,9 +29,10 @@ table:
 
 	bathroom:
 		-_id: key, str
-		-average_rating: int
+		-rating: [in
+		t], list of rating.
 		-gender: str
-		-bathroom_number: int
+			-bathroom_number: int, increment
 		-floor_id: key, the belonging floor
 		-building_id: key 
 	
