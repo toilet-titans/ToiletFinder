@@ -4,7 +4,7 @@ import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { BoxArrowRight, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
+import { BoxArrowRight, PersonFill, PersonPlusFill, PersonCircle } from 'react-bootstrap-icons';
 
 const NavBar = () => {
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
@@ -25,7 +25,6 @@ const NavBar = () => {
               // <Nav.Link id="add-stuff-nav" as={NavLink} to="/add" key="add">Add to List</Nav.Link>,
               <Nav.Link id="add-stuff-nav" as={NavLink} to="/directory" key="add">Directory</Nav.Link>,
               // <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">List</Nav.Link>,
-              <Nav.Link id="add-stuff-nav" as={NavLink} to="/profile" key="add">Temp Profile Page</Nav.Link>,
               <Nav.Link id="add-stuff-nav" as={NavLink} to="/rating" key="rating">Temp Rating Page</Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
@@ -49,6 +48,11 @@ const NavBar = () => {
               </NavDropdown>
             ) : (
               <NavDropdown id="navbar-current-user" title={currentUser}>
+                <NavDropdown.Item id="navbar-profile" as={NavLink} to="/profile">
+                  <PersonCircle />
+                  {' '}
+                  My Profile
+                </NavDropdown.Item>
                 <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
                   <BoxArrowRight />
                   {' '}
