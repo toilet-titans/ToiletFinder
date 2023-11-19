@@ -18,7 +18,7 @@ class BathroomCollection {
         type: String,
       },
       bathroom_number: {
-        type: Number,
+        type: SimpleSchema.Integer,
       },
       floor_id: {
         type: String,

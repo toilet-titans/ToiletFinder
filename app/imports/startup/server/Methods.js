@@ -16,6 +16,14 @@ function fetch_building(building_id) {
 }
 
 /**
+ * fetch all existing buildings from the database.
+ * @returns [{}, {}, ...] a list of object.
+ */
+function fetch_building_all() {
+  return Building_.collection.find().fetch();
+}
+
+/**
  * fetch the entire floor collection.
  * @returns a list of floor entities in the [{}, {}, {}...] format.
  */
@@ -182,8 +190,7 @@ Meteor.methods({
     check(data_, {
       building_name: String,
       floor: Match.Integer,
-      bathroom_number: Match.Integer,
-      gender: Match.OneOf('Female', 'Male'),
+      gender: Match.OneOf('Female', 'Male', 'Genderless'),
       rating: Number,
     });
     console.log('data validated');
@@ -230,13 +237,13 @@ Meteor.methods({
       console.log('start constructing new bathroom...');
       // construct new bathroom
       bathroom_id = Bathroom.collection.insert({
-        rating: [].push(data_.rating),
+        rating: [data_.rating],
         gender: data_.gender,
-        bathroom_number: data_.bathroom_number,
+        bathroom_number: fetch_floor(floor_id)[0].bathroom.length + 1,
         floor_id: floor_id,
         building_id: building_id,
       });
-      console.log('bathroom construction successful: ', Bathroom.collection.find({ _id: bathroom_id })).fetch();
+      console.log(`bathroom construction successful: ${Bathroom.collection.find({ _id: bathroom_id }).fetch()[0]}`);
       console.log('installing new bathroom on floor ', floor_id);
       // install new bathroom on floor
       Floor.collection.update(floor_id, {
@@ -250,5 +257,20 @@ Meteor.methods({
       throw new Meteor.Error('already-exists', 'This bathroom is in the database.');
     }
     console.log('\naddBathroom done');
+  },
+  'initializeBuilding': function (building_data) {
+    // building_data: { name: , floor_count}
+    console.log(building_data);
+    check(building_data, {
+      name: String,
+      floor_count: 1,
+    });
+    console.log('passed check');
+    building_construction(building_data.name, building_data.floor_count);
+  },
+  'getBuildings': function () {
+    const data = fetch_building_all();
+    console.log(data);
+    return data;
   },
 });
