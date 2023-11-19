@@ -228,8 +228,8 @@ const AddContact = () => {
                   </Col>
                   <Col><NumberInput
                     label="Floor Number"
-                    description="Please enter floor number"
-                    placeholder="Input placeholder"
+                    description="Floor Number Input"
+                    placeholder="Please enter floor number"
                     allowDecimal={false}
                     min={1}
                     max={15}
