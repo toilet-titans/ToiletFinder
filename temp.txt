@@ -1,0 +1,44 @@
+* key: default _id in String
+* _id: auto generated unique string _id.
+* all columns are required except arrays are optional.
+
+table:
+	Defaults: user, role
+
+	user (Not edited it yet, have to create new example data)
+		-_id:  key, str
+		-email: str
+		-firstname: str
+		-lastname: str
+		-password: str
+		-saved bathroom: list of keys
+
+	role:
+		
+	building:
+		-_id:  key, str
+		-name: str, unique
+		-floor_id: [String], a list of all floor
+		-floor_count: int
+		
+	floor:
+		-_id:  key, str
+		-bathroom: [String], stores all individual bathroom._id of this floor.
+		-floor_number: int
+		-building: key, str
+
+	bathroom:
+		-_id: key, str
+		-rating: [in
+		t], list of rating.
+		-gender: str
+			-bathroom_number: int, increment
+		-floor_id: key, the belonging floor
+		-building_id: key 
+	
+	review:
+		-_id: key, str
+		-user_id: key, owner of this review
+		-bathroom_id: key, review target
+		-rating: int
+		-content: str

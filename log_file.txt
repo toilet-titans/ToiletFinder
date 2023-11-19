@@ -1,0 +1,3725 @@
+
+> meteor-application-template-react@ start /home/john/Desktop/final-project/ToiletFinder/app
+> meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
+
+[[[[[ ~/Desktop/final-project/ToiletFinder/app ]]]]]
+
+=> Started proxy.
+=> Started HMR server.
+=> Started MongoDB.
+I20231118-16:27:08.974(-10)? Creating the default user(s)
+I20231118-16:27:08.990(-10)?   Creating user admin@foo.com.
+I20231118-16:27:09.181(-10)?   Creating user marquesb@hawaii.edu.
+I20231118-16:27:09.339(-10)?   Creating user ryderhs@hawaii.edu.
+I20231118-16:27:09.496(-10)?   Creating user liujl@hawaii.edu.
+I20231118-16:27:09.652(-10)?   Creating user reynseki@hawaii.edu.
+I20231118-16:27:09.779(-10)?   Creating user marquesbatoon@gmail.com.
+I20231118-16:27:09.988(-10)?   Creating user john@foo.com.
+I20231118-16:27:10.123(-10)? Creating default data.
+I20231118-16:27:10.124(-10)?   Adding: Basket (john@foo.com)
+I20231118-16:27:10.144(-10)?   Adding: Bicycle (john@foo.com)
+I20231118-16:27:10.154(-10)?   Adding: Banana (admin@foo.com)
+I20231118-16:27:10.159(-10)?   Adding: Boogie Board (admin@foo.com)
+I20231118-16:27:10.176(-10)? { name: 'Administration Services Building 1', floor_count: 1 }
+I20231118-16:27:10.177(-10)? passed check
+I20231118-16:27:10.191(-10)? constructed building base:  nAtqHHFZbBoQSXLzT
+I20231118-16:27:10.208(-10)? new building base:  [
+I20231118-16:27:10.209(-10)?   {
+I20231118-16:27:10.209(-10)?     _id: 'nAtqHHFZbBoQSXLzT',
+I20231118-16:27:10.209(-10)?     name: 'Administration Services Building 1',
+I20231118-16:27:10.209(-10)?     floor_count: 1,
+I20231118-16:27:10.209(-10)?     floor_id: []
+I20231118-16:27:10.209(-10)?   }
+I20231118-16:27:10.209(-10)? ]
+I20231118-16:27:10.210(-10)? new floors constructed:  [ 'oQD9Mxr9pCLsu5gpZ' ]
+I20231118-16:27:10.216(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.217(-10)?   {
+I20231118-16:27:10.217(-10)?     _id: 'nAtqHHFZbBoQSXLzT',
+I20231118-16:27:10.217(-10)?     name: 'Administration Services Building 1',
+I20231118-16:27:10.217(-10)?     floor_count: 1,
+I20231118-16:27:10.217(-10)?     floor_id: [ 'oQD9Mxr9pCLsu5gpZ' ]
+I20231118-16:27:10.217(-10)?   }
+I20231118-16:27:10.217(-10)? ]
+I20231118-16:27:10.218(-10)? { name: 'Administration Services Building 2', floor_count: 1 }
+I20231118-16:27:10.218(-10)? passed check
+I20231118-16:27:10.218(-10)? initializeBuilding call successful.
+I20231118-16:27:10.219(-10)? constructed building base:  GS8vFpmEWN5pHzC8g
+I20231118-16:27:10.226(-10)? new building base:  [
+I20231118-16:27:10.227(-10)?   {
+I20231118-16:27:10.227(-10)?     _id: 'GS8vFpmEWN5pHzC8g',
+I20231118-16:27:10.227(-10)?     name: 'Administration Services Building 2',
+I20231118-16:27:10.227(-10)?     floor_count: 1,
+I20231118-16:27:10.227(-10)?     floor_id: []
+I20231118-16:27:10.227(-10)?   }
+I20231118-16:27:10.227(-10)? ]
+I20231118-16:27:10.227(-10)? new floors constructed:  [ 'wXFMPj29ryF5mpjed' ]
+I20231118-16:27:10.232(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.233(-10)?   {
+I20231118-16:27:10.233(-10)?     _id: 'GS8vFpmEWN5pHzC8g',
+I20231118-16:27:10.233(-10)?     name: 'Administration Services Building 2',
+I20231118-16:27:10.233(-10)?     floor_count: 1,
+I20231118-16:27:10.233(-10)?     floor_id: [ 'wXFMPj29ryF5mpjed' ]
+I20231118-16:27:10.233(-10)?   }
+I20231118-16:27:10.233(-10)? ]
+I20231118-16:27:10.233(-10)? { name: 'Agricultural Engineering Institute', floor_count: 1 }
+I20231118-16:27:10.234(-10)? passed check
+I20231118-16:27:10.234(-10)? initializeBuilding call successful.
+I20231118-16:27:10.235(-10)? constructed building base:  RbMSDgyiSd6bGQeM3
+I20231118-16:27:10.241(-10)? new building base:  [
+I20231118-16:27:10.242(-10)?   {
+I20231118-16:27:10.242(-10)?     _id: 'RbMSDgyiSd6bGQeM3',
+I20231118-16:27:10.242(-10)?     name: 'Agricultural Engineering Institute',
+I20231118-16:27:10.242(-10)?     floor_count: 1,
+I20231118-16:27:10.242(-10)?     floor_id: []
+I20231118-16:27:10.242(-10)?   }
+I20231118-16:27:10.242(-10)? ]
+I20231118-16:27:10.242(-10)? new floors constructed:  [ 'zhq3nmtGnoZ4CJ2XJ' ]
+I20231118-16:27:10.247(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.247(-10)?   {
+I20231118-16:27:10.247(-10)?     _id: 'RbMSDgyiSd6bGQeM3',
+I20231118-16:27:10.248(-10)?     name: 'Agricultural Engineering Institute',
+I20231118-16:27:10.248(-10)?     floor_count: 1,
+I20231118-16:27:10.248(-10)?     floor_id: [ 'zhq3nmtGnoZ4CJ2XJ' ]
+I20231118-16:27:10.248(-10)?   }
+I20231118-16:27:10.248(-10)? ]
+I20231118-16:27:10.248(-10)? { name: 'Agricultural Science', floor_count: 1 }
+I20231118-16:27:10.248(-10)? passed check
+I20231118-16:27:10.248(-10)? initializeBuilding call successful.
+I20231118-16:27:10.250(-10)? constructed building base:  mE9XiLK5G22Ayu4LL
+I20231118-16:27:10.256(-10)? new building base:  [
+I20231118-16:27:10.256(-10)?   {
+I20231118-16:27:10.256(-10)?     _id: 'mE9XiLK5G22Ayu4LL',
+I20231118-16:27:10.257(-10)?     name: 'Agricultural Science',
+I20231118-16:27:10.257(-10)?     floor_count: 1,
+I20231118-16:27:10.257(-10)?     floor_id: []
+I20231118-16:27:10.257(-10)?   }
+I20231118-16:27:10.257(-10)? ]
+I20231118-16:27:10.257(-10)? new floors constructed:  [ 'N5cb5Diiwox2YbxyR' ]
+I20231118-16:27:10.261(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.262(-10)?   {
+I20231118-16:27:10.262(-10)?     _id: 'mE9XiLK5G22Ayu4LL',
+I20231118-16:27:10.262(-10)?     name: 'Agricultural Science',
+I20231118-16:27:10.262(-10)?     floor_count: 1,
+I20231118-16:27:10.262(-10)?     floor_id: [ 'N5cb5Diiwox2YbxyR' ]
+I20231118-16:27:10.262(-10)?   }
+I20231118-16:27:10.262(-10)? ]
+I20231118-16:27:10.263(-10)? { name: 'Air Force ROTC Building', floor_count: 1 }
+I20231118-16:27:10.263(-10)? passed check
+I20231118-16:27:10.263(-10)? initializeBuilding call successful.
+I20231118-16:27:10.264(-10)? constructed building base:  9aQTgQheg63Yn4tfN
+I20231118-16:27:10.270(-10)? new building base:  [
+I20231118-16:27:10.270(-10)?   {
+I20231118-16:27:10.270(-10)?     _id: '9aQTgQheg63Yn4tfN',
+I20231118-16:27:10.271(-10)?     name: 'Air Force ROTC Building',
+I20231118-16:27:10.271(-10)?     floor_count: 1,
+I20231118-16:27:10.271(-10)?     floor_id: []
+I20231118-16:27:10.271(-10)?   }
+I20231118-16:27:10.271(-10)? ]
+I20231118-16:27:10.271(-10)? new floors constructed:  [ 'k5njKMiSneKJW5F8g' ]
+I20231118-16:27:10.276(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.276(-10)?   {
+I20231118-16:27:10.276(-10)?     _id: '9aQTgQheg63Yn4tfN',
+I20231118-16:27:10.276(-10)?     name: 'Air Force ROTC Building',
+I20231118-16:27:10.276(-10)?     floor_count: 1,
+I20231118-16:27:10.276(-10)?     floor_id: [ 'k5njKMiSneKJW5F8g' ]
+I20231118-16:27:10.276(-10)?   }
+I20231118-16:27:10.277(-10)? ]
+I20231118-16:27:10.277(-10)? { name: 'Andrews Outdoor Theatre', floor_count: 1 }
+I20231118-16:27:10.277(-10)? passed check
+I20231118-16:27:10.277(-10)? initializeBuilding call successful.
+I20231118-16:27:10.278(-10)? constructed building base:  c6J5EugopDxbuKpoG
+I20231118-16:27:10.284(-10)? new building base:  [
+I20231118-16:27:10.284(-10)?   {
+I20231118-16:27:10.284(-10)?     _id: 'c6J5EugopDxbuKpoG',
+I20231118-16:27:10.284(-10)?     name: 'Andrews Outdoor Theatre',
+I20231118-16:27:10.284(-10)?     floor_count: 1,
+I20231118-16:27:10.284(-10)?     floor_id: []
+I20231118-16:27:10.285(-10)?   }
+I20231118-16:27:10.285(-10)? ]
+I20231118-16:27:10.285(-10)? new floors constructed:  [ 'w7MtKrdE5wjyGDfFu' ]
+I20231118-16:27:10.289(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.290(-10)?   {
+I20231118-16:27:10.290(-10)?     _id: 'c6J5EugopDxbuKpoG',
+I20231118-16:27:10.290(-10)?     name: 'Andrews Outdoor Theatre',
+I20231118-16:27:10.290(-10)?     floor_count: 1,
+I20231118-16:27:10.290(-10)?     floor_id: [ 'w7MtKrdE5wjyGDfFu' ]
+I20231118-16:27:10.290(-10)?   }
+I20231118-16:27:10.290(-10)? ]
+I20231118-16:27:10.290(-10)? { name: 'Architecture School', floor_count: 1 }
+I20231118-16:27:10.291(-10)? passed check
+I20231118-16:27:10.291(-10)? initializeBuilding call successful.
+I20231118-16:27:10.292(-10)? constructed building base:  Azb5WMBd3inajF2ww
+I20231118-16:27:10.298(-10)? new building base:  [
+I20231118-16:27:10.298(-10)?   {
+I20231118-16:27:10.298(-10)?     _id: 'Azb5WMBd3inajF2ww',
+I20231118-16:27:10.298(-10)?     name: 'Architecture School',
+I20231118-16:27:10.299(-10)?     floor_count: 1,
+I20231118-16:27:10.299(-10)?     floor_id: []
+I20231118-16:27:10.299(-10)?   }
+I20231118-16:27:10.299(-10)? ]
+I20231118-16:27:10.299(-10)? new floors constructed:  [ 'XKAtH2w3dhrzsseRX' ]
+I20231118-16:27:10.303(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.304(-10)?   {
+I20231118-16:27:10.304(-10)?     _id: 'Azb5WMBd3inajF2ww',
+I20231118-16:27:10.304(-10)?     name: 'Architecture School',
+I20231118-16:27:10.304(-10)?     floor_count: 1,
+I20231118-16:27:10.304(-10)?     floor_id: [ 'XKAtH2w3dhrzsseRX' ]
+I20231118-16:27:10.304(-10)?   }
+I20231118-16:27:10.304(-10)? ]
+I20231118-16:27:10.304(-10)? { name: 'Army ROTC Building', floor_count: 1 }
+I20231118-16:27:10.304(-10)? passed check
+I20231118-16:27:10.305(-10)? initializeBuilding call successful.
+I20231118-16:27:10.306(-10)? constructed building base:  dkpQ8xwxNTnydibDp
+I20231118-16:27:10.311(-10)? new building base:  [
+I20231118-16:27:10.312(-10)?   {
+I20231118-16:27:10.312(-10)?     _id: 'dkpQ8xwxNTnydibDp',
+I20231118-16:27:10.312(-10)?     name: 'Army ROTC Building',
+I20231118-16:27:10.312(-10)?     floor_count: 1,
+I20231118-16:27:10.312(-10)?     floor_id: []
+I20231118-16:27:10.312(-10)?   }
+I20231118-16:27:10.312(-10)? ]
+I20231118-16:27:10.312(-10)? new floors constructed:  [ 'MToEWouiXnMCLXajf' ]
+I20231118-16:27:10.317(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.317(-10)?   {
+I20231118-16:27:10.317(-10)?     _id: 'dkpQ8xwxNTnydibDp',
+I20231118-16:27:10.317(-10)?     name: 'Army ROTC Building',
+I20231118-16:27:10.317(-10)?     floor_count: 1,
+I20231118-16:27:10.317(-10)?     floor_id: [ 'MToEWouiXnMCLXajf' ]
+I20231118-16:27:10.317(-10)?   }
+I20231118-16:27:10.318(-10)? ]
+I20231118-16:27:10.318(-10)? { name: 'Art Building', floor_count: 1 }
+I20231118-16:27:10.318(-10)? passed check
+I20231118-16:27:10.318(-10)? initializeBuilding call successful.
+I20231118-16:27:10.319(-10)? constructed building base:  jAJ6NbtpDx463dxgD
+I20231118-16:27:10.325(-10)? new building base:  [
+I20231118-16:27:10.325(-10)?   {
+I20231118-16:27:10.325(-10)?     _id: 'jAJ6NbtpDx463dxgD',
+I20231118-16:27:10.325(-10)?     name: 'Art Building',
+I20231118-16:27:10.325(-10)?     floor_count: 1,
+I20231118-16:27:10.326(-10)?     floor_id: []
+I20231118-16:27:10.326(-10)?   }
+I20231118-16:27:10.326(-10)? ]
+I20231118-16:27:10.326(-10)? new floors constructed:  [ 'AJiruPmT3MghNzndn' ]
+I20231118-16:27:10.330(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.330(-10)?   {
+I20231118-16:27:10.331(-10)?     _id: 'jAJ6NbtpDx463dxgD',
+I20231118-16:27:10.331(-10)?     name: 'Art Building',
+I20231118-16:27:10.331(-10)?     floor_count: 1,
+I20231118-16:27:10.331(-10)?     floor_id: [ 'AJiruPmT3MghNzndn' ]
+I20231118-16:27:10.331(-10)?   }
+I20231118-16:27:10.331(-10)? ]
+I20231118-16:27:10.331(-10)? { name: 'Bachman Annex 2', floor_count: 1 }
+I20231118-16:27:10.331(-10)? passed check
+I20231118-16:27:10.331(-10)? initializeBuilding call successful.
+I20231118-16:27:10.333(-10)? constructed building base:  djyzqxATC2PbR9T48
+I20231118-16:27:10.339(-10)? new building base:  [
+I20231118-16:27:10.339(-10)?   {
+I20231118-16:27:10.339(-10)?     _id: 'djyzqxATC2PbR9T48',
+I20231118-16:27:10.339(-10)?     name: 'Bachman Annex 2',
+I20231118-16:27:10.339(-10)?     floor_count: 1,
+I20231118-16:27:10.339(-10)?     floor_id: []
+I20231118-16:27:10.339(-10)?   }
+I20231118-16:27:10.339(-10)? ]
+I20231118-16:27:10.340(-10)? new floors constructed:  [ '4suP5dBb6drfBMWG6' ]
+I20231118-16:27:10.350(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.350(-10)?   {
+I20231118-16:27:10.350(-10)?     _id: 'djyzqxATC2PbR9T48',
+I20231118-16:27:10.350(-10)?     name: 'Bachman Annex 2',
+I20231118-16:27:10.350(-10)?     floor_count: 1,
+I20231118-16:27:10.350(-10)?     floor_id: [ '4suP5dBb6drfBMWG6' ]
+I20231118-16:27:10.350(-10)?   }
+I20231118-16:27:10.351(-10)? ]
+I20231118-16:27:10.351(-10)? { name: 'Bachman Annex 9–13', floor_count: 1 }
+I20231118-16:27:10.351(-10)? passed check
+I20231118-16:27:10.351(-10)? initializeBuilding call successful.
+I20231118-16:27:10.352(-10)? constructed building base:  HjSkgybQGWv5JYxN6
+I20231118-16:27:10.359(-10)? new building base:  [
+I20231118-16:27:10.359(-10)?   {
+I20231118-16:27:10.359(-10)?     _id: 'HjSkgybQGWv5JYxN6',
+I20231118-16:27:10.359(-10)?     name: 'Bachman Annex 9–13',
+I20231118-16:27:10.359(-10)?     floor_count: 1,
+I20231118-16:27:10.359(-10)?     floor_id: []
+I20231118-16:27:10.360(-10)?   }
+I20231118-16:27:10.360(-10)? ]
+I20231118-16:27:10.360(-10)? new floors constructed:  [ 'qwtrg46PDKnCtv5Wp' ]
+I20231118-16:27:10.366(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.366(-10)?   {
+I20231118-16:27:10.366(-10)?     _id: 'HjSkgybQGWv5JYxN6',
+I20231118-16:27:10.366(-10)?     name: 'Bachman Annex 9–13',
+I20231118-16:27:10.367(-10)?     floor_count: 1,
+I20231118-16:27:10.367(-10)?     floor_id: [ 'qwtrg46PDKnCtv5Wp' ]
+I20231118-16:27:10.367(-10)?   }
+I20231118-16:27:10.367(-10)? ]
+I20231118-16:27:10.367(-10)? { name: 'Bachman Hall', floor_count: 1 }
+I20231118-16:27:10.367(-10)? passed check
+I20231118-16:27:10.367(-10)? initializeBuilding call successful.
+I20231118-16:27:10.369(-10)? constructed building base:  r69oqMp4RaE3vDDa6
+I20231118-16:27:10.377(-10)? new building base:  [
+I20231118-16:27:10.377(-10)?   {
+I20231118-16:27:10.377(-10)?     _id: 'r69oqMp4RaE3vDDa6',
+I20231118-16:27:10.378(-10)?     name: 'Bachman Hall',
+I20231118-16:27:10.378(-10)?     floor_count: 1,
+I20231118-16:27:10.378(-10)?     floor_id: []
+I20231118-16:27:10.378(-10)?   }
+I20231118-16:27:10.378(-10)? ]
+I20231118-16:27:10.378(-10)? new floors constructed:  [ 'x9Ew9zHfvQPGRqdut' ]
+I20231118-16:27:10.384(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.384(-10)?   {
+I20231118-16:27:10.384(-10)?     _id: 'r69oqMp4RaE3vDDa6',
+I20231118-16:27:10.385(-10)?     name: 'Bachman Hall',
+I20231118-16:27:10.385(-10)?     floor_count: 1,
+I20231118-16:27:10.385(-10)?     floor_id: [ 'x9Ew9zHfvQPGRqdut' ]
+I20231118-16:27:10.385(-10)?   }
+I20231118-16:27:10.385(-10)? ]
+I20231118-16:27:10.385(-10)? { name: 'Bilger Addition', floor_count: 1 }
+I20231118-16:27:10.385(-10)? passed check
+I20231118-16:27:10.386(-10)? initializeBuilding call successful.
+I20231118-16:27:10.387(-10)? constructed building base:  iRZ6xZbvQhjgLwpTc
+I20231118-16:27:10.396(-10)? new building base:  [
+I20231118-16:27:10.397(-10)?   {
+I20231118-16:27:10.397(-10)?     _id: 'iRZ6xZbvQhjgLwpTc',
+I20231118-16:27:10.397(-10)?     name: 'Bilger Addition',
+I20231118-16:27:10.397(-10)?     floor_count: 1,
+I20231118-16:27:10.397(-10)?     floor_id: []
+I20231118-16:27:10.397(-10)?   }
+I20231118-16:27:10.397(-10)? ]
+I20231118-16:27:10.397(-10)? new floors constructed:  [ 'ZfzA8LqMPSrx4Kswe' ]
+I20231118-16:27:10.402(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.402(-10)?   {
+I20231118-16:27:10.402(-10)?     _id: 'iRZ6xZbvQhjgLwpTc',
+I20231118-16:27:10.402(-10)?     name: 'Bilger Addition',
+I20231118-16:27:10.402(-10)?     floor_count: 1,
+I20231118-16:27:10.403(-10)?     floor_id: [ 'ZfzA8LqMPSrx4Kswe' ]
+I20231118-16:27:10.403(-10)?   }
+I20231118-16:27:10.403(-10)? ]
+I20231118-16:27:10.403(-10)? { name: 'Bilger Annex', floor_count: 1 }
+I20231118-16:27:10.403(-10)? passed check
+I20231118-16:27:10.403(-10)? initializeBuilding call successful.
+I20231118-16:27:10.404(-10)? constructed building base:  FN26moSpAJbyGjDC8
+I20231118-16:27:10.410(-10)? new building base:  [
+I20231118-16:27:10.410(-10)?   {
+I20231118-16:27:10.410(-10)?     _id: 'FN26moSpAJbyGjDC8',
+I20231118-16:27:10.410(-10)?     name: 'Bilger Annex',
+I20231118-16:27:10.411(-10)?     floor_count: 1,
+I20231118-16:27:10.411(-10)?     floor_id: []
+I20231118-16:27:10.411(-10)?   }
+I20231118-16:27:10.411(-10)? ]
+I20231118-16:27:10.411(-10)? new floors constructed:  [ 'G4mWYy6cxxQu6sqpX' ]
+I20231118-16:27:10.415(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.415(-10)?   {
+I20231118-16:27:10.415(-10)?     _id: 'FN26moSpAJbyGjDC8',
+I20231118-16:27:10.415(-10)?     name: 'Bilger Annex',
+I20231118-16:27:10.415(-10)?     floor_count: 1,
+I20231118-16:27:10.415(-10)?     floor_id: [ 'G4mWYy6cxxQu6sqpX' ]
+I20231118-16:27:10.416(-10)?   }
+I20231118-16:27:10.416(-10)? ]
+I20231118-16:27:10.416(-10)? { name: 'Bilger Hall', floor_count: 1 }
+I20231118-16:27:10.416(-10)? passed check
+I20231118-16:27:10.416(-10)? initializeBuilding call successful.
+I20231118-16:27:10.417(-10)? constructed building base:  kQdHNcEixzSmhgJ7Y
+I20231118-16:27:10.422(-10)? new building base:  [
+I20231118-16:27:10.423(-10)?   {
+I20231118-16:27:10.423(-10)?     _id: 'kQdHNcEixzSmhgJ7Y',
+I20231118-16:27:10.423(-10)?     name: 'Bilger Hall',
+I20231118-16:27:10.423(-10)?     floor_count: 1,
+I20231118-16:27:10.423(-10)?     floor_id: []
+I20231118-16:27:10.423(-10)?   }
+I20231118-16:27:10.423(-10)? ]
+I20231118-16:27:10.423(-10)? new floors constructed:  [ 'TaFmBZjwECCS2upcN' ]
+I20231118-16:27:10.428(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.428(-10)?   {
+I20231118-16:27:10.429(-10)?     _id: 'kQdHNcEixzSmhgJ7Y',
+I20231118-16:27:10.429(-10)?     name: 'Bilger Hall',
+I20231118-16:27:10.429(-10)?     floor_count: 1,
+I20231118-16:27:10.429(-10)?     floor_id: [ 'TaFmBZjwECCS2upcN' ]
+I20231118-16:27:10.429(-10)?   }
+I20231118-16:27:10.429(-10)? ]
+I20231118-16:27:10.429(-10)? { name: 'Biomedical Sciences', floor_count: 1 }
+I20231118-16:27:10.429(-10)? passed check
+I20231118-16:27:10.429(-10)? initializeBuilding call successful.
+I20231118-16:27:10.431(-10)? constructed building base:  rKu289HPmALdTGNXr
+I20231118-16:27:10.436(-10)? new building base:  [
+I20231118-16:27:10.437(-10)?   {
+I20231118-16:27:10.437(-10)?     _id: 'rKu289HPmALdTGNXr',
+I20231118-16:27:10.437(-10)?     name: 'Biomedical Sciences',
+I20231118-16:27:10.437(-10)?     floor_count: 1,
+I20231118-16:27:10.437(-10)?     floor_id: []
+I20231118-16:27:10.437(-10)?   }
+I20231118-16:27:10.437(-10)? ]
+I20231118-16:27:10.437(-10)? new floors constructed:  [ 'aQudNxhuipGNKgtTx' ]
+I20231118-16:27:10.441(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.442(-10)?   {
+I20231118-16:27:10.442(-10)?     _id: 'rKu289HPmALdTGNXr',
+I20231118-16:27:10.442(-10)?     name: 'Biomedical Sciences',
+I20231118-16:27:10.442(-10)?     floor_count: 1,
+I20231118-16:27:10.442(-10)?     floor_id: [ 'aQudNxhuipGNKgtTx' ]
+I20231118-16:27:10.442(-10)?   }
+I20231118-16:27:10.442(-10)? ]
+I20231118-16:27:10.442(-10)? { name: 'Building 37', floor_count: 1 }
+I20231118-16:27:10.443(-10)? passed check
+I20231118-16:27:10.443(-10)? initializeBuilding call successful.
+I20231118-16:27:10.444(-10)? constructed building base:  bdD3qzAkhTjbsvyqh
+I20231118-16:27:10.453(-10)? new building base:  [
+I20231118-16:27:10.453(-10)?   {
+I20231118-16:27:10.454(-10)?     _id: 'bdD3qzAkhTjbsvyqh',
+I20231118-16:27:10.454(-10)?     name: 'Building 37',
+I20231118-16:27:10.454(-10)?     floor_count: 1,
+I20231118-16:27:10.454(-10)?     floor_id: []
+I20231118-16:27:10.454(-10)?   }
+I20231118-16:27:10.454(-10)? ]
+I20231118-16:27:10.454(-10)? new floors constructed:  [ 'edsTj5EQoQHNPBJNN' ]
+I20231118-16:27:10.459(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.459(-10)?   {
+I20231118-16:27:10.459(-10)?     _id: 'bdD3qzAkhTjbsvyqh',
+I20231118-16:27:10.459(-10)?     name: 'Building 37',
+I20231118-16:27:10.460(-10)?     floor_count: 1,
+I20231118-16:27:10.460(-10)?     floor_id: [ 'edsTj5EQoQHNPBJNN' ]
+I20231118-16:27:10.460(-10)?   }
+I20231118-16:27:10.460(-10)? ]
+I20231118-16:27:10.460(-10)? { name: 'Burns Hall', floor_count: 1 }
+I20231118-16:27:10.460(-10)? passed check
+I20231118-16:27:10.460(-10)? initializeBuilding call successful.
+I20231118-16:27:10.461(-10)? constructed building base:  uf56uB2CwA4F4zncj
+I20231118-16:27:10.469(-10)? new building base:  [
+I20231118-16:27:10.469(-10)?   {
+I20231118-16:27:10.469(-10)?     _id: 'uf56uB2CwA4F4zncj',
+I20231118-16:27:10.470(-10)?     name: 'Burns Hall',
+I20231118-16:27:10.470(-10)?     floor_count: 1,
+I20231118-16:27:10.470(-10)?     floor_id: []
+I20231118-16:27:10.470(-10)?   }
+I20231118-16:27:10.470(-10)? ]
+I20231118-16:27:10.470(-10)? new floors constructed:  [ 'W3kgDSwWBR4PjgrJ5' ]
+I20231118-16:27:10.474(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.475(-10)?   {
+I20231118-16:27:10.475(-10)?     _id: 'uf56uB2CwA4F4zncj',
+I20231118-16:27:10.475(-10)?     name: 'Burns Hall',
+I20231118-16:27:10.475(-10)?     floor_count: 1,
+I20231118-16:27:10.475(-10)?     floor_id: [ 'W3kgDSwWBR4PjgrJ5' ]
+I20231118-16:27:10.475(-10)?   }
+I20231118-16:27:10.475(-10)? ]
+I20231118-16:27:10.476(-10)? { name: 'Campus Center', floor_count: 1 }
+I20231118-16:27:10.476(-10)? passed check
+I20231118-16:27:10.476(-10)? initializeBuilding call successful.
+I20231118-16:27:10.477(-10)? constructed building base:  7h5JNzPN2jHpWvXXG
+I20231118-16:27:10.485(-10)? new building base:  [
+I20231118-16:27:10.485(-10)?   {
+I20231118-16:27:10.485(-10)?     _id: '7h5JNzPN2jHpWvXXG',
+I20231118-16:27:10.485(-10)?     name: 'Campus Center',
+I20231118-16:27:10.486(-10)?     floor_count: 1,
+I20231118-16:27:10.486(-10)?     floor_id: []
+I20231118-16:27:10.486(-10)?   }
+I20231118-16:27:10.486(-10)? ]
+I20231118-16:27:10.486(-10)? new floors constructed:  [ 'MvvQG5heXcxGeaSy9' ]
+I20231118-16:27:10.490(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.491(-10)?   {
+I20231118-16:27:10.491(-10)?     _id: '7h5JNzPN2jHpWvXXG',
+I20231118-16:27:10.491(-10)?     name: 'Campus Center',
+I20231118-16:27:10.491(-10)?     floor_count: 1,
+I20231118-16:27:10.491(-10)?     floor_id: [ 'MvvQG5heXcxGeaSy9' ]
+I20231118-16:27:10.491(-10)?   }
+I20231118-16:27:10.491(-10)? ]
+I20231118-16:27:10.492(-10)? { name: 'Castle Annex', floor_count: 1 }
+I20231118-16:27:10.492(-10)? passed check
+I20231118-16:27:10.492(-10)? initializeBuilding call successful.
+I20231118-16:27:10.493(-10)? constructed building base:  ScZqMeAeevgdqx7uB
+I20231118-16:27:10.499(-10)? new building base:  [
+I20231118-16:27:10.499(-10)?   {
+I20231118-16:27:10.499(-10)?     _id: 'ScZqMeAeevgdqx7uB',
+I20231118-16:27:10.499(-10)?     name: 'Castle Annex',
+I20231118-16:27:10.500(-10)?     floor_count: 1,
+I20231118-16:27:10.500(-10)?     floor_id: []
+I20231118-16:27:10.500(-10)?   }
+I20231118-16:27:10.500(-10)? ]
+I20231118-16:27:10.500(-10)? new floors constructed:  [ 'XewrqTrrZNNmzq8YC' ]
+I20231118-16:27:10.504(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.504(-10)?   {
+I20231118-16:27:10.504(-10)?     _id: 'ScZqMeAeevgdqx7uB',
+I20231118-16:27:10.505(-10)?     name: 'Castle Annex',
+I20231118-16:27:10.505(-10)?     floor_count: 1,
+I20231118-16:27:10.505(-10)?     floor_id: [ 'XewrqTrrZNNmzq8YC' ]
+I20231118-16:27:10.505(-10)?   }
+I20231118-16:27:10.505(-10)? ]
+I20231118-16:27:10.505(-10)? { name: 'Castle Memorial', floor_count: 1 }
+I20231118-16:27:10.505(-10)? passed check
+I20231118-16:27:10.506(-10)? initializeBuilding call successful.
+I20231118-16:27:10.506(-10)? constructed building base:  9Xp9hphi2DipGefXz
+I20231118-16:27:10.512(-10)? new building base:  [
+I20231118-16:27:10.512(-10)?   {
+I20231118-16:27:10.512(-10)?     _id: '9Xp9hphi2DipGefXz',
+I20231118-16:27:10.512(-10)?     name: 'Castle Memorial',
+I20231118-16:27:10.512(-10)?     floor_count: 1,
+I20231118-16:27:10.512(-10)?     floor_id: []
+I20231118-16:27:10.512(-10)?   }
+I20231118-16:27:10.512(-10)? ]
+I20231118-16:27:10.513(-10)? new floors constructed:  [ 'AWugJyx4msya6WsRh' ]
+I20231118-16:27:10.516(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.517(-10)?   {
+I20231118-16:27:10.517(-10)?     _id: '9Xp9hphi2DipGefXz',
+I20231118-16:27:10.517(-10)?     name: 'Castle Memorial',
+I20231118-16:27:10.517(-10)?     floor_count: 1,
+I20231118-16:27:10.517(-10)?     floor_id: [ 'AWugJyx4msya6WsRh' ]
+I20231118-16:27:10.517(-10)?   }
+I20231118-16:27:10.517(-10)? ]
+I20231118-16:27:10.517(-10)? { name: 'Center for Korean Studies', floor_count: 1 }
+I20231118-16:27:10.518(-10)? passed check
+I20231118-16:27:10.518(-10)? initializeBuilding call successful.
+I20231118-16:27:10.519(-10)? constructed building base:  DKK9gL7RHFP9qWuzi
+I20231118-16:27:10.524(-10)? new building base:  [
+I20231118-16:27:10.524(-10)?   {
+I20231118-16:27:10.524(-10)?     _id: 'DKK9gL7RHFP9qWuzi',
+I20231118-16:27:10.524(-10)?     name: 'Center for Korean Studies',
+I20231118-16:27:10.524(-10)?     floor_count: 1,
+I20231118-16:27:10.524(-10)?     floor_id: []
+I20231118-16:27:10.525(-10)?   }
+I20231118-16:27:10.525(-10)? ]
+I20231118-16:27:10.525(-10)? new floors constructed:  [ 'RZ7jkTg7ZWBKdcYSb' ]
+I20231118-16:27:10.528(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.529(-10)?   {
+I20231118-16:27:10.529(-10)?     _id: 'DKK9gL7RHFP9qWuzi',
+I20231118-16:27:10.529(-10)?     name: 'Center for Korean Studies',
+I20231118-16:27:10.529(-10)?     floor_count: 1,
+I20231118-16:27:10.529(-10)?     floor_id: [ 'RZ7jkTg7ZWBKdcYSb' ]
+I20231118-16:27:10.529(-10)?   }
+I20231118-16:27:10.529(-10)? ]
+I20231118-16:27:10.530(-10)? {
+I20231118-16:27:10.530(-10)?   name: 'C-MORE Hale (Center for Microbial Oceanography: Research and Education)',
+I20231118-16:27:10.530(-10)?   floor_count: 1
+I20231118-16:27:10.530(-10)? }
+I20231118-16:27:10.530(-10)? passed check
+I20231118-16:27:10.530(-10)? initializeBuilding call successful.
+I20231118-16:27:10.531(-10)? constructed building base:  dobscPFqTaLSD6KfW
+I20231118-16:27:10.536(-10)? new building base:  [
+I20231118-16:27:10.536(-10)?   {
+I20231118-16:27:10.537(-10)?     _id: 'dobscPFqTaLSD6KfW',
+I20231118-16:27:10.537(-10)?     name: 'C-MORE Hale (Center for Microbial Oceanography: Research and Education)',
+I20231118-16:27:10.537(-10)?     floor_count: 1,
+I20231118-16:27:10.537(-10)?     floor_id: []
+I20231118-16:27:10.537(-10)?   }
+I20231118-16:27:10.537(-10)? ]
+I20231118-16:27:10.537(-10)? new floors constructed:  [ '7YyMYffFFbbg96qnM' ]
+I20231118-16:27:10.541(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.541(-10)?   {
+I20231118-16:27:10.541(-10)?     _id: 'dobscPFqTaLSD6KfW',
+I20231118-16:27:10.541(-10)?     name: 'C-MORE Hale (Center for Microbial Oceanography: Research and Education)',
+I20231118-16:27:10.541(-10)?     floor_count: 1,
+I20231118-16:27:10.541(-10)?     floor_id: [ '7YyMYffFFbbg96qnM' ]
+I20231118-16:27:10.542(-10)?   }
+I20231118-16:27:10.542(-10)? ]
+I20231118-16:27:10.542(-10)? { name: 'Cooke Field', floor_count: 1 }
+I20231118-16:27:10.542(-10)? passed check
+I20231118-16:27:10.542(-10)? initializeBuilding call successful.
+I20231118-16:27:10.543(-10)? constructed building base:  n3ikcuoPesXZ5QPzi
+I20231118-16:27:10.548(-10)? new building base:  [
+I20231118-16:27:10.549(-10)?   {
+I20231118-16:27:10.549(-10)?     _id: 'n3ikcuoPesXZ5QPzi',
+I20231118-16:27:10.549(-10)?     name: 'Cooke Field',
+I20231118-16:27:10.549(-10)?     floor_count: 1,
+I20231118-16:27:10.549(-10)?     floor_id: []
+I20231118-16:27:10.549(-10)?   }
+I20231118-16:27:10.549(-10)? ]
+I20231118-16:27:10.549(-10)? new floors constructed:  [ 'MNkepWQfcKGPPggXC' ]
+I20231118-16:27:10.554(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.554(-10)?   {
+I20231118-16:27:10.554(-10)?     _id: 'n3ikcuoPesXZ5QPzi',
+I20231118-16:27:10.554(-10)?     name: 'Cooke Field',
+I20231118-16:27:10.555(-10)?     floor_count: 1,
+I20231118-16:27:10.555(-10)?     floor_id: [ 'MNkepWQfcKGPPggXC' ]
+I20231118-16:27:10.555(-10)?   }
+I20231118-16:27:10.555(-10)? ]
+I20231118-16:27:10.555(-10)? { name: 'Crawford Hall', floor_count: 1 }
+I20231118-16:27:10.555(-10)? passed check
+I20231118-16:27:10.556(-10)? initializeBuilding call successful.
+I20231118-16:27:10.556(-10)? constructed building base:  mMj4RAGgmcBJzJATr
+I20231118-16:27:10.562(-10)? new building base:  [
+I20231118-16:27:10.562(-10)?   {
+I20231118-16:27:10.562(-10)?     _id: 'mMj4RAGgmcBJzJATr',
+I20231118-16:27:10.562(-10)?     name: 'Crawford Hall',
+I20231118-16:27:10.562(-10)?     floor_count: 1,
+I20231118-16:27:10.562(-10)?     floor_id: []
+I20231118-16:27:10.563(-10)?   }
+I20231118-16:27:10.563(-10)? ]
+I20231118-16:27:10.563(-10)? new floors constructed:  [ 'JpHjLAEZyTBkAyTob' ]
+I20231118-16:27:10.566(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.567(-10)?   {
+I20231118-16:27:10.567(-10)?     _id: 'mMj4RAGgmcBJzJATr',
+I20231118-16:27:10.567(-10)?     name: 'Crawford Hall',
+I20231118-16:27:10.567(-10)?     floor_count: 1,
+I20231118-16:27:10.567(-10)?     floor_id: [ 'JpHjLAEZyTBkAyTob' ]
+I20231118-16:27:10.567(-10)?   }
+I20231118-16:27:10.567(-10)? ]
+I20231118-16:27:10.567(-10)? { name: 'Dance Building', floor_count: 1 }
+I20231118-16:27:10.568(-10)? passed check
+I20231118-16:27:10.568(-10)? initializeBuilding call successful.
+I20231118-16:27:10.569(-10)? constructed building base:  EeZqhpbE6LygmcZGh
+I20231118-16:27:10.574(-10)? new building base:  [
+I20231118-16:27:10.574(-10)?   {
+I20231118-16:27:10.574(-10)?     _id: 'EeZqhpbE6LygmcZGh',
+I20231118-16:27:10.575(-10)?     name: 'Dance Building',
+I20231118-16:27:10.575(-10)?     floor_count: 1,
+I20231118-16:27:10.575(-10)?     floor_id: []
+I20231118-16:27:10.575(-10)?   }
+I20231118-16:27:10.575(-10)? ]
+I20231118-16:27:10.575(-10)? new floors constructed:  [ '6HgzqSYrG79Ajjgmp' ]
+I20231118-16:27:10.579(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.579(-10)?   {
+I20231118-16:27:10.579(-10)?     _id: 'EeZqhpbE6LygmcZGh',
+I20231118-16:27:10.579(-10)?     name: 'Dance Building',
+I20231118-16:27:10.579(-10)?     floor_count: 1,
+I20231118-16:27:10.579(-10)?     floor_id: [ '6HgzqSYrG79Ajjgmp' ]
+I20231118-16:27:10.579(-10)?   }
+I20231118-16:27:10.580(-10)? ]
+I20231118-16:27:10.580(-10)? { name: 'Dean Hall', floor_count: 1 }
+I20231118-16:27:10.580(-10)? passed check
+I20231118-16:27:10.580(-10)? initializeBuilding call successful.
+I20231118-16:27:10.581(-10)? constructed building base:  THtGTiZtyMXapQHid
+I20231118-16:27:10.587(-10)? new building base:  [
+I20231118-16:27:10.588(-10)?   {
+I20231118-16:27:10.588(-10)?     _id: 'THtGTiZtyMXapQHid',
+I20231118-16:27:10.588(-10)?     name: 'Dean Hall',
+I20231118-16:27:10.588(-10)?     floor_count: 1,
+I20231118-16:27:10.588(-10)?     floor_id: []
+I20231118-16:27:10.588(-10)?   }
+I20231118-16:27:10.589(-10)? ]
+I20231118-16:27:10.589(-10)? new floors constructed:  [ 'S9YKbjQgySxsNigTe' ]
+I20231118-16:27:10.592(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.593(-10)?   {
+I20231118-16:27:10.593(-10)?     _id: 'THtGTiZtyMXapQHid',
+I20231118-16:27:10.593(-10)?     name: 'Dean Hall',
+I20231118-16:27:10.593(-10)?     floor_count: 1,
+I20231118-16:27:10.593(-10)?     floor_id: [ 'S9YKbjQgySxsNigTe' ]
+I20231118-16:27:10.593(-10)?   }
+I20231118-16:27:10.593(-10)? ]
+I20231118-16:27:10.594(-10)? { name: 'Diving Safety Program', floor_count: 1 }
+I20231118-16:27:10.594(-10)? passed check
+I20231118-16:27:10.594(-10)? initializeBuilding call successful.
+I20231118-16:27:10.597(-10)? constructed building base:  v7F7qmMeaW9qzLeG8
+I20231118-16:27:10.603(-10)? new building base:  [
+I20231118-16:27:10.603(-10)?   {
+I20231118-16:27:10.604(-10)?     _id: 'v7F7qmMeaW9qzLeG8',
+I20231118-16:27:10.604(-10)?     name: 'Diving Safety Program',
+I20231118-16:27:10.604(-10)?     floor_count: 1,
+I20231118-16:27:10.604(-10)?     floor_id: []
+I20231118-16:27:10.604(-10)?   }
+I20231118-16:27:10.604(-10)? ]
+I20231118-16:27:10.606(-10)? new floors constructed:  [ 'XxARfSqyZqa6MYSuo' ]
+I20231118-16:27:10.614(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.615(-10)?   {
+I20231118-16:27:10.615(-10)?     _id: 'v7F7qmMeaW9qzLeG8',
+I20231118-16:27:10.616(-10)?     name: 'Diving Safety Program',
+I20231118-16:27:10.616(-10)?     floor_count: 1,
+I20231118-16:27:10.616(-10)?     floor_id: [ 'XxARfSqyZqa6MYSuo' ]
+I20231118-16:27:10.616(-10)?   }
+I20231118-16:27:10.616(-10)? ]
+I20231118-16:27:10.617(-10)? { name: 'Dole Street Offices', floor_count: 1 }
+I20231118-16:27:10.617(-10)? passed check
+I20231118-16:27:10.617(-10)? initializeBuilding call successful.
+I20231118-16:27:10.619(-10)? constructed building base:  nEzSbrH8WNrjzXSvR
+I20231118-16:27:10.626(-10)? new building base:  [
+I20231118-16:27:10.627(-10)?   {
+I20231118-16:27:10.627(-10)?     _id: 'nEzSbrH8WNrjzXSvR',
+I20231118-16:27:10.627(-10)?     name: 'Dole Street Offices',
+I20231118-16:27:10.627(-10)?     floor_count: 1,
+I20231118-16:27:10.627(-10)?     floor_id: []
+I20231118-16:27:10.627(-10)?   }
+I20231118-16:27:10.627(-10)? ]
+I20231118-16:27:10.627(-10)? new floors constructed:  [ 'ksigDKZcyTMexaW4H' ]
+I20231118-16:27:10.632(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.632(-10)?   {
+I20231118-16:27:10.633(-10)?     _id: 'nEzSbrH8WNrjzXSvR',
+I20231118-16:27:10.633(-10)?     name: 'Dole Street Offices',
+I20231118-16:27:10.633(-10)?     floor_count: 1,
+I20231118-16:27:10.633(-10)?     floor_id: [ 'ksigDKZcyTMexaW4H' ]
+I20231118-16:27:10.633(-10)?   }
+I20231118-16:27:10.633(-10)? ]
+I20231118-16:27:10.634(-10)? { name: 'Dole Street Parking Structure', floor_count: 1 }
+I20231118-16:27:10.634(-10)? passed check
+I20231118-16:27:10.634(-10)? initializeBuilding call successful.
+I20231118-16:27:10.635(-10)? constructed building base:  FnjMiwpB8YLEbdTn3
+I20231118-16:27:10.641(-10)? new building base:  [
+I20231118-16:27:10.641(-10)?   {
+I20231118-16:27:10.641(-10)?     _id: 'FnjMiwpB8YLEbdTn3',
+I20231118-16:27:10.641(-10)?     name: 'Dole Street Parking Structure',
+I20231118-16:27:10.641(-10)?     floor_count: 1,
+I20231118-16:27:10.641(-10)?     floor_id: []
+I20231118-16:27:10.642(-10)?   }
+I20231118-16:27:10.642(-10)? ]
+I20231118-16:27:10.642(-10)? new floors constructed:  [ 'nNmdRxPteR7EZNvHL' ]
+I20231118-16:27:10.646(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.647(-10)?   {
+I20231118-16:27:10.647(-10)?     _id: 'FnjMiwpB8YLEbdTn3',
+I20231118-16:27:10.647(-10)?     name: 'Dole Street Parking Structure',
+I20231118-16:27:10.647(-10)?     floor_count: 1,
+I20231118-16:27:10.647(-10)?     floor_id: [ 'nNmdRxPteR7EZNvHL' ]
+I20231118-16:27:10.647(-10)?   }
+I20231118-16:27:10.647(-10)? ]
+I20231118-16:27:10.647(-10)? { name: 'Edmondson Hall', floor_count: 1 }
+I20231118-16:27:10.648(-10)? passed check
+I20231118-16:27:10.648(-10)? initializeBuilding call successful.
+I20231118-16:27:10.649(-10)? constructed building base:  KTCm36TMeMbYia54u
+I20231118-16:27:10.657(-10)? new building base:  [
+I20231118-16:27:10.658(-10)?   {
+I20231118-16:27:10.658(-10)?     _id: 'KTCm36TMeMbYia54u',
+I20231118-16:27:10.658(-10)?     name: 'Edmondson Hall',
+I20231118-16:27:10.658(-10)?     floor_count: 1,
+I20231118-16:27:10.658(-10)?     floor_id: []
+I20231118-16:27:10.658(-10)?   }
+I20231118-16:27:10.658(-10)? ]
+I20231118-16:27:10.658(-10)? new floors constructed:  [ 'pHDYSot54BNJzQBHG' ]
+I20231118-16:27:10.663(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.664(-10)?   {
+I20231118-16:27:10.665(-10)?     _id: 'KTCm36TMeMbYia54u',
+I20231118-16:27:10.665(-10)?     name: 'Edmondson Hall',
+I20231118-16:27:10.665(-10)?     floor_count: 1,
+I20231118-16:27:10.665(-10)?     floor_id: [ 'pHDYSot54BNJzQBHG' ]
+I20231118-16:27:10.665(-10)?   }
+I20231118-16:27:10.665(-10)? ]
+I20231118-16:27:10.665(-10)? { name: 'Energy House', floor_count: 1 }
+I20231118-16:27:10.666(-10)? passed check
+I20231118-16:27:10.666(-10)? initializeBuilding call successful.
+I20231118-16:27:10.666(-10)? constructed building base:  xMuSTnzdEyTz5HEeh
+I20231118-16:27:10.676(-10)? new building base:  [
+I20231118-16:27:10.677(-10)?   {
+I20231118-16:27:10.677(-10)?     _id: 'xMuSTnzdEyTz5HEeh',
+I20231118-16:27:10.678(-10)?     name: 'Energy House',
+I20231118-16:27:10.678(-10)?     floor_count: 1,
+I20231118-16:27:10.678(-10)?     floor_id: []
+I20231118-16:27:10.678(-10)?   }
+I20231118-16:27:10.678(-10)? ]
+I20231118-16:27:10.679(-10)? new floors constructed:  [ 'NJ6Y2Jma7h6JjPaJE' ]
+I20231118-16:27:10.684(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.685(-10)?   {
+I20231118-16:27:10.685(-10)?     _id: 'xMuSTnzdEyTz5HEeh',
+I20231118-16:27:10.685(-10)?     name: 'Energy House',
+I20231118-16:27:10.686(-10)?     floor_count: 1,
+I20231118-16:27:10.686(-10)?     floor_id: [ 'NJ6Y2Jma7h6JjPaJE' ]
+I20231118-16:27:10.686(-10)?   }
+I20231118-16:27:10.686(-10)? ]
+I20231118-16:27:10.687(-10)? { name: 'Engineering Quad', floor_count: 1 }
+I20231118-16:27:10.688(-10)? passed check
+I20231118-16:27:10.688(-10)? initializeBuilding call successful.
+I20231118-16:27:10.689(-10)? constructed building base:  uW8zQLwuwxKFSd29P
+I20231118-16:27:10.697(-10)? new building base:  [
+I20231118-16:27:10.698(-10)?   {
+I20231118-16:27:10.698(-10)?     _id: 'uW8zQLwuwxKFSd29P',
+I20231118-16:27:10.698(-10)?     name: 'Engineering Quad',
+I20231118-16:27:10.699(-10)?     floor_count: 1,
+I20231118-16:27:10.699(-10)?     floor_id: []
+I20231118-16:27:10.699(-10)?   }
+I20231118-16:27:10.699(-10)? ]
+I20231118-16:27:10.700(-10)? new floors constructed:  [ 'YyESXKSd7vf4tfsa4' ]
+I20231118-16:27:10.703(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.704(-10)?   {
+I20231118-16:27:10.704(-10)?     _id: 'uW8zQLwuwxKFSd29P',
+I20231118-16:27:10.705(-10)?     name: 'Engineering Quad',
+I20231118-16:27:10.705(-10)?     floor_count: 1,
+I20231118-16:27:10.705(-10)?     floor_id: [ 'YyESXKSd7vf4tfsa4' ]
+I20231118-16:27:10.705(-10)?   }
+I20231118-16:27:10.705(-10)? ]
+I20231118-16:27:10.708(-10)? { name: 'Environmental Health and Safety Offices', floor_count: 1 }
+I20231118-16:27:10.708(-10)? passed check
+I20231118-16:27:10.709(-10)? initializeBuilding call successful.
+I20231118-16:27:10.709(-10)? constructed building base:  MyjYizcRifv2vRMFk
+I20231118-16:27:10.713(-10)? new building base:  [
+I20231118-16:27:10.714(-10)?   {
+I20231118-16:27:10.714(-10)?     _id: 'MyjYizcRifv2vRMFk',
+I20231118-16:27:10.714(-10)?     name: 'Environmental Health and Safety Offices',
+I20231118-16:27:10.715(-10)?     floor_count: 1,
+I20231118-16:27:10.715(-10)?     floor_id: []
+I20231118-16:27:10.715(-10)?   }
+I20231118-16:27:10.715(-10)? ]
+I20231118-16:27:10.715(-10)? new floors constructed:  [ 'uJCRS87FBLYiav6vq' ]
+I20231118-16:27:10.720(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.722(-10)?   {
+I20231118-16:27:10.723(-10)?     _id: 'MyjYizcRifv2vRMFk',
+I20231118-16:27:10.723(-10)?     name: 'Environmental Health and Safety Offices',
+I20231118-16:27:10.723(-10)?     floor_count: 1,
+I20231118-16:27:10.723(-10)?     floor_id: [ 'uJCRS87FBLYiav6vq' ]
+I20231118-16:27:10.723(-10)?   }
+I20231118-16:27:10.724(-10)? ]
+I20231118-16:27:10.724(-10)? { name: 'Environmental Protection Facility', floor_count: 1 }
+I20231118-16:27:10.725(-10)? passed check
+I20231118-16:27:10.725(-10)? initializeBuilding call successful.
+I20231118-16:27:10.725(-10)? constructed building base:  iyhrezjd6jkbbghSn
+I20231118-16:27:10.730(-10)? new building base:  [
+I20231118-16:27:10.730(-10)?   {
+I20231118-16:27:10.731(-10)?     _id: 'iyhrezjd6jkbbghSn',
+I20231118-16:27:10.731(-10)?     name: 'Environmental Protection Facility',
+I20231118-16:27:10.731(-10)?     floor_count: 1,
+I20231118-16:27:10.731(-10)?     floor_id: []
+I20231118-16:27:10.732(-10)?   }
+I20231118-16:27:10.732(-10)? ]
+I20231118-16:27:10.732(-10)? new floors constructed:  [ 'gqaJd7hQd4o63kfGq' ]
+I20231118-16:27:10.739(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.740(-10)?   {
+I20231118-16:27:10.740(-10)?     _id: 'iyhrezjd6jkbbghSn',
+I20231118-16:27:10.740(-10)?     name: 'Environmental Protection Facility',
+I20231118-16:27:10.740(-10)?     floor_count: 1,
+I20231118-16:27:10.740(-10)?     floor_id: [ 'gqaJd7hQd4o63kfGq' ]
+I20231118-16:27:10.741(-10)?   }
+I20231118-16:27:10.741(-10)? ]
+I20231118-16:27:10.741(-10)? { name: 'Everly Hall', floor_count: 1 }
+I20231118-16:27:10.741(-10)? passed check
+I20231118-16:27:10.742(-10)? initializeBuilding call successful.
+I20231118-16:27:10.742(-10)? constructed building base:  AAbaBkTqkhFdH6QmH
+I20231118-16:27:10.749(-10)? new building base:  [
+I20231118-16:27:10.749(-10)?   {
+I20231118-16:27:10.750(-10)?     _id: 'AAbaBkTqkhFdH6QmH',
+I20231118-16:27:10.750(-10)?     name: 'Everly Hall',
+I20231118-16:27:10.750(-10)?     floor_count: 1,
+I20231118-16:27:10.750(-10)?     floor_id: []
+I20231118-16:27:10.751(-10)?   }
+I20231118-16:27:10.751(-10)? ]
+I20231118-16:27:10.751(-10)? new floors constructed:  [ 'd2k7EwWtty6CBs4xf' ]
+I20231118-16:27:10.755(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.755(-10)?   {
+I20231118-16:27:10.756(-10)?     _id: 'AAbaBkTqkhFdH6QmH',
+I20231118-16:27:10.756(-10)?     name: 'Everly Hall',
+I20231118-16:27:10.756(-10)?     floor_count: 1,
+I20231118-16:27:10.756(-10)?     floor_id: [ 'd2k7EwWtty6CBs4xf' ]
+I20231118-16:27:10.756(-10)?   }
+I20231118-16:27:10.757(-10)? ]
+I20231118-16:27:10.757(-10)? { name: 'Federal Credit Union', floor_count: 1 }
+I20231118-16:27:10.757(-10)? passed check
+I20231118-16:27:10.758(-10)? initializeBuilding call successful.
+I20231118-16:27:10.760(-10)? constructed building base:  y6odYL3gcSFMFDJ5a
+I20231118-16:27:10.765(-10)? new building base:  [
+I20231118-16:27:10.766(-10)?   {
+I20231118-16:27:10.766(-10)?     _id: 'y6odYL3gcSFMFDJ5a',
+I20231118-16:27:10.766(-10)?     name: 'Federal Credit Union',
+I20231118-16:27:10.767(-10)?     floor_count: 1,
+I20231118-16:27:10.767(-10)?     floor_id: []
+I20231118-16:27:10.767(-10)?   }
+I20231118-16:27:10.767(-10)? ]
+I20231118-16:27:10.767(-10)? new floors constructed:  [ 'ETKbSHTEbFi3bxCev' ]
+I20231118-16:27:10.770(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.770(-10)?   {
+I20231118-16:27:10.771(-10)?     _id: 'y6odYL3gcSFMFDJ5a',
+I20231118-16:27:10.771(-10)?     name: 'Federal Credit Union',
+I20231118-16:27:10.771(-10)?     floor_count: 1,
+I20231118-16:27:10.771(-10)?     floor_id: [ 'ETKbSHTEbFi3bxCev' ]
+I20231118-16:27:10.771(-10)?   }
+I20231118-16:27:10.772(-10)? ]
+I20231118-16:27:10.772(-10)? { name: 'Financial Management Office', floor_count: 1 }
+I20231118-16:27:10.772(-10)? passed check
+I20231118-16:27:10.773(-10)? initializeBuilding call successful.
+I20231118-16:27:10.773(-10)? constructed building base:  xBXH7eXMrDwzp5nm6
+I20231118-16:27:10.777(-10)? new building base:  [
+I20231118-16:27:10.777(-10)?   {
+I20231118-16:27:10.778(-10)?     _id: 'xBXH7eXMrDwzp5nm6',
+I20231118-16:27:10.778(-10)?     name: 'Financial Management Office',
+I20231118-16:27:10.778(-10)?     floor_count: 1,
+I20231118-16:27:10.778(-10)?     floor_id: []
+I20231118-16:27:10.778(-10)?   }
+I20231118-16:27:10.779(-10)? ]
+I20231118-16:27:10.779(-10)? new floors constructed:  [ 'NWmaLdNPhXNA4XknM' ]
+I20231118-16:27:10.782(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.782(-10)?   {
+I20231118-16:27:10.783(-10)?     _id: 'xBXH7eXMrDwzp5nm6',
+I20231118-16:27:10.783(-10)?     name: 'Financial Management Office',
+I20231118-16:27:10.783(-10)?     floor_count: 1,
+I20231118-16:27:10.783(-10)?     floor_id: [ 'NWmaLdNPhXNA4XknM' ]
+I20231118-16:27:10.783(-10)?   }
+I20231118-16:27:10.784(-10)? ]
+I20231118-16:27:10.784(-10)? { name: 'Food Science and Technology', floor_count: 1 }
+I20231118-16:27:10.784(-10)? passed check
+I20231118-16:27:10.785(-10)? initializeBuilding call successful.
+I20231118-16:27:10.785(-10)? constructed building base:  kgwWSQPubRamsB9LX
+I20231118-16:27:10.791(-10)? new building base:  [
+I20231118-16:27:10.791(-10)?   {
+I20231118-16:27:10.791(-10)?     _id: 'kgwWSQPubRamsB9LX',
+I20231118-16:27:10.792(-10)?     name: 'Food Science and Technology',
+I20231118-16:27:10.792(-10)?     floor_count: 1,
+I20231118-16:27:10.792(-10)?     floor_id: []
+I20231118-16:27:10.792(-10)?   }
+I20231118-16:27:10.792(-10)? ]
+I20231118-16:27:10.792(-10)? new floors constructed:  [ 'Hytoas2xMPTkgv57k' ]
+I20231118-16:27:10.796(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.796(-10)?   {
+I20231118-16:27:10.796(-10)?     _id: 'kgwWSQPubRamsB9LX',
+I20231118-16:27:10.797(-10)?     name: 'Food Science and Technology',
+I20231118-16:27:10.797(-10)?     floor_count: 1,
+I20231118-16:27:10.797(-10)?     floor_id: [ 'Hytoas2xMPTkgv57k' ]
+I20231118-16:27:10.797(-10)?   }
+I20231118-16:27:10.797(-10)? ]
+I20231118-16:27:10.797(-10)? { name: 'Frear Hall', floor_count: 1 }
+I20231118-16:27:10.798(-10)? passed check
+I20231118-16:27:10.798(-10)? initializeBuilding call successful.
+I20231118-16:27:10.798(-10)? constructed building base:  ieFzurnAEgBR2MxXR
+I20231118-16:27:10.803(-10)? new building base:  [
+I20231118-16:27:10.804(-10)?   {
+I20231118-16:27:10.804(-10)?     _id: 'ieFzurnAEgBR2MxXR',
+I20231118-16:27:10.804(-10)?     name: 'Frear Hall',
+I20231118-16:27:10.804(-10)?     floor_count: 1,
+I20231118-16:27:10.804(-10)?     floor_id: []
+I20231118-16:27:10.804(-10)?   }
+I20231118-16:27:10.805(-10)? ]
+I20231118-16:27:10.805(-10)? new floors constructed:  [ '3hi3okeYJSEYJfcbS' ]
+I20231118-16:27:10.808(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.809(-10)?   {
+I20231118-16:27:10.809(-10)?     _id: 'ieFzurnAEgBR2MxXR',
+I20231118-16:27:10.809(-10)?     name: 'Frear Hall',
+I20231118-16:27:10.809(-10)?     floor_count: 1,
+I20231118-16:27:10.809(-10)?     floor_id: [ '3hi3okeYJSEYJfcbS' ]
+I20231118-16:27:10.810(-10)?   }
+I20231118-16:27:10.810(-10)? ]
+I20231118-16:27:10.810(-10)? { name: 'Gartley Hall', floor_count: 1 }
+I20231118-16:27:10.810(-10)? passed check
+I20231118-16:27:10.810(-10)? initializeBuilding call successful.
+I20231118-16:27:10.811(-10)? constructed building base:  jTxXEMzuEL6gG4Lx9
+I20231118-16:27:10.816(-10)? new building base:  [
+I20231118-16:27:10.816(-10)?   {
+I20231118-16:27:10.816(-10)?     _id: 'jTxXEMzuEL6gG4Lx9',
+I20231118-16:27:10.819(-10)?     name: 'Gartley Hall',
+I20231118-16:27:10.819(-10)?     floor_count: 1,
+I20231118-16:27:10.819(-10)?     floor_id: []
+I20231118-16:27:10.820(-10)?   }
+I20231118-16:27:10.820(-10)? ]
+I20231118-16:27:10.820(-10)? new floors constructed:  [ 'vy6MTYeoc8vx6v9XK' ]
+I20231118-16:27:10.820(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.821(-10)?   {
+I20231118-16:27:10.821(-10)?     _id: 'jTxXEMzuEL6gG4Lx9',
+I20231118-16:27:10.821(-10)?     name: 'Gartley Hall',
+I20231118-16:27:10.821(-10)?     floor_count: 1,
+I20231118-16:27:10.821(-10)?     floor_id: [ 'vy6MTYeoc8vx6v9XK' ]
+I20231118-16:27:10.821(-10)?   }
+I20231118-16:27:10.822(-10)? ]
+I20231118-16:27:10.822(-10)? { name: 'Gateway House', floor_count: 1 }
+I20231118-16:27:10.822(-10)? passed check
+I20231118-16:27:10.831(-10)? initializeBuilding call successful.
+I20231118-16:27:10.832(-10)? constructed building base:  9W5mEc8SgSvnxYiuz
+I20231118-16:27:10.832(-10)? new building base:  [
+I20231118-16:27:10.832(-10)?   {
+I20231118-16:27:10.832(-10)?     _id: '9W5mEc8SgSvnxYiuz',
+I20231118-16:27:10.833(-10)?     name: 'Gateway House',
+I20231118-16:27:10.833(-10)?     floor_count: 1,
+I20231118-16:27:10.833(-10)?     floor_id: []
+I20231118-16:27:10.833(-10)?   }
+I20231118-16:27:10.833(-10)? ]
+I20231118-16:27:10.833(-10)? new floors constructed:  [ 'QPzYrtLMTy2rWEpi7' ]
+I20231118-16:27:10.834(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.834(-10)?   {
+I20231118-16:27:10.834(-10)?     _id: '9W5mEc8SgSvnxYiuz',
+I20231118-16:27:10.835(-10)?     name: 'Gateway House',
+I20231118-16:27:10.835(-10)?     floor_count: 1,
+I20231118-16:27:10.835(-10)?     floor_id: [ 'QPzYrtLMTy2rWEpi7' ]
+I20231118-16:27:10.835(-10)?   }
+I20231118-16:27:10.835(-10)? ]
+I20231118-16:27:10.835(-10)? { name: 'George Hall', floor_count: 1 }
+I20231118-16:27:10.836(-10)? passed check
+I20231118-16:27:10.836(-10)? initializeBuilding call successful.
+I20231118-16:27:10.836(-10)? constructed building base:  bjKN9ZWWP9y7gu3hq
+I20231118-16:27:10.840(-10)? new building base:  [
+I20231118-16:27:10.840(-10)?   {
+I20231118-16:27:10.841(-10)?     _id: 'bjKN9ZWWP9y7gu3hq',
+I20231118-16:27:10.841(-10)?     name: 'George Hall',
+I20231118-16:27:10.841(-10)?     floor_count: 1,
+I20231118-16:27:10.841(-10)?     floor_id: []
+I20231118-16:27:10.841(-10)?   }
+I20231118-16:27:10.841(-10)? ]
+I20231118-16:27:10.842(-10)? new floors constructed:  [ 'GyHkq5TH9AZpNpSiN' ]
+I20231118-16:27:10.845(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.845(-10)?   {
+I20231118-16:27:10.845(-10)?     _id: 'bjKN9ZWWP9y7gu3hq',
+I20231118-16:27:10.845(-10)?     name: 'George Hall',
+I20231118-16:27:10.846(-10)?     floor_count: 1,
+I20231118-16:27:10.846(-10)?     floor_id: [ 'GyHkq5TH9AZpNpSiN' ]
+I20231118-16:27:10.846(-10)?   }
+I20231118-16:27:10.846(-10)? ]
+I20231118-16:27:10.847(-10)? { name: 'Gilmore Hall', floor_count: 1 }
+I20231118-16:27:10.847(-10)? passed check
+I20231118-16:27:10.847(-10)? initializeBuilding call successful.
+I20231118-16:27:10.848(-10)? constructed building base:  9XPXqowkW7CGqqs7Z
+I20231118-16:27:10.852(-10)? new building base:  [
+I20231118-16:27:10.852(-10)?   {
+I20231118-16:27:10.852(-10)?     _id: '9XPXqowkW7CGqqs7Z',
+I20231118-16:27:10.852(-10)?     name: 'Gilmore Hall',
+I20231118-16:27:10.853(-10)?     floor_count: 1,
+I20231118-16:27:10.853(-10)?     floor_id: []
+I20231118-16:27:10.853(-10)?   }
+I20231118-16:27:10.853(-10)? ]
+I20231118-16:27:10.853(-10)? new floors constructed:  [ 'NekrxXWgozNaGnXyD' ]
+I20231118-16:27:10.856(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.856(-10)?   {
+I20231118-16:27:10.857(-10)?     _id: '9XPXqowkW7CGqqs7Z',
+I20231118-16:27:10.857(-10)?     name: 'Gilmore Hall',
+I20231118-16:27:10.857(-10)?     floor_count: 1,
+I20231118-16:27:10.857(-10)?     floor_id: [ 'NekrxXWgozNaGnXyD' ]
+I20231118-16:27:10.857(-10)?   }
+I20231118-16:27:10.857(-10)? ]
+I20231118-16:27:10.857(-10)? { name: 'Gym 1', floor_count: 1 }
+I20231118-16:27:10.858(-10)? passed check
+I20231118-16:27:10.858(-10)? initializeBuilding call successful.
+I20231118-16:27:10.858(-10)? constructed building base:  7kstrTqrP3meb8JD3
+I20231118-16:27:10.863(-10)? new building base:  [
+I20231118-16:27:10.863(-10)?   {
+I20231118-16:27:10.863(-10)?     _id: '7kstrTqrP3meb8JD3',
+I20231118-16:27:10.864(-10)?     name: 'Gym 1',
+I20231118-16:27:10.864(-10)?     floor_count: 1,
+I20231118-16:27:10.864(-10)?     floor_id: []
+I20231118-16:27:10.864(-10)?   }
+I20231118-16:27:10.864(-10)? ]
+I20231118-16:27:10.864(-10)? new floors constructed:  [ '8Je9sEeWtpapCfvRn' ]
+I20231118-16:27:10.867(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.867(-10)?   {
+I20231118-16:27:10.868(-10)?     _id: '7kstrTqrP3meb8JD3',
+I20231118-16:27:10.868(-10)?     name: 'Gym 1',
+I20231118-16:27:10.868(-10)?     floor_count: 1,
+I20231118-16:27:10.868(-10)?     floor_id: [ '8Je9sEeWtpapCfvRn' ]
+I20231118-16:27:10.868(-10)?   }
+I20231118-16:27:10.868(-10)? ]
+I20231118-16:27:10.868(-10)? { name: 'Gym 2', floor_count: 1 }
+I20231118-16:27:10.869(-10)? passed check
+I20231118-16:27:10.869(-10)? initializeBuilding call successful.
+I20231118-16:27:10.869(-10)? constructed building base:  sAeCTLJd7KF8H5AZL
+I20231118-16:27:10.873(-10)? new building base:  [
+I20231118-16:27:10.873(-10)?   {
+I20231118-16:27:10.874(-10)?     _id: 'sAeCTLJd7KF8H5AZL',
+I20231118-16:27:10.874(-10)?     name: 'Gym 2',
+I20231118-16:27:10.874(-10)?     floor_count: 1,
+I20231118-16:27:10.874(-10)?     floor_id: []
+I20231118-16:27:10.874(-10)?   }
+I20231118-16:27:10.874(-10)? ]
+I20231118-16:27:10.874(-10)? new floors constructed:  [ 'g2nkJQX9R25EQ4CMG' ]
+I20231118-16:27:10.877(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.877(-10)?   {
+I20231118-16:27:10.877(-10)?     _id: 'sAeCTLJd7KF8H5AZL',
+I20231118-16:27:10.878(-10)?     name: 'Gym 2',
+I20231118-16:27:10.878(-10)?     floor_count: 1,
+I20231118-16:27:10.878(-10)?     floor_id: [ 'g2nkJQX9R25EQ4CMG' ]
+I20231118-16:27:10.878(-10)?   }
+I20231118-16:27:10.878(-10)? ]
+I20231118-16:27:10.878(-10)? { name: 'Hale Aloha Lehua', floor_count: 1 }
+I20231118-16:27:10.879(-10)? passed check
+I20231118-16:27:10.879(-10)? initializeBuilding call successful.
+I20231118-16:27:10.879(-10)? constructed building base:  SRfNMzD5hRZvi4Mui
+I20231118-16:27:10.884(-10)? new building base:  [
+I20231118-16:27:10.885(-10)?   {
+I20231118-16:27:10.885(-10)?     _id: 'SRfNMzD5hRZvi4Mui',
+I20231118-16:27:10.885(-10)?     name: 'Hale Aloha Lehua',
+I20231118-16:27:10.885(-10)?     floor_count: 1,
+I20231118-16:27:10.885(-10)?     floor_id: []
+I20231118-16:27:10.885(-10)?   }
+I20231118-16:27:10.886(-10)? ]
+I20231118-16:27:10.886(-10)? new floors constructed:  [ 'kRTnBrzPHb5cdxpav' ]
+I20231118-16:27:10.888(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.889(-10)?   {
+I20231118-16:27:10.890(-10)?     _id: 'SRfNMzD5hRZvi4Mui',
+I20231118-16:27:10.890(-10)?     name: 'Hale Aloha Lehua',
+I20231118-16:27:10.890(-10)?     floor_count: 1,
+I20231118-16:27:10.890(-10)?     floor_id: [ 'kRTnBrzPHb5cdxpav' ]
+I20231118-16:27:10.890(-10)?   }
+I20231118-16:27:10.890(-10)? ]
+I20231118-16:27:10.891(-10)? { name: 'Hale Aloha ʻIlima', floor_count: 1 }
+I20231118-16:27:10.891(-10)? passed check
+I20231118-16:27:10.891(-10)? initializeBuilding call successful.
+I20231118-16:27:10.892(-10)? constructed building base:  tjSqaijgheWyfCRFr
+I20231118-16:27:10.895(-10)? new building base:  [
+I20231118-16:27:10.895(-10)?   {
+I20231118-16:27:10.896(-10)?     _id: 'tjSqaijgheWyfCRFr',
+I20231118-16:27:10.896(-10)?     name: 'Hale Aloha ʻIlima',
+I20231118-16:27:10.896(-10)?     floor_count: 1,
+I20231118-16:27:10.896(-10)?     floor_id: []
+I20231118-16:27:10.896(-10)?   }
+I20231118-16:27:10.896(-10)? ]
+I20231118-16:27:10.897(-10)? new floors constructed:  [ 'Ko4FioCJi2psbLFcz' ]
+I20231118-16:27:10.900(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.900(-10)?   {
+I20231118-16:27:10.901(-10)?     _id: 'tjSqaijgheWyfCRFr',
+I20231118-16:27:10.901(-10)?     name: 'Hale Aloha ʻIlima',
+I20231118-16:27:10.901(-10)?     floor_count: 1,
+I20231118-16:27:10.901(-10)?     floor_id: [ 'Ko4FioCJi2psbLFcz' ]
+I20231118-16:27:10.901(-10)?   }
+I20231118-16:27:10.901(-10)? ]
+I20231118-16:27:10.901(-10)? { name: 'Hale Aloha Mokihana', floor_count: 1 }
+I20231118-16:27:10.902(-10)? passed check
+I20231118-16:27:10.902(-10)? initializeBuilding call successful.
+I20231118-16:27:10.902(-10)? constructed building base:  QAYDWb6vfwgCiMoEq
+I20231118-16:27:10.906(-10)? new building base:  [
+I20231118-16:27:10.907(-10)?   {
+I20231118-16:27:10.907(-10)?     _id: 'QAYDWb6vfwgCiMoEq',
+I20231118-16:27:10.907(-10)?     name: 'Hale Aloha Mokihana',
+I20231118-16:27:10.907(-10)?     floor_count: 1,
+I20231118-16:27:10.907(-10)?     floor_id: []
+I20231118-16:27:10.907(-10)?   }
+I20231118-16:27:10.907(-10)? ]
+I20231118-16:27:10.908(-10)? new floors constructed:  [ 'tetBu5cy2NW8qQEpA' ]
+I20231118-16:27:10.910(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.910(-10)?   {
+I20231118-16:27:10.910(-10)?     _id: 'QAYDWb6vfwgCiMoEq',
+I20231118-16:27:10.910(-10)?     name: 'Hale Aloha Mokihana',
+I20231118-16:27:10.911(-10)?     floor_count: 1,
+I20231118-16:27:10.911(-10)?     floor_id: [ 'tetBu5cy2NW8qQEpA' ]
+I20231118-16:27:10.911(-10)?   }
+I20231118-16:27:10.911(-10)? ]
+I20231118-16:27:10.911(-10)? { name: 'Hale Aloha Lokelani', floor_count: 1 }
+I20231118-16:27:10.912(-10)? passed check
+I20231118-16:27:10.912(-10)? initializeBuilding call successful.
+I20231118-16:27:10.912(-10)? constructed building base:  ue82BtRyz6AA3g9jj
+I20231118-16:27:10.917(-10)? new building base:  [
+I20231118-16:27:10.917(-10)?   {
+I20231118-16:27:10.917(-10)?     _id: 'ue82BtRyz6AA3g9jj',
+I20231118-16:27:10.918(-10)?     name: 'Hale Aloha Lokelani',
+I20231118-16:27:10.918(-10)?     floor_count: 1,
+I20231118-16:27:10.918(-10)?     floor_id: []
+I20231118-16:27:10.918(-10)?   }
+I20231118-16:27:10.918(-10)? ]
+I20231118-16:27:10.918(-10)? new floors constructed:  [ '9CmNaKGGTZortZ9ud' ]
+I20231118-16:27:10.921(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.921(-10)?   {
+I20231118-16:27:10.922(-10)?     _id: 'ue82BtRyz6AA3g9jj',
+I20231118-16:27:10.922(-10)?     name: 'Hale Aloha Lokelani',
+I20231118-16:27:10.922(-10)?     floor_count: 1,
+I20231118-16:27:10.922(-10)?     floor_id: [ '9CmNaKGGTZortZ9ud' ]
+I20231118-16:27:10.922(-10)?   }
+I20231118-16:27:10.922(-10)? ]
+I20231118-16:27:10.923(-10)? { name: 'Hale Aloha Cafeteria', floor_count: 1 }
+I20231118-16:27:10.923(-10)? passed check
+I20231118-16:27:10.923(-10)? initializeBuilding call successful.
+I20231118-16:27:10.923(-10)? constructed building base:  HFNpb2avpW7qD7inf
+I20231118-16:27:10.928(-10)? new building base:  [
+I20231118-16:27:10.928(-10)?   {
+I20231118-16:27:10.929(-10)?     _id: 'HFNpb2avpW7qD7inf',
+I20231118-16:27:10.929(-10)?     name: 'Hale Aloha Cafeteria',
+I20231118-16:27:10.929(-10)?     floor_count: 1,
+I20231118-16:27:10.929(-10)?     floor_id: []
+I20231118-16:27:10.929(-10)?   }
+I20231118-16:27:10.930(-10)? ]
+I20231118-16:27:10.930(-10)? new floors constructed:  [ 'WB5wFgfEea3gJw3fa' ]
+I20231118-16:27:10.932(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.932(-10)?   {
+I20231118-16:27:10.933(-10)?     _id: 'HFNpb2avpW7qD7inf',
+I20231118-16:27:10.933(-10)?     name: 'Hale Aloha Cafeteria',
+I20231118-16:27:10.933(-10)?     floor_count: 1,
+I20231118-16:27:10.933(-10)?     floor_id: [ 'WB5wFgfEea3gJw3fa' ]
+I20231118-16:27:10.933(-10)?   }
+I20231118-16:27:10.933(-10)? ]
+I20231118-16:27:10.933(-10)? { name: 'Hale Ānuenue', floor_count: 1 }
+I20231118-16:27:10.934(-10)? passed check
+I20231118-16:27:10.934(-10)? initializeBuilding call successful.
+I20231118-16:27:10.934(-10)? constructed building base:  JtQDoE5eAqKSiWFZd
+I20231118-16:27:10.946(-10)? new building base:  [
+I20231118-16:27:10.947(-10)?   {
+I20231118-16:27:10.947(-10)?     _id: 'JtQDoE5eAqKSiWFZd',
+I20231118-16:27:10.947(-10)?     name: 'Hale Ānuenue',
+I20231118-16:27:10.947(-10)?     floor_count: 1,
+I20231118-16:27:10.947(-10)?     floor_id: []
+I20231118-16:27:10.947(-10)?   }
+I20231118-16:27:10.947(-10)? ]
+I20231118-16:27:10.948(-10)? new floors constructed:  [ 'qsG4edpAQGgjswWsi' ]
+I20231118-16:27:10.950(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.950(-10)?   {
+I20231118-16:27:10.951(-10)?     _id: 'JtQDoE5eAqKSiWFZd',
+I20231118-16:27:10.951(-10)?     name: 'Hale Ānuenue',
+I20231118-16:27:10.951(-10)?     floor_count: 1,
+I20231118-16:27:10.951(-10)?     floor_id: [ 'qsG4edpAQGgjswWsi' ]
+I20231118-16:27:10.951(-10)?   }
+I20231118-16:27:10.951(-10)? ]
+I20231118-16:27:10.951(-10)? { name: 'Hale Halawai', floor_count: 1 }
+I20231118-16:27:10.952(-10)? passed check
+I20231118-16:27:10.952(-10)? initializeBuilding call successful.
+I20231118-16:27:10.952(-10)? constructed building base:  LWHHoceJhSpL9XyhY
+I20231118-16:27:10.957(-10)? new building base:  [
+I20231118-16:27:10.957(-10)?   {
+I20231118-16:27:10.957(-10)?     _id: 'LWHHoceJhSpL9XyhY',
+I20231118-16:27:10.957(-10)?     name: 'Hale Halawai',
+I20231118-16:27:10.958(-10)?     floor_count: 1,
+I20231118-16:27:10.958(-10)?     floor_id: []
+I20231118-16:27:10.958(-10)?   }
+I20231118-16:27:10.958(-10)? ]
+I20231118-16:27:10.958(-10)? new floors constructed:  [ '5WdqLHK9yKbdh66Dn' ]
+I20231118-16:27:10.961(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.961(-10)?   {
+I20231118-16:27:10.961(-10)?     _id: 'LWHHoceJhSpL9XyhY',
+I20231118-16:27:10.962(-10)?     name: 'Hale Halawai',
+I20231118-16:27:10.962(-10)?     floor_count: 1,
+I20231118-16:27:10.962(-10)?     floor_id: [ '5WdqLHK9yKbdh66Dn' ]
+I20231118-16:27:10.962(-10)?   }
+I20231118-16:27:10.962(-10)? ]
+I20231118-16:27:10.962(-10)? { name: 'Hale Kahawai', floor_count: 1 }
+I20231118-16:27:10.963(-10)? passed check
+I20231118-16:27:10.963(-10)? initializeBuilding call successful.
+I20231118-16:27:10.964(-10)? constructed building base:  M2P55bwtSR9XPtgRw
+I20231118-16:27:10.967(-10)? new building base:  [
+I20231118-16:27:10.967(-10)?   {
+I20231118-16:27:10.968(-10)?     _id: 'M2P55bwtSR9XPtgRw',
+I20231118-16:27:10.968(-10)?     name: 'Hale Kahawai',
+I20231118-16:27:10.968(-10)?     floor_count: 1,
+I20231118-16:27:10.968(-10)?     floor_id: []
+I20231118-16:27:10.968(-10)?   }
+I20231118-16:27:10.968(-10)? ]
+I20231118-16:27:10.968(-10)? new floors constructed:  [ 'XsH8TndWR42aDaags' ]
+I20231118-16:27:10.971(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.971(-10)?   {
+I20231118-16:27:10.971(-10)?     _id: 'M2P55bwtSR9XPtgRw',
+I20231118-16:27:10.972(-10)?     name: 'Hale Kahawai',
+I20231118-16:27:10.972(-10)?     floor_count: 1,
+I20231118-16:27:10.972(-10)?     floor_id: [ 'XsH8TndWR42aDaags' ]
+I20231118-16:27:10.972(-10)?   }
+I20231118-16:27:10.972(-10)? ]
+I20231118-16:27:10.972(-10)? { name: 'Hale Kuahine', floor_count: 1 }
+I20231118-16:27:10.973(-10)? passed check
+I20231118-16:27:10.973(-10)? initializeBuilding call successful.
+I20231118-16:27:10.973(-10)? constructed building base:  E45CZyzAFwd9NXb6W
+I20231118-16:27:10.978(-10)? new building base:  [
+I20231118-16:27:10.979(-10)?   {
+I20231118-16:27:10.979(-10)?     _id: 'E45CZyzAFwd9NXb6W',
+I20231118-16:27:10.979(-10)?     name: 'Hale Kuahine',
+I20231118-16:27:10.979(-10)?     floor_count: 1,
+I20231118-16:27:10.979(-10)?     floor_id: []
+I20231118-16:27:10.979(-10)?   }
+I20231118-16:27:10.979(-10)? ]
+I20231118-16:27:10.980(-10)? new floors constructed:  [ 'EBM9jB645WwbLopiD' ]
+I20231118-16:27:10.982(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.983(-10)?   {
+I20231118-16:27:10.983(-10)?     _id: 'E45CZyzAFwd9NXb6W',
+I20231118-16:27:10.983(-10)?     name: 'Hale Kuahine',
+I20231118-16:27:10.983(-10)?     floor_count: 1,
+I20231118-16:27:10.983(-10)?     floor_id: [ 'EBM9jB645WwbLopiD' ]
+I20231118-16:27:10.984(-10)?   }
+I20231118-16:27:10.984(-10)? ]
+I20231118-16:27:10.984(-10)? { name: 'Hale Laulima', floor_count: 1 }
+I20231118-16:27:10.984(-10)? passed check
+I20231118-16:27:10.984(-10)? initializeBuilding call successful.
+I20231118-16:27:10.985(-10)? constructed building base:  eFKN7XgkDo4Tzhcqa
+I20231118-16:27:10.989(-10)? new building base:  [
+I20231118-16:27:10.989(-10)?   {
+I20231118-16:27:10.990(-10)?     _id: 'eFKN7XgkDo4Tzhcqa',
+I20231118-16:27:10.990(-10)?     name: 'Hale Laulima',
+I20231118-16:27:10.990(-10)?     floor_count: 1,
+I20231118-16:27:10.990(-10)?     floor_id: []
+I20231118-16:27:10.990(-10)?   }
+I20231118-16:27:10.990(-10)? ]
+I20231118-16:27:10.990(-10)? new floors constructed:  [ 'dMvpuXzhhkd8eBXYi' ]
+I20231118-16:27:10.993(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:10.993(-10)?   {
+I20231118-16:27:10.993(-10)?     _id: 'eFKN7XgkDo4Tzhcqa',
+I20231118-16:27:10.994(-10)?     name: 'Hale Laulima',
+I20231118-16:27:10.994(-10)?     floor_count: 1,
+I20231118-16:27:10.994(-10)?     floor_id: [ 'dMvpuXzhhkd8eBXYi' ]
+I20231118-16:27:10.994(-10)?   }
+I20231118-16:27:10.994(-10)? ]
+I20231118-16:27:10.994(-10)? { name: 'Hale Mānoa', floor_count: 1 }
+I20231118-16:27:10.994(-10)? passed check
+I20231118-16:27:10.995(-10)? initializeBuilding call successful.
+I20231118-16:27:10.996(-10)? constructed building base:  CFRf2Zuoa2WCaozX9
+I20231118-16:27:11.002(-10)? new building base:  [
+I20231118-16:27:11.002(-10)?   {
+I20231118-16:27:11.002(-10)?     _id: 'CFRf2Zuoa2WCaozX9',
+I20231118-16:27:11.002(-10)?     name: 'Hale Mānoa',
+I20231118-16:27:11.003(-10)?     floor_count: 1,
+I20231118-16:27:11.003(-10)?     floor_id: []
+I20231118-16:27:11.003(-10)?   }
+I20231118-16:27:11.003(-10)? ]
+I20231118-16:27:11.003(-10)? new floors constructed:  [ 'S49v7FPpMWZJdSMBu' ]
+I20231118-16:27:11.006(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.007(-10)?   {
+I20231118-16:27:11.007(-10)?     _id: 'CFRf2Zuoa2WCaozX9',
+I20231118-16:27:11.007(-10)?     name: 'Hale Mānoa',
+I20231118-16:27:11.007(-10)?     floor_count: 1,
+I20231118-16:27:11.007(-10)?     floor_id: [ 'S49v7FPpMWZJdSMBu' ]
+I20231118-16:27:11.008(-10)?   }
+I20231118-16:27:11.008(-10)? ]
+I20231118-16:27:11.008(-10)? { name: 'Hale Noelani', floor_count: 1 }
+I20231118-16:27:11.008(-10)? passed check
+I20231118-16:27:11.009(-10)? initializeBuilding call successful.
+I20231118-16:27:11.009(-10)? constructed building base:  bPxS3o2PtHyhoKXHZ
+I20231118-16:27:11.013(-10)? new building base:  [
+I20231118-16:27:11.014(-10)?   {
+I20231118-16:27:11.014(-10)?     _id: 'bPxS3o2PtHyhoKXHZ',
+I20231118-16:27:11.014(-10)?     name: 'Hale Noelani',
+I20231118-16:27:11.014(-10)?     floor_count: 1,
+I20231118-16:27:11.014(-10)?     floor_id: []
+I20231118-16:27:11.014(-10)?   }
+I20231118-16:27:11.014(-10)? ]
+I20231118-16:27:11.015(-10)? new floors constructed:  [ 'iyNvuG7tGMqzhmAaW' ]
+I20231118-16:27:11.019(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.019(-10)?   {
+I20231118-16:27:11.019(-10)?     _id: 'bPxS3o2PtHyhoKXHZ',
+I20231118-16:27:11.019(-10)?     name: 'Hale Noelani',
+I20231118-16:27:11.020(-10)?     floor_count: 1,
+I20231118-16:27:11.020(-10)?     floor_id: [ 'iyNvuG7tGMqzhmAaW' ]
+I20231118-16:27:11.020(-10)?   }
+I20231118-16:27:11.020(-10)? ]
+I20231118-16:27:11.020(-10)? { name: 'Hale Wainani', floor_count: 1 }
+I20231118-16:27:11.021(-10)? passed check
+I20231118-16:27:11.021(-10)? initializeBuilding call successful.
+I20231118-16:27:11.021(-10)? constructed building base:  qgFBEyw6y5uySyxXv
+I20231118-16:27:11.025(-10)? new building base:  [
+I20231118-16:27:11.025(-10)?   {
+I20231118-16:27:11.026(-10)?     _id: 'qgFBEyw6y5uySyxXv',
+I20231118-16:27:11.026(-10)?     name: 'Hale Wainani',
+I20231118-16:27:11.026(-10)?     floor_count: 1,
+I20231118-16:27:11.026(-10)?     floor_id: []
+I20231118-16:27:11.026(-10)?   }
+I20231118-16:27:11.026(-10)? ]
+I20231118-16:27:11.026(-10)? new floors constructed:  [ 'QKrHjJHaqMQARKnM9' ]
+I20231118-16:27:11.029(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.029(-10)?   {
+I20231118-16:27:11.030(-10)?     _id: 'qgFBEyw6y5uySyxXv',
+I20231118-16:27:11.030(-10)?     name: 'Hale Wainani',
+I20231118-16:27:11.030(-10)?     floor_count: 1,
+I20231118-16:27:11.030(-10)?     floor_id: [ 'QKrHjJHaqMQARKnM9' ]
+I20231118-16:27:11.030(-10)?   }
+I20231118-16:27:11.030(-10)? ]
+I20231118-16:27:11.030(-10)? { name: 'Hamilton Library', floor_count: 1 }
+I20231118-16:27:11.031(-10)? passed check
+I20231118-16:27:11.031(-10)? initializeBuilding call successful.
+I20231118-16:27:11.040(-10)? constructed building base:  M7yn2WQv6fwF4bshB
+I20231118-16:27:11.044(-10)? new building base:  [
+I20231118-16:27:11.045(-10)?   {
+I20231118-16:27:11.045(-10)?     _id: 'M7yn2WQv6fwF4bshB',
+I20231118-16:27:11.045(-10)?     name: 'Hamilton Library',
+I20231118-16:27:11.045(-10)?     floor_count: 1,
+I20231118-16:27:11.045(-10)?     floor_id: []
+I20231118-16:27:11.046(-10)?   }
+I20231118-16:27:11.046(-10)? ]
+I20231118-16:27:11.046(-10)? new floors constructed:  [ 'xQcicqkicA4LX9CAx' ]
+I20231118-16:27:11.048(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.048(-10)?   {
+I20231118-16:27:11.048(-10)?     _id: 'M7yn2WQv6fwF4bshB',
+I20231118-16:27:11.049(-10)?     name: 'Hamilton Library',
+I20231118-16:27:11.049(-10)?     floor_count: 1,
+I20231118-16:27:11.049(-10)?     floor_id: [ 'xQcicqkicA4LX9CAx' ]
+I20231118-16:27:11.049(-10)?   }
+I20231118-16:27:11.049(-10)? ]
+I20231118-16:27:11.049(-10)? { name: 'Hawaiʻi English Language Program', floor_count: 1 }
+I20231118-16:27:11.050(-10)? passed check
+I20231118-16:27:11.050(-10)? initializeBuilding call successful.
+I20231118-16:27:11.053(-10)? constructed building base:  fwqTk9A6kHYTxByYp
+I20231118-16:27:11.056(-10)? new building base:  [
+I20231118-16:27:11.057(-10)?   {
+I20231118-16:27:11.057(-10)?     _id: 'fwqTk9A6kHYTxByYp',
+I20231118-16:27:11.058(-10)?     name: 'Hawaiʻi English Language Program',
+I20231118-16:27:11.058(-10)?     floor_count: 1,
+I20231118-16:27:11.058(-10)?     floor_id: []
+I20231118-16:27:11.058(-10)?   }
+I20231118-16:27:11.058(-10)? ]
+I20231118-16:27:11.058(-10)? new floors constructed:  [ 'wx9wgZu98tphSzR5N' ]
+I20231118-16:27:11.061(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.061(-10)?   {
+I20231118-16:27:11.061(-10)?     _id: 'fwqTk9A6kHYTxByYp',
+I20231118-16:27:11.061(-10)?     name: 'Hawaiʻi English Language Program',
+I20231118-16:27:11.062(-10)?     floor_count: 1,
+I20231118-16:27:11.062(-10)?     floor_id: [ 'wx9wgZu98tphSzR5N' ]
+I20231118-16:27:11.062(-10)?   }
+I20231118-16:27:11.062(-10)? ]
+I20231118-16:27:11.062(-10)? { name: 'Hawaiʻi Hall', floor_count: 1 }
+I20231118-16:27:11.062(-10)? passed check
+I20231118-16:27:11.063(-10)? initializeBuilding call successful.
+I20231118-16:27:11.064(-10)? constructed building base:  broXqrQPfcpyJ3nCv
+I20231118-16:27:11.069(-10)? new building base:  [
+I20231118-16:27:11.069(-10)?   {
+I20231118-16:27:11.069(-10)?     _id: 'broXqrQPfcpyJ3nCv',
+I20231118-16:27:11.069(-10)?     name: 'Hawaiʻi Hall',
+I20231118-16:27:11.069(-10)?     floor_count: 1,
+I20231118-16:27:11.070(-10)?     floor_id: []
+I20231118-16:27:11.070(-10)?   }
+I20231118-16:27:11.070(-10)? ]
+I20231118-16:27:11.070(-10)? new floors constructed:  [ 'boKE74YHKdSmQrJrR' ]
+I20231118-16:27:11.074(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.074(-10)?   {
+I20231118-16:27:11.074(-10)?     _id: 'broXqrQPfcpyJ3nCv',
+I20231118-16:27:11.074(-10)?     name: 'Hawaiʻi Hall',
+I20231118-16:27:11.075(-10)?     floor_count: 1,
+I20231118-16:27:11.075(-10)?     floor_id: [ 'boKE74YHKdSmQrJrR' ]
+I20231118-16:27:11.075(-10)?   }
+I20231118-16:27:11.075(-10)? ]
+I20231118-16:27:11.075(-10)? { name: 'Hawaiʻi Institute of Geophysics', floor_count: 1 }
+I20231118-16:27:11.075(-10)? passed check
+I20231118-16:27:11.076(-10)? initializeBuilding call successful.
+I20231118-16:27:11.076(-10)? constructed building base:  gGfD3WmxCXTx55eiF
+I20231118-16:27:11.080(-10)? new building base:  [
+I20231118-16:27:11.081(-10)?   {
+I20231118-16:27:11.081(-10)?     _id: 'gGfD3WmxCXTx55eiF',
+I20231118-16:27:11.081(-10)?     name: 'Hawaiʻi Institute of Geophysics',
+I20231118-16:27:11.081(-10)?     floor_count: 1,
+I20231118-16:27:11.081(-10)?     floor_id: []
+I20231118-16:27:11.081(-10)?   }
+I20231118-16:27:11.081(-10)? ]
+I20231118-16:27:11.082(-10)? new floors constructed:  [ '8qPhZ6cP3E54s8XuH' ]
+I20231118-16:27:11.085(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.085(-10)?   {
+I20231118-16:27:11.085(-10)?     _id: 'gGfD3WmxCXTx55eiF',
+I20231118-16:27:11.085(-10)?     name: 'Hawaiʻi Institute of Geophysics',
+I20231118-16:27:11.086(-10)?     floor_count: 1,
+I20231118-16:27:11.086(-10)?     floor_id: [ '8qPhZ6cP3E54s8XuH' ]
+I20231118-16:27:11.086(-10)?   }
+I20231118-16:27:11.086(-10)? ]
+I20231118-16:27:11.086(-10)? { name: 'Health Services', floor_count: 1 }
+I20231118-16:27:11.086(-10)? passed check
+I20231118-16:27:11.087(-10)? initializeBuilding call successful.
+I20231118-16:27:11.087(-10)? constructed building base:  tTY7BY58oQ2TMohLf
+I20231118-16:27:11.091(-10)? new building base:  [
+I20231118-16:27:11.091(-10)?   {
+I20231118-16:27:11.091(-10)?     _id: 'tTY7BY58oQ2TMohLf',
+I20231118-16:27:11.091(-10)?     name: 'Health Services',
+I20231118-16:27:11.092(-10)?     floor_count: 1,
+I20231118-16:27:11.092(-10)?     floor_id: []
+I20231118-16:27:11.092(-10)?   }
+I20231118-16:27:11.092(-10)? ]
+I20231118-16:27:11.092(-10)? new floors constructed:  [ 'mBizdq5eaQGqrSdNq' ]
+I20231118-16:27:11.095(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.097(-10)?   {
+I20231118-16:27:11.097(-10)?     _id: 'tTY7BY58oQ2TMohLf',
+I20231118-16:27:11.097(-10)?     name: 'Health Services',
+I20231118-16:27:11.097(-10)?     floor_count: 1,
+I20231118-16:27:11.097(-10)?     floor_id: [ 'mBizdq5eaQGqrSdNq' ]
+I20231118-16:27:11.098(-10)?   }
+I20231118-16:27:11.098(-10)? ]
+I20231118-16:27:11.098(-10)? { name: 'Hemenway Hall', floor_count: 1 }
+I20231118-16:27:11.098(-10)? passed check
+I20231118-16:27:11.098(-10)? initializeBuilding call successful.
+I20231118-16:27:11.099(-10)? constructed building base:  kxuiGSHvadgso7DTL
+I20231118-16:27:11.101(-10)? new building base:  [
+I20231118-16:27:11.101(-10)?   {
+I20231118-16:27:11.101(-10)?     _id: 'kxuiGSHvadgso7DTL',
+I20231118-16:27:11.101(-10)?     name: 'Hemenway Hall',
+I20231118-16:27:11.101(-10)?     floor_count: 1,
+I20231118-16:27:11.102(-10)?     floor_id: []
+I20231118-16:27:11.102(-10)?   }
+I20231118-16:27:11.102(-10)? ]
+I20231118-16:27:11.102(-10)? new floors constructed:  [ '3CQthNZoJYHaErEmF' ]
+I20231118-16:27:11.106(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.106(-10)?   {
+I20231118-16:27:11.107(-10)?     _id: 'kxuiGSHvadgso7DTL',
+I20231118-16:27:11.107(-10)?     name: 'Hemenway Hall',
+I20231118-16:27:11.107(-10)?     floor_count: 1,
+I20231118-16:27:11.107(-10)?     floor_id: [ '3CQthNZoJYHaErEmF' ]
+I20231118-16:27:11.107(-10)?   }
+I20231118-16:27:11.107(-10)? ]
+I20231118-16:27:11.107(-10)? { name: 'Henke Hall', floor_count: 1 }
+I20231118-16:27:11.108(-10)? passed check
+I20231118-16:27:11.108(-10)? initializeBuilding call successful.
+I20231118-16:27:11.109(-10)? constructed building base:  y5s5qbpDx7XCcgBje
+I20231118-16:27:11.112(-10)? new building base:  [
+I20231118-16:27:11.112(-10)?   {
+I20231118-16:27:11.112(-10)?     _id: 'y5s5qbpDx7XCcgBje',
+I20231118-16:27:11.112(-10)?     name: 'Henke Hall',
+I20231118-16:27:11.112(-10)?     floor_count: 1,
+I20231118-16:27:11.113(-10)?     floor_id: []
+I20231118-16:27:11.113(-10)?   }
+I20231118-16:27:11.113(-10)? ]
+I20231118-16:27:11.113(-10)? new floors constructed:  [ '7kuSLf7Zjuxc9NbcZ' ]
+I20231118-16:27:11.116(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.116(-10)?   {
+I20231118-16:27:11.117(-10)?     _id: 'y5s5qbpDx7XCcgBje',
+I20231118-16:27:11.117(-10)?     name: 'Henke Hall',
+I20231118-16:27:11.117(-10)?     floor_count: 1,
+I20231118-16:27:11.117(-10)?     floor_id: [ '7kuSLf7Zjuxc9NbcZ' ]
+I20231118-16:27:11.117(-10)?   }
+I20231118-16:27:11.117(-10)? ]
+I20231118-16:27:11.118(-10)? { name: 'Holmes Hall', floor_count: 1 }
+I20231118-16:27:11.118(-10)? passed check
+I20231118-16:27:11.118(-10)? initializeBuilding call successful.
+I20231118-16:27:11.118(-10)? constructed building base:  WCTwy2gZeZpBkYYKY
+I20231118-16:27:11.123(-10)? new building base:  [
+I20231118-16:27:11.123(-10)?   {
+I20231118-16:27:11.124(-10)?     _id: 'WCTwy2gZeZpBkYYKY',
+I20231118-16:27:11.124(-10)?     name: 'Holmes Hall',
+I20231118-16:27:11.124(-10)?     floor_count: 1,
+I20231118-16:27:11.124(-10)?     floor_id: []
+I20231118-16:27:11.124(-10)?   }
+I20231118-16:27:11.124(-10)? ]
+I20231118-16:27:11.124(-10)? new floors constructed:  [ 'jpA5bJaFTf3jqSv8C' ]
+I20231118-16:27:11.127(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.128(-10)?   {
+I20231118-16:27:11.128(-10)?     _id: 'WCTwy2gZeZpBkYYKY',
+I20231118-16:27:11.128(-10)?     name: 'Holmes Hall',
+I20231118-16:27:11.128(-10)?     floor_count: 1,
+I20231118-16:27:11.128(-10)?     floor_id: [ 'jpA5bJaFTf3jqSv8C' ]
+I20231118-16:27:11.128(-10)?   }
+I20231118-16:27:11.128(-10)? ]
+I20231118-16:27:11.129(-10)? { name: 'Horticulture Greenhouses', floor_count: 1 }
+I20231118-16:27:11.129(-10)? passed check
+I20231118-16:27:11.129(-10)? initializeBuilding call successful.
+I20231118-16:27:11.129(-10)? constructed building base:  nQkkQ9oFpD2YeJhPx
+I20231118-16:27:11.134(-10)? new building base:  [
+I20231118-16:27:11.134(-10)?   {
+I20231118-16:27:11.134(-10)?     _id: 'nQkkQ9oFpD2YeJhPx',
+I20231118-16:27:11.134(-10)?     name: 'Horticulture Greenhouses',
+I20231118-16:27:11.135(-10)?     floor_count: 1,
+I20231118-16:27:11.135(-10)?     floor_id: []
+I20231118-16:27:11.135(-10)?   }
+I20231118-16:27:11.135(-10)? ]
+I20231118-16:27:11.135(-10)? new floors constructed:  [ 'pyaKghQpMAL8FTDXS' ]
+I20231118-16:27:11.137(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.138(-10)?   {
+I20231118-16:27:11.138(-10)?     _id: 'nQkkQ9oFpD2YeJhPx',
+I20231118-16:27:11.138(-10)?     name: 'Horticulture Greenhouses',
+I20231118-16:27:11.138(-10)?     floor_count: 1,
+I20231118-16:27:11.138(-10)?     floor_id: [ 'pyaKghQpMAL8FTDXS' ]
+I20231118-16:27:11.138(-10)?   }
+I20231118-16:27:11.138(-10)? ]
+I20231118-16:27:11.139(-10)? { name: 'Horticulture Headhouse', floor_count: 1 }
+I20231118-16:27:11.139(-10)? passed check
+I20231118-16:27:11.139(-10)? initializeBuilding call successful.
+I20231118-16:27:11.139(-10)? constructed building base:  ZeerFgke9mJkgHiWe
+I20231118-16:27:11.142(-10)? new building base:  [
+I20231118-16:27:11.143(-10)?   {
+I20231118-16:27:11.143(-10)?     _id: 'ZeerFgke9mJkgHiWe',
+I20231118-16:27:11.143(-10)?     name: 'Horticulture Headhouse',
+I20231118-16:27:11.143(-10)?     floor_count: 1,
+I20231118-16:27:11.143(-10)?     floor_id: []
+I20231118-16:27:11.143(-10)?   }
+I20231118-16:27:11.144(-10)? ]
+I20231118-16:27:11.144(-10)? new floors constructed:  [ 'a6cBbyrohzR4HQzGL' ]
+I20231118-16:27:11.146(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.147(-10)?   {
+I20231118-16:27:11.147(-10)?     _id: 'ZeerFgke9mJkgHiWe',
+I20231118-16:27:11.147(-10)?     name: 'Horticulture Headhouse',
+I20231118-16:27:11.147(-10)?     floor_count: 1,
+I20231118-16:27:11.147(-10)?     floor_id: [ 'a6cBbyrohzR4HQzGL' ]
+I20231118-16:27:11.147(-10)?   }
+I20231118-16:27:11.147(-10)? ]
+I20231118-16:27:11.148(-10)? { name: 'Information Technology Center', floor_count: 1 }
+I20231118-16:27:11.148(-10)? passed check
+I20231118-16:27:11.148(-10)? initializeBuilding call successful.
+I20231118-16:27:11.148(-10)? constructed building base:  mj3tAK9xGxot62xYG
+I20231118-16:27:11.151(-10)? new building base:  [
+I20231118-16:27:11.152(-10)?   {
+I20231118-16:27:11.152(-10)?     _id: 'mj3tAK9xGxot62xYG',
+I20231118-16:27:11.152(-10)?     name: 'Information Technology Center',
+I20231118-16:27:11.152(-10)?     floor_count: 1,
+I20231118-16:27:11.152(-10)?     floor_id: []
+I20231118-16:27:11.153(-10)?   }
+I20231118-16:27:11.153(-10)? ]
+I20231118-16:27:11.153(-10)? new floors constructed:  [ 'CMwK7A9jAswotWZjk' ]
+I20231118-16:27:11.156(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.156(-10)?   {
+I20231118-16:27:11.156(-10)?     _id: 'mj3tAK9xGxot62xYG',
+I20231118-16:27:11.156(-10)?     name: 'Information Technology Center',
+I20231118-16:27:11.157(-10)?     floor_count: 1,
+I20231118-16:27:11.157(-10)?     floor_id: [ 'CMwK7A9jAswotWZjk' ]
+I20231118-16:27:11.157(-10)?   }
+I20231118-16:27:11.157(-10)? ]
+I20231118-16:27:11.157(-10)? { name: 'Institute for Astronomy', floor_count: 1 }
+I20231118-16:27:11.158(-10)? passed check
+I20231118-16:27:11.158(-10)? initializeBuilding call successful.
+I20231118-16:27:11.158(-10)? constructed building base:  qSvAj3vhyS3dchxAj
+I20231118-16:27:11.163(-10)? new building base:  [
+I20231118-16:27:11.163(-10)?   {
+I20231118-16:27:11.164(-10)?     _id: 'qSvAj3vhyS3dchxAj',
+I20231118-16:27:11.164(-10)?     name: 'Institute for Astronomy',
+I20231118-16:27:11.164(-10)?     floor_count: 1,
+I20231118-16:27:11.164(-10)?     floor_id: []
+I20231118-16:27:11.164(-10)?   }
+I20231118-16:27:11.164(-10)? ]
+I20231118-16:27:11.165(-10)? new floors constructed:  [ 'mgDxPM2pZ36dHynmi' ]
+I20231118-16:27:11.167(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.168(-10)?   {
+I20231118-16:27:11.168(-10)?     _id: 'qSvAj3vhyS3dchxAj',
+I20231118-16:27:11.168(-10)?     name: 'Institute for Astronomy',
+I20231118-16:27:11.169(-10)?     floor_count: 1,
+I20231118-16:27:11.169(-10)?     floor_id: [ 'mgDxPM2pZ36dHynmi' ]
+I20231118-16:27:11.169(-10)?   }
+I20231118-16:27:11.169(-10)? ]
+I20231118-16:27:11.171(-10)? { name: 'Jefferson Hall', floor_count: 1 }
+I20231118-16:27:11.171(-10)? passed check
+I20231118-16:27:11.171(-10)? initializeBuilding call successful.
+I20231118-16:27:11.172(-10)? constructed building base:  7hoocsknRzMitChTK
+I20231118-16:27:11.174(-10)? new building base:  [
+I20231118-16:27:11.175(-10)?   {
+I20231118-16:27:11.175(-10)?     _id: '7hoocsknRzMitChTK',
+I20231118-16:27:11.175(-10)?     name: 'Jefferson Hall',
+I20231118-16:27:11.175(-10)?     floor_count: 1,
+I20231118-16:27:11.175(-10)?     floor_id: []
+I20231118-16:27:11.176(-10)?   }
+I20231118-16:27:11.176(-10)? ]
+I20231118-16:27:11.176(-10)? new floors constructed:  [ 'BmDMSWtXrpZ2WzsvL' ]
+I20231118-16:27:11.179(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.179(-10)?   {
+I20231118-16:27:11.179(-10)?     _id: '7hoocsknRzMitChTK',
+I20231118-16:27:11.179(-10)?     name: 'Jefferson Hall',
+I20231118-16:27:11.180(-10)?     floor_count: 1,
+I20231118-16:27:11.180(-10)?     floor_id: [ 'BmDMSWtXrpZ2WzsvL' ]
+I20231118-16:27:11.180(-10)?   }
+I20231118-16:27:11.180(-10)? ]
+I20231118-16:27:11.180(-10)? { name: 'John A. Burns School of Medicine', floor_count: 1 }
+I20231118-16:27:11.181(-10)? passed check
+I20231118-16:27:11.181(-10)? initializeBuilding call successful.
+I20231118-16:27:11.182(-10)? constructed building base:  rvmHPqmj8FnTBzu67
+I20231118-16:27:11.187(-10)? new building base:  [
+I20231118-16:27:11.188(-10)?   {
+I20231118-16:27:11.188(-10)?     _id: 'rvmHPqmj8FnTBzu67',
+I20231118-16:27:11.188(-10)?     name: 'John A. Burns School of Medicine',
+I20231118-16:27:11.188(-10)?     floor_count: 1,
+I20231118-16:27:11.188(-10)?     floor_id: []
+I20231118-16:27:11.189(-10)?   }
+I20231118-16:27:11.189(-10)? ]
+I20231118-16:27:11.189(-10)? new floors constructed:  [ 'iAAFcHDWBreAv4m3Z' ]
+I20231118-16:27:11.192(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.193(-10)?   {
+I20231118-16:27:11.193(-10)?     _id: 'rvmHPqmj8FnTBzu67',
+I20231118-16:27:11.193(-10)?     name: 'John A. Burns School of Medicine',
+I20231118-16:27:11.193(-10)?     floor_count: 1,
+I20231118-16:27:11.193(-10)?     floor_id: [ 'iAAFcHDWBreAv4m3Z' ]
+I20231118-16:27:11.193(-10)?   }
+I20231118-16:27:11.194(-10)? ]
+I20231118-16:27:11.194(-10)? { name: 'Johnson Hall A', floor_count: 1 }
+I20231118-16:27:11.194(-10)? passed check
+I20231118-16:27:11.195(-10)? initializeBuilding call successful.
+I20231118-16:27:11.195(-10)? constructed building base:  Ff8pYRAGqgWTrWC3m
+I20231118-16:27:11.200(-10)? new building base:  [
+I20231118-16:27:11.200(-10)?   {
+I20231118-16:27:11.201(-10)?     _id: 'Ff8pYRAGqgWTrWC3m',
+I20231118-16:27:11.201(-10)?     name: 'Johnson Hall A',
+I20231118-16:27:11.201(-10)?     floor_count: 1,
+I20231118-16:27:11.201(-10)?     floor_id: []
+I20231118-16:27:11.201(-10)?   }
+I20231118-16:27:11.201(-10)? ]
+I20231118-16:27:11.203(-10)? new floors constructed:  [ 'qXNpkEhYKQrmdXvsg' ]
+I20231118-16:27:11.207(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.208(-10)?   {
+I20231118-16:27:11.208(-10)?     _id: 'Ff8pYRAGqgWTrWC3m',
+I20231118-16:27:11.209(-10)?     name: 'Johnson Hall A',
+I20231118-16:27:11.209(-10)?     floor_count: 1,
+I20231118-16:27:11.210(-10)?     floor_id: [ 'qXNpkEhYKQrmdXvsg' ]
+I20231118-16:27:11.210(-10)?   }
+I20231118-16:27:11.210(-10)? ]
+I20231118-16:27:11.211(-10)? { name: 'Johnson Hall B', floor_count: 1 }
+I20231118-16:27:11.211(-10)? passed check
+I20231118-16:27:11.212(-10)? initializeBuilding call successful.
+I20231118-16:27:11.214(-10)? constructed building base:  twRNh638yN5i2NfC7
+I20231118-16:27:11.223(-10)? new building base:  [
+I20231118-16:27:11.227(-10)?   {
+I20231118-16:27:11.227(-10)?     _id: 'twRNh638yN5i2NfC7',
+I20231118-16:27:11.228(-10)?     name: 'Johnson Hall B',
+I20231118-16:27:11.228(-10)?     floor_count: 1,
+I20231118-16:27:11.228(-10)?     floor_id: []
+I20231118-16:27:11.228(-10)?   }
+I20231118-16:27:11.228(-10)? ]
+I20231118-16:27:11.229(-10)? new floors constructed:  [ '7JssBgf2v7gAro5Lu' ]
+I20231118-16:27:11.229(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.229(-10)?   {
+I20231118-16:27:11.230(-10)?     _id: 'twRNh638yN5i2NfC7',
+I20231118-16:27:11.230(-10)?     name: 'Johnson Hall B',
+I20231118-16:27:11.230(-10)?     floor_count: 1,
+I20231118-16:27:11.230(-10)?     floor_id: [ '7JssBgf2v7gAro5Lu' ]
+I20231118-16:27:11.230(-10)?   }
+I20231118-16:27:11.230(-10)? ]
+I20231118-16:27:11.231(-10)? { name: 'Kahanamoku Pool', floor_count: 1 }
+I20231118-16:27:11.231(-10)? passed check
+I20231118-16:27:11.232(-10)? initializeBuilding call successful.
+I20231118-16:27:11.232(-10)? constructed building base:  P94xTHfQd4M8MCZbE
+I20231118-16:27:11.239(-10)? new building base:  [
+I20231118-16:27:11.239(-10)?   {
+I20231118-16:27:11.240(-10)?     _id: 'P94xTHfQd4M8MCZbE',
+I20231118-16:27:11.240(-10)?     name: 'Kahanamoku Pool',
+I20231118-16:27:11.240(-10)?     floor_count: 1,
+I20231118-16:27:11.240(-10)?     floor_id: []
+I20231118-16:27:11.240(-10)?   }
+I20231118-16:27:11.240(-10)? ]
+I20231118-16:27:11.241(-10)? new floors constructed:  [ 'HRJYgcnfSMoqcaRC6' ]
+I20231118-16:27:11.245(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.246(-10)?   {
+I20231118-16:27:11.246(-10)?     _id: 'P94xTHfQd4M8MCZbE',
+I20231118-16:27:11.246(-10)?     name: 'Kahanamoku Pool',
+I20231118-16:27:11.247(-10)?     floor_count: 1,
+I20231118-16:27:11.247(-10)?     floor_id: [ 'HRJYgcnfSMoqcaRC6' ]
+I20231118-16:27:11.247(-10)?   }
+I20231118-16:27:11.247(-10)? ]
+I20231118-16:27:11.248(-10)? { name: 'Kamakakūokalani Center for Hawaiian Studies', floor_count: 1 }
+I20231118-16:27:11.248(-10)? passed check
+I20231118-16:27:11.248(-10)? initializeBuilding call successful.
+I20231118-16:27:11.249(-10)? constructed building base:  dj9En8xvZ8fXjtiTh
+I20231118-16:27:11.255(-10)? new building base:  [
+I20231118-16:27:11.255(-10)?   {
+I20231118-16:27:11.256(-10)?     _id: 'dj9En8xvZ8fXjtiTh',
+I20231118-16:27:11.256(-10)?     name: 'Kamakakūokalani Center for Hawaiian Studies',
+I20231118-16:27:11.256(-10)?     floor_count: 1,
+I20231118-16:27:11.256(-10)?     floor_id: []
+I20231118-16:27:11.256(-10)?   }
+I20231118-16:27:11.256(-10)? ]
+I20231118-16:27:11.257(-10)? new floors constructed:  [ 'fz8k6PAw2W2L39hKm' ]
+I20231118-16:27:11.262(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.262(-10)?   {
+I20231118-16:27:11.263(-10)?     _id: 'dj9En8xvZ8fXjtiTh',
+I20231118-16:27:11.263(-10)?     name: 'Kamakakūokalani Center for Hawaiian Studies',
+I20231118-16:27:11.263(-10)?     floor_count: 1,
+I20231118-16:27:11.263(-10)?     floor_id: [ 'fz8k6PAw2W2L39hKm' ]
+I20231118-16:27:11.263(-10)?   }
+I20231118-16:27:11.264(-10)? ]
+I20231118-16:27:11.264(-10)? { name: 'Kauʻiokahaloa Iki Faculty Housing', floor_count: 1 }
+I20231118-16:27:11.264(-10)? passed check
+I20231118-16:27:11.265(-10)? initializeBuilding call successful.
+I20231118-16:27:11.265(-10)? constructed building base:  2EosAEKfFko33s66S
+I20231118-16:27:11.272(-10)? new building base:  [
+I20231118-16:27:11.272(-10)?   {
+I20231118-16:27:11.273(-10)?     _id: '2EosAEKfFko33s66S',
+I20231118-16:27:11.273(-10)?     name: 'Kauʻiokahaloa Iki Faculty Housing',
+I20231118-16:27:11.273(-10)?     floor_count: 1,
+I20231118-16:27:11.273(-10)?     floor_id: []
+I20231118-16:27:11.273(-10)?   }
+I20231118-16:27:11.273(-10)? ]
+I20231118-16:27:11.274(-10)? new floors constructed:  [ 'wqCBWd9jq7bdtBrWB' ]
+I20231118-16:27:11.278(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.278(-10)?   {
+I20231118-16:27:11.279(-10)?     _id: '2EosAEKfFko33s66S',
+I20231118-16:27:11.279(-10)?     name: 'Kauʻiokahaloa Iki Faculty Housing',
+I20231118-16:27:11.279(-10)?     floor_count: 1,
+I20231118-16:27:11.279(-10)?     floor_id: [ 'wqCBWd9jq7bdtBrWB' ]
+I20231118-16:27:11.279(-10)?   }
+I20231118-16:27:11.279(-10)? ]
+I20231118-16:27:11.280(-10)? { name: 'Kauʻiokahaloa Nui Faculty Housing', floor_count: 1 }
+I20231118-16:27:11.280(-10)? passed check
+I20231118-16:27:11.280(-10)? initializeBuilding call successful.
+I20231118-16:27:11.281(-10)? constructed building base:  XpFgBHXMJ58XGiN28
+I20231118-16:27:11.289(-10)? new building base:  [
+I20231118-16:27:11.290(-10)?   {
+I20231118-16:27:11.290(-10)?     _id: 'XpFgBHXMJ58XGiN28',
+I20231118-16:27:11.290(-10)?     name: 'Kauʻiokahaloa Nui Faculty Housing',
+I20231118-16:27:11.290(-10)?     floor_count: 1,
+I20231118-16:27:11.291(-10)?     floor_id: []
+I20231118-16:27:11.291(-10)?   }
+I20231118-16:27:11.291(-10)? ]
+I20231118-16:27:11.291(-10)? new floors constructed:  [ 'PGrjYDJZLD3W4Dczg' ]
+I20231118-16:27:11.296(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.296(-10)?   {
+I20231118-16:27:11.296(-10)?     _id: 'XpFgBHXMJ58XGiN28',
+I20231118-16:27:11.296(-10)?     name: 'Kauʻiokahaloa Nui Faculty Housing',
+I20231118-16:27:11.296(-10)?     floor_count: 1,
+I20231118-16:27:11.297(-10)?     floor_id: [ 'PGrjYDJZLD3W4Dczg' ]
+I20231118-16:27:11.297(-10)?   }
+I20231118-16:27:11.297(-10)? ]
+I20231118-16:27:11.297(-10)? { name: 'Keller Hall', floor_count: 1 }
+I20231118-16:27:11.298(-10)? passed check
+I20231118-16:27:11.298(-10)? initializeBuilding call successful.
+I20231118-16:27:11.298(-10)? constructed building base:  masJ4nyQWMDCQDM2a
+I20231118-16:27:11.305(-10)? new building base:  [
+I20231118-16:27:11.306(-10)?   {
+I20231118-16:27:11.306(-10)?     _id: 'masJ4nyQWMDCQDM2a',
+I20231118-16:27:11.306(-10)?     name: 'Keller Hall',
+I20231118-16:27:11.306(-10)?     floor_count: 1,
+I20231118-16:27:11.306(-10)?     floor_id: []
+I20231118-16:27:11.307(-10)?   }
+I20231118-16:27:11.309(-10)? ]
+I20231118-16:27:11.310(-10)? new floors constructed:  [ 'Bo9GAM6EFC39F8Fnk' ]
+I20231118-16:27:11.311(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.311(-10)?   {
+I20231118-16:27:11.312(-10)?     _id: 'masJ4nyQWMDCQDM2a',
+I20231118-16:27:11.312(-10)?     name: 'Keller Hall',
+I20231118-16:27:11.312(-10)?     floor_count: 1,
+I20231118-16:27:11.312(-10)?     floor_id: [ 'Bo9GAM6EFC39F8Fnk' ]
+I20231118-16:27:11.312(-10)?   }
+I20231118-16:27:11.312(-10)? ]
+I20231118-16:27:11.313(-10)? { name: 'Kennedy Theatre', floor_count: 1 }
+I20231118-16:27:11.314(-10)? passed check
+I20231118-16:27:11.314(-10)? initializeBuilding call successful.
+I20231118-16:27:11.314(-10)? constructed building base:  XMSscQYWoJwemnCpC
+I20231118-16:27:11.321(-10)? new building base:  [
+I20231118-16:27:11.321(-10)?   {
+I20231118-16:27:11.322(-10)?     _id: 'XMSscQYWoJwemnCpC',
+I20231118-16:27:11.322(-10)?     name: 'Kennedy Theatre',
+I20231118-16:27:11.322(-10)?     floor_count: 1,
+I20231118-16:27:11.322(-10)?     floor_id: []
+I20231118-16:27:11.322(-10)?   }
+I20231118-16:27:11.323(-10)? ]
+I20231118-16:27:11.323(-10)? new floors constructed:  [ 'xqhvWA69cET8jv727' ]
+I20231118-16:27:11.327(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.328(-10)?   {
+I20231118-16:27:11.328(-10)?     _id: 'XMSscQYWoJwemnCpC',
+I20231118-16:27:11.328(-10)?     name: 'Kennedy Theatre',
+I20231118-16:27:11.328(-10)?     floor_count: 1,
+I20231118-16:27:11.328(-10)?     floor_id: [ 'xqhvWA69cET8jv727' ]
+I20231118-16:27:11.329(-10)?   }
+I20231118-16:27:11.329(-10)? ]
+I20231118-16:27:11.329(-10)? { name: 'KHET TV', floor_count: 1 }
+I20231118-16:27:11.330(-10)? passed check
+I20231118-16:27:11.332(-10)? initializeBuilding call successful.
+I20231118-16:27:11.332(-10)? constructed building base:  gp3jeAjAPAHGsN6tc
+I20231118-16:27:11.337(-10)? new building base:  [
+I20231118-16:27:11.342(-10)?   {
+I20231118-16:27:11.342(-10)?     _id: 'gp3jeAjAPAHGsN6tc',
+I20231118-16:27:11.342(-10)?     name: 'KHET TV',
+I20231118-16:27:11.343(-10)?     floor_count: 1,
+I20231118-16:27:11.343(-10)?     floor_id: []
+I20231118-16:27:11.343(-10)?   }
+I20231118-16:27:11.343(-10)? ]
+I20231118-16:27:11.344(-10)? new floors constructed:  [ 'gTzDXGwaFAs9pb4Jc' ]
+I20231118-16:27:11.344(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.344(-10)?   {
+I20231118-16:27:11.344(-10)?     _id: 'gp3jeAjAPAHGsN6tc',
+I20231118-16:27:11.344(-10)?     name: 'KHET TV',
+I20231118-16:27:11.345(-10)?     floor_count: 1,
+I20231118-16:27:11.345(-10)?     floor_id: [ 'gTzDXGwaFAs9pb4Jc' ]
+I20231118-16:27:11.345(-10)?   }
+I20231118-16:27:11.345(-10)? ]
+I20231118-16:27:11.346(-10)? { name: 'Klum Gym', floor_count: 1 }
+I20231118-16:27:11.347(-10)? passed check
+I20231118-16:27:11.347(-10)? initializeBuilding call successful.
+I20231118-16:27:11.347(-10)? constructed building base:  stSfwSn4Q59s27iQt
+I20231118-16:27:11.356(-10)? new building base:  [
+I20231118-16:27:11.357(-10)?   {
+I20231118-16:27:11.357(-10)?     _id: 'stSfwSn4Q59s27iQt',
+I20231118-16:27:11.357(-10)?     name: 'Klum Gym',
+I20231118-16:27:11.357(-10)?     floor_count: 1,
+I20231118-16:27:11.357(-10)?     floor_id: []
+I20231118-16:27:11.357(-10)?   }
+I20231118-16:27:11.358(-10)? ]
+I20231118-16:27:11.358(-10)? new floors constructed:  [ 'rZwWin8ChXh6Cw3xd' ]
+I20231118-16:27:11.364(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.365(-10)?   {
+I20231118-16:27:11.365(-10)?     _id: 'stSfwSn4Q59s27iQt',
+I20231118-16:27:11.365(-10)?     name: 'Klum Gym',
+I20231118-16:27:11.365(-10)?     floor_count: 1,
+I20231118-16:27:11.365(-10)?     floor_id: [ 'rZwWin8ChXh6Cw3xd' ]
+I20231118-16:27:11.365(-10)?   }
+I20231118-16:27:11.366(-10)? ]
+I20231118-16:27:11.369(-10)? { name: 'Krauss Annex 19', floor_count: 1 }
+I20231118-16:27:11.370(-10)? passed check
+I20231118-16:27:11.370(-10)? initializeBuilding call successful.
+I20231118-16:27:11.370(-10)? constructed building base:  TYwz7u34LDQtQszHJ
+I20231118-16:27:11.374(-10)? new building base:  [
+I20231118-16:27:11.375(-10)?   {
+I20231118-16:27:11.375(-10)?     _id: 'TYwz7u34LDQtQszHJ',
+I20231118-16:27:11.375(-10)?     name: 'Krauss Annex 19',
+I20231118-16:27:11.375(-10)?     floor_count: 1,
+I20231118-16:27:11.375(-10)?     floor_id: []
+I20231118-16:27:11.376(-10)?   }
+I20231118-16:27:11.376(-10)? ]
+I20231118-16:27:11.376(-10)? new floors constructed:  [ 'Hom9urL68RG7yThp9' ]
+I20231118-16:27:11.381(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.381(-10)?   {
+I20231118-16:27:11.382(-10)?     _id: 'TYwz7u34LDQtQszHJ',
+I20231118-16:27:11.382(-10)?     name: 'Krauss Annex 19',
+I20231118-16:27:11.382(-10)?     floor_count: 1,
+I20231118-16:27:11.382(-10)?     floor_id: [ 'Hom9urL68RG7yThp9' ]
+I20231118-16:27:11.382(-10)?   }
+I20231118-16:27:11.383(-10)? ]
+I20231118-16:27:11.383(-10)? { name: 'Krauss Annex U', floor_count: 1 }
+I20231118-16:27:11.384(-10)? passed check
+I20231118-16:27:11.384(-10)? initializeBuilding call successful.
+I20231118-16:27:11.384(-10)? constructed building base:  9cxip5SGBfMkc3cvk
+I20231118-16:27:11.391(-10)? new building base:  [
+I20231118-16:27:11.392(-10)?   {
+I20231118-16:27:11.392(-10)?     _id: '9cxip5SGBfMkc3cvk',
+I20231118-16:27:11.392(-10)?     name: 'Krauss Annex U',
+I20231118-16:27:11.393(-10)?     floor_count: 1,
+I20231118-16:27:11.393(-10)?     floor_id: []
+I20231118-16:27:11.393(-10)?   }
+I20231118-16:27:11.393(-10)? ]
+I20231118-16:27:11.393(-10)? new floors constructed:  [ 'GLqjHN458zQpj2rJj' ]
+I20231118-16:27:11.398(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.398(-10)?   {
+I20231118-16:27:11.398(-10)?     _id: '9cxip5SGBfMkc3cvk',
+I20231118-16:27:11.399(-10)?     name: 'Krauss Annex U',
+I20231118-16:27:11.399(-10)?     floor_count: 1,
+I20231118-16:27:11.399(-10)?     floor_id: [ 'GLqjHN458zQpj2rJj' ]
+I20231118-16:27:11.399(-10)?   }
+I20231118-16:27:11.399(-10)? ]
+I20231118-16:27:11.399(-10)? { name: 'Krauss Hall', floor_count: 1 }
+I20231118-16:27:11.400(-10)? passed check
+I20231118-16:27:11.400(-10)? initializeBuilding call successful.
+I20231118-16:27:11.401(-10)? constructed building base:  J6tv8N5q7B7qarnkh
+I20231118-16:27:11.408(-10)? new building base:  [
+I20231118-16:27:11.408(-10)?   {
+I20231118-16:27:11.409(-10)?     _id: 'J6tv8N5q7B7qarnkh',
+I20231118-16:27:11.409(-10)?     name: 'Krauss Hall',
+I20231118-16:27:11.409(-10)?     floor_count: 1,
+I20231118-16:27:11.409(-10)?     floor_id: []
+I20231118-16:27:11.409(-10)?   }
+I20231118-16:27:11.410(-10)? ]
+I20231118-16:27:11.410(-10)? new floors constructed:  [ '4dErr5jo46mt97P8j' ]
+I20231118-16:27:11.415(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.416(-10)?   {
+I20231118-16:27:11.416(-10)?     _id: 'J6tv8N5q7B7qarnkh',
+I20231118-16:27:11.416(-10)?     name: 'Krauss Hall',
+I20231118-16:27:11.416(-10)?     floor_count: 1,
+I20231118-16:27:11.417(-10)?     floor_id: [ '4dErr5jo46mt97P8j' ]
+I20231118-16:27:11.417(-10)?   }
+I20231118-16:27:11.417(-10)? ]
+I20231118-16:27:11.417(-10)? { name: 'Kuykendall Annex', floor_count: 1 }
+I20231118-16:27:11.418(-10)? passed check
+I20231118-16:27:11.418(-10)? initializeBuilding call successful.
+I20231118-16:27:11.419(-10)? constructed building base:  LM3Fhugy5No8HBGfe
+I20231118-16:27:11.426(-10)? new building base:  [
+I20231118-16:27:11.426(-10)?   {
+I20231118-16:27:11.426(-10)?     _id: 'LM3Fhugy5No8HBGfe',
+I20231118-16:27:11.427(-10)?     name: 'Kuykendall Annex',
+I20231118-16:27:11.427(-10)?     floor_count: 1,
+I20231118-16:27:11.427(-10)?     floor_id: []
+I20231118-16:27:11.427(-10)?   }
+I20231118-16:27:11.427(-10)? ]
+I20231118-16:27:11.428(-10)? new floors constructed:  [ 'vPynsuF2a8e26sH6z' ]
+I20231118-16:27:11.436(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.437(-10)?   {
+I20231118-16:27:11.437(-10)?     _id: 'LM3Fhugy5No8HBGfe',
+I20231118-16:27:11.437(-10)?     name: 'Kuykendall Annex',
+I20231118-16:27:11.437(-10)?     floor_count: 1,
+I20231118-16:27:11.437(-10)?     floor_id: [ 'vPynsuF2a8e26sH6z' ]
+I20231118-16:27:11.438(-10)?   }
+I20231118-16:27:11.438(-10)? ]
+I20231118-16:27:11.438(-10)? { name: 'Kuykendall Hall', floor_count: 1 }
+I20231118-16:27:11.438(-10)? passed check
+I20231118-16:27:11.439(-10)? initializeBuilding call successful.
+I20231118-16:27:11.440(-10)? constructed building base:  SvgvExsKhk36idhiD
+I20231118-16:27:11.446(-10)? new building base:  [
+I20231118-16:27:11.447(-10)?   {
+I20231118-16:27:11.447(-10)?     _id: 'SvgvExsKhk36idhiD',
+I20231118-16:27:11.447(-10)?     name: 'Kuykendall Hall',
+I20231118-16:27:11.447(-10)?     floor_count: 1,
+I20231118-16:27:11.448(-10)?     floor_id: []
+I20231118-16:27:11.448(-10)?   }
+I20231118-16:27:11.448(-10)? ]
+I20231118-16:27:11.449(-10)? new floors constructed:  [ 'NcMGQNAp2Pzx6LhnM' ]
+I20231118-16:27:11.452(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.453(-10)?   {
+I20231118-16:27:11.453(-10)?     _id: 'SvgvExsKhk36idhiD',
+I20231118-16:27:11.453(-10)?     name: 'Kuykendall Hall',
+I20231118-16:27:11.453(-10)?     floor_count: 1,
+I20231118-16:27:11.454(-10)?     floor_id: [ 'NcMGQNAp2Pzx6LhnM' ]
+I20231118-16:27:11.454(-10)?   }
+I20231118-16:27:11.454(-10)? ]
+I20231118-16:27:11.454(-10)? { name: 'Lab School Portables 1–4', floor_count: 1 }
+I20231118-16:27:11.456(-10)? passed check
+I20231118-16:27:11.457(-10)? initializeBuilding call successful.
+I20231118-16:27:11.457(-10)? constructed building base:  RE9JJ66HwnJDYooeS
+I20231118-16:27:11.465(-10)? new building base:  [
+I20231118-16:27:11.465(-10)?   {
+I20231118-16:27:11.465(-10)?     _id: 'RE9JJ66HwnJDYooeS',
+I20231118-16:27:11.465(-10)?     name: 'Lab School Portables 1–4',
+I20231118-16:27:11.465(-10)?     floor_count: 1,
+I20231118-16:27:11.466(-10)?     floor_id: []
+I20231118-16:27:11.466(-10)?   }
+I20231118-16:27:11.466(-10)? ]
+I20231118-16:27:11.466(-10)? new floors constructed:  [ 'YxHjJKCGNMDv4aFb4' ]
+I20231118-16:27:11.470(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.471(-10)?   {
+I20231118-16:27:11.471(-10)?     _id: 'RE9JJ66HwnJDYooeS',
+I20231118-16:27:11.471(-10)?     name: 'Lab School Portables 1–4',
+I20231118-16:27:11.471(-10)?     floor_count: 1,
+I20231118-16:27:11.471(-10)?     floor_id: [ 'YxHjJKCGNMDv4aFb4' ]
+I20231118-16:27:11.471(-10)?   }
+I20231118-16:27:11.472(-10)? ]
+I20231118-16:27:11.474(-10)? { name: 'Landscaping', floor_count: 1 }
+I20231118-16:27:11.475(-10)? passed check
+I20231118-16:27:11.475(-10)? initializeBuilding call successful.
+I20231118-16:27:11.475(-10)? constructed building base:  npjfevNnsw42Q5Mep
+I20231118-16:27:11.478(-10)? new building base:  [
+I20231118-16:27:11.478(-10)?   {
+I20231118-16:27:11.478(-10)?     _id: 'npjfevNnsw42Q5Mep',
+I20231118-16:27:11.478(-10)?     name: 'Landscaping',
+I20231118-16:27:11.478(-10)?     floor_count: 1,
+I20231118-16:27:11.479(-10)?     floor_id: []
+I20231118-16:27:11.479(-10)?   }
+I20231118-16:27:11.479(-10)? ]
+I20231118-16:27:11.479(-10)? new floors constructed:  [ 'gewcpm3G4mv2hiQBF' ]
+I20231118-16:27:11.482(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.483(-10)?   {
+I20231118-16:27:11.483(-10)?     _id: 'npjfevNnsw42Q5Mep',
+I20231118-16:27:11.483(-10)?     name: 'Landscaping',
+I20231118-16:27:11.483(-10)?     floor_count: 1,
+I20231118-16:27:11.483(-10)?     floor_id: [ 'gewcpm3G4mv2hiQBF' ]
+I20231118-16:27:11.483(-10)?   }
+I20231118-16:27:11.483(-10)? ]
+I20231118-16:27:11.484(-10)? { name: 'Law Library', floor_count: 1 }
+I20231118-16:27:11.484(-10)? passed check
+I20231118-16:27:11.484(-10)? initializeBuilding call successful.
+I20231118-16:27:11.485(-10)? constructed building base:  CmoSTb55nCTeoQhh4
+I20231118-16:27:11.490(-10)? new building base:  [
+I20231118-16:27:11.490(-10)?   {
+I20231118-16:27:11.490(-10)?     _id: 'CmoSTb55nCTeoQhh4',
+I20231118-16:27:11.491(-10)?     name: 'Law Library',
+I20231118-16:27:11.491(-10)?     floor_count: 1,
+I20231118-16:27:11.491(-10)?     floor_id: []
+I20231118-16:27:11.491(-10)?   }
+I20231118-16:27:11.491(-10)? ]
+I20231118-16:27:11.491(-10)? new floors constructed:  [ 'cpiqTFWa2XwHzRLp5' ]
+I20231118-16:27:11.494(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.495(-10)?   {
+I20231118-16:27:11.495(-10)?     _id: 'CmoSTb55nCTeoQhh4',
+I20231118-16:27:11.495(-10)?     name: 'Law Library',
+I20231118-16:27:11.495(-10)?     floor_count: 1,
+I20231118-16:27:11.495(-10)?     floor_id: [ 'cpiqTFWa2XwHzRLp5' ]
+I20231118-16:27:11.495(-10)?   }
+I20231118-16:27:11.495(-10)? ]
+I20231118-16:27:11.496(-10)? { name: 'Law School', floor_count: 1 }
+I20231118-16:27:11.496(-10)? passed check
+I20231118-16:27:11.496(-10)? initializeBuilding call successful.
+I20231118-16:27:11.496(-10)? constructed building base:  qfaKsgArLmGtvg7rS
+I20231118-16:27:11.501(-10)? new building base:  [
+I20231118-16:27:11.501(-10)?   {
+I20231118-16:27:11.501(-10)?     _id: 'qfaKsgArLmGtvg7rS',
+I20231118-16:27:11.501(-10)?     name: 'Law School',
+I20231118-16:27:11.501(-10)?     floor_count: 1,
+I20231118-16:27:11.501(-10)?     floor_id: []
+I20231118-16:27:11.501(-10)?   }
+I20231118-16:27:11.502(-10)? ]
+I20231118-16:27:11.502(-10)? new floors constructed:  [ 'jaeNoWrQQZq34yBuf' ]
+I20231118-16:27:11.505(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.506(-10)?   {
+I20231118-16:27:11.506(-10)?     _id: 'qfaKsgArLmGtvg7rS',
+I20231118-16:27:11.506(-10)?     name: 'Law School',
+I20231118-16:27:11.506(-10)?     floor_count: 1,
+I20231118-16:27:11.506(-10)?     floor_id: [ 'jaeNoWrQQZq34yBuf' ]
+I20231118-16:27:11.506(-10)?   }
+I20231118-16:27:11.506(-10)? ]
+I20231118-16:27:11.506(-10)? { name: 'Lincoln Hall', floor_count: 1 }
+I20231118-16:27:11.506(-10)? passed check
+I20231118-16:27:11.507(-10)? initializeBuilding call successful.
+I20231118-16:27:11.507(-10)? constructed building base:  FcBQXYJPGCs9FRhwu
+I20231118-16:27:11.511(-10)? new building base:  [
+I20231118-16:27:11.511(-10)?   {
+I20231118-16:27:11.511(-10)?     _id: 'FcBQXYJPGCs9FRhwu',
+I20231118-16:27:11.511(-10)?     name: 'Lincoln Hall',
+I20231118-16:27:11.511(-10)?     floor_count: 1,
+I20231118-16:27:11.512(-10)?     floor_id: []
+I20231118-16:27:11.512(-10)?   }
+I20231118-16:27:11.512(-10)? ]
+I20231118-16:27:11.512(-10)? new floors constructed:  [ 'DJBDiTHiJXfu486jg' ]
+I20231118-16:27:11.514(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.515(-10)?   {
+I20231118-16:27:11.515(-10)?     _id: 'FcBQXYJPGCs9FRhwu',
+I20231118-16:27:11.515(-10)?     name: 'Lincoln Hall',
+I20231118-16:27:11.515(-10)?     floor_count: 1,
+I20231118-16:27:11.515(-10)?     floor_id: [ 'DJBDiTHiJXfu486jg' ]
+I20231118-16:27:11.515(-10)?   }
+I20231118-16:27:11.515(-10)? ]
+I20231118-16:27:11.516(-10)? { name: 'Lincoln Hall Annex', floor_count: 1 }
+I20231118-16:27:11.516(-10)? passed check
+I20231118-16:27:11.516(-10)? initializeBuilding call successful.
+I20231118-16:27:11.516(-10)? constructed building base:  uB3MYD34i3rXFqoLf
+I20231118-16:27:11.520(-10)? new building base:  [
+I20231118-16:27:11.520(-10)?   {
+I20231118-16:27:11.520(-10)?     _id: 'uB3MYD34i3rXFqoLf',
+I20231118-16:27:11.520(-10)?     name: 'Lincoln Hall Annex',
+I20231118-16:27:11.520(-10)?     floor_count: 1,
+I20231118-16:27:11.521(-10)?     floor_id: []
+I20231118-16:27:11.521(-10)?   }
+I20231118-16:27:11.521(-10)? ]
+I20231118-16:27:11.521(-10)? new floors constructed:  [ 'x9Ghb7thrSWKFo9pK' ]
+I20231118-16:27:11.523(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.524(-10)?   {
+I20231118-16:27:11.524(-10)?     _id: 'uB3MYD34i3rXFqoLf',
+I20231118-16:27:11.524(-10)?     name: 'Lincoln Hall Annex',
+I20231118-16:27:11.524(-10)?     floor_count: 1,
+I20231118-16:27:11.524(-10)?     floor_id: [ 'x9Ghb7thrSWKFo9pK' ]
+I20231118-16:27:11.524(-10)?   }
+I20231118-16:27:11.524(-10)? ]
+I20231118-16:27:11.524(-10)? { name: 'Magoon Facility', floor_count: 1 }
+I20231118-16:27:11.525(-10)? passed check
+I20231118-16:27:11.525(-10)? initializeBuilding call successful.
+I20231118-16:27:11.525(-10)? constructed building base:  K2AziNtxTsKveYxgE
+I20231118-16:27:11.529(-10)? new building base:  [
+I20231118-16:27:11.529(-10)?   {
+I20231118-16:27:11.529(-10)?     _id: 'K2AziNtxTsKveYxgE',
+I20231118-16:27:11.529(-10)?     name: 'Magoon Facility',
+I20231118-16:27:11.529(-10)?     floor_count: 1,
+I20231118-16:27:11.529(-10)?     floor_id: []
+I20231118-16:27:11.530(-10)?   }
+I20231118-16:27:11.530(-10)? ]
+I20231118-16:27:11.530(-10)? new floors constructed:  [ '6vgSpQieqTyC2ykn2' ]
+I20231118-16:27:11.533(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.533(-10)?   {
+I20231118-16:27:11.533(-10)?     _id: 'K2AziNtxTsKveYxgE',
+I20231118-16:27:11.533(-10)?     name: 'Magoon Facility',
+I20231118-16:27:11.533(-10)?     floor_count: 1,
+I20231118-16:27:11.533(-10)?     floor_id: [ '6vgSpQieqTyC2ykn2' ]
+I20231118-16:27:11.533(-10)?   }
+I20231118-16:27:11.533(-10)? ]
+I20231118-16:27:11.534(-10)? { name: 'Maile Way Annex', floor_count: 1 }
+I20231118-16:27:11.534(-10)? passed check
+I20231118-16:27:11.534(-10)? initializeBuilding call successful.
+I20231118-16:27:11.534(-10)? constructed building base:  StsRk3i2hFB8f466c
+I20231118-16:27:11.538(-10)? new building base:  [
+I20231118-16:27:11.538(-10)?   {
+I20231118-16:27:11.538(-10)?     _id: 'StsRk3i2hFB8f466c',
+I20231118-16:27:11.538(-10)?     name: 'Maile Way Annex',
+I20231118-16:27:11.538(-10)?     floor_count: 1,
+I20231118-16:27:11.538(-10)?     floor_id: []
+I20231118-16:27:11.538(-10)?   }
+I20231118-16:27:11.539(-10)? ]
+I20231118-16:27:11.539(-10)? new floors constructed:  [ 'DwAWGLtyFSsatw8pC' ]
+I20231118-16:27:11.542(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.542(-10)?   {
+I20231118-16:27:11.542(-10)?     _id: 'StsRk3i2hFB8f466c',
+I20231118-16:27:11.542(-10)?     name: 'Maile Way Annex',
+I20231118-16:27:11.542(-10)?     floor_count: 1,
+I20231118-16:27:11.542(-10)?     floor_id: [ 'DwAWGLtyFSsatw8pC' ]
+I20231118-16:27:11.542(-10)?   }
+I20231118-16:27:11.543(-10)? ]
+I20231118-16:27:11.543(-10)? { name: 'Marine Sciences Building', floor_count: 1 }
+I20231118-16:27:11.543(-10)? passed check
+I20231118-16:27:11.543(-10)? initializeBuilding call successful.
+I20231118-16:27:11.543(-10)? constructed building base:  tBoNYwkyGcyibRAfC
+I20231118-16:27:11.546(-10)? new building base:  [
+I20231118-16:27:11.547(-10)?   {
+I20231118-16:27:11.547(-10)?     _id: 'tBoNYwkyGcyibRAfC',
+I20231118-16:27:11.547(-10)?     name: 'Marine Sciences Building',
+I20231118-16:27:11.547(-10)?     floor_count: 1,
+I20231118-16:27:11.547(-10)?     floor_id: []
+I20231118-16:27:11.547(-10)?   }
+I20231118-16:27:11.547(-10)? ]
+I20231118-16:27:11.547(-10)? new floors constructed:  [ 'aEzBcAvabY5gKuDeY' ]
+I20231118-16:27:11.552(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.552(-10)?   {
+I20231118-16:27:11.552(-10)?     _id: 'tBoNYwkyGcyibRAfC',
+I20231118-16:27:11.552(-10)?     name: 'Marine Sciences Building',
+I20231118-16:27:11.552(-10)?     floor_count: 1,
+I20231118-16:27:11.553(-10)?     floor_id: [ 'aEzBcAvabY5gKuDeY' ]
+I20231118-16:27:11.553(-10)?   }
+I20231118-16:27:11.553(-10)? ]
+I20231118-16:27:11.553(-10)? { name: 'Miller Hall', floor_count: 1 }
+I20231118-16:27:11.553(-10)? passed check
+I20231118-16:27:11.553(-10)? initializeBuilding call successful.
+I20231118-16:27:11.554(-10)? constructed building base:  NNZEQhxSmPhrEMnn5
+I20231118-16:27:11.560(-10)? new building base:  [
+I20231118-16:27:11.560(-10)?   {
+I20231118-16:27:11.560(-10)?     _id: 'NNZEQhxSmPhrEMnn5',
+I20231118-16:27:11.560(-10)?     name: 'Miller Hall',
+I20231118-16:27:11.561(-10)?     floor_count: 1,
+I20231118-16:27:11.561(-10)?     floor_id: []
+I20231118-16:27:11.561(-10)?   }
+I20231118-16:27:11.561(-10)? ]
+I20231118-16:27:11.561(-10)? new floors constructed:  [ 'gfKrrxiajaGaycJeB' ]
+I20231118-16:27:11.563(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.564(-10)?   {
+I20231118-16:27:11.564(-10)?     _id: 'NNZEQhxSmPhrEMnn5',
+I20231118-16:27:11.564(-10)?     name: 'Miller Hall',
+I20231118-16:27:11.564(-10)?     floor_count: 1,
+I20231118-16:27:11.564(-10)?     floor_id: [ 'gfKrrxiajaGaycJeB' ]
+I20231118-16:27:11.564(-10)?   }
+I20231118-16:27:11.564(-10)? ]
+I20231118-16:27:11.565(-10)? { name: 'Miller Hall Annex', floor_count: 1 }
+I20231118-16:27:11.565(-10)? passed check
+I20231118-16:27:11.565(-10)? initializeBuilding call successful.
+I20231118-16:27:11.565(-10)? constructed building base:  FTF6yF2Jp7CugqL48
+I20231118-16:27:11.570(-10)? new building base:  [
+I20231118-16:27:11.570(-10)?   {
+I20231118-16:27:11.570(-10)?     _id: 'FTF6yF2Jp7CugqL48',
+I20231118-16:27:11.570(-10)?     name: 'Miller Hall Annex',
+I20231118-16:27:11.570(-10)?     floor_count: 1,
+I20231118-16:27:11.570(-10)?     floor_id: []
+I20231118-16:27:11.570(-10)?   }
+I20231118-16:27:11.571(-10)? ]
+I20231118-16:27:11.571(-10)? new floors constructed:  [ 'hkPvL5dnKKFmoCAQS' ]
+I20231118-16:27:11.573(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.573(-10)?   {
+I20231118-16:27:11.574(-10)?     _id: 'FTF6yF2Jp7CugqL48',
+I20231118-16:27:11.574(-10)?     name: 'Miller Hall Annex',
+I20231118-16:27:11.574(-10)?     floor_count: 1,
+I20231118-16:27:11.574(-10)?     floor_id: [ 'hkPvL5dnKKFmoCAQS' ]
+I20231118-16:27:11.574(-10)?   }
+I20231118-16:27:11.574(-10)? ]
+I20231118-16:27:11.574(-10)? { name: 'Moore Hall', floor_count: 1 }
+I20231118-16:27:11.574(-10)? passed check
+I20231118-16:27:11.575(-10)? initializeBuilding call successful.
+I20231118-16:27:11.575(-10)? constructed building base:  z5Fn8ssRLriwze87Q
+I20231118-16:27:11.580(-10)? new building base:  [
+I20231118-16:27:11.580(-10)?   {
+I20231118-16:27:11.580(-10)?     _id: 'z5Fn8ssRLriwze87Q',
+I20231118-16:27:11.580(-10)?     name: 'Moore Hall',
+I20231118-16:27:11.580(-10)?     floor_count: 1,
+I20231118-16:27:11.581(-10)?     floor_id: []
+I20231118-16:27:11.581(-10)?   }
+I20231118-16:27:11.581(-10)? ]
+I20231118-16:27:11.581(-10)? new floors constructed:  [ 'ymhQA585wqchoFgMa' ]
+I20231118-16:27:11.584(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.584(-10)?   {
+I20231118-16:27:11.584(-10)?     _id: 'z5Fn8ssRLriwze87Q',
+I20231118-16:27:11.584(-10)?     name: 'Moore Hall',
+I20231118-16:27:11.584(-10)?     floor_count: 1,
+I20231118-16:27:11.584(-10)?     floor_id: [ 'ymhQA585wqchoFgMa' ]
+I20231118-16:27:11.584(-10)?   }
+I20231118-16:27:11.585(-10)? ]
+I20231118-16:27:11.585(-10)? { name: 'Multipurpose Building', floor_count: 1 }
+I20231118-16:27:11.585(-10)? passed check
+I20231118-16:27:11.585(-10)? initializeBuilding call successful.
+I20231118-16:27:11.586(-10)? constructed building base:  qMzDCaGF9AYaxDWFH
+I20231118-16:27:11.590(-10)? new building base:  [
+I20231118-16:27:11.590(-10)?   {
+I20231118-16:27:11.590(-10)?     _id: 'qMzDCaGF9AYaxDWFH',
+I20231118-16:27:11.590(-10)?     name: 'Multipurpose Building',
+I20231118-16:27:11.590(-10)?     floor_count: 1,
+I20231118-16:27:11.590(-10)?     floor_id: []
+I20231118-16:27:11.590(-10)?   }
+I20231118-16:27:11.591(-10)? ]
+I20231118-16:27:11.591(-10)? new floors constructed:  [ '3MTwZMHpMRFfFgYJs' ]
+I20231118-16:27:11.593(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.594(-10)?   {
+I20231118-16:27:11.594(-10)?     _id: 'qMzDCaGF9AYaxDWFH',
+I20231118-16:27:11.594(-10)?     name: 'Multipurpose Building',
+I20231118-16:27:11.595(-10)?     floor_count: 1,
+I20231118-16:27:11.595(-10)?     floor_id: [ '3MTwZMHpMRFfFgYJs' ]
+I20231118-16:27:11.595(-10)?   }
+I20231118-16:27:11.595(-10)? ]
+I20231118-16:27:11.595(-10)? { name: 'Murakami Stadium', floor_count: 1 }
+I20231118-16:27:11.595(-10)? passed check
+I20231118-16:27:11.595(-10)? initializeBuilding call successful.
+I20231118-16:27:11.596(-10)? constructed building base:  sHqygAPDAES6DxaSa
+I20231118-16:27:11.598(-10)? new building base:  [
+I20231118-16:27:11.599(-10)?   {
+I20231118-16:27:11.599(-10)?     _id: 'sHqygAPDAES6DxaSa',
+I20231118-16:27:11.599(-10)?     name: 'Murakami Stadium',
+I20231118-16:27:11.599(-10)?     floor_count: 1,
+I20231118-16:27:11.599(-10)?     floor_id: []
+I20231118-16:27:11.599(-10)?   }
+I20231118-16:27:11.599(-10)? ]
+I20231118-16:27:11.599(-10)? new floors constructed:  [ 'xX72pJrus9RN3DdZc' ]
+I20231118-16:27:11.602(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.602(-10)?   {
+I20231118-16:27:11.603(-10)?     _id: 'sHqygAPDAES6DxaSa',
+I20231118-16:27:11.603(-10)?     name: 'Murakami Stadium',
+I20231118-16:27:11.603(-10)?     floor_count: 1,
+I20231118-16:27:11.603(-10)?     floor_id: [ 'xX72pJrus9RN3DdZc' ]
+I20231118-16:27:11.603(-10)?   }
+I20231118-16:27:11.603(-10)? ]
+I20231118-16:27:11.603(-10)? { name: 'Music Building Complex', floor_count: 1 }
+I20231118-16:27:11.604(-10)? passed check
+I20231118-16:27:11.604(-10)? initializeBuilding call successful.
+I20231118-16:27:11.604(-10)? constructed building base:  WPfbXwctuBX95JJM7
+I20231118-16:27:11.608(-10)? new building base:  [
+I20231118-16:27:11.609(-10)?   {
+I20231118-16:27:11.609(-10)?     _id: 'WPfbXwctuBX95JJM7',
+I20231118-16:27:11.609(-10)?     name: 'Music Building Complex',
+I20231118-16:27:11.609(-10)?     floor_count: 1,
+I20231118-16:27:11.609(-10)?     floor_id: []
+I20231118-16:27:11.609(-10)?   }
+I20231118-16:27:11.609(-10)? ]
+I20231118-16:27:11.610(-10)? new floors constructed:  [ 'MN6iDcYKnFd5oB2rD' ]
+I20231118-16:27:11.612(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.612(-10)?   {
+I20231118-16:27:11.613(-10)?     _id: 'WPfbXwctuBX95JJM7',
+I20231118-16:27:11.613(-10)?     name: 'Music Building Complex',
+I20231118-16:27:11.613(-10)?     floor_count: 1,
+I20231118-16:27:11.613(-10)?     floor_id: [ 'MN6iDcYKnFd5oB2rD' ]
+I20231118-16:27:11.613(-10)?   }
+I20231118-16:27:11.613(-10)? ]
+I20231118-16:27:11.613(-10)? { name: 'National Marine Fisheries Service', floor_count: 1 }
+I20231118-16:27:11.613(-10)? passed check
+I20231118-16:27:11.614(-10)? initializeBuilding call successful.
+I20231118-16:27:11.614(-10)? constructed building base:  vrnvtJRpgrqtyMkwL
+I20231118-16:27:11.618(-10)? new building base:  [
+I20231118-16:27:11.618(-10)?   {
+I20231118-16:27:11.618(-10)?     _id: 'vrnvtJRpgrqtyMkwL',
+I20231118-16:27:11.618(-10)?     name: 'National Marine Fisheries Service',
+I20231118-16:27:11.618(-10)?     floor_count: 1,
+I20231118-16:27:11.618(-10)?     floor_id: []
+I20231118-16:27:11.618(-10)?   }
+I20231118-16:27:11.619(-10)? ]
+I20231118-16:27:11.619(-10)? new floors constructed:  [ 'CWsfR9ij66KiGNQaq' ]
+I20231118-16:27:11.621(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.621(-10)?   {
+I20231118-16:27:11.622(-10)?     _id: 'vrnvtJRpgrqtyMkwL',
+I20231118-16:27:11.622(-10)?     name: 'National Marine Fisheries Service',
+I20231118-16:27:11.622(-10)?     floor_count: 1,
+I20231118-16:27:11.622(-10)?     floor_id: [ 'CWsfR9ij66KiGNQaq' ]
+I20231118-16:27:11.622(-10)?   }
+I20231118-16:27:11.622(-10)? ]
+I20231118-16:27:11.622(-10)? { name: 'Newman Center', floor_count: 1 }
+I20231118-16:27:11.622(-10)? passed check
+I20231118-16:27:11.623(-10)? initializeBuilding call successful.
+I20231118-16:27:11.623(-10)? constructed building base:  6zKYAWZrHvuusrGYe
+I20231118-16:27:11.627(-10)? new building base:  [
+I20231118-16:27:11.628(-10)?   {
+I20231118-16:27:11.628(-10)?     _id: '6zKYAWZrHvuusrGYe',
+I20231118-16:27:11.628(-10)?     name: 'Newman Center',
+I20231118-16:27:11.628(-10)?     floor_count: 1,
+I20231118-16:27:11.628(-10)?     floor_id: []
+I20231118-16:27:11.628(-10)?   }
+I20231118-16:27:11.628(-10)? ]
+I20231118-16:27:11.629(-10)? new floors constructed:  [ 'TYDo2mYNWAbGxq7MY' ]
+I20231118-16:27:11.638(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.638(-10)?   {
+I20231118-16:27:11.638(-10)?     _id: '6zKYAWZrHvuusrGYe',
+I20231118-16:27:11.638(-10)?     name: 'Newman Center',
+I20231118-16:27:11.638(-10)?     floor_count: 1,
+I20231118-16:27:11.638(-10)?     floor_id: [ 'TYDo2mYNWAbGxq7MY' ]
+I20231118-16:27:11.638(-10)?   }
+I20231118-16:27:11.638(-10)? ]
+I20231118-16:27:11.639(-10)? { name: 'NREM Greenhouse', floor_count: 1 }
+I20231118-16:27:11.639(-10)? passed check
+I20231118-16:27:11.639(-10)? initializeBuilding call successful.
+I20231118-16:27:11.639(-10)? constructed building base:  hXWAX54XWr5FjEGLu
+I20231118-16:27:11.644(-10)? new building base:  [
+I20231118-16:27:11.644(-10)?   {
+I20231118-16:27:11.644(-10)?     _id: 'hXWAX54XWr5FjEGLu',
+I20231118-16:27:11.644(-10)?     name: 'NREM Greenhouse',
+I20231118-16:27:11.644(-10)?     floor_count: 1,
+I20231118-16:27:11.644(-10)?     floor_id: []
+I20231118-16:27:11.645(-10)?   }
+I20231118-16:27:11.645(-10)? ]
+I20231118-16:27:11.645(-10)? new floors constructed:  [ 'cx44Ema9QCpLzCfiS' ]
+I20231118-16:27:11.648(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.648(-10)?   {
+I20231118-16:27:11.648(-10)?     _id: 'hXWAX54XWr5FjEGLu',
+I20231118-16:27:11.648(-10)?     name: 'NREM Greenhouse',
+I20231118-16:27:11.648(-10)?     floor_count: 1,
+I20231118-16:27:11.648(-10)?     floor_id: [ 'cx44Ema9QCpLzCfiS' ]
+I20231118-16:27:11.649(-10)?   }
+I20231118-16:27:11.649(-10)? ]
+I20231118-16:27:11.649(-10)? {
+I20231118-16:27:11.649(-10)?   name: 'Office of Procurement and Real Property Management',
+I20231118-16:27:11.649(-10)?   floor_count: 1
+I20231118-16:27:11.649(-10)? }
+I20231118-16:27:11.649(-10)? passed check
+I20231118-16:27:11.649(-10)? initializeBuilding call successful.
+I20231118-16:27:11.650(-10)? constructed building base:  o6A9BpT4BifoR227t
+I20231118-16:27:11.653(-10)? new building base:  [
+I20231118-16:27:11.654(-10)?   {
+I20231118-16:27:11.654(-10)?     _id: 'o6A9BpT4BifoR227t',
+I20231118-16:27:11.654(-10)?     name: 'Office of Procurement and Real Property Management',
+I20231118-16:27:11.654(-10)?     floor_count: 1,
+I20231118-16:27:11.654(-10)?     floor_id: []
+I20231118-16:27:11.654(-10)?   }
+I20231118-16:27:11.654(-10)? ]
+I20231118-16:27:11.654(-10)? new floors constructed:  [ 'EQTWBwicYtu3KuauH' ]
+I20231118-16:27:11.657(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.658(-10)?   {
+I20231118-16:27:11.658(-10)?     _id: 'o6A9BpT4BifoR227t',
+I20231118-16:27:11.658(-10)?     name: 'Office of Procurement and Real Property Management',
+I20231118-16:27:11.658(-10)?     floor_count: 1,
+I20231118-16:27:11.658(-10)?     floor_id: [ 'EQTWBwicYtu3KuauH' ]
+I20231118-16:27:11.658(-10)?   }
+I20231118-16:27:11.659(-10)? ]
+I20231118-16:27:11.659(-10)? { name: 'Orvis Auditorium', floor_count: 1 }
+I20231118-16:27:11.659(-10)? passed check
+I20231118-16:27:11.659(-10)? initializeBuilding call successful.
+I20231118-16:27:11.659(-10)? constructed building base:  pqky8njf3QGQTD9Zt
+I20231118-16:27:11.664(-10)? new building base:  [
+I20231118-16:27:11.664(-10)?   {
+I20231118-16:27:11.664(-10)?     _id: 'pqky8njf3QGQTD9Zt',
+I20231118-16:27:11.664(-10)?     name: 'Orvis Auditorium',
+I20231118-16:27:11.664(-10)?     floor_count: 1,
+I20231118-16:27:11.664(-10)?     floor_id: []
+I20231118-16:27:11.665(-10)?   }
+I20231118-16:27:11.665(-10)? ]
+I20231118-16:27:11.665(-10)? new floors constructed:  [ '2CanZaquZb4fqjexc' ]
+I20231118-16:27:11.670(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.671(-10)?   {
+I20231118-16:27:11.671(-10)?     _id: 'pqky8njf3QGQTD9Zt',
+I20231118-16:27:11.671(-10)?     name: 'Orvis Auditorium',
+I20231118-16:27:11.671(-10)?     floor_count: 1,
+I20231118-16:27:11.671(-10)?     floor_id: [ '2CanZaquZb4fqjexc' ]
+I20231118-16:27:11.671(-10)?   }
+I20231118-16:27:11.671(-10)? ]
+I20231118-16:27:11.672(-10)? { name: 'Pacific Biosciences Research Center', floor_count: 1 }
+I20231118-16:27:11.672(-10)? passed check
+I20231118-16:27:11.672(-10)? initializeBuilding call successful.
+I20231118-16:27:11.672(-10)? constructed building base:  dvtf43SuqTPKD7eTt
+I20231118-16:27:11.675(-10)? new building base:  [
+I20231118-16:27:11.675(-10)?   {
+I20231118-16:27:11.676(-10)?     _id: 'dvtf43SuqTPKD7eTt',
+I20231118-16:27:11.676(-10)?     name: 'Pacific Biosciences Research Center',
+I20231118-16:27:11.676(-10)?     floor_count: 1,
+I20231118-16:27:11.676(-10)?     floor_id: []
+I20231118-16:27:11.676(-10)?   }
+I20231118-16:27:11.676(-10)? ]
+I20231118-16:27:11.676(-10)? new floors constructed:  [ 'gwv5s3y8A8frzTkXp' ]
+I20231118-16:27:11.681(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.681(-10)?   {
+I20231118-16:27:11.681(-10)?     _id: 'dvtf43SuqTPKD7eTt',
+I20231118-16:27:11.681(-10)?     name: 'Pacific Biosciences Research Center',
+I20231118-16:27:11.682(-10)?     floor_count: 1,
+I20231118-16:27:11.682(-10)?     floor_id: [ 'gwv5s3y8A8frzTkXp' ]
+I20231118-16:27:11.682(-10)?   }
+I20231118-16:27:11.682(-10)? ]
+I20231118-16:27:11.682(-10)? { name: 'Pacific Ocean Science and Technology', floor_count: 1 }
+I20231118-16:27:11.683(-10)? passed check
+I20231118-16:27:11.683(-10)? initializeBuilding call successful.
+I20231118-16:27:11.683(-10)? constructed building base:  qmkSPBrjbSfMMqRMS
+I20231118-16:27:11.690(-10)? new building base:  [
+I20231118-16:27:11.691(-10)?   {
+I20231118-16:27:11.691(-10)?     _id: 'qmkSPBrjbSfMMqRMS',
+I20231118-16:27:11.691(-10)?     name: 'Pacific Ocean Science and Technology',
+I20231118-16:27:11.692(-10)?     floor_count: 1,
+I20231118-16:27:11.692(-10)?     floor_id: []
+I20231118-16:27:11.692(-10)?   }
+I20231118-16:27:11.692(-10)? ]
+I20231118-16:27:11.692(-10)? new floors constructed:  [ 'ysPi979yWP8Ti58TR' ]
+I20231118-16:27:11.696(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.697(-10)?   {
+I20231118-16:27:11.697(-10)?     _id: 'qmkSPBrjbSfMMqRMS',
+I20231118-16:27:11.697(-10)?     name: 'Pacific Ocean Science and Technology',
+I20231118-16:27:11.697(-10)?     floor_count: 1,
+I20231118-16:27:11.697(-10)?     floor_id: [ 'ysPi979yWP8Ti58TR' ]
+I20231118-16:27:11.698(-10)?   }
+I20231118-16:27:11.698(-10)? ]
+I20231118-16:27:11.698(-10)? { name: 'Paradise Palms Cafe', floor_count: 1 }
+I20231118-16:27:11.698(-10)? passed check
+I20231118-16:27:11.700(-10)? initializeBuilding call successful.
+I20231118-16:27:11.703(-10)? constructed building base:  uYp6EcEiywSs6FHvj
+I20231118-16:27:11.711(-10)? new building base:  [
+I20231118-16:27:11.711(-10)?   {
+I20231118-16:27:11.711(-10)?     _id: 'uYp6EcEiywSs6FHvj',
+I20231118-16:27:11.711(-10)?     name: 'Paradise Palms Cafe',
+I20231118-16:27:11.711(-10)?     floor_count: 1,
+I20231118-16:27:11.711(-10)?     floor_id: []
+I20231118-16:27:11.711(-10)?   }
+I20231118-16:27:11.711(-10)? ]
+I20231118-16:27:11.712(-10)? new floors constructed:  [ 'kvWwqGDQSQLCM789y' ]
+I20231118-16:27:11.718(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.719(-10)?   {
+I20231118-16:27:11.719(-10)?     _id: 'uYp6EcEiywSs6FHvj',
+I20231118-16:27:11.719(-10)?     name: 'Paradise Palms Cafe',
+I20231118-16:27:11.719(-10)?     floor_count: 1,
+I20231118-16:27:11.719(-10)?     floor_id: [ 'kvWwqGDQSQLCM789y' ]
+I20231118-16:27:11.719(-10)?   }
+I20231118-16:27:11.719(-10)? ]
+I20231118-16:27:11.720(-10)? { name: 'Parking Structure', floor_count: 1 }
+I20231118-16:27:11.720(-10)? passed check
+I20231118-16:27:11.720(-10)? initializeBuilding call successful.
+I20231118-16:27:11.723(-10)? constructed building base:  vzsrxmmNnj5WGrnh5
+I20231118-16:27:11.731(-10)? new building base:  [
+I20231118-16:27:11.731(-10)?   {
+I20231118-16:27:11.732(-10)?     _id: 'vzsrxmmNnj5WGrnh5',
+I20231118-16:27:11.732(-10)?     name: 'Parking Structure',
+I20231118-16:27:11.732(-10)?     floor_count: 1,
+I20231118-16:27:11.732(-10)?     floor_id: []
+I20231118-16:27:11.732(-10)?   }
+I20231118-16:27:11.732(-10)? ]
+I20231118-16:27:11.732(-10)? new floors constructed:  [ 'hLF72yaJaEPfkKs3h' ]
+I20231118-16:27:11.740(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.741(-10)?   {
+I20231118-16:27:11.741(-10)?     _id: 'vzsrxmmNnj5WGrnh5',
+I20231118-16:27:11.741(-10)?     name: 'Parking Structure',
+I20231118-16:27:11.741(-10)?     floor_count: 1,
+I20231118-16:27:11.741(-10)?     floor_id: [ 'hLF72yaJaEPfkKs3h' ]
+I20231118-16:27:11.741(-10)?   }
+I20231118-16:27:11.741(-10)? ]
+I20231118-16:27:11.741(-10)? { name: 'Physical Education Athletic Complex', floor_count: 1 }
+I20231118-16:27:11.742(-10)? passed check
+I20231118-16:27:11.742(-10)? initializeBuilding call successful.
+I20231118-16:27:11.744(-10)? constructed building base:  dwxWQLoFoD6e6dNWJ
+I20231118-16:27:11.753(-10)? new building base:  [
+I20231118-16:27:11.754(-10)?   {
+I20231118-16:27:11.754(-10)?     _id: 'dwxWQLoFoD6e6dNWJ',
+I20231118-16:27:11.754(-10)?     name: 'Physical Education Athletic Complex',
+I20231118-16:27:11.754(-10)?     floor_count: 1,
+I20231118-16:27:11.754(-10)?     floor_id: []
+I20231118-16:27:11.754(-10)?   }
+I20231118-16:27:11.754(-10)? ]
+I20231118-16:27:11.754(-10)? new floors constructed:  [ 'oPtSNXhFCHgpa76jE' ]
+I20231118-16:27:11.763(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.764(-10)?   {
+I20231118-16:27:11.764(-10)?     _id: 'dwxWQLoFoD6e6dNWJ',
+I20231118-16:27:11.765(-10)?     name: 'Physical Education Athletic Complex',
+I20231118-16:27:11.765(-10)?     floor_count: 1,
+I20231118-16:27:11.765(-10)?     floor_id: [ 'oPtSNXhFCHgpa76jE' ]
+I20231118-16:27:11.765(-10)?   }
+I20231118-16:27:11.765(-10)? ]
+I20231118-16:27:11.766(-10)? { name: 'Physical Plant Building', floor_count: 1 }
+I20231118-16:27:11.766(-10)? passed check
+I20231118-16:27:11.767(-10)? initializeBuilding call successful.
+I20231118-16:27:11.767(-10)? constructed building base:  qatiRBwP6egtKuvLF
+I20231118-16:27:11.774(-10)? new building base:  [
+I20231118-16:27:11.775(-10)?   {
+I20231118-16:27:11.775(-10)?     _id: 'qatiRBwP6egtKuvLF',
+I20231118-16:27:11.775(-10)?     name: 'Physical Plant Building',
+I20231118-16:27:11.775(-10)?     floor_count: 1,
+I20231118-16:27:11.775(-10)?     floor_id: []
+I20231118-16:27:11.775(-10)?   }
+I20231118-16:27:11.775(-10)? ]
+I20231118-16:27:11.776(-10)? new floors constructed:  [ 'aA45WuxWGXp8zyKos' ]
+I20231118-16:27:11.780(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.781(-10)?   {
+I20231118-16:27:11.781(-10)?     _id: 'qatiRBwP6egtKuvLF',
+I20231118-16:27:11.781(-10)?     name: 'Physical Plant Building',
+I20231118-16:27:11.781(-10)?     floor_count: 1,
+I20231118-16:27:11.781(-10)?     floor_id: [ 'aA45WuxWGXp8zyKos' ]
+I20231118-16:27:11.781(-10)?   }
+I20231118-16:27:11.781(-10)? ]
+I20231118-16:27:11.782(-10)? { name: 'Physical Science Building', floor_count: 1 }
+I20231118-16:27:11.782(-10)? passed check
+I20231118-16:27:11.782(-10)? initializeBuilding call successful.
+I20231118-16:27:11.783(-10)? constructed building base:  tktZYts7mBFCTpF2g
+I20231118-16:27:11.790(-10)? new building base:  [
+I20231118-16:27:11.790(-10)?   {
+I20231118-16:27:11.791(-10)?     _id: 'tktZYts7mBFCTpF2g',
+I20231118-16:27:11.791(-10)?     name: 'Physical Science Building',
+I20231118-16:27:11.791(-10)?     floor_count: 1,
+I20231118-16:27:11.791(-10)?     floor_id: []
+I20231118-16:27:11.791(-10)?   }
+I20231118-16:27:11.792(-10)? ]
+I20231118-16:27:11.792(-10)? new floors constructed:  [ 'ptc6QExAc2raofznw' ]
+I20231118-16:27:11.796(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.796(-10)?   {
+I20231118-16:27:11.796(-10)?     _id: 'tktZYts7mBFCTpF2g',
+I20231118-16:27:11.797(-10)?     name: 'Physical Science Building',
+I20231118-16:27:11.797(-10)?     floor_count: 1,
+I20231118-16:27:11.797(-10)?     floor_id: [ 'ptc6QExAc2raofznw' ]
+I20231118-16:27:11.797(-10)?   }
+I20231118-16:27:11.797(-10)? ]
+I20231118-16:27:11.797(-10)? { name: 'Pope Laboratory', floor_count: 1 }
+I20231118-16:27:11.797(-10)? passed check
+I20231118-16:27:11.797(-10)? initializeBuilding call successful.
+I20231118-16:27:11.799(-10)? constructed building base:  7QsXcDfbBBcmhx6aP
+I20231118-16:27:11.807(-10)? new building base:  [
+I20231118-16:27:11.808(-10)?   {
+I20231118-16:27:11.808(-10)?     _id: '7QsXcDfbBBcmhx6aP',
+I20231118-16:27:11.808(-10)?     name: 'Pope Laboratory',
+I20231118-16:27:11.808(-10)?     floor_count: 1,
+I20231118-16:27:11.808(-10)?     floor_id: []
+I20231118-16:27:11.808(-10)?   }
+I20231118-16:27:11.809(-10)? ]
+I20231118-16:27:11.809(-10)? new floors constructed:  [ 'm5ANuWQ2Se3cmHDjb' ]
+I20231118-16:27:11.820(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.821(-10)?   {
+I20231118-16:27:11.821(-10)?     _id: '7QsXcDfbBBcmhx6aP',
+I20231118-16:27:11.821(-10)?     name: 'Pope Laboratory',
+I20231118-16:27:11.822(-10)?     floor_count: 1,
+I20231118-16:27:11.822(-10)?     floor_id: [ 'm5ANuWQ2Se3cmHDjb' ]
+I20231118-16:27:11.822(-10)?   }
+I20231118-16:27:11.822(-10)? ]
+I20231118-16:27:11.823(-10)? { name: 'Practice Fields', floor_count: 1 }
+I20231118-16:27:11.823(-10)? passed check
+I20231118-16:27:11.823(-10)? initializeBuilding call successful.
+I20231118-16:27:11.824(-10)? constructed building base:  fqzJMbnuwMuQNfRr5
+I20231118-16:27:11.829(-10)? new building base:  [
+I20231118-16:27:11.830(-10)?   {
+I20231118-16:27:11.830(-10)?     _id: 'fqzJMbnuwMuQNfRr5',
+I20231118-16:27:11.830(-10)?     name: 'Practice Fields',
+I20231118-16:27:11.830(-10)?     floor_count: 1,
+I20231118-16:27:11.831(-10)?     floor_id: []
+I20231118-16:27:11.831(-10)?   }
+I20231118-16:27:11.831(-10)? ]
+I20231118-16:27:11.831(-10)? new floors constructed:  [ 'g2LmxHTs5X5dhbQE5' ]
+I20231118-16:27:11.840(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.840(-10)?   {
+I20231118-16:27:11.840(-10)?     _id: 'fqzJMbnuwMuQNfRr5',
+I20231118-16:27:11.840(-10)?     name: 'Practice Fields',
+I20231118-16:27:11.840(-10)?     floor_count: 1,
+I20231118-16:27:11.840(-10)?     floor_id: [ 'g2LmxHTs5X5dhbQE5' ]
+I20231118-16:27:11.841(-10)?   }
+I20231118-16:27:11.841(-10)? ]
+I20231118-16:27:11.841(-10)? { name: 'Public Safety', floor_count: 1 }
+I20231118-16:27:11.841(-10)? passed check
+I20231118-16:27:11.841(-10)? initializeBuilding call successful.
+I20231118-16:27:11.842(-10)? constructed building base:  mczBBLAdu8chWTceP
+I20231118-16:27:11.847(-10)? new building base:  [
+I20231118-16:27:11.847(-10)?   {
+I20231118-16:27:11.847(-10)?     _id: 'mczBBLAdu8chWTceP',
+I20231118-16:27:11.848(-10)?     name: 'Public Safety',
+I20231118-16:27:11.848(-10)?     floor_count: 1,
+I20231118-16:27:11.848(-10)?     floor_id: []
+I20231118-16:27:11.848(-10)?   }
+I20231118-16:27:11.848(-10)? ]
+I20231118-16:27:11.848(-10)? new floors constructed:  [ 'j4vQzLi8gd9NMHg4Y' ]
+I20231118-16:27:11.851(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.852(-10)?   {
+I20231118-16:27:11.852(-10)?     _id: 'mczBBLAdu8chWTceP',
+I20231118-16:27:11.852(-10)?     name: 'Public Safety',
+I20231118-16:27:11.852(-10)?     floor_count: 1,
+I20231118-16:27:11.852(-10)?     floor_id: [ 'j4vQzLi8gd9NMHg4Y' ]
+I20231118-16:27:11.852(-10)?   }
+I20231118-16:27:11.852(-10)? ]
+I20231118-16:27:11.853(-10)? {
+I20231118-16:27:11.853(-10)?   name: 'Queen Liliʻuokalani Center for Student Services',
+I20231118-16:27:11.853(-10)?   floor_count: 1
+I20231118-16:27:11.853(-10)? }
+I20231118-16:27:11.853(-10)? passed check
+I20231118-16:27:11.853(-10)? initializeBuilding call successful.
+I20231118-16:27:11.854(-10)? constructed building base:  QjTfAtqoxwKsngBi8
+I20231118-16:27:11.859(-10)? new building base:  [
+I20231118-16:27:11.859(-10)?   {
+I20231118-16:27:11.860(-10)?     _id: 'QjTfAtqoxwKsngBi8',
+I20231118-16:27:11.860(-10)?     name: 'Queen Liliʻuokalani Center for Student Services',
+I20231118-16:27:11.860(-10)?     floor_count: 1,
+I20231118-16:27:11.860(-10)?     floor_id: []
+I20231118-16:27:11.860(-10)?   }
+I20231118-16:27:11.860(-10)? ]
+I20231118-16:27:11.860(-10)? new floors constructed:  [ '8okqtHmk6haJitf2p' ]
+I20231118-16:27:11.864(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.864(-10)?   {
+I20231118-16:27:11.864(-10)?     _id: 'QjTfAtqoxwKsngBi8',
+I20231118-16:27:11.864(-10)?     name: 'Queen Liliʻuokalani Center for Student Services',
+I20231118-16:27:11.864(-10)?     floor_count: 1,
+I20231118-16:27:11.864(-10)?     floor_id: [ '8okqtHmk6haJitf2p' ]
+I20231118-16:27:11.865(-10)?   }
+I20231118-16:27:11.865(-10)? ]
+I20231118-16:27:11.865(-10)? { name: 'Sakamaki Hall', floor_count: 1 }
+I20231118-16:27:11.865(-10)? passed check
+I20231118-16:27:11.865(-10)? initializeBuilding call successful.
+I20231118-16:27:11.866(-10)? constructed building base:  EwN592Guc5xzzdXii
+I20231118-16:27:11.871(-10)? new building base:  [
+I20231118-16:27:11.871(-10)?   {
+I20231118-16:27:11.872(-10)?     _id: 'EwN592Guc5xzzdXii',
+I20231118-16:27:11.872(-10)?     name: 'Sakamaki Hall',
+I20231118-16:27:11.872(-10)?     floor_count: 1,
+I20231118-16:27:11.872(-10)?     floor_id: []
+I20231118-16:27:11.872(-10)?   }
+I20231118-16:27:11.872(-10)? ]
+I20231118-16:27:11.872(-10)? new floors constructed:  [ '2Fu6di3ZCwsPiWxcm' ]
+I20231118-16:27:11.878(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.878(-10)?   {
+I20231118-16:27:11.878(-10)?     _id: 'EwN592Guc5xzzdXii',
+I20231118-16:27:11.878(-10)?     name: 'Sakamaki Hall',
+I20231118-16:27:11.878(-10)?     floor_count: 1,
+I20231118-16:27:11.879(-10)?     floor_id: [ '2Fu6di3ZCwsPiWxcm' ]
+I20231118-16:27:11.879(-10)?   }
+I20231118-16:27:11.879(-10)? ]
+I20231118-16:27:11.879(-10)? { name: 'Saunders Hall', floor_count: 1 }
+I20231118-16:27:11.880(-10)? passed check
+I20231118-16:27:11.882(-10)? initializeBuilding call successful.
+I20231118-16:27:11.883(-10)? constructed building base:  78Cvq98mHYnwGwzAs
+I20231118-16:27:11.889(-10)? new building base:  [
+I20231118-16:27:11.890(-10)?   {
+I20231118-16:27:11.890(-10)?     _id: '78Cvq98mHYnwGwzAs',
+I20231118-16:27:11.890(-10)?     name: 'Saunders Hall',
+I20231118-16:27:11.890(-10)?     floor_count: 1,
+I20231118-16:27:11.890(-10)?     floor_id: []
+I20231118-16:27:11.891(-10)?   }
+I20231118-16:27:11.891(-10)? ]
+I20231118-16:27:11.891(-10)? new floors constructed:  [ '5c3bi6dom4mNJ8K2C' ]
+I20231118-16:27:11.895(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.895(-10)?   {
+I20231118-16:27:11.895(-10)?     _id: '78Cvq98mHYnwGwzAs',
+I20231118-16:27:11.895(-10)?     name: 'Saunders Hall',
+I20231118-16:27:11.895(-10)?     floor_count: 1,
+I20231118-16:27:11.896(-10)?     floor_id: [ '5c3bi6dom4mNJ8K2C' ]
+I20231118-16:27:11.896(-10)?   }
+I20231118-16:27:11.896(-10)? ]
+I20231118-16:27:11.896(-10)? { name: 'Sherman Laboratory', floor_count: 1 }
+I20231118-16:27:11.896(-10)? passed check
+I20231118-16:27:11.896(-10)? initializeBuilding call successful.
+I20231118-16:27:11.897(-10)? constructed building base:  4y8GMHiZzWsSGioyF
+I20231118-16:27:11.905(-10)? new building base:  [
+I20231118-16:27:11.905(-10)?   {
+I20231118-16:27:11.905(-10)?     _id: '4y8GMHiZzWsSGioyF',
+I20231118-16:27:11.905(-10)?     name: 'Sherman Laboratory',
+I20231118-16:27:11.906(-10)?     floor_count: 1,
+I20231118-16:27:11.906(-10)?     floor_id: []
+I20231118-16:27:11.906(-10)?   }
+I20231118-16:27:11.906(-10)? ]
+I20231118-16:27:11.906(-10)? new floors constructed:  [ '5dTbyj7XXBnvxw5eu' ]
+I20231118-16:27:11.909(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.909(-10)?   {
+I20231118-16:27:11.910(-10)?     _id: '4y8GMHiZzWsSGioyF',
+I20231118-16:27:11.910(-10)?     name: 'Sherman Laboratory',
+I20231118-16:27:11.910(-10)?     floor_count: 1,
+I20231118-16:27:11.910(-10)?     floor_id: [ '5dTbyj7XXBnvxw5eu' ]
+I20231118-16:27:11.910(-10)?   }
+I20231118-16:27:11.910(-10)? ]
+I20231118-16:27:11.911(-10)? { name: 'Shidler College of Business', floor_count: 1 }
+I20231118-16:27:11.911(-10)? passed check
+I20231118-16:27:11.911(-10)? initializeBuilding call successful.
+I20231118-16:27:11.911(-10)? constructed building base:  TTFFiuKB4hR5WXMKq
+I20231118-16:27:11.915(-10)? new building base:  [
+I20231118-16:27:11.915(-10)?   {
+I20231118-16:27:11.916(-10)?     _id: 'TTFFiuKB4hR5WXMKq',
+I20231118-16:27:11.916(-10)?     name: 'Shidler College of Business',
+I20231118-16:27:11.916(-10)?     floor_count: 1,
+I20231118-16:27:11.916(-10)?     floor_id: []
+I20231118-16:27:11.916(-10)?   }
+I20231118-16:27:11.916(-10)? ]
+I20231118-16:27:11.916(-10)? new floors constructed:  [ 'yDoudNXhoCf7J5T6z' ]
+I20231118-16:27:11.919(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.919(-10)?   {
+I20231118-16:27:11.919(-10)?     _id: 'TTFFiuKB4hR5WXMKq',
+I20231118-16:27:11.920(-10)?     name: 'Shidler College of Business',
+I20231118-16:27:11.920(-10)?     floor_count: 1,
+I20231118-16:27:11.920(-10)?     floor_id: [ 'yDoudNXhoCf7J5T6z' ]
+I20231118-16:27:11.920(-10)?   }
+I20231118-16:27:11.920(-10)? ]
+I20231118-16:27:11.920(-10)? { name: 'Shops', floor_count: 1 }
+I20231118-16:27:11.921(-10)? passed check
+I20231118-16:27:11.921(-10)? initializeBuilding call successful.
+I20231118-16:27:11.921(-10)? constructed building base:  sKYSGxqbiw6vCJFZo
+I20231118-16:27:11.926(-10)? new building base:  [
+I20231118-16:27:11.927(-10)?   {
+I20231118-16:27:11.927(-10)?     _id: 'sKYSGxqbiw6vCJFZo',
+I20231118-16:27:11.927(-10)?     name: 'Shops',
+I20231118-16:27:11.927(-10)?     floor_count: 1,
+I20231118-16:27:11.927(-10)?     floor_id: []
+I20231118-16:27:11.927(-10)?   }
+I20231118-16:27:11.927(-10)? ]
+I20231118-16:27:11.927(-10)? new floors constructed:  [ 'Ae5FBGxpqDzpKjKfa' ]
+I20231118-16:27:11.930(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.931(-10)?   {
+I20231118-16:27:11.931(-10)?     _id: 'sKYSGxqbiw6vCJFZo',
+I20231118-16:27:11.931(-10)?     name: 'Shops',
+I20231118-16:27:11.931(-10)?     floor_count: 1,
+I20231118-16:27:11.931(-10)?     floor_id: [ 'Ae5FBGxpqDzpKjKfa' ]
+I20231118-16:27:11.931(-10)?   }
+I20231118-16:27:11.932(-10)? ]
+I20231118-16:27:11.932(-10)? { name: 'Sinclair Annex', floor_count: 1 }
+I20231118-16:27:11.932(-10)? passed check
+I20231118-16:27:11.932(-10)? initializeBuilding call successful.
+I20231118-16:27:11.932(-10)? constructed building base:  mPbbaTJccjTXZ97gH
+I20231118-16:27:11.937(-10)? new building base:  [
+I20231118-16:27:11.937(-10)?   {
+I20231118-16:27:11.938(-10)?     _id: 'mPbbaTJccjTXZ97gH',
+I20231118-16:27:11.938(-10)?     name: 'Sinclair Annex',
+I20231118-16:27:11.938(-10)?     floor_count: 1,
+I20231118-16:27:11.938(-10)?     floor_id: []
+I20231118-16:27:11.938(-10)?   }
+I20231118-16:27:11.938(-10)? ]
+I20231118-16:27:11.938(-10)? new floors constructed:  [ '6GDXd9tqyCJXSWraR' ]
+I20231118-16:27:11.941(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.942(-10)?   {
+I20231118-16:27:11.942(-10)?     _id: 'mPbbaTJccjTXZ97gH',
+I20231118-16:27:11.942(-10)?     name: 'Sinclair Annex',
+I20231118-16:27:11.942(-10)?     floor_count: 1,
+I20231118-16:27:11.942(-10)?     floor_id: [ '6GDXd9tqyCJXSWraR' ]
+I20231118-16:27:11.942(-10)?   }
+I20231118-16:27:11.942(-10)? ]
+I20231118-16:27:11.943(-10)? { name: 'Sinclair', floor_count: 1 }
+I20231118-16:27:11.943(-10)? passed check
+I20231118-16:27:11.943(-10)? initializeBuilding call successful.
+I20231118-16:27:11.943(-10)? constructed building base:  S27tbuEKJhne6LizM
+I20231118-16:27:11.947(-10)? new building base:  [
+I20231118-16:27:11.947(-10)?   {
+I20231118-16:27:11.947(-10)?     _id: 'S27tbuEKJhne6LizM',
+I20231118-16:27:11.947(-10)?     name: 'Sinclair',
+I20231118-16:27:11.947(-10)?     floor_count: 1,
+I20231118-16:27:11.948(-10)?     floor_id: []
+I20231118-16:27:11.948(-10)?   }
+I20231118-16:27:11.948(-10)? ]
+I20231118-16:27:11.948(-10)? new floors constructed:  [ 'iXezNd7CtJEFedmSD' ]
+I20231118-16:27:11.952(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.953(-10)?   {
+I20231118-16:27:11.953(-10)?     _id: 'S27tbuEKJhne6LizM',
+I20231118-16:27:11.953(-10)?     name: 'Sinclair',
+I20231118-16:27:11.953(-10)?     floor_count: 1,
+I20231118-16:27:11.953(-10)?     floor_id: [ 'iXezNd7CtJEFedmSD' ]
+I20231118-16:27:11.953(-10)?   }
+I20231118-16:27:11.953(-10)? ]
+I20231118-16:27:11.953(-10)? { name: 'Snyder Hall', floor_count: 1 }
+I20231118-16:27:11.954(-10)? passed check
+I20231118-16:27:11.954(-10)? initializeBuilding call successful.
+I20231118-16:27:11.954(-10)? constructed building base:  hZuehPqcMbz6Z5yjy
+I20231118-16:27:11.957(-10)? new building base:  [
+I20231118-16:27:11.958(-10)?   {
+I20231118-16:27:11.958(-10)?     _id: 'hZuehPqcMbz6Z5yjy',
+I20231118-16:27:11.958(-10)?     name: 'Snyder Hall',
+I20231118-16:27:11.958(-10)?     floor_count: 1,
+I20231118-16:27:11.958(-10)?     floor_id: []
+I20231118-16:27:11.958(-10)?   }
+I20231118-16:27:11.958(-10)? ]
+I20231118-16:27:11.959(-10)? new floors constructed:  [ 'ZqKMkFcskgefPLzJF' ]
+I20231118-16:27:11.961(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.962(-10)?   {
+I20231118-16:27:11.962(-10)?     _id: 'hZuehPqcMbz6Z5yjy',
+I20231118-16:27:11.962(-10)?     name: 'Snyder Hall',
+I20231118-16:27:11.962(-10)?     floor_count: 1,
+I20231118-16:27:11.962(-10)?     floor_id: [ 'ZqKMkFcskgefPLzJF' ]
+I20231118-16:27:11.962(-10)?   }
+I20231118-16:27:11.962(-10)? ]
+I20231118-16:27:11.963(-10)? { name: 'Softball Stadium', floor_count: 1 }
+I20231118-16:27:11.963(-10)? passed check
+I20231118-16:27:11.963(-10)? initializeBuilding call successful.
+I20231118-16:27:11.963(-10)? constructed building base:  2EppDX3ghWwau9Exm
+I20231118-16:27:11.968(-10)? new building base:  [
+I20231118-16:27:11.968(-10)?   {
+I20231118-16:27:11.968(-10)?     _id: '2EppDX3ghWwau9Exm',
+I20231118-16:27:11.969(-10)?     name: 'Softball Stadium',
+I20231118-16:27:11.969(-10)?     floor_count: 1,
+I20231118-16:27:11.969(-10)?     floor_id: []
+I20231118-16:27:11.969(-10)?   }
+I20231118-16:27:11.969(-10)? ]
+I20231118-16:27:11.969(-10)? new floors constructed:  [ 'dYkyKRcxkzxA49vNW' ]
+I20231118-16:27:11.972(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.972(-10)?   {
+I20231118-16:27:11.973(-10)?     _id: '2EppDX3ghWwau9Exm',
+I20231118-16:27:11.973(-10)?     name: 'Softball Stadium',
+I20231118-16:27:11.973(-10)?     floor_count: 1,
+I20231118-16:27:11.973(-10)?     floor_id: [ 'dYkyKRcxkzxA49vNW' ]
+I20231118-16:27:11.973(-10)?   }
+I20231118-16:27:11.973(-10)? ]
+I20231118-16:27:11.974(-10)? { name: 'Spalding Hall', floor_count: 1 }
+I20231118-16:27:11.974(-10)? passed check
+I20231118-16:27:11.974(-10)? initializeBuilding call successful.
+I20231118-16:27:11.975(-10)? constructed building base:  FmFuji3jbJEofRnbN
+I20231118-16:27:11.980(-10)? new building base:  [
+I20231118-16:27:11.980(-10)?   {
+I20231118-16:27:11.980(-10)?     _id: 'FmFuji3jbJEofRnbN',
+I20231118-16:27:11.980(-10)?     name: 'Spalding Hall',
+I20231118-16:27:11.981(-10)?     floor_count: 1,
+I20231118-16:27:11.981(-10)?     floor_id: []
+I20231118-16:27:11.981(-10)?   }
+I20231118-16:27:11.981(-10)? ]
+I20231118-16:27:11.981(-10)? new floors constructed:  [ 'XtmaPyJSussE8fWNb' ]
+I20231118-16:27:11.988(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:11.988(-10)?   {
+I20231118-16:27:11.988(-10)?     _id: 'FmFuji3jbJEofRnbN',
+I20231118-16:27:11.988(-10)?     name: 'Spalding Hall',
+I20231118-16:27:11.989(-10)?     floor_count: 1,
+I20231118-16:27:11.989(-10)?     floor_id: [ 'XtmaPyJSussE8fWNb' ]
+I20231118-16:27:11.989(-10)?   }
+I20231118-16:27:11.989(-10)? ]
+I20231118-16:27:11.989(-10)? { name: 'Speech Pathology/Audiology', floor_count: 1 }
+I20231118-16:27:11.990(-10)? passed check
+I20231118-16:27:11.990(-10)? initializeBuilding call successful.
+I20231118-16:27:11.990(-10)? constructed building base:  BArKWheMzgAKQBWCv
+I20231118-16:27:11.995(-10)? new building base:  [
+I20231118-16:27:11.995(-10)?   {
+I20231118-16:27:11.995(-10)?     _id: 'BArKWheMzgAKQBWCv',
+I20231118-16:27:11.995(-10)?     name: 'Speech Pathology/Audiology',
+I20231118-16:27:11.996(-10)?     floor_count: 1,
+I20231118-16:27:11.996(-10)?     floor_id: []
+I20231118-16:27:11.996(-10)?   }
+I20231118-16:27:11.996(-10)? ]
+I20231118-16:27:11.996(-10)? new floors constructed:  [ 'pQa9GxNAk4zEw9J2i' ]
+I20231118-16:27:11.999(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.000(-10)?   {
+I20231118-16:27:12.000(-10)?     _id: 'BArKWheMzgAKQBWCv',
+I20231118-16:27:12.000(-10)?     name: 'Speech Pathology/Audiology',
+I20231118-16:27:12.000(-10)?     floor_count: 1,
+I20231118-16:27:12.000(-10)?     floor_id: [ 'pQa9GxNAk4zEw9J2i' ]
+I20231118-16:27:12.001(-10)?   }
+I20231118-16:27:12.001(-10)? ]
+I20231118-16:27:12.003(-10)? { name: 'St. John Plant Science Lab', floor_count: 1 }
+I20231118-16:27:12.003(-10)? passed check
+I20231118-16:27:12.003(-10)? initializeBuilding call successful.
+I20231118-16:27:12.003(-10)? constructed building base:  HQT7YfMieizuWbWjE
+I20231118-16:27:12.008(-10)? new building base:  [
+I20231118-16:27:12.008(-10)?   {
+I20231118-16:27:12.008(-10)?     _id: 'HQT7YfMieizuWbWjE',
+I20231118-16:27:12.009(-10)?     name: 'St. John Plant Science Lab',
+I20231118-16:27:12.009(-10)?     floor_count: 1,
+I20231118-16:27:12.009(-10)?     floor_id: []
+I20231118-16:27:12.009(-10)?   }
+I20231118-16:27:12.009(-10)? ]
+I20231118-16:27:12.009(-10)? new floors constructed:  [ 'XPF4xSndt7aMm8oEd' ]
+I20231118-16:27:12.012(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.013(-10)?   {
+I20231118-16:27:12.013(-10)?     _id: 'HQT7YfMieizuWbWjE',
+I20231118-16:27:12.013(-10)?     name: 'St. John Plant Science Lab',
+I20231118-16:27:12.013(-10)?     floor_count: 1,
+I20231118-16:27:12.013(-10)?     floor_id: [ 'XPF4xSndt7aMm8oEd' ]
+I20231118-16:27:12.013(-10)?   }
+I20231118-16:27:12.013(-10)? ]
+I20231118-16:27:12.014(-10)? { name: 'Stan Sheriff Center', floor_count: 1 }
+I20231118-16:27:12.014(-10)? passed check
+I20231118-16:27:12.014(-10)? initializeBuilding call successful.
+I20231118-16:27:12.015(-10)? constructed building base:  5DAa9Kujd4tLzXNN4
+I20231118-16:27:12.019(-10)? new building base:  [
+I20231118-16:27:12.020(-10)?   {
+I20231118-16:27:12.020(-10)?     _id: '5DAa9Kujd4tLzXNN4',
+I20231118-16:27:12.020(-10)?     name: 'Stan Sheriff Center',
+I20231118-16:27:12.020(-10)?     floor_count: 1,
+I20231118-16:27:12.020(-10)?     floor_id: []
+I20231118-16:27:12.020(-10)?   }
+I20231118-16:27:12.020(-10)? ]
+I20231118-16:27:12.021(-10)? new floors constructed:  [ 'boLQKfLLucatpnwTe' ]
+I20231118-16:27:12.024(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.024(-10)?   {
+I20231118-16:27:12.024(-10)?     _id: '5DAa9Kujd4tLzXNN4',
+I20231118-16:27:12.024(-10)?     name: 'Stan Sheriff Center',
+I20231118-16:27:12.025(-10)?     floor_count: 1,
+I20231118-16:27:12.025(-10)?     floor_id: [ 'boLQKfLLucatpnwTe' ]
+I20231118-16:27:12.025(-10)?   }
+I20231118-16:27:12.025(-10)? ]
+I20231118-16:27:12.025(-10)? { name: 'Tennis Courts', floor_count: 1 }
+I20231118-16:27:12.026(-10)? passed check
+I20231118-16:27:12.026(-10)? initializeBuilding call successful.
+I20231118-16:27:12.026(-10)? constructed building base:  PXjoRPrBAEtbsdRQS
+I20231118-16:27:12.031(-10)? new building base:  [
+I20231118-16:27:12.031(-10)?   {
+I20231118-16:27:12.031(-10)?     _id: 'PXjoRPrBAEtbsdRQS',
+I20231118-16:27:12.031(-10)?     name: 'Tennis Courts',
+I20231118-16:27:12.032(-10)?     floor_count: 1,
+I20231118-16:27:12.032(-10)?     floor_id: []
+I20231118-16:27:12.032(-10)?   }
+I20231118-16:27:12.032(-10)? ]
+I20231118-16:27:12.032(-10)? new floors constructed:  [ '84od5gaygbp6jztWn' ]
+I20231118-16:27:12.037(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.037(-10)?   {
+I20231118-16:27:12.037(-10)?     _id: 'PXjoRPrBAEtbsdRQS',
+I20231118-16:27:12.038(-10)?     name: 'Tennis Courts',
+I20231118-16:27:12.038(-10)?     floor_count: 1,
+I20231118-16:27:12.038(-10)?     floor_id: [ '84od5gaygbp6jztWn' ]
+I20231118-16:27:12.038(-10)?   }
+I20231118-16:27:12.038(-10)? ]
+I20231118-16:27:12.038(-10)? { name: 'Thrift Shop', floor_count: 1 }
+I20231118-16:27:12.039(-10)? passed check
+I20231118-16:27:12.039(-10)? initializeBuilding call successful.
+I20231118-16:27:12.039(-10)? constructed building base:  yDP29qcLpXzX4iXW6
+I20231118-16:27:12.044(-10)? new building base:  [
+I20231118-16:27:12.044(-10)?   {
+I20231118-16:27:12.044(-10)?     _id: 'yDP29qcLpXzX4iXW6',
+I20231118-16:27:12.045(-10)?     name: 'Thrift Shop',
+I20231118-16:27:12.045(-10)?     floor_count: 1,
+I20231118-16:27:12.045(-10)?     floor_id: []
+I20231118-16:27:12.045(-10)?   }
+I20231118-16:27:12.045(-10)? ]
+I20231118-16:27:12.045(-10)? new floors constructed:  [ 'yXNXXHPnBntBySRDy' ]
+I20231118-16:27:12.048(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.049(-10)?   {
+I20231118-16:27:12.049(-10)?     _id: 'yDP29qcLpXzX4iXW6',
+I20231118-16:27:12.049(-10)?     name: 'Thrift Shop',
+I20231118-16:27:12.049(-10)?     floor_count: 1,
+I20231118-16:27:12.049(-10)?     floor_id: [ 'yXNXXHPnBntBySRDy' ]
+I20231118-16:27:12.050(-10)?   }
+I20231118-16:27:12.050(-10)? ]
+I20231118-16:27:12.050(-10)? { name: 'Transportation Services', floor_count: 1 }
+I20231118-16:27:12.050(-10)? passed check
+I20231118-16:27:12.052(-10)? initializeBuilding call successful.
+I20231118-16:27:12.053(-10)? constructed building base:  xXWatAn4Fg7AviT3g
+I20231118-16:27:12.058(-10)? new building base:  [
+I20231118-16:27:12.058(-10)?   {
+I20231118-16:27:12.058(-10)?     _id: 'xXWatAn4Fg7AviT3g',
+I20231118-16:27:12.059(-10)?     name: 'Transportation Services',
+I20231118-16:27:12.059(-10)?     floor_count: 1,
+I20231118-16:27:12.059(-10)?     floor_id: []
+I20231118-16:27:12.059(-10)?   }
+I20231118-16:27:12.059(-10)? ]
+I20231118-16:27:12.060(-10)? new floors constructed:  [ 'BELvtNpzjkv8nweJA' ]
+I20231118-16:27:12.063(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.063(-10)?   {
+I20231118-16:27:12.063(-10)?     _id: 'xXWatAn4Fg7AviT3g',
+I20231118-16:27:12.063(-10)?     name: 'Transportation Services',
+I20231118-16:27:12.063(-10)?     floor_count: 1,
+I20231118-16:27:12.064(-10)?     floor_id: [ 'BELvtNpzjkv8nweJA' ]
+I20231118-16:27:12.064(-10)?   }
+I20231118-16:27:12.064(-10)? ]
+I20231118-16:27:12.064(-10)? { name: 'University High School 1', floor_count: 1 }
+I20231118-16:27:12.065(-10)? passed check
+I20231118-16:27:12.065(-10)? initializeBuilding call successful.
+I20231118-16:27:12.065(-10)? constructed building base:  NR4J8Hocgcoey9CcG
+I20231118-16:27:12.071(-10)? new building base:  [
+I20231118-16:27:12.071(-10)?   {
+I20231118-16:27:12.072(-10)?     _id: 'NR4J8Hocgcoey9CcG',
+I20231118-16:27:12.072(-10)?     name: 'University High School 1',
+I20231118-16:27:12.072(-10)?     floor_count: 1,
+I20231118-16:27:12.072(-10)?     floor_id: []
+I20231118-16:27:12.072(-10)?   }
+I20231118-16:27:12.072(-10)? ]
+I20231118-16:27:12.072(-10)? new floors constructed:  [ 'QP2FTdQCfH9v2KcLy' ]
+I20231118-16:27:12.076(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.076(-10)?   {
+I20231118-16:27:12.076(-10)?     _id: 'NR4J8Hocgcoey9CcG',
+I20231118-16:27:12.076(-10)?     name: 'University High School 1',
+I20231118-16:27:12.077(-10)?     floor_count: 1,
+I20231118-16:27:12.077(-10)?     floor_id: [ 'QP2FTdQCfH9v2KcLy' ]
+I20231118-16:27:12.077(-10)?   }
+I20231118-16:27:12.077(-10)? ]
+I20231118-16:27:12.077(-10)? { name: 'University High School 2', floor_count: 1 }
+I20231118-16:27:12.078(-10)? passed check
+I20231118-16:27:12.078(-10)? initializeBuilding call successful.
+I20231118-16:27:12.078(-10)? constructed building base:  bDkTXrfKRs9nZnBYv
+I20231118-16:27:12.083(-10)? new building base:  [
+I20231118-16:27:12.083(-10)?   {
+I20231118-16:27:12.083(-10)?     _id: 'bDkTXrfKRs9nZnBYv',
+I20231118-16:27:12.083(-10)?     name: 'University High School 2',
+I20231118-16:27:12.083(-10)?     floor_count: 1,
+I20231118-16:27:12.084(-10)?     floor_id: []
+I20231118-16:27:12.084(-10)?   }
+I20231118-16:27:12.084(-10)? ]
+I20231118-16:27:12.084(-10)? new floors constructed:  [ '46TvfLAjaeWnckjkD' ]
+I20231118-16:27:12.087(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.087(-10)?   {
+I20231118-16:27:12.087(-10)?     _id: 'bDkTXrfKRs9nZnBYv',
+I20231118-16:27:12.087(-10)?     name: 'University High School 2',
+I20231118-16:27:12.088(-10)?     floor_count: 1,
+I20231118-16:27:12.088(-10)?     floor_id: [ '46TvfLAjaeWnckjkD' ]
+I20231118-16:27:12.088(-10)?   }
+I20231118-16:27:12.088(-10)? ]
+I20231118-16:27:12.088(-10)? { name: 'University High School 3', floor_count: 1 }
+I20231118-16:27:12.089(-10)? passed check
+I20231118-16:27:12.089(-10)? initializeBuilding call successful.
+I20231118-16:27:12.089(-10)? constructed building base:  qE8qgHffLsKw5phBJ
+I20231118-16:27:12.093(-10)? new building base:  [
+I20231118-16:27:12.093(-10)?   {
+I20231118-16:27:12.093(-10)?     _id: 'qE8qgHffLsKw5phBJ',
+I20231118-16:27:12.094(-10)?     name: 'University High School 3',
+I20231118-16:27:12.094(-10)?     floor_count: 1,
+I20231118-16:27:12.094(-10)?     floor_id: []
+I20231118-16:27:12.094(-10)?   }
+I20231118-16:27:12.094(-10)? ]
+I20231118-16:27:12.094(-10)? new floors constructed:  [ 'eZiyjh3sxvJSrvESH' ]
+I20231118-16:27:12.097(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.098(-10)?   {
+I20231118-16:27:12.098(-10)?     _id: 'qE8qgHffLsKw5phBJ',
+I20231118-16:27:12.098(-10)?     name: 'University High School 3',
+I20231118-16:27:12.098(-10)?     floor_count: 1,
+I20231118-16:27:12.099(-10)?     floor_id: [ 'eZiyjh3sxvJSrvESH' ]
+I20231118-16:27:12.099(-10)?   }
+I20231118-16:27:12.099(-10)? ]
+I20231118-16:27:12.099(-10)? { name: 'University of Hawaiʻi Press', floor_count: 1 }
+I20231118-16:27:12.100(-10)? passed check
+I20231118-16:27:12.100(-10)? initializeBuilding call successful.
+I20231118-16:27:12.100(-10)? constructed building base:  QDFyLpLDq2BeNLAhX
+I20231118-16:27:12.105(-10)? new building base:  [
+I20231118-16:27:12.105(-10)?   {
+I20231118-16:27:12.106(-10)?     _id: 'QDFyLpLDq2BeNLAhX',
+I20231118-16:27:12.106(-10)?     name: 'University of Hawaiʻi Press',
+I20231118-16:27:12.106(-10)?     floor_count: 1,
+I20231118-16:27:12.106(-10)?     floor_id: []
+I20231118-16:27:12.106(-10)?   }
+I20231118-16:27:12.106(-10)? ]
+I20231118-16:27:12.107(-10)? new floors constructed:  [ 'xSeawq4W5T7abynu8' ]
+I20231118-16:27:12.109(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.110(-10)?   {
+I20231118-16:27:12.110(-10)?     _id: 'QDFyLpLDq2BeNLAhX',
+I20231118-16:27:12.110(-10)?     name: 'University of Hawaiʻi Press',
+I20231118-16:27:12.110(-10)?     floor_count: 1,
+I20231118-16:27:12.111(-10)?     floor_id: [ 'xSeawq4W5T7abynu8' ]
+I20231118-16:27:12.111(-10)?   }
+I20231118-16:27:12.111(-10)? ]
+I20231118-16:27:12.111(-10)? { name: 'USDA Fruit Fly Lab', floor_count: 1 }
+I20231118-16:27:12.112(-10)? passed check
+I20231118-16:27:12.112(-10)? initializeBuilding call successful.
+I20231118-16:27:12.112(-10)? constructed building base:  qKcY7Jnb2kmYi6u4o
+I20231118-16:27:12.119(-10)? new building base:  [
+I20231118-16:27:12.120(-10)?   {
+I20231118-16:27:12.120(-10)?     _id: 'qKcY7Jnb2kmYi6u4o',
+I20231118-16:27:12.120(-10)?     name: 'USDA Fruit Fly Lab',
+I20231118-16:27:12.120(-10)?     floor_count: 1,
+I20231118-16:27:12.121(-10)?     floor_id: []
+I20231118-16:27:12.121(-10)?   }
+I20231118-16:27:12.121(-10)? ]
+I20231118-16:27:12.121(-10)? new floors constructed:  [ 'Mctgtc4w3MLGkpwn4' ]
+I20231118-16:27:12.127(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.128(-10)?   {
+I20231118-16:27:12.128(-10)?     _id: 'qKcY7Jnb2kmYi6u4o',
+I20231118-16:27:12.128(-10)?     name: 'USDA Fruit Fly Lab',
+I20231118-16:27:12.129(-10)?     floor_count: 1,
+I20231118-16:27:12.129(-10)?     floor_id: [ 'Mctgtc4w3MLGkpwn4' ]
+I20231118-16:27:12.129(-10)?   }
+I20231118-16:27:12.129(-10)? ]
+I20231118-16:27:12.129(-10)? { name: 'Waʻahila Faculty Housing', floor_count: 1 }
+I20231118-16:27:12.130(-10)? passed check
+I20231118-16:27:12.130(-10)? initializeBuilding call successful.
+I20231118-16:27:12.130(-10)? constructed building base:  jj59Bpf2XZgCtZPWy
+I20231118-16:27:12.135(-10)? new building base:  [
+I20231118-16:27:12.136(-10)?   {
+I20231118-16:27:12.136(-10)?     _id: 'jj59Bpf2XZgCtZPWy',
+I20231118-16:27:12.136(-10)?     name: 'Waʻahila Faculty Housing',
+I20231118-16:27:12.136(-10)?     floor_count: 1,
+I20231118-16:27:12.136(-10)?     floor_id: []
+I20231118-16:27:12.137(-10)?   }
+I20231118-16:27:12.137(-10)? ]
+I20231118-16:27:12.137(-10)? new floors constructed:  [ 'KZxaZ8BC5zQcNNtdd' ]
+I20231118-16:27:12.140(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.140(-10)?   {
+I20231118-16:27:12.140(-10)?     _id: 'jj59Bpf2XZgCtZPWy',
+I20231118-16:27:12.141(-10)?     name: 'Waʻahila Faculty Housing',
+I20231118-16:27:12.141(-10)?     floor_count: 1,
+I20231118-16:27:12.141(-10)?     floor_id: [ 'KZxaZ8BC5zQcNNtdd' ]
+I20231118-16:27:12.141(-10)?   }
+I20231118-16:27:12.141(-10)? ]
+I20231118-16:27:12.142(-10)? { name: 'Warehouse', floor_count: 1 }
+I20231118-16:27:12.142(-10)? passed check
+I20231118-16:27:12.142(-10)? initializeBuilding call successful.
+I20231118-16:27:12.143(-10)? constructed building base:  wXtTzMe4kTiXxzBJS
+I20231118-16:27:12.151(-10)? new building base:  [
+I20231118-16:27:12.152(-10)?   {
+I20231118-16:27:12.152(-10)?     _id: 'wXtTzMe4kTiXxzBJS',
+I20231118-16:27:12.152(-10)?     name: 'Warehouse',
+I20231118-16:27:12.152(-10)?     floor_count: 1,
+I20231118-16:27:12.152(-10)?     floor_id: []
+I20231118-16:27:12.153(-10)?   }
+I20231118-16:27:12.153(-10)? ]
+I20231118-16:27:12.153(-10)? new floors constructed:  [ 'JqoxLWuMpJd4Pg5zx' ]
+I20231118-16:27:12.156(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.156(-10)?   {
+I20231118-16:27:12.156(-10)?     _id: 'wXtTzMe4kTiXxzBJS',
+I20231118-16:27:12.157(-10)?     name: 'Warehouse',
+I20231118-16:27:12.157(-10)?     floor_count: 1,
+I20231118-16:27:12.157(-10)?     floor_id: [ 'JqoxLWuMpJd4Pg5zx' ]
+I20231118-16:27:12.157(-10)?   }
+I20231118-16:27:12.157(-10)? ]
+I20231118-16:27:12.158(-10)? { name: 'Warrior Recreation Center', floor_count: 1 }
+I20231118-16:27:12.158(-10)? passed check
+I20231118-16:27:12.158(-10)? initializeBuilding call successful.
+I20231118-16:27:12.159(-10)? constructed building base:  9K7WsDfWJBXhsZFi4
+I20231118-16:27:12.164(-10)? new building base:  [
+I20231118-16:27:12.165(-10)?   {
+I20231118-16:27:12.165(-10)?     _id: '9K7WsDfWJBXhsZFi4',
+I20231118-16:27:12.165(-10)?     name: 'Warrior Recreation Center',
+I20231118-16:27:12.165(-10)?     floor_count: 1,
+I20231118-16:27:12.165(-10)?     floor_id: []
+I20231118-16:27:12.166(-10)?   }
+I20231118-16:27:12.166(-10)? ]
+I20231118-16:27:12.166(-10)? new floors constructed:  [ 'BsLdkWQvP4ZpQL3ta' ]
+I20231118-16:27:12.169(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.170(-10)?   {
+I20231118-16:27:12.170(-10)?     _id: '9K7WsDfWJBXhsZFi4',
+I20231118-16:27:12.170(-10)?     name: 'Warrior Recreation Center',
+I20231118-16:27:12.170(-10)?     floor_count: 1,
+I20231118-16:27:12.171(-10)?     floor_id: [ 'BsLdkWQvP4ZpQL3ta' ]
+I20231118-16:27:12.171(-10)?   }
+I20231118-16:27:12.171(-10)? ]
+I20231118-16:27:12.172(-10)? { name: 'Watanabe Hall', floor_count: 1 }
+I20231118-16:27:12.172(-10)? passed check
+I20231118-16:27:12.172(-10)? initializeBuilding call successful.
+I20231118-16:27:12.173(-10)? constructed building base:  CNnqFuuN2zRfpkaDr
+I20231118-16:27:12.178(-10)? new building base:  [
+I20231118-16:27:12.179(-10)?   {
+I20231118-16:27:12.179(-10)?     _id: 'CNnqFuuN2zRfpkaDr',
+I20231118-16:27:12.179(-10)?     name: 'Watanabe Hall',
+I20231118-16:27:12.179(-10)?     floor_count: 1,
+I20231118-16:27:12.179(-10)?     floor_id: []
+I20231118-16:27:12.180(-10)?   }
+I20231118-16:27:12.180(-10)? ]
+I20231118-16:27:12.180(-10)? new floors constructed:  [ 'aC3LEg8WF29ooEjFk' ]
+I20231118-16:27:12.183(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.184(-10)?   {
+I20231118-16:27:12.184(-10)?     _id: 'CNnqFuuN2zRfpkaDr',
+I20231118-16:27:12.184(-10)?     name: 'Watanabe Hall',
+I20231118-16:27:12.185(-10)?     floor_count: 1,
+I20231118-16:27:12.185(-10)?     floor_id: [ 'aC3LEg8WF29ooEjFk' ]
+I20231118-16:27:12.185(-10)?   }
+I20231118-16:27:12.185(-10)? ]
+I20231118-16:27:12.185(-10)? { name: 'Webster Hall', floor_count: 1 }
+I20231118-16:27:12.186(-10)? passed check
+I20231118-16:27:12.186(-10)? initializeBuilding call successful.
+I20231118-16:27:12.186(-10)? constructed building base:  dv8zmNTffbCsY9dTv
+I20231118-16:27:12.191(-10)? new building base:  [
+I20231118-16:27:12.192(-10)?   {
+I20231118-16:27:12.192(-10)?     _id: 'dv8zmNTffbCsY9dTv',
+I20231118-16:27:12.192(-10)?     name: 'Webster Hall',
+I20231118-16:27:12.192(-10)?     floor_count: 1,
+I20231118-16:27:12.192(-10)?     floor_id: []
+I20231118-16:27:12.193(-10)?   }
+I20231118-16:27:12.193(-10)? ]
+I20231118-16:27:12.193(-10)? new floors constructed:  [ 'kpN86t6beZjpXGsMc' ]
+I20231118-16:27:12.197(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.198(-10)?   {
+I20231118-16:27:12.198(-10)?     _id: 'dv8zmNTffbCsY9dTv',
+I20231118-16:27:12.198(-10)?     name: 'Webster Hall',
+I20231118-16:27:12.198(-10)?     floor_count: 1,
+I20231118-16:27:12.198(-10)?     floor_id: [ 'kpN86t6beZjpXGsMc' ]
+I20231118-16:27:12.199(-10)?   }
+I20231118-16:27:12.199(-10)? ]
+I20231118-16:27:12.199(-10)? { name: 'Wist Annex 1', floor_count: 1 }
+I20231118-16:27:12.199(-10)? passed check
+I20231118-16:27:12.200(-10)? initializeBuilding call successful.
+I20231118-16:27:12.200(-10)? constructed building base:  Mt7xAj83FTX9i6Guc
+I20231118-16:27:12.204(-10)? new building base:  [
+I20231118-16:27:12.204(-10)?   {
+I20231118-16:27:12.204(-10)?     _id: 'Mt7xAj83FTX9i6Guc',
+I20231118-16:27:12.205(-10)?     name: 'Wist Annex 1',
+I20231118-16:27:12.205(-10)?     floor_count: 1,
+I20231118-16:27:12.205(-10)?     floor_id: []
+I20231118-16:27:12.205(-10)?   }
+I20231118-16:27:12.205(-10)? ]
+I20231118-16:27:12.205(-10)? new floors constructed:  [ 'qBTaNq2ZX3oP98W5k' ]
+I20231118-16:27:12.210(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.210(-10)?   {
+I20231118-16:27:12.210(-10)?     _id: 'Mt7xAj83FTX9i6Guc',
+I20231118-16:27:12.210(-10)?     name: 'Wist Annex 1',
+I20231118-16:27:12.211(-10)?     floor_count: 1,
+I20231118-16:27:12.211(-10)?     floor_id: [ 'qBTaNq2ZX3oP98W5k' ]
+I20231118-16:27:12.211(-10)?   }
+I20231118-16:27:12.211(-10)? ]
+I20231118-16:27:12.211(-10)? { name: 'Wist Hall', floor_count: 1 }
+I20231118-16:27:12.212(-10)? passed check
+I20231118-16:27:12.212(-10)? initializeBuilding call successful.
+I20231118-16:27:12.212(-10)? constructed building base:  MPMmZJCwXobGTrvuT
+I20231118-16:27:12.217(-10)? new building base:  [
+I20231118-16:27:12.219(-10)?   {
+I20231118-16:27:12.219(-10)?     _id: 'MPMmZJCwXobGTrvuT',
+I20231118-16:27:12.220(-10)?     name: 'Wist Hall',
+I20231118-16:27:12.220(-10)?     floor_count: 1,
+I20231118-16:27:12.220(-10)?     floor_id: []
+I20231118-16:27:12.220(-10)?   }
+I20231118-16:27:12.220(-10)? ]
+I20231118-16:27:12.220(-10)? new floors constructed:  [ 'SsMj5wTh9W7KyKC9r' ]
+I20231118-16:27:12.221(-10)? assembled new floors to building. building data:  [
+I20231118-16:27:12.222(-10)?   {
+I20231118-16:27:12.222(-10)?     _id: 'MPMmZJCwXobGTrvuT',
+I20231118-16:27:12.222(-10)?     name: 'Wist Hall',
+I20231118-16:27:12.222(-10)?     floor_count: 1,
+I20231118-16:27:12.222(-10)?     floor_id: [ 'SsMj5wTh9W7KyKC9r' ]
+I20231118-16:27:12.223(-10)?   }
+I20231118-16:27:12.223(-10)? ]
+I20231118-16:27:12.223(-10)? initializeBuilding call successful.
+I20231118-16:27:12.240(-10)? [
+I20231118-16:27:12.243(-10)?   {
+I20231118-16:27:12.243(-10)?     _id: 'nAtqHHFZbBoQSXLzT',
+I20231118-16:27:12.244(-10)?     name: 'Administration Services Building 1',
+I20231118-16:27:12.244(-10)?     floor_count: 1,
+I20231118-16:27:12.244(-10)?     floor_id: [ 'oQD9Mxr9pCLsu5gpZ' ]
+I20231118-16:27:12.244(-10)?   },
+I20231118-16:27:12.244(-10)?   {
+I20231118-16:27:12.244(-10)?     _id: 'GS8vFpmEWN5pHzC8g',
+I20231118-16:27:12.244(-10)?     name: 'Administration Services Building 2',
+I20231118-16:27:12.244(-10)?     floor_count: 1,
+I20231118-16:27:12.244(-10)?     floor_id: [ 'wXFMPj29ryF5mpjed' ]
+I20231118-16:27:12.245(-10)?   },
+I20231118-16:27:12.245(-10)?   {
+I20231118-16:27:12.245(-10)?     _id: 'RbMSDgyiSd6bGQeM3',
+I20231118-16:27:12.245(-10)?     name: 'Agricultural Engineering Institute',
+I20231118-16:27:12.245(-10)?     floor_count: 1,
+I20231118-16:27:12.245(-10)?     floor_id: [ 'zhq3nmtGnoZ4CJ2XJ' ]
+I20231118-16:27:12.245(-10)?   },
+I20231118-16:27:12.245(-10)?   {
+I20231118-16:27:12.246(-10)?     _id: 'mE9XiLK5G22Ayu4LL',
+I20231118-16:27:12.246(-10)?     name: 'Agricultural Science',
+I20231118-16:27:12.246(-10)?     floor_count: 1,
+I20231118-16:27:12.246(-10)?     floor_id: [ 'N5cb5Diiwox2YbxyR' ]
+I20231118-16:27:12.246(-10)?   },
+I20231118-16:27:12.246(-10)?   {
+I20231118-16:27:12.246(-10)?     _id: '9aQTgQheg63Yn4tfN',
+I20231118-16:27:12.246(-10)?     name: 'Air Force ROTC Building',
+I20231118-16:27:12.247(-10)?     floor_count: 1,
+I20231118-16:27:12.247(-10)?     floor_id: [ 'k5njKMiSneKJW5F8g' ]
+I20231118-16:27:12.247(-10)?   },
+I20231118-16:27:12.247(-10)?   {
+I20231118-16:27:12.247(-10)?     _id: 'c6J5EugopDxbuKpoG',
+I20231118-16:27:12.247(-10)?     name: 'Andrews Outdoor Theatre',
+I20231118-16:27:12.247(-10)?     floor_count: 1,
+I20231118-16:27:12.247(-10)?     floor_id: [ 'w7MtKrdE5wjyGDfFu' ]
+I20231118-16:27:12.247(-10)?   },
+I20231118-16:27:12.248(-10)?   {
+I20231118-16:27:12.248(-10)?     _id: 'Azb5WMBd3inajF2ww',
+I20231118-16:27:12.248(-10)?     name: 'Architecture School',
+I20231118-16:27:12.248(-10)?     floor_count: 1,
+I20231118-16:27:12.248(-10)?     floor_id: [ 'XKAtH2w3dhrzsseRX' ]
+I20231118-16:27:12.248(-10)?   },
+I20231118-16:27:12.248(-10)?   {
+I20231118-16:27:12.248(-10)?     _id: 'dkpQ8xwxNTnydibDp',
+I20231118-16:27:12.248(-10)?     name: 'Army ROTC Building',
+I20231118-16:27:12.249(-10)?     floor_count: 1,
+I20231118-16:27:12.249(-10)?     floor_id: [ 'MToEWouiXnMCLXajf' ]
+I20231118-16:27:12.249(-10)?   },
+I20231118-16:27:12.249(-10)?   {
+I20231118-16:27:12.249(-10)?     _id: 'jAJ6NbtpDx463dxgD',
+I20231118-16:27:12.249(-10)?     name: 'Art Building',
+I20231118-16:27:12.249(-10)?     floor_count: 1,
+I20231118-16:27:12.250(-10)?     floor_id: [ 'AJiruPmT3MghNzndn' ]
+I20231118-16:27:12.250(-10)?   },
+I20231118-16:27:12.250(-10)?   {
+I20231118-16:27:12.250(-10)?     _id: 'djyzqxATC2PbR9T48',
+I20231118-16:27:12.250(-10)?     name: 'Bachman Annex 2',
+I20231118-16:27:12.250(-10)?     floor_count: 1,
+I20231118-16:27:12.250(-10)?     floor_id: [ '4suP5dBb6drfBMWG6' ]
+I20231118-16:27:12.250(-10)?   },
+I20231118-16:27:12.250(-10)?   {
+I20231118-16:27:12.251(-10)?     _id: 'HjSkgybQGWv5JYxN6',
+I20231118-16:27:12.251(-10)?     name: 'Bachman Annex 9–13',
+I20231118-16:27:12.251(-10)?     floor_count: 1,
+I20231118-16:27:12.251(-10)?     floor_id: [ 'qwtrg46PDKnCtv5Wp' ]
+I20231118-16:27:12.251(-10)?   },
+I20231118-16:27:12.251(-10)?   {
+I20231118-16:27:12.251(-10)?     _id: 'r69oqMp4RaE3vDDa6',
+I20231118-16:27:12.251(-10)?     name: 'Bachman Hall',
+I20231118-16:27:12.251(-10)?     floor_count: 1,
+I20231118-16:27:12.252(-10)?     floor_id: [ 'x9Ew9zHfvQPGRqdut' ]
+I20231118-16:27:12.252(-10)?   },
+I20231118-16:27:12.252(-10)?   {
+I20231118-16:27:12.252(-10)?     _id: 'iRZ6xZbvQhjgLwpTc',
+I20231118-16:27:12.252(-10)?     name: 'Bilger Addition',
+I20231118-16:27:12.252(-10)?     floor_count: 1,
+I20231118-16:27:12.252(-10)?     floor_id: [ 'ZfzA8LqMPSrx4Kswe' ]
+I20231118-16:27:12.252(-10)?   },
+I20231118-16:27:12.253(-10)?   {
+I20231118-16:27:12.253(-10)?     _id: 'FN26moSpAJbyGjDC8',
+I20231118-16:27:12.253(-10)?     name: 'Bilger Annex',
+I20231118-16:27:12.253(-10)?     floor_count: 1,
+I20231118-16:27:12.253(-10)?     floor_id: [ 'G4mWYy6cxxQu6sqpX' ]
+I20231118-16:27:12.253(-10)?   },
+I20231118-16:27:12.253(-10)?   {
+I20231118-16:27:12.253(-10)?     _id: 'kQdHNcEixzSmhgJ7Y',
+I20231118-16:27:12.253(-10)?     name: 'Bilger Hall',
+I20231118-16:27:12.254(-10)?     floor_count: 1,
+I20231118-16:27:12.254(-10)?     floor_id: [ 'TaFmBZjwECCS2upcN' ]
+I20231118-16:27:12.254(-10)?   },
+I20231118-16:27:12.254(-10)?   {
+I20231118-16:27:12.254(-10)?     _id: 'rKu289HPmALdTGNXr',
+I20231118-16:27:12.254(-10)?     name: 'Biomedical Sciences',
+I20231118-16:27:12.254(-10)?     floor_count: 1,
+I20231118-16:27:12.254(-10)?     floor_id: [ 'aQudNxhuipGNKgtTx' ]
+I20231118-16:27:12.254(-10)?   },
+I20231118-16:27:12.255(-10)?   {
+I20231118-16:27:12.255(-10)?     _id: 'bdD3qzAkhTjbsvyqh',
+I20231118-16:27:12.255(-10)?     name: 'Building 37',
+I20231118-16:27:12.255(-10)?     floor_count: 1,
+I20231118-16:27:12.255(-10)?     floor_id: [ 'edsTj5EQoQHNPBJNN' ]
+I20231118-16:27:12.255(-10)?   },
+I20231118-16:27:12.255(-10)?   {
+I20231118-16:27:12.255(-10)?     _id: 'uf56uB2CwA4F4zncj',
+I20231118-16:27:12.256(-10)?     name: 'Burns Hall',
+I20231118-16:27:12.256(-10)?     floor_count: 1,
+I20231118-16:27:12.256(-10)?     floor_id: [ 'W3kgDSwWBR4PjgrJ5' ]
+I20231118-16:27:12.256(-10)?   },
+I20231118-16:27:12.256(-10)?   {
+I20231118-16:27:12.256(-10)?     _id: '7h5JNzPN2jHpWvXXG',
+I20231118-16:27:12.256(-10)?     name: 'Campus Center',
+I20231118-16:27:12.256(-10)?     floor_count: 1,
+I20231118-16:27:12.256(-10)?     floor_id: [ 'MvvQG5heXcxGeaSy9' ]
+I20231118-16:27:12.257(-10)?   },
+I20231118-16:27:12.257(-10)?   {
+I20231118-16:27:12.257(-10)?     _id: 'ScZqMeAeevgdqx7uB',
+I20231118-16:27:12.257(-10)?     name: 'Castle Annex',
+I20231118-16:27:12.257(-10)?     floor_count: 1,
+I20231118-16:27:12.257(-10)?     floor_id: [ 'XewrqTrrZNNmzq8YC' ]
+I20231118-16:27:12.257(-10)?   },
+I20231118-16:27:12.257(-10)?   {
+I20231118-16:27:12.257(-10)?     _id: '9Xp9hphi2DipGefXz',
+I20231118-16:27:12.258(-10)?     name: 'Castle Memorial',
+I20231118-16:27:12.258(-10)?     floor_count: 1,
+I20231118-16:27:12.258(-10)?     floor_id: [ 'AWugJyx4msya6WsRh' ]
+I20231118-16:27:12.258(-10)?   },
+I20231118-16:27:12.258(-10)?   {
+I20231118-16:27:12.258(-10)?     _id: 'DKK9gL7RHFP9qWuzi',
+I20231118-16:27:12.258(-10)?     name: 'Center for Korean Studies',
+I20231118-16:27:12.258(-10)?     floor_count: 1,
+I20231118-16:27:12.259(-10)?     floor_id: [ 'RZ7jkTg7ZWBKdcYSb' ]
+I20231118-16:27:12.259(-10)?   },
+I20231118-16:27:12.259(-10)?   {
+I20231118-16:27:12.259(-10)?     _id: 'dobscPFqTaLSD6KfW',
+I20231118-16:27:12.259(-10)?     name: 'C-MORE Hale (Center for Microbial Oceanography: Research and Education)',
+I20231118-16:27:12.259(-10)?     floor_count: 1,
+I20231118-16:27:12.259(-10)?     floor_id: [ '7YyMYffFFbbg96qnM' ]
+I20231118-16:27:12.259(-10)?   },
+I20231118-16:27:12.259(-10)?   {
+I20231118-16:27:12.260(-10)?     _id: 'n3ikcuoPesXZ5QPzi',
+I20231118-16:27:12.260(-10)?     name: 'Cooke Field',
+I20231118-16:27:12.260(-10)?     floor_count: 1,
+I20231118-16:27:12.260(-10)?     floor_id: [ 'MNkepWQfcKGPPggXC' ]
+I20231118-16:27:12.260(-10)?   },
+I20231118-16:27:12.260(-10)?   {
+I20231118-16:27:12.260(-10)?     _id: 'mMj4RAGgmcBJzJATr',
+I20231118-16:27:12.260(-10)?     name: 'Crawford Hall',
+I20231118-16:27:12.260(-10)?     floor_count: 1,
+I20231118-16:27:12.261(-10)?     floor_id: [ 'JpHjLAEZyTBkAyTob' ]
+I20231118-16:27:12.261(-10)?   },
+I20231118-16:27:12.261(-10)?   {
+I20231118-16:27:12.261(-10)?     _id: 'EeZqhpbE6LygmcZGh',
+I20231118-16:27:12.261(-10)?     name: 'Dance Building',
+I20231118-16:27:12.261(-10)?     floor_count: 1,
+I20231118-16:27:12.261(-10)?     floor_id: [ '6HgzqSYrG79Ajjgmp' ]
+I20231118-16:27:12.261(-10)?   },
+I20231118-16:27:12.261(-10)?   {
+I20231118-16:27:12.262(-10)?     _id: 'THtGTiZtyMXapQHid',
+I20231118-16:27:12.262(-10)?     name: 'Dean Hall',
+I20231118-16:27:12.262(-10)?     floor_count: 1,
+I20231118-16:27:12.262(-10)?     floor_id: [ 'S9YKbjQgySxsNigTe' ]
+I20231118-16:27:12.262(-10)?   },
+I20231118-16:27:12.262(-10)?   {
+I20231118-16:27:12.262(-10)?     _id: 'v7F7qmMeaW9qzLeG8',
+I20231118-16:27:12.262(-10)?     name: 'Diving Safety Program',
+I20231118-16:27:12.263(-10)?     floor_count: 1,
+I20231118-16:27:12.263(-10)?     floor_id: [ 'XxARfSqyZqa6MYSuo' ]
+I20231118-16:27:12.263(-10)?   },
+I20231118-16:27:12.263(-10)?   {
+I20231118-16:27:12.263(-10)?     _id: 'nEzSbrH8WNrjzXSvR',
+I20231118-16:27:12.263(-10)?     name: 'Dole Street Offices',
+I20231118-16:27:12.263(-10)?     floor_count: 1,
+I20231118-16:27:12.263(-10)?     floor_id: [ 'ksigDKZcyTMexaW4H' ]
+I20231118-16:27:12.263(-10)?   },
+I20231118-16:27:12.264(-10)?   {
+I20231118-16:27:12.264(-10)?     _id: 'FnjMiwpB8YLEbdTn3',
+I20231118-16:27:12.264(-10)?     name: 'Dole Street Parking Structure',
+I20231118-16:27:12.264(-10)?     floor_count: 1,
+I20231118-16:27:12.264(-10)?     floor_id: [ 'nNmdRxPteR7EZNvHL' ]
+I20231118-16:27:12.264(-10)?   },
+I20231118-16:27:12.264(-10)?   {
+I20231118-16:27:12.264(-10)?     _id: 'KTCm36TMeMbYia54u',
+I20231118-16:27:12.265(-10)?     name: 'Edmondson Hall',
+I20231118-16:27:12.265(-10)?     floor_count: 1,
+I20231118-16:27:12.265(-10)?     floor_id: [ 'pHDYSot54BNJzQBHG' ]
+I20231118-16:27:12.265(-10)?   },
+I20231118-16:27:12.265(-10)?   {
+I20231118-16:27:12.265(-10)?     _id: 'xMuSTnzdEyTz5HEeh',
+I20231118-16:27:12.265(-10)?     name: 'Energy House',
+I20231118-16:27:12.265(-10)?     floor_count: 1,
+I20231118-16:27:12.265(-10)?     floor_id: [ 'NJ6Y2Jma7h6JjPaJE' ]
+I20231118-16:27:12.266(-10)?   },
+I20231118-16:27:12.266(-10)?   {
+I20231118-16:27:12.266(-10)?     _id: 'uW8zQLwuwxKFSd29P',
+I20231118-16:27:12.266(-10)?     name: 'Engineering Quad',
+I20231118-16:27:12.266(-10)?     floor_count: 1,
+I20231118-16:27:12.266(-10)?     floor_id: [ 'YyESXKSd7vf4tfsa4' ]
+I20231118-16:27:12.266(-10)?   },
+I20231118-16:27:12.266(-10)?   {
+I20231118-16:27:12.266(-10)?     _id: 'MyjYizcRifv2vRMFk',
+I20231118-16:27:12.267(-10)?     name: 'Environmental Health and Safety Offices',
+I20231118-16:27:12.267(-10)?     floor_count: 1,
+I20231118-16:27:12.267(-10)?     floor_id: [ 'uJCRS87FBLYiav6vq' ]
+I20231118-16:27:12.267(-10)?   },
+I20231118-16:27:12.267(-10)?   {
+I20231118-16:27:12.267(-10)?     _id: 'iyhrezjd6jkbbghSn',
+I20231118-16:27:12.267(-10)?     name: 'Environmental Protection Facility',
+I20231118-16:27:12.267(-10)?     floor_count: 1,
+I20231118-16:27:12.268(-10)?     floor_id: [ 'gqaJd7hQd4o63kfGq' ]
+I20231118-16:27:12.268(-10)?   },
+I20231118-16:27:12.268(-10)?   {
+I20231118-16:27:12.268(-10)?     _id: 'AAbaBkTqkhFdH6QmH',
+I20231118-16:27:12.268(-10)?     name: 'Everly Hall',
+I20231118-16:27:12.268(-10)?     floor_count: 1,
+I20231118-16:27:12.268(-10)?     floor_id: [ 'd2k7EwWtty6CBs4xf' ]
+I20231118-16:27:12.268(-10)?   },
+I20231118-16:27:12.268(-10)?   {
+I20231118-16:27:12.269(-10)?     _id: 'y6odYL3gcSFMFDJ5a',
+I20231118-16:27:12.269(-10)?     name: 'Federal Credit Union',
+I20231118-16:27:12.269(-10)?     floor_count: 1,
+I20231118-16:27:12.269(-10)?     floor_id: [ 'ETKbSHTEbFi3bxCev' ]
+I20231118-16:27:12.269(-10)?   },
+I20231118-16:27:12.269(-10)?   {
+I20231118-16:27:12.269(-10)?     _id: 'xBXH7eXMrDwzp5nm6',
+I20231118-16:27:12.269(-10)?     name: 'Financial Management Office',
+I20231118-16:27:12.269(-10)?     floor_count: 1,
+I20231118-16:27:12.270(-10)?     floor_id: [ 'NWmaLdNPhXNA4XknM' ]
+I20231118-16:27:12.270(-10)?   },
+I20231118-16:27:12.270(-10)?   {
+I20231118-16:27:12.270(-10)?     _id: 'kgwWSQPubRamsB9LX',
+I20231118-16:27:12.270(-10)?     name: 'Food Science and Technology',
+I20231118-16:27:12.270(-10)?     floor_count: 1,
+I20231118-16:27:12.270(-10)?     floor_id: [ 'Hytoas2xMPTkgv57k' ]
+I20231118-16:27:12.270(-10)?   },
+I20231118-16:27:12.271(-10)?   {
+I20231118-16:27:12.271(-10)?     _id: 'ieFzurnAEgBR2MxXR',
+I20231118-16:27:12.271(-10)?     name: 'Frear Hall',
+I20231118-16:27:12.271(-10)?     floor_count: 1,
+I20231118-16:27:12.271(-10)?     floor_id: [ '3hi3okeYJSEYJfcbS' ]
+I20231118-16:27:12.271(-10)?   },
+I20231118-16:27:12.271(-10)?   {
+I20231118-16:27:12.271(-10)?     _id: 'jTxXEMzuEL6gG4Lx9',
+I20231118-16:27:12.271(-10)?     name: 'Gartley Hall',
+I20231118-16:27:12.272(-10)?     floor_count: 1,
+I20231118-16:27:12.272(-10)?     floor_id: [ 'vy6MTYeoc8vx6v9XK' ]
+I20231118-16:27:12.272(-10)?   },
+I20231118-16:27:12.272(-10)?   {
+I20231118-16:27:12.272(-10)?     _id: '9W5mEc8SgSvnxYiuz',
+I20231118-16:27:12.272(-10)?     name: 'Gateway House',
+I20231118-16:27:12.272(-10)?     floor_count: 1,
+I20231118-16:27:12.272(-10)?     floor_id: [ 'QPzYrtLMTy2rWEpi7' ]
+I20231118-16:27:12.272(-10)?   },
+I20231118-16:27:12.273(-10)?   {
+I20231118-16:27:12.273(-10)?     _id: 'bjKN9ZWWP9y7gu3hq',
+I20231118-16:27:12.273(-10)?     name: 'George Hall',
+I20231118-16:27:12.273(-10)?     floor_count: 1,
+I20231118-16:27:12.273(-10)?     floor_id: [ 'GyHkq5TH9AZpNpSiN' ]
+I20231118-16:27:12.274(-10)?   },
+I20231118-16:27:12.274(-10)?   {
+I20231118-16:27:12.275(-10)?     _id: '9XPXqowkW7CGqqs7Z',
+I20231118-16:27:12.275(-10)?     name: 'Gilmore Hall',
+I20231118-16:27:12.275(-10)?     floor_count: 1,
+I20231118-16:27:12.275(-10)?     floor_id: [ 'NekrxXWgozNaGnXyD' ]
+I20231118-16:27:12.275(-10)?   },
+I20231118-16:27:12.275(-10)?   {
+I20231118-16:27:12.275(-10)?     _id: '7kstrTqrP3meb8JD3',
+I20231118-16:27:12.275(-10)?     name: 'Gym 1',
+I20231118-16:27:12.275(-10)?     floor_count: 1,
+I20231118-16:27:12.276(-10)?     floor_id: [ '8Je9sEeWtpapCfvRn' ]
+I20231118-16:27:12.276(-10)?   },
+I20231118-16:27:12.276(-10)?   {
+I20231118-16:27:12.276(-10)?     _id: 'sAeCTLJd7KF8H5AZL',
+I20231118-16:27:12.276(-10)?     name: 'Gym 2',
+I20231118-16:27:12.276(-10)?     floor_count: 1,
+I20231118-16:27:12.276(-10)?     floor_id: [ 'g2nkJQX9R25EQ4CMG' ]
+I20231118-16:27:12.277(-10)?   },
+I20231118-16:27:12.277(-10)?   {
+I20231118-16:27:12.277(-10)?     _id: 'SRfNMzD5hRZvi4Mui',
+I20231118-16:27:12.277(-10)?     name: 'Hale Aloha Lehua',
+I20231118-16:27:12.277(-10)?     floor_count: 1,
+I20231118-16:27:12.277(-10)?     floor_id: [ 'kRTnBrzPHb5cdxpav' ]
+I20231118-16:27:12.277(-10)?   },
+I20231118-16:27:12.277(-10)?   {
+I20231118-16:27:12.278(-10)?     _id: 'tjSqaijgheWyfCRFr',
+I20231118-16:27:12.278(-10)?     name: 'Hale Aloha ʻIlima',
+I20231118-16:27:12.278(-10)?     floor_count: 1,
+I20231118-16:27:12.278(-10)?     floor_id: [ 'Ko4FioCJi2psbLFcz' ]
+I20231118-16:27:12.278(-10)?   },
+I20231118-16:27:12.278(-10)?   {
+I20231118-16:27:12.278(-10)?     _id: 'QAYDWb6vfwgCiMoEq',
+I20231118-16:27:12.278(-10)?     name: 'Hale Aloha Mokihana',
+I20231118-16:27:12.279(-10)?     floor_count: 1,
+I20231118-16:27:12.279(-10)?     floor_id: [ 'tetBu5cy2NW8qQEpA' ]
+I20231118-16:27:12.279(-10)?   },
+I20231118-16:27:12.279(-10)?   {
+I20231118-16:27:12.279(-10)?     _id: 'ue82BtRyz6AA3g9jj',
+I20231118-16:27:12.279(-10)?     name: 'Hale Aloha Lokelani',
+I20231118-16:27:12.279(-10)?     floor_count: 1,
+I20231118-16:27:12.279(-10)?     floor_id: [ '9CmNaKGGTZortZ9ud' ]
+I20231118-16:27:12.279(-10)?   },
+I20231118-16:27:12.280(-10)?   {
+I20231118-16:27:12.280(-10)?     _id: 'HFNpb2avpW7qD7inf',
+I20231118-16:27:12.280(-10)?     name: 'Hale Aloha Cafeteria',
+I20231118-16:27:12.280(-10)?     floor_count: 1,
+I20231118-16:27:12.280(-10)?     floor_id: [ 'WB5wFgfEea3gJw3fa' ]
+I20231118-16:27:12.280(-10)?   },
+I20231118-16:27:12.280(-10)?   {
+I20231118-16:27:12.281(-10)?     _id: 'JtQDoE5eAqKSiWFZd',
+I20231118-16:27:12.281(-10)?     name: 'Hale Ānuenue',
+I20231118-16:27:12.281(-10)?     floor_count: 1,
+I20231118-16:27:12.281(-10)?     floor_id: [ 'qsG4edpAQGgjswWsi' ]
+I20231118-16:27:12.281(-10)?   },
+I20231118-16:27:12.281(-10)?   {
+I20231118-16:27:12.281(-10)?     _id: 'LWHHoceJhSpL9XyhY',
+I20231118-16:27:12.281(-10)?     name: 'Hale Halawai',
+I20231118-16:27:12.282(-10)?     floor_count: 1,
+I20231118-16:27:12.282(-10)?     floor_id: [ '5WdqLHK9yKbdh66Dn' ]
+I20231118-16:27:12.282(-10)?   },
+I20231118-16:27:12.282(-10)?   {
+I20231118-16:27:12.282(-10)?     _id: 'M2P55bwtSR9XPtgRw',
+I20231118-16:27:12.282(-10)?     name: 'Hale Kahawai',
+I20231118-16:27:12.282(-10)?     floor_count: 1,
+I20231118-16:27:12.282(-10)?     floor_id: [ 'XsH8TndWR42aDaags' ]
+I20231118-16:27:12.283(-10)?   },
+I20231118-16:27:12.283(-10)?   {
+I20231118-16:27:12.283(-10)?     _id: 'E45CZyzAFwd9NXb6W',
+I20231118-16:27:12.283(-10)?     name: 'Hale Kuahine',
+I20231118-16:27:12.283(-10)?     floor_count: 1,
+I20231118-16:27:12.283(-10)?     floor_id: [ 'EBM9jB645WwbLopiD' ]
+I20231118-16:27:12.283(-10)?   },
+I20231118-16:27:12.283(-10)?   {
+I20231118-16:27:12.283(-10)?     _id: 'eFKN7XgkDo4Tzhcqa',
+I20231118-16:27:12.284(-10)?     name: 'Hale Laulima',
+I20231118-16:27:12.284(-10)?     floor_count: 1,
+I20231118-16:27:12.284(-10)?     floor_id: [ 'dMvpuXzhhkd8eBXYi' ]
+I20231118-16:27:12.284(-10)?   },
+I20231118-16:27:12.284(-10)?   {
+I20231118-16:27:12.284(-10)?     _id: 'CFRf2Zuoa2WCaozX9',
+I20231118-16:27:12.284(-10)?     name: 'Hale Mānoa',
+I20231118-16:27:12.284(-10)?     floor_count: 1,
+I20231118-16:27:12.285(-10)?     floor_id: [ 'S49v7FPpMWZJdSMBu' ]
+I20231118-16:27:12.285(-10)?   },
+I20231118-16:27:12.285(-10)?   {
+I20231118-16:27:12.285(-10)?     _id: 'bPxS3o2PtHyhoKXHZ',
+I20231118-16:27:12.285(-10)?     name: 'Hale Noelani',
+I20231118-16:27:12.285(-10)?     floor_count: 1,
+I20231118-16:27:12.285(-10)?     floor_id: [ 'iyNvuG7tGMqzhmAaW' ]
+I20231118-16:27:12.285(-10)?   },
+I20231118-16:27:12.286(-10)?   {
+I20231118-16:27:12.286(-10)?     _id: 'qgFBEyw6y5uySyxXv',
+I20231118-16:27:12.286(-10)?     name: 'Hale Wainani',
+I20231118-16:27:12.286(-10)?     floor_count: 1,
+I20231118-16:27:12.286(-10)?     floor_id: [ 'QKrHjJHaqMQARKnM9' ]
+I20231118-16:27:12.286(-10)?   },
+I20231118-16:27:12.286(-10)?   {
+I20231118-16:27:12.286(-10)?     _id: 'M7yn2WQv6fwF4bshB',
+I20231118-16:27:12.286(-10)?     name: 'Hamilton Library',
+I20231118-16:27:12.287(-10)?     floor_count: 1,
+I20231118-16:27:12.287(-10)?     floor_id: [ 'xQcicqkicA4LX9CAx' ]
+I20231118-16:27:12.287(-10)?   },
+I20231118-16:27:12.287(-10)?   {
+I20231118-16:27:12.287(-10)?     _id: 'fwqTk9A6kHYTxByYp',
+I20231118-16:27:12.287(-10)?     name: 'Hawaiʻi English Language Program',
+I20231118-16:27:12.287(-10)?     floor_count: 1,
+I20231118-16:27:12.287(-10)?     floor_id: [ 'wx9wgZu98tphSzR5N' ]
+I20231118-16:27:12.287(-10)?   },
+I20231118-16:27:12.288(-10)?   {
+I20231118-16:27:12.288(-10)?     _id: 'broXqrQPfcpyJ3nCv',
+I20231118-16:27:12.288(-10)?     name: 'Hawaiʻi Hall',
+I20231118-16:27:12.288(-10)?     floor_count: 1,
+I20231118-16:27:12.288(-10)?     floor_id: [ 'boKE74YHKdSmQrJrR' ]
+I20231118-16:27:12.288(-10)?   },
+I20231118-16:27:12.288(-10)?   {
+I20231118-16:27:12.288(-10)?     _id: 'gGfD3WmxCXTx55eiF',
+I20231118-16:27:12.288(-10)?     name: 'Hawaiʻi Institute of Geophysics',
+I20231118-16:27:12.289(-10)?     floor_count: 1,
+I20231118-16:27:12.289(-10)?     floor_id: [ '8qPhZ6cP3E54s8XuH' ]
+I20231118-16:27:12.289(-10)?   },
+I20231118-16:27:12.289(-10)?   {
+I20231118-16:27:12.289(-10)?     _id: 'tTY7BY58oQ2TMohLf',
+I20231118-16:27:12.289(-10)?     name: 'Health Services',
+I20231118-16:27:12.289(-10)?     floor_count: 1,
+I20231118-16:27:12.289(-10)?     floor_id: [ 'mBizdq5eaQGqrSdNq' ]
+I20231118-16:27:12.290(-10)?   },
+I20231118-16:27:12.290(-10)?   {
+I20231118-16:27:12.290(-10)?     _id: 'kxuiGSHvadgso7DTL',
+I20231118-16:27:12.290(-10)?     name: 'Hemenway Hall',
+I20231118-16:27:12.290(-10)?     floor_count: 1,
+I20231118-16:27:12.290(-10)?     floor_id: [ '3CQthNZoJYHaErEmF' ]
+I20231118-16:27:12.290(-10)?   },
+I20231118-16:27:12.290(-10)?   {
+I20231118-16:27:12.290(-10)?     _id: 'y5s5qbpDx7XCcgBje',
+I20231118-16:27:12.291(-10)?     name: 'Henke Hall',
+I20231118-16:27:12.291(-10)?     floor_count: 1,
+I20231118-16:27:12.291(-10)?     floor_id: [ '7kuSLf7Zjuxc9NbcZ' ]
+I20231118-16:27:12.291(-10)?   },
+I20231118-16:27:12.291(-10)?   {
+I20231118-16:27:12.291(-10)?     _id: 'WCTwy2gZeZpBkYYKY',
+I20231118-16:27:12.291(-10)?     name: 'Holmes Hall',
+I20231118-16:27:12.291(-10)?     floor_count: 1,
+I20231118-16:27:12.292(-10)?     floor_id: [ 'jpA5bJaFTf3jqSv8C' ]
+I20231118-16:27:12.292(-10)?   },
+I20231118-16:27:12.292(-10)?   {
+I20231118-16:27:12.292(-10)?     _id: 'nQkkQ9oFpD2YeJhPx',
+I20231118-16:27:12.292(-10)?     name: 'Horticulture Greenhouses',
+I20231118-16:27:12.292(-10)?     floor_count: 1,
+I20231118-16:27:12.292(-10)?     floor_id: [ 'pyaKghQpMAL8FTDXS' ]
+I20231118-16:27:12.292(-10)?   },
+I20231118-16:27:12.292(-10)?   {
+I20231118-16:27:12.292(-10)?     _id: 'ZeerFgke9mJkgHiWe',
+I20231118-16:27:12.293(-10)?     name: 'Horticulture Headhouse',
+I20231118-16:27:12.293(-10)?     floor_count: 1,
+I20231118-16:27:12.293(-10)?     floor_id: [ 'a6cBbyrohzR4HQzGL' ]
+I20231118-16:27:12.293(-10)?   },
+I20231118-16:27:12.293(-10)?   {
+I20231118-16:27:12.293(-10)?     _id: 'mj3tAK9xGxot62xYG',
+I20231118-16:27:12.293(-10)?     name: 'Information Technology Center',
+I20231118-16:27:12.293(-10)?     floor_count: 1,
+I20231118-16:27:12.293(-10)?     floor_id: [ 'CMwK7A9jAswotWZjk' ]
+I20231118-16:27:12.294(-10)?   },
+I20231118-16:27:12.294(-10)?   {
+I20231118-16:27:12.294(-10)?     _id: 'qSvAj3vhyS3dchxAj',
+I20231118-16:27:12.294(-10)?     name: 'Institute for Astronomy',
+I20231118-16:27:12.294(-10)?     floor_count: 1,
+I20231118-16:27:12.294(-10)?     floor_id: [ 'mgDxPM2pZ36dHynmi' ]
+I20231118-16:27:12.294(-10)?   },
+I20231118-16:27:12.294(-10)?   {
+I20231118-16:27:12.294(-10)?     _id: '7hoocsknRzMitChTK',
+I20231118-16:27:12.294(-10)?     name: 'Jefferson Hall',
+I20231118-16:27:12.295(-10)?     floor_count: 1,
+I20231118-16:27:12.295(-10)?     floor_id: [ 'BmDMSWtXrpZ2WzsvL' ]
+I20231118-16:27:12.295(-10)?   },
+I20231118-16:27:12.295(-10)?   {
+I20231118-16:27:12.295(-10)?     _id: 'rvmHPqmj8FnTBzu67',
+I20231118-16:27:12.295(-10)?     name: 'John A. Burns School of Medicine',
+I20231118-16:27:12.295(-10)?     floor_count: 1,
+I20231118-16:27:12.295(-10)?     floor_id: [ 'iAAFcHDWBreAv4m3Z' ]
+I20231118-16:27:12.295(-10)?   },
+I20231118-16:27:12.296(-10)?   {
+I20231118-16:27:12.296(-10)?     _id: 'Ff8pYRAGqgWTrWC3m',
+I20231118-16:27:12.296(-10)?     name: 'Johnson Hall A',
+I20231118-16:27:12.296(-10)?     floor_count: 1,
+I20231118-16:27:12.296(-10)?     floor_id: [ 'qXNpkEhYKQrmdXvsg' ]
+I20231118-16:27:12.296(-10)?   },
+I20231118-16:27:12.296(-10)?   {
+I20231118-16:27:12.296(-10)?     _id: 'twRNh638yN5i2NfC7',
+I20231118-16:27:12.296(-10)?     name: 'Johnson Hall B',
+I20231118-16:27:12.296(-10)?     floor_count: 1,
+I20231118-16:27:12.297(-10)?     floor_id: [ '7JssBgf2v7gAro5Lu' ]
+I20231118-16:27:12.297(-10)?   },
+I20231118-16:27:12.297(-10)?   {
+I20231118-16:27:12.297(-10)?     _id: 'P94xTHfQd4M8MCZbE',
+I20231118-16:27:12.297(-10)?     name: 'Kahanamoku Pool',
+I20231118-16:27:12.297(-10)?     floor_count: 1,
+I20231118-16:27:12.297(-10)?     floor_id: [ 'HRJYgcnfSMoqcaRC6' ]
+I20231118-16:27:12.297(-10)?   },
+I20231118-16:27:12.297(-10)?   {
+I20231118-16:27:12.298(-10)?     _id: 'dj9En8xvZ8fXjtiTh',
+I20231118-16:27:12.298(-10)?     name: 'Kamakakūokalani Center for Hawaiian Studies',
+I20231118-16:27:12.298(-10)?     floor_count: 1,
+I20231118-16:27:12.298(-10)?     floor_id: [ 'fz8k6PAw2W2L39hKm' ]
+I20231118-16:27:12.298(-10)?   },
+I20231118-16:27:12.298(-10)?   {
+I20231118-16:27:12.298(-10)?     _id: '2EosAEKfFko33s66S',
+I20231118-16:27:12.298(-10)?     name: 'Kauʻiokahaloa Iki Faculty Housing',
+I20231118-16:27:12.299(-10)?     floor_count: 1,
+I20231118-16:27:12.299(-10)?     floor_id: [ 'wqCBWd9jq7bdtBrWB' ]
+I20231118-16:27:12.299(-10)?   },
+I20231118-16:27:12.299(-10)?   {
+I20231118-16:27:12.299(-10)?     _id: 'XpFgBHXMJ58XGiN28',
+I20231118-16:27:12.299(-10)?     name: 'Kauʻiokahaloa Nui Faculty Housing',
+I20231118-16:27:12.299(-10)?     floor_count: 1,
+I20231118-16:27:12.299(-10)?     floor_id: [ 'PGrjYDJZLD3W4Dczg' ]
+I20231118-16:27:12.299(-10)?   },
+I20231118-16:27:12.299(-10)?   {
+I20231118-16:27:12.300(-10)?     _id: 'masJ4nyQWMDCQDM2a',
+I20231118-16:27:12.300(-10)?     name: 'Keller Hall',
+I20231118-16:27:12.300(-10)?     floor_count: 1,
+I20231118-16:27:12.300(-10)?     floor_id: [ 'Bo9GAM6EFC39F8Fnk' ]
+I20231118-16:27:12.300(-10)?   },
+I20231118-16:27:12.300(-10)?   {
+I20231118-16:27:12.300(-10)?     _id: 'XMSscQYWoJwemnCpC',
+I20231118-16:27:12.300(-10)?     name: 'Kennedy Theatre',
+I20231118-16:27:12.300(-10)?     floor_count: 1,
+I20231118-16:27:12.301(-10)?     floor_id: [ 'xqhvWA69cET8jv727' ]
+I20231118-16:27:12.301(-10)?   },
+I20231118-16:27:12.301(-10)?   {
+I20231118-16:27:12.301(-10)?     _id: 'gp3jeAjAPAHGsN6tc',
+I20231118-16:27:12.301(-10)?     name: 'KHET TV',
+I20231118-16:27:12.301(-10)?     floor_count: 1,
+I20231118-16:27:12.301(-10)?     floor_id: [ 'gTzDXGwaFAs9pb4Jc' ]
+I20231118-16:27:12.301(-10)?   },
+I20231118-16:27:12.302(-10)?   {
+I20231118-16:27:12.302(-10)?     _id: 'stSfwSn4Q59s27iQt',
+I20231118-16:27:12.302(-10)?     name: 'Klum Gym',
+I20231118-16:27:12.302(-10)?     floor_count: 1,
+I20231118-16:27:12.302(-10)?     floor_id: [ 'rZwWin8ChXh6Cw3xd' ]
+I20231118-16:27:12.302(-10)?   },
+I20231118-16:27:12.302(-10)?   {
+I20231118-16:27:12.302(-10)?     _id: 'TYwz7u34LDQtQszHJ',
+I20231118-16:27:12.302(-10)?     name: 'Krauss Annex 19',
+I20231118-16:27:12.303(-10)?     floor_count: 1,
+I20231118-16:27:12.303(-10)?     floor_id: [ 'Hom9urL68RG7yThp9' ]
+I20231118-16:27:12.303(-10)?   },
+I20231118-16:27:12.303(-10)?   {
+I20231118-16:27:12.303(-10)?     _id: '9cxip5SGBfMkc3cvk',
+I20231118-16:27:12.303(-10)?     name: 'Krauss Annex U',
+I20231118-16:27:12.303(-10)?     floor_count: 1,
+I20231118-16:27:12.303(-10)?     floor_id: [ 'GLqjHN458zQpj2rJj' ]
+I20231118-16:27:12.303(-10)?   },
+I20231118-16:27:12.303(-10)?   {
+I20231118-16:27:12.304(-10)?     _id: 'J6tv8N5q7B7qarnkh',
+I20231118-16:27:12.304(-10)?     name: 'Krauss Hall',
+I20231118-16:27:12.304(-10)?     floor_count: 1,
+I20231118-16:27:12.304(-10)?     floor_id: [ '4dErr5jo46mt97P8j' ]
+I20231118-16:27:12.304(-10)?   },
+I20231118-16:27:12.304(-10)?   {
+I20231118-16:27:12.304(-10)?     _id: 'LM3Fhugy5No8HBGfe',
+I20231118-16:27:12.304(-10)?     name: 'Kuykendall Annex',
+I20231118-16:27:12.304(-10)?     floor_count: 1,
+I20231118-16:27:12.305(-10)?     floor_id: [ 'vPynsuF2a8e26sH6z' ]
+I20231118-16:27:12.305(-10)?   },
+I20231118-16:27:12.305(-10)?   {
+I20231118-16:27:12.305(-10)?     _id: 'SvgvExsKhk36idhiD',
+I20231118-16:27:12.305(-10)?     name: 'Kuykendall Hall',
+I20231118-16:27:12.305(-10)?     floor_count: 1,
+I20231118-16:27:12.305(-10)?     floor_id: [ 'NcMGQNAp2Pzx6LhnM' ]
+I20231118-16:27:12.305(-10)?   },
+I20231118-16:27:12.305(-10)?   {
+I20231118-16:27:12.306(-10)?     _id: 'RE9JJ66HwnJDYooeS',
+I20231118-16:27:12.306(-10)?     name: 'Lab School Portables 1–4',
+I20231118-16:27:12.306(-10)?     floor_count: 1,
+I20231118-16:27:12.306(-10)?     floor_id: [ 'YxHjJKCGNMDv4aFb4' ]
+I20231118-16:27:12.306(-10)?   },
+I20231118-16:27:12.306(-10)?   {
+I20231118-16:27:12.306(-10)?     _id: 'npjfevNnsw42Q5Mep',
+I20231118-16:27:12.306(-10)?     name: 'Landscaping',
+I20231118-16:27:12.306(-10)?     floor_count: 1,
+I20231118-16:27:12.306(-10)?     floor_id: [ 'gewcpm3G4mv2hiQBF' ]
+I20231118-16:27:12.307(-10)?   },
+I20231118-16:27:12.307(-10)?   {
+I20231118-16:27:12.307(-10)?     _id: 'CmoSTb55nCTeoQhh4',
+I20231118-16:27:12.307(-10)?     name: 'Law Library',
+I20231118-16:27:12.307(-10)?     floor_count: 1,
+I20231118-16:27:12.307(-10)?     floor_id: [ 'cpiqTFWa2XwHzRLp5' ]
+I20231118-16:27:12.307(-10)?   },
+I20231118-16:27:12.307(-10)?   {
+I20231118-16:27:12.307(-10)?     _id: 'qfaKsgArLmGtvg7rS',
+I20231118-16:27:12.308(-10)?     name: 'Law School',
+I20231118-16:27:12.308(-10)?     floor_count: 1,
+I20231118-16:27:12.308(-10)?     floor_id: [ 'jaeNoWrQQZq34yBuf' ]
+I20231118-16:27:12.308(-10)?   },
+I20231118-16:27:12.308(-10)?   {
+I20231118-16:27:12.308(-10)?     _id: 'FcBQXYJPGCs9FRhwu',
+I20231118-16:27:12.308(-10)?     name: 'Lincoln Hall',
+I20231118-16:27:12.308(-10)?     floor_count: 1,
+I20231118-16:27:12.308(-10)?     floor_id: [ 'DJBDiTHiJXfu486jg' ]
+I20231118-16:27:12.308(-10)?   },
+I20231118-16:27:12.308(-10)?   {
+I20231118-16:27:12.309(-10)?     _id: 'uB3MYD34i3rXFqoLf',
+I20231118-16:27:12.309(-10)?     name: 'Lincoln Hall Annex',
+I20231118-16:27:12.309(-10)?     floor_count: 1,
+I20231118-16:27:12.309(-10)?     floor_id: [ 'x9Ghb7thrSWKFo9pK' ]
+I20231118-16:27:12.309(-10)?   },
+I20231118-16:27:12.309(-10)?   {
+I20231118-16:27:12.309(-10)?     _id: 'K2AziNtxTsKveYxgE',
+I20231118-16:27:12.309(-10)?     name: 'Magoon Facility',
+I20231118-16:27:12.309(-10)?     floor_count: 1,
+I20231118-16:27:12.309(-10)?     floor_id: [ '6vgSpQieqTyC2ykn2' ]
+I20231118-16:27:12.310(-10)?   },
+I20231118-16:27:12.310(-10)?   {
+I20231118-16:27:12.310(-10)?     _id: 'StsRk3i2hFB8f466c',
+I20231118-16:27:12.310(-10)?     name: 'Maile Way Annex',
+I20231118-16:27:12.310(-10)?     floor_count: 1,
+I20231118-16:27:12.310(-10)?     floor_id: [ 'DwAWGLtyFSsatw8pC' ]
+I20231118-16:27:12.310(-10)?   },
+I20231118-16:27:12.310(-10)?   {
+I20231118-16:27:12.310(-10)?     _id: 'tBoNYwkyGcyibRAfC',
+I20231118-16:27:12.310(-10)?     name: 'Marine Sciences Building',
+I20231118-16:27:12.311(-10)?     floor_count: 1,
+I20231118-16:27:12.311(-10)?     floor_id: [ 'aEzBcAvabY5gKuDeY' ]
+I20231118-16:27:12.311(-10)?   },
+I20231118-16:27:12.311(-10)?   {
+I20231118-16:27:12.311(-10)?     _id: 'NNZEQhxSmPhrEMnn5',
+I20231118-16:27:12.311(-10)?     name: 'Miller Hall',
+I20231118-16:27:12.311(-10)?     floor_count: 1,
+I20231118-16:27:12.311(-10)?     floor_id: [ 'gfKrrxiajaGaycJeB' ]
+I20231118-16:27:12.311(-10)?   },
+I20231118-16:27:12.311(-10)?   {
+I20231118-16:27:12.311(-10)?     _id: 'FTF6yF2Jp7CugqL48',
+I20231118-16:27:12.312(-10)?     name: 'Miller Hall Annex',
+I20231118-16:27:12.312(-10)?     floor_count: 1,
+I20231118-16:27:12.312(-10)?     floor_id: [ 'hkPvL5dnKKFmoCAQS' ]
+I20231118-16:27:12.312(-10)?   },
+I20231118-16:27:12.312(-10)?   {
+I20231118-16:27:12.312(-10)?     _id: 'z5Fn8ssRLriwze87Q',
+I20231118-16:27:12.312(-10)?     name: 'Moore Hall',
+I20231118-16:27:12.312(-10)?     floor_count: 1,
+I20231118-16:27:12.312(-10)?     floor_id: [ 'ymhQA585wqchoFgMa' ]
+I20231118-16:27:12.313(-10)?   },
+I20231118-16:27:12.313(-10)?   ... 47 more items
+I20231118-16:27:12.313(-10)? ]
+I20231118-16:27:12.313(-10)? getBuildings call successful.
+=> Started your app.
+
+=> App running at: http://localhost:3000/
