@@ -20,6 +20,9 @@ import Directory from '../pages/Directory';
 import Profile from '../pages/Profile';
 import Rating from '../pages/RatingPage';
 import AddBathroom from '../pages/AddBathroom';
+import Page from '../pages/Gender';
+import Bathroom from '../pages/Bathroom';
+import BathroomCard from '../pages/BathroomCard';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -41,7 +44,10 @@ const App = () => {
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/directory" element={<ProtectedRoute><Directory /></ProtectedRoute>} />
+          <Route path="/page" element={<ProtectedRoute><Page /></ProtectedRoute>} />
+          <Route path="/bathroom" element={<ProtectedRoute><Bathroom /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+          <Route path="/bathroomcard" element={<ProtectedRoute><BathroomCard /></ProtectedRoute>} />
           <Route path="/rating" element={<ProtectedRoute><Rating /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />

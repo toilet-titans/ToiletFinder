@@ -10,20 +10,20 @@ import Landing from './Landing';
 
 // File copied from ListStuff.jsx
 /* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-const Directory = () => (
+const Bathroom = () => (
   <Container className="py-3">
     <Row className="justify-content-center">
       <Col md={7}>
         <Col className="text-center">
-          <h2>Buildings</h2>
+          <h2>Bathrooms</h2>
         </Col>
         <ListGroup>
-          <Link to="/Page"><ListGroupItem>Moore Hall</ListGroupItem></Link>
-          <Link to="/Page"><ListGroupItem>Kuykendall Hall</ListGroupItem></Link>
+          <Link to="/BathroomCard"><ListGroupItem>Bathroom #1</ListGroupItem></Link>
+          <Link to="/BathroomCard"><ListGroupItem>Bathroom #2</ListGroupItem></Link>
         </ListGroup>
       </Col>
     </Row>
   </Container>
 );
 
-export default Directory;
+export default Bathroom;
