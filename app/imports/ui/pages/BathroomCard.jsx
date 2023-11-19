@@ -5,6 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Autocomplete, Textarea } from '@mantine/core';
+import Rating from '../components/BathroomCardTable';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
@@ -61,6 +62,7 @@ const BathroomCard = () => {
                     <h1>Bathroom Number</h1>
                   </Col>
                 </Row>
+                <Rating />
                 <Row>
                   <Col><Textarea
                     label="Add Comment"
