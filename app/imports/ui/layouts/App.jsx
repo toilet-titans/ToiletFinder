@@ -19,7 +19,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Directory from '../pages/Directory';
 import Profile from '../pages/Profile';
 import Rating from '../pages/RatingPage';
-import BathroomAdmin from '../pages/BathroomAdmin';
+import AddBathroom from '../pages/AddBathroom';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/rating" element={<ProtectedRoute><Rating /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
-          <Route path="/admin" element={<AdminProtectedRoute ready={ready}><BathroomAdmin /></AdminProtectedRoute>} />
+          <Route path="/add-bathroom" element={<AdminProtectedRoute ready={ready}><AddBathroom /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
