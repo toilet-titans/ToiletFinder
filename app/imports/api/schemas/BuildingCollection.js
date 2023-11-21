@@ -11,6 +11,7 @@ class BuildingCollection {
     this.schema = new SimpleSchema({
       name: {
         type: String,
+        unique: true,
       },
       floor_count: {
         type: Number,

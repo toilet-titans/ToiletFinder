@@ -258,19 +258,45 @@ Meteor.methods({
     }
     console.log('\naddBathroom done');
   },
-  'initializeBuilding': function (building_data) {
-    // building_data: { name: , floor_count}
-    console.log(building_data);
-    check(building_data, {
-      name: String,
-      floor_count: 1,
+  'initializeBuilding': function (building_data_array) {
+    check(building_data_array, Array);
+    console.log('passed array check');
+    let dup_count = 0;
+    building_data_array.forEach(element => {
+      check(element, {
+        name: String,
+        floor_count: Match.Integer,
+      });
+      console.log('\npassed check');
+      const building_check = Building_.collection.find({ name: element.name }).fetch();
+      if (building_check.length === 0) {
+        building_construction(element.name, element.floor_count);
+      } else {
+        console.log('This building is already in the database: ', building_check[0]._id);
+        dup_count++;
+      }
     });
-    console.log('passed check');
-    building_construction(building_data.name, building_data.floor_count);
+    console.log(`building collection count: ${Building_.collection.find().count()}`);
+    console.log(`initial array count: ${building_data_array.length}`);
+    console.log(`number of duplicate buildings: ${dup_count}`);
   },
   'getBuildings': function () {
     const data = fetch_building_all();
-    console.log(data);
+    console.log('\n', data);
     return data;
+  },
+  'getFloors': function (building_id) {
+    check(building_id, String);
+    console.log('\npassed check.');
+    const floors = Floor.collection.find({ building: building_id }).fetch();
+    console.log('\n', floors);
+    return floors;
+  },
+  'getBathroom': function (floor_id) {
+    check(floor_id, String);
+    console.log('\npassed check.');
+    const bathrooms = Bathroom.collection.find({ floor_id: floor_id }).fetch();
+    console.log('\n', bathrooms);
+    return bathrooms;
   },
 });
