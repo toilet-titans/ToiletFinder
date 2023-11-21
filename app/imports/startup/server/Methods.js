@@ -60,7 +60,7 @@ function floor_construction(building_id, base_floor, top_floor) {
       new_floor <= top_floor; new_floor++
     ) {
       new_floor_id.push(Floor.collection.insert({
-        building: building_id,
+        building_id: building_id,
         floor_number: new_floor,
         bathroom: [],
       }));
@@ -126,7 +126,7 @@ function building_renovation(building_id, new_floors) {
 
 function fetch_single_bathroom(building_name, floor_number, bathroom_number, bathroom_gender) {
   const building_id = Building_.collection.find({ name: building_name }).fetch()[0]._id;
-  const floor_id = Floor.collection.find({ building: building_id, floor_number: floor_number }).fetch[0]._id;
+  const floor_id = Floor.collection.find({ building_id: building_id, floor_number: floor_number }).fetch[0]._id;
 
   return Bathroom.collection.findOne({
     building_id: building_id,
@@ -176,7 +176,7 @@ function get_building_id(building_name) {
  * @returns return its unique _id if found, else return undefined.
  */
 function get_floor_id(building_id, floor_number) {
-  const floor = Floor.collection.find({ building: building_id, floor_number: floor_number }).fetch();
+  const floor = Floor.collection.find({ building_id: building_id, floor_number: floor_number }).fetch();
 
   if (floor) {
     return floor[0]._id;
@@ -262,6 +262,7 @@ Meteor.methods({
     check(building_data_array, Array);
     console.log('passed array check');
     let dup_count = 0;
+    let added = 0;
     building_data_array.forEach(element => {
       check(element, {
         name: String,
@@ -271,6 +272,7 @@ Meteor.methods({
       const building_check = Building_.collection.find({ name: element.name }).fetch();
       if (building_check.length === 0) {
         building_construction(element.name, element.floor_count);
+        added++;
       } else {
         console.log('This building is already in the database: ', building_check[0]._id);
         dup_count++;
@@ -279,6 +281,7 @@ Meteor.methods({
     console.log(`building collection count: ${Building_.collection.find().count()}`);
     console.log(`initial array count: ${building_data_array.length}`);
     console.log(`number of duplicate buildings: ${dup_count}`);
+    console.log(`number of new buildings added: ${added}`);
   },
   'getBuildings': function () {
     const data = fetch_building_all();
@@ -288,7 +291,7 @@ Meteor.methods({
   'getFloors': function (building_id) {
     check(building_id, String);
     console.log('\npassed check.');
-    const floors = Floor.collection.find({ building: building_id }).fetch();
+    const floors = Floor.collection.find({ building_id: building_id }).fetch();
     console.log('\n', floors);
     return floors;
   },

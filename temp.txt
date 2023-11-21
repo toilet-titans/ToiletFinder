@@ -5,40 +5,96 @@
 table:
 	Defaults: user, role
 
-	user (Not edited it yet, have to create new example data)
-		-_id:  key, str
-		-email: str
-		-firstname: str
-		-lastname: str
-		-password: str
-		-saved bathroom: list of keys
+	user (Not implemented it yet, bathroom sample data needed)'		-_id:  key, str
+		- _id:
+			- str
+			- key
+			- unique
+		-email: 
+			- str
+			- unique
+		-firstname: 
+			- str
+		-lastname: 
+			- str
+		-password: 
+			- str
+		-saved bathroom: 
+			- list of bathroom key
+			- [String]
+			- key
+			- unique
 
 	role:
 		
 	building:
-		-_id:  key, str
-		-name: str, unique
-		-floor_id: [String], a list of all floor
-		-floor_count: int
+		-_id:  
+			- key
+			- str
+			- unique
+		-name: 
+			- str
+			- unique
+		-floor_id: 
+			- [String], 
+			- a list of all floor
+			- unique
+		-floor_count: 
+			-int
 		
 	floor:
-		-_id:  key, str
-		-bathroom: [String], stores all individual bathroom._id of this floor.
-		-floor_number: int
-		-building: key, str
+		-_id:  
+			- key
+			- str
+			- unique
+		-bathroom: 
+			- [String]
+			- unique
+			- stores all individual bathroom._id of this floor.
+		-floor_number: 
+			- int
+		-building_id: 
+			- key
+			- str
+			- unique
 
 	bathroom:
-		-_id: key, str
-		-rating: [in
-		t], list of rating.
-		-gender: str
-			-bathroom_number: int, increment
-		-floor_id: key, the belonging floor
-		-building_id: key 
-	
+		-_id: 
+			- key
+			- str
+			- unique
+		-rating: 
+			- [int]
+			- list of rating.
+		-gender: 
+			- str
+		*bathroom_number: 
+			- int
+			- auto increment
+			- shouldn't be used in create 
+		-floor_id: 
+			- key
+			- the belonging floor
+			- unique
+		-building_id: 
+			- key
+			- str
+			- unique 
+	------- below not used ----------------
 	review:
-		-_id: key, str
-		-user_id: key, owner of this review
-		-bathroom_id: key, review target
-		-rating: int
-		-content: str
+		-_id: 
+			- key
+			- str
+			- unique
+		-user_id: 
+			- key
+			- owner of this review
+			- unique
+		-bathroom_id: 
+			- key
+			- review target
+			- unique
+		-rating: 
+			- int
+		-content: 
+			- str

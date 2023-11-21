@@ -17,7 +17,7 @@ Meteor.call('initializeBuilding', building_data, function (error, result) {
 });
 
 // Meteor.call('getBuildings', function (error, result) {
-//   if (error) {
+//   if (error) {//
 //     console.log('There is an error.');
 //   } else {
 //     data = result;

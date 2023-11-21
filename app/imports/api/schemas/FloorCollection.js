@@ -15,9 +15,11 @@ class FloorCollection {
       bathroom: Array,
       'bathroom.$': {
         type: String,
+        unique: true,
       },
-      building: {
+      building_id: {
         type: String,
+        unique: true,
       },
     });
 

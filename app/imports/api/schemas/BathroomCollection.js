@@ -22,9 +22,11 @@ class BathroomCollection {
       },
       floor_id: {
         type: String,
+        unique: true,
       },
       building_id: {
         type: String,
+        unique: true,
       },
     });
 

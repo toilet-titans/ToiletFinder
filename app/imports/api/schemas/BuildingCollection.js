@@ -21,6 +21,7 @@ class BuildingCollection {
       },
       'floor_id.$': {
         type: String,
+        unique: true,
       },
     });
 
