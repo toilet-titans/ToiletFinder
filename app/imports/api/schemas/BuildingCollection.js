@@ -25,6 +25,9 @@ class BuildingCollection {
 
     // attach to MongoDB for data validation.
     this.collection.attachSchema(this.schema);
+    // Define names for publications and subscriptions
+    this.userPublicationName = `${this.name}.publication.user`;
+    this.adminPublicationName = `${this.name}.publication.admin`;
 
   }
 }
