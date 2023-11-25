@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row, Card } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
@@ -18,27 +18,42 @@ const Landing = () => (
       </Col>
     </Row>
 
-    <Row className="justify-content-end separator row-coloring1">
-      <Col xs={9} className="d-flex flex-column justify-content-center">
-        <h1>Featured Bathroom of the Day!</h1>
-        <div className="flex-container">
-          <Image src="/images/FeaturedRestroomExample.jpeg" width="650px" />
-          <Col className="d-flex flex-column">
-            <p className="px-3"><strong>Location:</strong></p>
-            <p className="px-3"><strong>Floor:</strong></p>
-            <p className="px-3"><strong>Rating:</strong></p>
-            <p className="px-3"><strong>Random Review:</strong></p>
-          </Col>
-        </div>
+    <Row className="background-img1">
+      <Col xs={1} className="home-align1">
+        <Card style={{ width: '30rem' }}>
+          <Card.Img variant="top" src="/images/FeaturedRestroomExample.jpeg" />
+          <Card.Body>
+            <Card.Title>Featured Bathroom of the Day!</Card.Title>
+            <Card.Text>
+              {/* eslint-disable-next-line max-len */}
+              <h6>Location:</h6>
+              <h6>Floor:</h6>
+              <h6>Rating:</h6>
+              <h6>Featured Review:</h6>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col xs={1} className="home-align2">
+        <Card style={{ width: '30rem' }}>
+          <Card.Img variant="top" src="/images/RunningToilet1.jpg" />
+          <Card.Body>
+            <Card.Title>Mission Statement</Card.Title>
+            <Card.Text>
+              {/* eslint-disable-next-line max-len */}
+              As fellow students at UH Manoa, we understand how hard it can be to find a clean bathroom to use, especially if you are a new student.  That is why we came up with Toilet Finder!  This app allows for students of any year to easily find a bathroom to use.  Using a rating and review sysem, it allows for students to provide their opinions on restrooms across campus for their fellow classmates to look at.
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </Col>
     </Row>
 
-    <Row className="justify-content-end row-coloring1">
+    {/* <Row className="justify-content-end row-coloring1">
       <Col xs={9} className="d-flex flex-column justify-content-center">
         <h1>Campus Map</h1>
         <Image src="/images/campusmap.jpg" width="750px" />
       </Col>
-    </Row>
+    </Row> */}
   </Container>
 );
 

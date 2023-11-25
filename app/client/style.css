@@ -47,3 +47,17 @@ body {
 .row-coloring1 {
   background-color: #5CDB95;
 }
+
+.home-align1 {
+  margin-left: 65px;
+}
+
+.home-align2 {
+  margin-left: 750px;
+}
+
+.background-img1 {
+  background-image: url("https://d1l18ops95qbzp.cloudfront.net/wp-content/2015/09/UH-manoa-McCarthy-Mall.jpg");
+  background-position: center;
+  background-size: contain;
+}
