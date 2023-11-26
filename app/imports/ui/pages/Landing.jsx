@@ -3,13 +3,13 @@ import { Col, Container, Image, Row, Card } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" fluid className="py-3">
+  <Container id="landing-page" fluid>
     <Row className="align-middle text-center">
-      <Col xs={4}>
+      <Col xs={12} md={4}>
         <Image roundedCircle src="/images/logo.png" width="300px" />
       </Col>
 
-      <Col xs={8} className="d-flex flex-column justify-content-center">
+      <Col xs={12} md={8} className="d-flex flex-column justify-content-center">
         <h1>Welcome to our temporary landing page!</h1>
         <p>Admins, log in to see what users see!</p>
         <p>I've initialized Mongo DB with your hawaii.edu email addresses.</p>
@@ -18,9 +18,9 @@ const Landing = () => (
       </Col>
     </Row>
 
-    <Row className="background-img1">
-      <Col xs={1} className="home-align1">
-        <Card style={{ width: '30rem' }}>
+    <Row className="justify-content-center background-img1">
+      <Col xs={12} md={6}>
+        <Card style={{ width: '24rem' }}>
           <Card.Img variant="top" src="/images/FeaturedRestroomExample.jpeg" />
           <Card.Body>
             <Card.Title>Featured Bathroom of the Day!</Card.Title>
@@ -34,8 +34,8 @@ const Landing = () => (
           </Card.Body>
         </Card>
       </Col>
-      <Col xs={1} className="home-align2">
-        <Card style={{ width: '30rem' }}>
+      <Col xs={12} md={2}>
+        <Card style={{ width: '24rem' }}>
           <Card.Img variant="top" src="/images/RunningToilet1.jpg" />
           <Card.Body>
             <Card.Title>Mission Statement</Card.Title>
@@ -47,13 +47,6 @@ const Landing = () => (
         </Card>
       </Col>
     </Row>
-
-    {/* <Row className="justify-content-end row-coloring1">
-      <Col xs={9} className="d-flex flex-column justify-content-center">
-        <h1>Campus Map</h1>
-        <Image src="/images/campusmap.jpg" width="750px" />
-      </Col>
-    </Row> */}
   </Container>
 );
 
