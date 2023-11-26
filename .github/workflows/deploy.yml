@@ -1,0 +1,60 @@
+name: Build and deploy to digital ocean droplet.
+
+on: 
+  push: 
+    branches:
+      - deploy
+
+env:
+  mup_js: ${{ secrets.MUP_JS }} 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo.
+        uses: actions/checkout@v4
+        with: 
+          sparse-checkout: |
+            app
+            config
+            doc
+            .idea
+      - name: List files.
+        run: |
+          echo "Files in the workspace:"
+          ls -al
+          
+      - name: Setup npm.
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14.x'
+        
+      - name: Check npm installation.  
+        run: npm -v
+      
+      - name: Setup meteor
+        run: curl https://install.meteor.com/ | sh
+
+      - name: Check metoer installation.
+        run: meteor --version
+        
+      - name: Install mup and check installation.
+        run: |
+          npm install -g mup
+          mup -v
+          
+      - name: Install npm modules and mup.
+        run:  |
+          cd app
+          meteor npm install
+        
+      - name: Setup mup.
+        run: |
+          cd app/.deploy
+          mup init
+          cp ../../config/settings.development.json ./settings.json
+          echo "${{ env.mup_js }}" > ./mup.js
+          mup stop
+          mup setup
+          mup deploy
