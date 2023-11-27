@@ -4,13 +4,21 @@
 /* Set up some CSS variables to theme the application. */
 :root {
   --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
+  --matr-navbar-bg-rgb: 92, 219, 149;
+  --matr-navbar-text-color: navy;
 }
 
 /* Change bootstrap variable values.
- See https://getbootstrap.com/docs/5.2/customize/css-variables/
- */
+See https://getbootstrap.com/docs/5.2/customize/css-variables/
+*/
+
+body .navbar {
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+}
+
 body {
+  color: navy;
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
 }
 
@@ -34,4 +42,21 @@ body {
 
 .separator {
   padding-bottom: 50px;
+}
+
+.row-coloring1 {
+  background-color: #5CDB95;
+}
+
+.home-align1 {
+  margin-left: 65px;
+}
+
+.home-align2 {
+  margin-left: 750px;
+}
+
+.background-img1 {
+  background-image: url("https://d1l18ops95qbzp.cloudfront.net/wp-content/2015/09/UH-manoa-McCarthy-Mall.jpg");
+  background-position: center;
 }
