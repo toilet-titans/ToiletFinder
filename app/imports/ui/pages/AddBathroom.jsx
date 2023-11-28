@@ -1,30 +1,29 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, NumField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, SubmitField } from 'uniforms-bootstrap5';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Autocomplete, NumberInput } from '@mantine/core';
-
+import { Bathroom } from '../../api/schemas/BathroomCollection';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
-  BuildingFloor: String,
-  RatingNumber: String,
-  Gender: String,
-  FloorNumber: String,
+  rating: SimpleSchema.Integer,
+  gender: String,
+  floor_id: String,
+  bathroom_number: SimpleSchema.Integer,
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const AddContact = () => {
+const AddBathroom = () => {
 
   const submit = (data, formRef) => {
-    const { firstName, lastName, address, image, description } = data;
-    const owner = Meteor.user().username;
-    Contacts.collection.insert(
-      { firstName, lastName, address, image, description, owner },
+    const { rating, gender, floor_id, bathroom_number } = data;
+    Bathroom.collection.insert(
+      { rating, gender, floor_id, bathroom_number },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -236,7 +235,7 @@ const AddContact = () => {
                   />
                   </Col>
                 </Row>
-                <SubmitField />
+                <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
             </Card>
@@ -247,4 +246,4 @@ const AddContact = () => {
   );
 };
 
-export default AddContact;
+export default AddBathroom;

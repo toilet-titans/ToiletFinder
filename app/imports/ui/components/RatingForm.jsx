@@ -53,7 +53,6 @@ const RatingForm = () => (
       </Button>
     </Form>
   </Container>
-
 );
 
 export default RatingForm;
