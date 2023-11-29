@@ -23,9 +23,6 @@ class BathroomCollection {
       floor_id: {
         type: String,
       },
-      building_id: {
-        type: String,
-      },
     });
 
     // attach to MongoDB for data validation.
