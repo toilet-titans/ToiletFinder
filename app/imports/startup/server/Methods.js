@@ -1,9 +1,11 @@
 /* eslint-disable quote-props */
 import { Meteor } from 'meteor/meteor';
 import { check, Match } from 'meteor/check';
+import _ from 'underscore';
 import { Building_ } from '../../api/schemas/BuildingCollection';
 import { Floor } from '../../api/schemas/FloorCollection';
 import { Bathroom } from '../../api/schemas/BathroomCollection';
+
 
 /**
  * fetch a building entity with its unique id.
@@ -52,18 +54,22 @@ function floor_construction(building_id, base_floor, top_floor) {
   try {
     // if floor it's a existing floor in the building.
     if (base_floor >= top_floor) {
+      console.log('floor exists');
       return [];
     }
     const new_floor_id = [];
+    console.log('create new floor');
     for (
       let new_floor = base_floor + 1;
       new_floor <= top_floor; new_floor++
     ) {
-      new_floor_id.push(Floor.collection.insert({
+      const floor_id_str = Floor.collection.insert({
         building_id: building_id,
         floor_number: new_floor,
         bathroom: [],
-      }));
+      }).toString();
+      console.log(floor_id_str);
+      new_floor_id.push(floor_id_str);
     }
 
     return new_floor_id;
@@ -118,6 +124,7 @@ function building_construction(building_name, floor_count) {
  */
 function building_renovation(building_id, new_floors) {
   Building_.collection.update(building_id, {
+    $inc: { floor_count: new_floors.length },
     $push: {
       floor_id: { $each: new_floors },
     },
@@ -178,7 +185,7 @@ function get_building_id(building_name) {
 function get_floor_id(building_id, floor_number) {
   const floor = Floor.collection.find({ building_id: building_id, floor_number: floor_number }).fetch();
 
-  if (floor) {
+  if (floor && (floor.length !== 0)) {
     return floor[0]._id;
   }
   return undefined;
@@ -186,6 +193,7 @@ function get_floor_id(building_id, floor_number) {
 
 Meteor.methods({
   'addBathroom': function (data_) {
+    console.log('floor number :', data_.floor);
     console.log('\naddBathroom method called.');
     check(data_, {
       building_name: String,
@@ -206,11 +214,11 @@ Meteor.methods({
       building_id = building_data[0]._id;
       // construct new floors if constructing new bathroom on a new floor.
       console.log('constructing new floors...');
-      const new_floor_id = floor_construction(building_id, building_data[0].floor_count, data_.floor_number);
+      const new_floor_id = floor_construction(building_id, building_data[0].floor_count, data_.floor);
       console.log('new floors constructed: ', new_floor_id);
 
       // renovate building with new floors if any.
-      if (new_floor_id) {
+      if (new_floor_id.length !== 0 && new_floor_id) {
         // renovate building.
         console.log(`renovate building ${building_id} to include floors ${new_floor_id}`);
         building_renovation(building_id, new_floor_id);
@@ -243,12 +251,13 @@ Meteor.methods({
         floor_id: floor_id,
         building_id: building_id,
       });
-      console.log(`bathroom construction successful: ${Bathroom.collection.find({ _id: bathroom_id }).fetch()[0]}`);
+      const bathroomIdStr = bathroom_id.toString();
+      console.log(`bathroom construction successful: ${Bathroom.collection.find({ _id: bathroomIdStr }).fetch()[0]}`);
       console.log('installing new bathroom on floor ', floor_id);
       // install new bathroom on floor
       Floor.collection.update(floor_id, {
         $push: {
-          bathroom: { $each: [].push(bathroom_id) },
+          bathroom: { $each: [bathroomIdStr] },
         },
       });
       console.log('bathroom successfully installed on floor ', fetch_floor(floor_id));
@@ -260,7 +269,7 @@ Meteor.methods({
   },
   'initializeBuilding': function (building_data_array) {
     check(building_data_array, Array);
-    console.log('passed array check');
+    // console.log('passed array check');
     let dup_count = 0;
     let added = 0;
     building_data_array.forEach(element => {
@@ -268,13 +277,13 @@ Meteor.methods({
         name: String,
         floor_count: Match.Integer,
       });
-      console.log('\npassed check');
+      // console.log('\npassed check');
       const building_check = Building_.collection.find({ name: element.name }).fetch();
       if (building_check.length === 0) {
         building_construction(element.name, element.floor_count);
         added++;
       } else {
-        console.log('This building is already in the database: ', building_check[0]._id);
+        // console.log('This building is already in the database: ', building_check[0]._id);
         dup_count++;
       }
     });
@@ -285,7 +294,7 @@ Meteor.methods({
   },
   'getBuildings': function () {
     const data = fetch_building_all();
-    console.log('\n', data);
+    // console.log('\n', data);
     return data;
   },
   'getFloors': function (building_id) {
@@ -295,11 +304,44 @@ Meteor.methods({
     console.log('\n', floors);
     return floors;
   },
-  'getBathroom': function (floor_id) {
+  'getBathrooms': function (floor_id) {
     check(floor_id, String);
     console.log('\npassed check.');
     const bathrooms = Bathroom.collection.find({ floor_id: floor_id }).fetch();
     console.log('\n', bathrooms);
     return bathrooms;
+  },
+  'getBathrooms2': function (data_) {
+    check(data_, {
+      building_id: String,
+      gender: Match.OneOf('Male', 'Female', 'Genderless'),
+    });
+    const bathrooms = Bathroom.collection.find({ building_id: data_.building_id, gender: data_.gender }).fetch();
+    const data = bathrooms.map((bathroom) => ({
+      _id: bathroom._id,
+      rating: bathroom.rating,
+      gender: bathroom.gender,
+      bathroom_number: bathroom.bathroom_number,
+      floor_number: fetch_floor(bathroom.floor_id)[0].floor_number,
+    }));
+    return data;
+  },
+  'getGenders': function (building_id) {
+    check(building_id, String);
+    // get all floors
+    // foreach get bathroom
+    // pass in to uniq
+    const building_floors = Floor.collection.find({ building_id: building_id }).fetch();
+    console.log('building_floors: ', building_floors);
+    const allBathrooms = building_floors.map((floorId) => Bathroom.collection.find({ floor_id: floorId._id }).fetch());
+    console.log('all bathroom of the building: ', allBathrooms);
+    const uniqueGenders = _.uniq(_.pluck(_.flatten(allBathrooms), 'gender'));
+    console.log('unique genders: ', uniqueGenders);
+    return uniqueGenders;
+  },
+  'getBuildingNames': function () {
+    const buildings = fetch_building_all();
+    const names = _.map(buildings, 'name');
+    return names;
   },
 });

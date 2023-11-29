@@ -49,14 +49,12 @@ table:
 			- unique
 		-bathroom: 
 			- [String]
-			- unique
 			- stores all individual bathroom._id of this floor.
 		-floor_number: 
 			- int
 		-building_id: 
 			- key
 			- str
-			- unique
 
 	bathroom:
 		-_id: 
@@ -75,11 +73,9 @@ table:
 		-floor_id: 
 			- key
 			- the belonging floor
-			- unique
 		-building_id: 
 			- key
 			- str
-			- unique 
 	------- below not used ----------------
 	review:
 		-_id: 

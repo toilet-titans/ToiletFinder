@@ -20,7 +20,7 @@ import Directory from '../pages/Directory';
 import Profile from '../pages/Profile';
 import Rating from '../pages/RatingPage';
 import AddBathroom from '../pages/AddBathroom';
-import Page from '../pages/Gender';
+import Gender from '../pages/Gender';
 import Bathroom from '../pages/Bathroom';
 import BathroomCard from '../pages/BathroomCard';
 
@@ -44,8 +44,8 @@ const App = () => {
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/directory" element={<ProtectedRoute><Directory /></ProtectedRoute>} />
-          <Route path="/page" element={<ProtectedRoute><Page /></ProtectedRoute>} />
-          <Route path="/bathroom" element={<ProtectedRoute><Bathroom /></ProtectedRoute>} />
+          <Route path="/gender/:building_id/:name" element={<ProtectedRoute><Gender /></ProtectedRoute>} />
+          <Route path="/bathroom/:building_id/:gender" element={<ProtectedRoute><Bathroom /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/bathroomcard" element={<ProtectedRoute><BathroomCard /></ProtectedRoute>} />
           <Route path="/rating" element={<ProtectedRoute><Rating /></ProtectedRoute>} />
