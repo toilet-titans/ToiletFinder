@@ -10,7 +10,7 @@ class FloorCollection {
     // Define the schema.
     this.schema = new SimpleSchema({
       floor_number: {
-        type: Number,
+        type: String,
       },
       bathroom: Array,
       'bathroom.$': {

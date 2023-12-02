@@ -13,7 +13,7 @@ const formSchema = new SimpleSchema({
   building_name: String,
   rating: String,
   gender: String,
-  floor_number: SimpleSchema.Integer,
+  floor_number: String,
   review: {
     type: String,
     min: 1,
@@ -48,7 +48,7 @@ const AddBathroom = () => {
     const { building_name, rating, gender, floor_number, review, direction } = data;
     const insert_data = {
       building_name: building_name,
-      floor: floor_number,
+      floor: parseInt(floor_number, 10), // Convert floor_number to integer
       gender: gender,
       rating: parseFloat(rating),
       review: review,
@@ -96,7 +96,18 @@ const AddBathroom = () => {
                         name="floor_number"
                         label="Floor Number"
                         placeholder="Please pick a floor number"
-                        options={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(num => ({ label: num.toString(), value: num }))}
+                        options={[
+                          { label: '0', value: 0 },
+                          { label: '1', value: 1 },
+                          { label: '2', value: 2 },
+                          { label: '3', value: 3 },
+                          { label: '4', value: 4 },
+                          { label: '5', value: 5 },
+                          { label: '6', value: 6 },
+                          { label: '7', value: 7 },
+                          { label: '8', value: 8 },
+                          { label: '9', value: 9 },
+                        ]}
                       />
                     </Col>
                   </Row>
@@ -134,12 +145,12 @@ const AddBathroom = () => {
                         placeholder="Pick a rating"
                         limit={6}
                         options={[
-                          { label: '0', value: 0 },
-                          { label: '1', value: 1 },
-                          { label: '2', value: 2 },
-                          { label: '3', value: 3 },
-                          { label: '4', value: 4 },
-                          { label: '5', value: 5 },
+                          { label: 0, value: 0 },
+                          { label: 1, value: 1 },
+                          { label: 2, value: 2 },
+                          { label: 3, value: 3 },
+                          { label: 4, value: 4 },
+                          { label: 5, value: 5 },
                         ]}
                       />
                     </Col>
