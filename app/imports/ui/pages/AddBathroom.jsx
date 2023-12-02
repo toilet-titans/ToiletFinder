@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import swal from 'sweetalert';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, SubmitField, SelectField, NumField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, SubmitField, SelectField, NumField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import fetchData from '../../api/query/fetch';
 
 // fetchData is basically a call to backend, as long as there is a matching method in the backend,
-// itll run. So insert also works because there is one method for addBathroom.
+// it will run. So insert also works because there is one method for addBathroom.
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
   building_name: String,
   rating: String,
   gender: String,
   floor_number: SimpleSchema.Integer,
+  review: {
+    type: String,
+    min: 1,
+  },
+  direction: String,
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const AddContact = () => {
+const AddBathroom = () => {
   // building_names: [str, str, ...]
   const [building_names, setBuildingNames] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -35,19 +41,21 @@ const AddContact = () => {
         setLoading(false);
       }
     };
-
     fetchGenders();
   }, []); // Empty dependency array ensures the effect runs once after the initial render
   const submit = (data, formRef) => {
     console.log('submit ran.');
-    const { building_name, rating, gender, floor_number } = data;
+    const { building_name, rating, gender, floor_number, review, direction } = data;
     const insert_data = {
       building_name: building_name,
       floor: floor_number,
       gender: gender,
       rating: parseFloat(rating),
+      review: review,
+      direction: direction,
     };
     fetchData('addBathroom', insert_data);
+    swal('Success', 'Bathroom added successfully!', 'success');
     formRef.reset();
   };
 
@@ -119,12 +127,27 @@ const AddContact = () => {
                     />
                     </Col>
                   </Row>
+                  <Row>
+                    <Col><TextField name="review" /></Col>
+                    <Col>
+                      <SelectField
+                        name="direction"
+                        label="Direction"
+                        placeholder="Please pick a direction"
+                        options={[
+                          { label: 'North', value: 'North' },
+                          { label: 'East', value: 'East' },
+                          { label: 'West', value: 'West' },
+                          { label: 'South', value: 'South' },
+                        ]}
+                      />
+                    </Col>
+                  </Row>
                   <SubmitField />
                   <ErrorsField />
                 </Card.Body>
               </Card>
             )}
-
           </AutoForm>
         </Col>
       </Row>
@@ -132,4 +155,4 @@ const AddContact = () => {
   );
 };
 
-export default AddContact;
+export default AddBathroom;
