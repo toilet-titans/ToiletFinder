@@ -11,14 +11,26 @@ import fetchData from '../../api/query/fetch';
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
   building_name: String,
-  rating: String,
-  gender: String,
-  floor_number: SimpleSchema.Integer,
+  rating: {
+    type: String,
+    optional: true,
+  },
+  floor_number: {
+    type: SimpleSchema.Integer,
+    optional: true,
+  },
+  gender: {
+    type: String,
+    optional: true,
+  },
+  direction: {
+    type: String,
+    optional: true,
+  },
   review: {
     type: String,
-    min: 1,
+    optional: true,
   },
-  direction: String,
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
@@ -27,6 +39,8 @@ const bridge = new SimpleSchema2Bridge(formSchema);
 const AddBathroom = () => {
   // building_names: [str, str, ...]
   const [building_names, setBuildingNames] = useState([]);
+  const [showGenderForm, setShowGenderForm] = useState(false);
+  const [selectedBuilding, setSelectedBuilding] = useState(null);
   const [loading, setLoading] = useState(true);
   console.log('visited. ', building_names);
   useEffect(() => {
@@ -43,6 +57,16 @@ const AddBathroom = () => {
     };
     fetchGenders();
   }, []); // Empty dependency array ensures the effect runs once after the initial render
+  const handleBuildingChange = (value) => {
+    // You can add logic here based on the selected building
+    // For simplicity, let's assume we want to show the gender field if the building is 'Building A'
+    setSelectedBuilding(value);
+    if (value === 'Bilger Hall') {
+      setShowGenderForm(true);
+    } else {
+      setShowGenderForm(false);
+    }
+  };
   const submit = (data, formRef) => {
     console.log('submit ran.');
     const { building_name, rating, gender, floor_number, review, direction } = data;
@@ -89,6 +113,10 @@ const AddBathroom = () => {
                       label="Building Names"
                       placeholder="Please pick a building"
                       options={building_names.map(name => ({ label: name, value: name }))}
+                      value={selectedBuilding}
+                      onChange={(value) => {
+                        handleBuildingChange(value);
+                      }}
                     />
                     </Col>
                     <Col><SelectField
@@ -108,17 +136,18 @@ const AddBathroom = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col><SelectField
-                      name="gender"
-                      label="Gender"
-                      placeholder="Please pick a gender"
-                      options={[
-                        { label: 'Male', value: 'Male' },
-                        { label: 'Female', value: 'Female' },
-                        { label: 'Genderless', value: 'Genderless' },
-                      ]}
-                      // styles={{ dropdown: { maxHeight: 200, overflowY: 'auto' } }}
-                    />
+                    <Col> {showGenderForm && (
+                      <SelectField
+                        name="gender"
+                        label="Gender"
+                        placeholder="Please pick a gender"
+                        options={[
+                          { label: 'Male', value: 'Male' },
+                          { label: 'Female', value: 'Female' },
+                          { label: 'Genderless', value: 'Genderless' },
+                        ]}
+                      />
+                    )}
                     </Col>
                     <Col><NumField
                       name="floor_number"

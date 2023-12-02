@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import swal from 'sweetalert';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, SubmitField, SelectField, NumField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, SubmitField, SelectField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import fetchData from '../../api/query/fetch';
@@ -91,20 +91,13 @@ const AddBathroom = () => {
                       options={building_names.map(name => ({ label: name, value: name }))}
                     />
                     </Col>
-                    <Col><SelectField
-                      name="rating"
-                      label="Rating Number"
-                      placeholder="Pick a rating"
-                      limit={6}
-                      options={[
-                        { label: '0', value: 0 },
-                        { label: '1', value: 1 },
-                        { label: '2', value: 2 },
-                        { label: '3', value: 3 },
-                        { label: '4', value: 4 },
-                        { label: '5', value: 5 },
-                      ]}
-                    />
+                    <Col>
+                      <SelectField
+                        name="floor_number"
+                        label="Floor Number"
+                        placeholder="Please pick a floor number"
+                        options={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(num => ({ label: num.toString(), value: num }))}
+                      />
                     </Col>
                   </Row>
                   <Row>
@@ -120,28 +113,37 @@ const AddBathroom = () => {
                       // styles={{ dropdown: { maxHeight: 200, overflowY: 'auto' } }}
                     />
                     </Col>
-                    <Col><NumField
-                      name="floor_number"
-                      label="Floor Number"
-                      placeholder="Please enter floor number"
+                    <Col>                      <SelectField
+                      name="direction"
+                      label="Direction"
+                      placeholder="Please pick a direction"
+                      options={[
+                        { label: 'North', value: 'North' },
+                        { label: 'East', value: 'East' },
+                        { label: 'West', value: 'West' },
+                        { label: 'South', value: 'South' },
+                      ]}
                     />
                     </Col>
                   </Row>
                   <Row>
-                    <Col><TextField name="review" /></Col>
                     <Col>
                       <SelectField
-                        name="direction"
-                        label="Direction"
-                        placeholder="Please pick a direction"
+                        name="rating"
+                        label="Rating Number"
+                        placeholder="Pick a rating"
+                        limit={6}
                         options={[
-                          { label: 'North', value: 'North' },
-                          { label: 'East', value: 'East' },
-                          { label: 'West', value: 'West' },
-                          { label: 'South', value: 'South' },
+                          { label: '0', value: 0 },
+                          { label: '1', value: 1 },
+                          { label: '2', value: 2 },
+                          { label: '3', value: 3 },
+                          { label: '4', value: 4 },
+                          { label: '5', value: 5 },
                         ]}
                       />
                     </Col>
+                    <Col><TextField name="review" /></Col>
                   </Row>
                   <SubmitField />
                   <ErrorsField />
