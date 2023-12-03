@@ -11,11 +11,9 @@ class ReviewCollection {
     this.schema = new SimpleSchema({
       user_id: {
         type: String,
-        unique: true,
       },
       bathroom_id: {
         type: String,
-        unique: true,
       },
       rating: {
         type: Number,

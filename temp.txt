@@ -23,8 +23,6 @@ table:
 			- list of bathroom key
 			- [String]
 			- key
-			- unique
-
 	role:
 		
 	building:
@@ -38,7 +36,6 @@ table:
 		-floor_id: 
 			- [String], 
 			- a list of all floor
-			- unique
 		-floor_count: 
 			-int
 		
