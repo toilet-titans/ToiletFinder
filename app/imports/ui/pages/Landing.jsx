@@ -3,12 +3,12 @@ import { Col, Container, Image, Row, Card } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" fluid>
-    <Row className="align-middle text-center">
+  <Container id="landing-page" fluid className="background-img1">
+    <Row className="align-middle text-center py">
       <Col xs={12} md={4}>
         <Image roundedCircle src="/images/logo.png" width="300px" />
       </Col>
-      <Col xs={12} md={8} className="d-flex flex-column justify-content-center">
+      <Col xs={12} md={8} className="d-flex flex-column justify-content-center body-color1">
         <h1>Welcome to our temporary landing page!</h1>
         <p>Admins, log in to see what users see!</p>
         <p>I've initialized Mongo DB with your hawaii.edu email addresses.</p>
@@ -16,12 +16,12 @@ const Landing = () => (
         <p><strong>NEVER EDIT ON MAIN BRANCH.</strong> Always work on your own branch and never pull request into main without making sure nobody else will be affected.</p>
       </Col>
     </Row>
-    <Row className="justify-content-center background-img1">
+    <Row className="justify-content-center">
       <Col xs={12} md={6}>
-        <Card style={{ width: '24rem' }}>
+        <Card className="h-100" style={{ width: '24rem', backgroundColor: '#33B3B3', color: 'navy' }}>
           <Card.Img variant="top" src="/images/compass4.png" />
           <Card.Body>
-            <Card.Title>Featured Bathroom of the Day!</Card.Title>
+            <Card.Title>Which way is up?</Card.Title>
             <Card.Text>
               {/* eslint-disable-next-line max-len */}
               To avoid confusion, our restrooms are organized by compass direction so it is easier to differentiate where each restroom is located.  For example, a restroom located on the fourth floor of the POST building on the North side would be considered the "POST Fourth Floor Men's Restroom North Side".  A compass provided on the website efficiently allows users to locate where a restroom would be.
@@ -30,7 +30,7 @@ const Landing = () => (
         </Card>
       </Col>
       <Col xs={12} md={2}>
-        <Card style={{ width: '24rem' }}>
+        <Card style={{ width: '24rem', backgroundColor: '#33B3B3', color: 'navy' }}>
           <Card.Img variant="top" src="/images/RunningToilet1.jpg" />
           <Card.Body>
             <Card.Title>Mission Statement</Card.Title>
