@@ -19,15 +19,12 @@ const Landing = () => (
     <Row className="justify-content-center background-img1">
       <Col xs={12} md={6}>
         <Card style={{ width: '24rem' }}>
-          <Card.Img variant="top" src="/images/FeaturedRestroomExample.jpeg" />
+          <Card.Img variant="top" src="/images/compass4.png" />
           <Card.Body>
             <Card.Title>Featured Bathroom of the Day!</Card.Title>
             <Card.Text>
               {/* eslint-disable-next-line max-len */}
-              <h6>Location:</h6>
-              <h6>Floor:</h6>
-              <h6>Rating:</h6>
-              <h6>Featured Review:</h6>
+              To avoid confusion, our restrooms are organized by compass direction so it is easier to differentiate where each restroom is located.  For example, a restroom located on the fourth floor of the POST building on the North side would be considered the "POST Fourth Floor Men's Restroom North Side".  A compass provided on the website efficiently allows users to locate where a restroom would be.
             </Card.Text>
           </Card.Body>
         </Card>
