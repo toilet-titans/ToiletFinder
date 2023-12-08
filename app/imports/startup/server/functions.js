@@ -5,6 +5,7 @@ import _ from 'underscore';
 import { Building_ } from '../../api/schemas/BuildingCollection';
 import { Floor } from '../../api/schemas/FloorCollection';
 import { Bathroom } from '../../api/schemas/BathroomCollection';
+import swal from 'sweetalert';
 /**
  * fetch a building entity with its unique id.
  * @param {_id} building_id building's unique _id.
@@ -221,6 +222,7 @@ export function getBuildings() {
 }
 
 export function addBathroom(data_) {
+  console.log('anything');
   const building_row = Building_.collection.find({ name: data_.building_name });
   const building_data = building_row.fetch();
   let building_id;
@@ -285,6 +287,7 @@ export function addBathroom(data_) {
     throw new Meteor.Error('already-exists', 'This bathroom is in the database.');
   }
   console.log('\naddBathroom done');
+  swal('Success', 'Bathroom added successfully!', 'success');
 }
 
 export function getFloors(building_id) {

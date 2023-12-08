@@ -15,6 +15,8 @@ Meteor.methods({
       floor: Match.Integer,
       gender: Match.OneOf(...BATHROOM_GENDER),
       rating: Number,
+      review: String,
+      direction: String,
     });
     console.log('data validated');
     logic.addBathroom(data_);
