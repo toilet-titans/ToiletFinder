@@ -147,16 +147,18 @@ function fetch_single_bathroom(building_name, floor_number, bathroom_number, bat
  * lookup existing bathroom with the parameters.
  * @param {_id} building_id unique id of the building it's located.
  * @param {_id} floor_id unique id of the floor it's located.
- * @param {int} bathroom_number bathroom number.
  * @param {String} bathroom_gender bathroom type.
+ * @param {String} direction direction.
+ * @param {String} review review.
  * @returns return its unique _id if found, else return undefined.
  */
-function get_bathroom_id(building_id, floor_id, bathroom_number, bathroom_gender) {
+function get_bathroom_id(building_id, floor_id, direction, bathroom_gender, review) {
   const bathroom = Bathroom.collection.find({
     building_id: building_id,
     floor_id: floor_id,
-    bathroom_number: bathroom_number,
+    direction: direction,
     gender: bathroom_gender,
+    review: review,
   }).fetch();
 
   // if bathroom exists.
@@ -193,13 +195,16 @@ function get_floor_id(building_id, floor_number) {
 
 Meteor.methods({
   'addBathroom': function (data_) {
+    console.log('SAY SOMETHING');
     console.log('floor number :', data_.floor);
     console.log('\naddBathroom method called.');
     check(data_, {
       building_name: String,
       floor: Match.Integer,
       gender: Match.OneOf('Female', 'Male', 'Genderless'),
-      rating: Number,
+      rating: Match.Integer,
+      review: String,
+      direction: Match.OneOf('East', 'North', 'West', 'South'),
     });
     console.log('data validated');
     const building_row = Building_.collection.find({ name: data_.building_name });
@@ -237,7 +242,7 @@ Meteor.methods({
     // check if bathroom exists on a existing floor.
     const floor_id = get_floor_id(building_id, data_.floor);
     console.log('get bathroom id...');
-    let bathroom_id = get_bathroom_id(building_id, floor_id, data_.bathroom_number, data_.gender);
+    let bathroom_id = get_bathroom_id(building_id, floor_id, data_.direction, data_.gender, data_.review);
     console.log('check existing bathroom... bathroom_id: ', bathroom_id);
     // no bathroom found
     if (!bathroom_id) {
@@ -247,7 +252,8 @@ Meteor.methods({
       bathroom_id = Bathroom.collection.insert({
         rating: [data_.rating],
         gender: data_.gender,
-        bathroom_number: fetch_floor(floor_id)[0].bathroom.length + 1,
+        direction: data_.direction,
+        review: data_.review,
         floor_id: floor_id,
         building_id: building_id,
       });

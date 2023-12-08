@@ -48,7 +48,7 @@ const AddBathroom = () => {
     const { building_name, rating, gender, floor_number, review, direction } = data;
     const insert_data = {
       building_name: building_name,
-      floor: parseInt(floor_number, 10), // Convert floor_number to integer
+      floor: parseFloat(floor_number),
       gender: gender,
       rating: parseFloat(rating),
       review: review,

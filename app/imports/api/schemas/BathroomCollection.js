@@ -18,7 +18,7 @@ class BathroomCollection {
         type: String,
       },
       floor_id: {
-        type: String,
+        type: Number,
       },
       building_id: {
         type: String,
