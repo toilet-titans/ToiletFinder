@@ -268,7 +268,8 @@ export function addBathroom(data_) {
     bathroom_id = Bathroom.collection.insert({
       rating: [data_.rating],
       gender: data_.gender,
-      bathroom_number: fetch_floor(floor_id)[0].bathroom.length + 1,
+      direction: data_.direction,
+      review: data_.review,
       floor_id: floor_id,
       building_id: building_id,
     });
@@ -287,7 +288,6 @@ export function addBathroom(data_) {
     throw new Meteor.Error('already-exists', 'This bathroom is in the database.');
   }
   console.log('\naddBathroom done');
-  swal('Success', 'Bathroom added successfully!', 'success');
 }
 
 export function getFloors(building_id) {

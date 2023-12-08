@@ -33,7 +33,10 @@ const Directory = () => {
           ) : (
             <ListGroup>
               {buildings.map((building) => (
-                <Link to={`/gender/${building._id}/${encodeURIComponent(building.name)}`} key={building._id}>
+                <Link
+                  to={`/gender/${building._id}/${encodeURIComponent(building.name)}`}
+                  key={building._id}
+                >
                   <ListGroupItem>{building.name}</ListGroupItem>
                 </Link>
               ))}

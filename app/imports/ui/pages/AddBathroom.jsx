@@ -55,7 +55,8 @@ const AddBathroom = () => {
       direction: direction,
     };
     fetchData('addBathroom', insert_data);
-   // formRef.reset();
+    swal('Success', 'Bathroom added successfully!', 'success');
+    formRef.reset();
   };
 
   const validateForm = (model) => {
