@@ -32,6 +32,7 @@ const NavBar = () => {
               <Nav.Link id="bathroom-admin-nav" as={NavLink} to="/admin" key="admin">Bathroom Admin</Nav.Link>,
               <Nav.Link id="add-bathroom-nav" as={NavLink} to="/add-bathroom" key="admin">Add Bathroom</Nav.Link>
             ) : ''}
+            <Nav.Link id="about-us-nav" as={NavLink} to="/aboutus" key="aboutus">About Us</Nav.Link>
           </Nav>
           <Nav className="justify-content-end">
             {currentUser === '' ? (
