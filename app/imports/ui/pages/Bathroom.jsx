@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import fetchData from '../../api/query/fetch';
 
 const Bathroom = () => {
 
   const { building_id, gender } = useParams();
-  const [bathroom_data, serBathroomData] = useState({});
+  const [bathroom_data, setBathroomData] = useState({});
   const [loading, setLoading] = useState(true);
   console.log('visited. ');
   useEffect(() => {
@@ -18,7 +18,7 @@ const Bathroom = () => {
         };
         const bathroomList = await fetchData('getBathrooms2', data);
         console.log('available bathrooms: ', bathroomList);
-        serBathroomData(bathroomList);
+        setBathroomData(bathroomList);
       } catch (error) {
         // Handle error if needed
       } finally {
@@ -33,7 +33,7 @@ const Bathroom = () => {
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>Bathrooms</h2>
+            <h2>Bathroom</h2>
           </Col>
           {loading ? (
             <div>Loading...</div>
@@ -43,10 +43,12 @@ const Bathroom = () => {
                 bathroom_data.map((bathroom) => (
                   <Row>
                     <li>
+                      Building: {bathroom.building_name},
                       Rating: {bathroom.rating},
                       gender: {bathroom.gender},
-                      bathroom number: {bathroom.bathroom_number},
-                      floor: {bathroom.floor_number}
+                      bathroom direction: {bathroom.direction},
+                      floor: {bathroom.floor_number},
+                      review: {bathroom.review}
                     </li>
                   </Row>
                 ))
@@ -57,6 +59,7 @@ const Bathroom = () => {
               )}
             </ListGroup>
           )}
+          <Link to="/directory">Back to Directory</Link>
         </Col>
       </Row>
     </Container>

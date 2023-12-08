@@ -29,6 +29,9 @@ class BathroomCollection {
       direction: {
         type: String,
       },
+      building_name: {
+        type: String,
+      },
     });
 
     // attach to MongoDB for data validation.

@@ -5,7 +5,6 @@ import _ from 'underscore';
 import { Building_ } from '../../api/schemas/BuildingCollection';
 import { Floor } from '../../api/schemas/FloorCollection';
 import { Bathroom } from '../../api/schemas/BathroomCollection';
-import swal from 'sweetalert';
 /**
  * fetch a building entity with its unique id.
  * @param {_id} building_id building's unique _id.
@@ -51,7 +50,7 @@ export function fetch_floor(floor_id) {
  */
 export function floor_construction(building_id, base_floor, top_floor) {
   try {
-    // if floor it's a existing floor in the building.
+    // if floor its na existing floor in the building.
     if (base_floor >= top_floor) {
       console.log('floor exists');
       return [];
@@ -117,7 +116,7 @@ export function building_construction(building_name, floor_count) {
 }
 
 /**
- * renovates a existing building by assemble new floors.
+ * renovates an existing building by assemble new floors.
  * @param {_id} building_id building's unique _id.
  * @param {[_id]} new_floors list of floor ids to be assembled.
  */
@@ -176,7 +175,7 @@ export function get_building_id(building_name) {
 }
 
 /**
- * loopup floor up with given parameters.
+ * look up floor with given parameters.
  * @param {_id} building_id the unique building id of this floor.
  * @param {int} floor_number what floor is this in the building.
  * @returns return its unique _id if found, else return undefined.
@@ -199,7 +198,7 @@ export function initializeBuilding(building_data_array) {
       name: String,
       floor_count: Match.Integer,
     });
-    // console.log('\npassed check');
+    // console.log('\passed check');
     const building_check = Building_.collection.find({ name: element.name }).fetch();
     if (building_check.length === 0) {
       building_construction(element.name, element.floor_count);
@@ -229,7 +228,7 @@ export function addBathroom(data_) {
 
   console.log('query executed for building lookup, building_data:', building_data);
   // check and construct new building/floor if needed
-  // if the building exist.
+  // Check is the building does exist.
   // 0: false, > 0: true.
   if (building_data.length) {
     building_id = building_data[0]._id;
@@ -255,7 +254,7 @@ export function addBathroom(data_) {
     console.log('new building constructed, id: ', building_id);
   }
 
-  // check if bathroom exists on a existing floor.
+  // check if bathroom exists on an existing floor.
   const floor_id = get_floor_id(building_id, data_.floor);
   console.log('get bathroom id...');
   let bathroom_id = get_bathroom_id(building_id, floor_id, data_.gender);
@@ -272,6 +271,7 @@ export function addBathroom(data_) {
       review: data_.review,
       floor_id: floor_id,
       building_id: building_id,
+      building_name: data_.building_name,
     });
     const bathroomIdStr = bathroom_id.toString();
     console.log(`bathroom construction successful: ${Bathroom.collection.find({ _id: bathroomIdStr }).fetch()[0]}`);
@@ -303,8 +303,10 @@ export function getBathrooms2(data_) {
     _id: bathroom._id,
     rating: bathroom.rating,
     gender: bathroom.gender,
-    bathroom_number: bathroom.bathroom_number,
+    direction: bathroom.direction,
     floor_number: fetch_floor(bathroom.floor_id)[0].floor_number,
+    review: bathroom.review,
+    building_name: bathroom.building_name,
   }));
   return data;
 }
