@@ -4,11 +4,10 @@ import { Link, useParams } from 'react-router-dom';
 import fetchData from '../../api/query/fetch';
 
 const Floor = () => {
-  const { building_id, name } = useParams();
-  const { gender, GenderName } = useParams();
+  const { building_id, gender } = useParams();
   const [floors_data, setFloorsData] = useState({});
   const [loading, setLoading] = useState(true);
-  console.log('visited. ', name);
+  console.log('visited. ');
   useEffect(() => {
     const fetchFloors = async () => {
       try {
@@ -17,9 +16,7 @@ const Floor = () => {
           gender: gender,
         };
         const floorsList = await fetchData('getFloors2', data);
-        const testFloorsList = await fetchData('getFloors', data.building_id);
-        console.log('available Floors: ', floorsList);
-        console.log('available Floors 2 : ', testFloorsList);
+        console.log('available Floors 2 : ', floorsList);
         setFloorsData(floorsList);
       } catch (error) {
         // Handle error if needed
@@ -35,7 +32,7 @@ const Floor = () => {
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>{name}, {GenderName} Floors available</h2>
+            <h2>w, {} Floors available</h2>
           </Col>
           {loading ? (
             <div>Loading...</div>

@@ -290,19 +290,23 @@ export function addBathroom(data_) {
 }
 
 export function getFloors(building_id) {
-  console.log('\npassed check.');
+  console.log('\npassed floors1 check');
   const floors = Floor.collection.find({ building_id: building_id }).fetch();
   console.log('\n', floors);
   return floors;
 }
 export function getFloors2(data_) {
-  const floors = Floor.collection.find({ building_id: data_.building_id, gender: data_.gender }).fetch();
-  console.log('\npassed check.');
-  const data = floors.map((bathroom) => ({
-    gender: bathroom.gender,
-    floor_number: fetch_floor(bathroom.floor_id)[0].floor_number,
-    building_name: bathroom.building_name,
-  }));
+  const floors = Floor.collection.find({ building_id: data_.building_id }).fetch();
+  console.log('\npassed floors2 check.');
+  const filteredFloors = floors.filter((floor) => floor.bathroom.length > 0); // Filter floors with bathrooms
+  const data = filteredFloors.map((bathroom) => {
+    const floor_info = fetch_floor(bathroom.building_id);
+    return {
+      gender: bathroom.gender,
+      floor_number: floor_info.map((floor) => floor.floor_number),
+      building_name: bathroom.building_name,
+    };
+  });
   return data;
 }
 
