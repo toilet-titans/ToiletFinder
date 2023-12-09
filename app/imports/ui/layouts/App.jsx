@@ -23,6 +23,7 @@ import AddBathroom from '../pages/AddBathroom';
 import Gender from '../pages/Gender';
 import Bathroom from '../pages/Bathroom';
 import BathroomCard from '../pages/BathroomCard';
+import Floor from '../pages/Floor';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/directory" element={<ProtectedRoute><Directory /></ProtectedRoute>} />
           <Route path="/gender/:building_id/:name" element={<ProtectedRoute><Gender /></ProtectedRoute>} />
+          <Route path="/floor/:building_id/:gender" element={<ProtectedRoute><Floor /></ProtectedRoute>} />
           <Route path="/bathroom/:building_id/:gender" element={<ProtectedRoute><Bathroom /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/bathroomcard" element={<ProtectedRoute><BathroomCard /></ProtectedRoute>} />

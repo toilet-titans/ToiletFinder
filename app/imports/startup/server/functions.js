@@ -69,7 +69,6 @@ export function floor_construction(building_id, base_floor, top_floor) {
       console.log(floor_id_str);
       new_floor_id.push(floor_id_str);
     }
-
     return new_floor_id;
   } catch (error) {
     console.error('Error constructing floor:', error);
@@ -296,12 +295,15 @@ export function getFloors(building_id) {
   console.log('\n', floors);
   return floors;
 }
-export function getFloors2(building_id, gender) {
-  const floors = Floor.collection.find({
-    building_id: building_id,
-    gender: gender,
-  }).fetch();
-  return floors;
+export function getFloors2(data_) {
+  const floors = Floor.collection.find({ building_id: data_.building_id, gender: data_.gender }).fetch();
+  console.log('\npassed check.');
+  const data = floors.map((bathroom) => ({
+    gender: bathroom.gender,
+    floor_number: fetch_floor(bathroom.floor_id)[0].floor_number,
+    building_name: bathroom.building_name,
+  }));
+  return data;
 }
 
 export function getBathrooms2(data_) {

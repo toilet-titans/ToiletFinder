@@ -36,7 +36,7 @@ const Gender = () => {
             <ListGroup>
               {genders_data.length > 0 ? (
                 genders_data.map((gender) => (
-                  <Link to={`/Bathroom/${building_id}/${gender}`} key={building_id}>
+                  <Link to={`/bathroom/${building_id}/${gender}`} key={building_id}>
                     <ListGroupItem>{gender}</ListGroupItem>
                   </Link>
                 ))

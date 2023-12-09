@@ -48,7 +48,7 @@ const AddBathroom = () => {
     const { building_name, rating, gender, floor_number, review, direction } = data;
     const insert_data = {
       building_name: building_name,
-      floor_number: parseFloat(floor_number),
+      floor: parseFloat(floor_number),
       gender: gender,
       rating: parseFloat(rating),
       review: review,

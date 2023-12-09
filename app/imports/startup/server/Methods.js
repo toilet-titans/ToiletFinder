@@ -13,7 +13,7 @@ Meteor.methods({
     check(data_, {
       building_name: String,
       floor: Match.Integer,
-      gender: Match.OneOf(...BATHROOM_GENDER),
+      gender: String,
       rating: Number,
       review: String,
       direction: String,

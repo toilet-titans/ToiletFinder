@@ -19,9 +19,6 @@ class FloorCollection {
       building_id: {
         type: String,
       },
-      gender: {
-        type: String,
-      },
     });
 
     // attach to MongoDB for data validation.

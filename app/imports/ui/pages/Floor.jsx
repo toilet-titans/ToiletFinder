@@ -12,8 +12,14 @@ const Floor = () => {
   useEffect(() => {
     const fetchFloors = async () => {
       try {
-        const floorsList = await fetchData('getFloors2', building_id, gender);
+        const data = {
+          building_id: building_id,
+          gender: gender,
+        };
+        const floorsList = await fetchData('getFloors2', data);
+        const testFloorsList = await fetchData('getFloors', data.building_id);
         console.log('available Floors: ', floorsList);
+        console.log('available Floors 2 : ', testFloorsList);
         setFloorsData(floorsList);
       } catch (error) {
         // Handle error if needed
@@ -37,13 +43,15 @@ const Floor = () => {
             <ListGroup>
               {floors_data.length > 0 ? (
                 floors_data.map((floor_number) => (
-                  <Link to={`/direction/${floor_number}/${building_id}/${gender}`} key={building_id}>
-                    <ListGroupItem>{floor_number}</ListGroupItem>
-                  </Link>
+                  <ListGroupItem key={building_id}>
+                    <Link to={`/direction/${floor_number}/${building_id}/${gender}`}>
+                      {floor_number}
+                    </Link>
+                  </ListGroupItem>
                 ))
               ) : (
                 <div>
-                  No genders found. <Link to="/add-bathroom">Add a bathroom</Link>.
+                  No floors found. <Link to="/add-bathroom">Add a bathroom</Link>.
                 </div>
               )}
             </ListGroup>
