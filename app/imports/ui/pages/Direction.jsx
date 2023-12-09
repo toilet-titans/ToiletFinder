@@ -3,42 +3,42 @@ import { Container, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import fetchData from '../../api/query/fetch';
 
-const Floor = () => {
+const Gender = () => {
   const { building_id, name } = useParams();
-  const { gender, GenderName } = useParams();
-  const [floors_data, setFloorsData] = useState({});
+  const [genders_data, setGendersData] = useState({});
   const [loading, setLoading] = useState(true);
   console.log('visited. ', name);
   useEffect(() => {
-    const fetchFloors = async () => {
+    const fetchGenders = async () => {
       try {
-        const floorsList = await fetchData('getFloors2', building_id, gender);
-        console.log('available Floors: ', floorsList);
-        setFloorsData(floorsList);
+        const gendersList = await fetchData('getGenders', building_id);
+        console.log('available genders: ', gendersList);
+        setGendersData(gendersList);
       } catch (error) {
         // Handle error if needed
       } finally {
         setLoading(false);
       }
     };
-    fetchFloors();
-  }, []);
+
+    fetchGenders();
+  }, []); // Empty dependency array ensures the effect runs once after the initial render
 
   return (
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>{name}, {GenderName} Floors available</h2>
+            <h2>{name} Genders available</h2>
           </Col>
           {loading ? (
             <div>Loading...</div>
           ) : (
             <ListGroup>
-              {floors_data.length > 0 ? (
-                floors_data.map((floor_number) => (
-                  <Link to={`/direction/${floor_number}/${building_id}/${gender}`} key={building_id}>
-                    <ListGroupItem>{floor_number}</ListGroupItem>
+              {genders_data.length > 0 ? (
+                genders_data.map((gender) => (
+                  <Link to={`/direction/${building_id}/${gender}`} key={building_id}>
+                    <ListGroupItem>{gender}</ListGroupItem>
                   </Link>
                 ))
               ) : (
@@ -55,4 +55,4 @@ const Floor = () => {
   );
 };
 
-export default Floor;
+export default Gender;

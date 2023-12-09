@@ -20,7 +20,6 @@ const Gender = () => {
         setLoading(false);
       }
     };
-
     fetchGenders();
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 

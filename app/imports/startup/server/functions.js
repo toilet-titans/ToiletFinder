@@ -296,6 +296,13 @@ export function getFloors(building_id) {
   console.log('\n', floors);
   return floors;
 }
+export function getFloors2(building_id, gender) {
+  const floors = Floor.collection.find({
+    building_id: building_id,
+    gender: gender,
+  }).fetch();
+  return floors;
+}
 
 export function getBathrooms2(data_) {
   const bathrooms = Bathroom.collection.find({ building_id: data_.building_id, gender: data_.gender }).fetch();

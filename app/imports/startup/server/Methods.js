@@ -32,6 +32,13 @@ Meteor.methods({
     check(building_id, String);
     return logic.getFloors(building_id);
   },
+  'getFloors2': function (data_) {
+    check(data_, {
+      building_id: String,
+      gender: Match.OneOf(...BATHROOM_GENDER),
+    });
+    return logic.getFloors2(data_);
+  },
   'getBathrooms': function (floor_id) {
     check(floor_id, String);
     return logic.getBathrooms(floor_id);
