@@ -52,6 +52,18 @@ class NavBar {
     await testController.click('#login-dropdown');
     await testController.click('#login-dropdown-sign-up');
   }
+
+  async gotoDirectoryPage(testController) {
+    await testController.click('#directory-nav');
+  }
+
+  async gotoRatingPage(testController) {
+    await testController.click('#rating-nav');
+  }
+
+  async gotoAddBathroomPage(testController) {
+    await testController.click('#add-bathroom-nav');
+  }
 }
 
 export const navBar = new NavBar();

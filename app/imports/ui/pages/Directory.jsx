@@ -22,7 +22,7 @@ const Directory = () => {
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
   return (
-    <Container className="py-3">
+    <Container className="py-3" id="directory-page">
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">

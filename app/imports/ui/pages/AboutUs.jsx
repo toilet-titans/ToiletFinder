@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 /* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 const AboutUs = () => (
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
-  <Container className="py-3">
+  <Container className="py-3" id="aboutus-page">
     <Row className="justify-content-center">
       <Col md={7}>
         <Col className="text-center">
@@ -14,42 +14,42 @@ const AboutUs = () => (
     </Row>
     <Row className="justify-content-evenly">
       <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
-        <Card.Img variant="top" src="/images/ryder.jpg" />
+        <Card.Img variant="top" src="/images/jiangle.jpg" />
         <Card.Body>
-          <Card.Title>Which way is up?</Card.Title>
+          <Card.Title>Jianle Liu?</Card.Title>
           <Card.Text>
             {/* eslint-disable-next-line max-len */}
-                  placeholder
+                  Backend
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
+        <Card.Img variant="top" src="/images/marques.jpg" />
+        <Card.Body>
+          <Card.Title>Marques Batoon</Card.Title>
+          <Card.Text>
+            {/* eslint-disable-next-line max-len */}
+            Backend
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
+        <Card.Img variant="top" src="/images/reyn.jpg" />
+        <Card.Body>
+          <Card.Title>Reyn Seki</Card.Title>
+          <Card.Text>
+            {/* eslint-disable-next-line max-len */}
+            Frontend
           </Card.Text>
         </Card.Body>
       </Card>
       <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
         <Card.Img variant="top" src="/images/ryder.jpg" />
         <Card.Body>
-          <Card.Title>Which way is up?</Card.Title>
+          <Card.Title>Ryder Shintaku</Card.Title>
           <Card.Text>
             {/* eslint-disable-next-line max-len */}
-            placeholder
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
-        <Card.Img variant="top" src="/images/ryder.jpg" />
-        <Card.Body>
-          <Card.Title>Which way is up?</Card.Title>
-          <Card.Text>
-            {/* eslint-disable-next-line max-len */}
-            placeholder
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
-        <Card.Img variant="top" src="/images/ryder.jpg" />
-        <Card.Body>
-          <Card.Title>Which way is up?</Card.Title>
-          <Card.Text>
-            {/* eslint-disable-next-line max-len */}
-            placeholder
+            Frontend
           </Card.Text>
         </Card.Body>
       </Card>
