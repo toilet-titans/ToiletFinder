@@ -81,6 +81,7 @@ const AddContact = () => {
                       label="Building Names"
                       placeholder="Please pick a building"
                       options={building_names.map(name => ({ label: name, value: name }))}
+                      id="addbathroom-name"
                     />
                     </Col>
                     <Col><SelectField
@@ -96,6 +97,7 @@ const AddContact = () => {
                         { label: '4', value: 4 },
                         { label: '5', value: 5 },
                       ]}
+                      id="addbathroom-rating"
                     />
                     </Col>
                   </Row>
@@ -109,6 +111,7 @@ const AddContact = () => {
                         { label: 'Female', value: 'Female' },
                         { label: 'Genderless', value: 'Genderless' },
                       ]}
+                      id="addbathroom-gender"
                       // styles={{ dropdown: { maxHeight: 200, overflowY: 'auto' } }}
                     />
                     </Col>
@@ -116,10 +119,11 @@ const AddContact = () => {
                       name="floor_number"
                       label="Floor Number"
                       placeholder="Please enter floor number"
+                      id="addbathroom-floor"
                     />
                     </Col>
                   </Row>
-                  <SubmitField />
+                  <SubmitField id="addbathroom-submit" />
                   <ErrorsField />
                 </Card.Body>
               </Card>

@@ -64,6 +64,10 @@ class NavBar {
   async gotoAddBathroomPage(testController) {
     await testController.click('#add-bathroom-nav');
   }
+
+  async gotoAboutUsPage(testController) {
+    await testController.click('#about-us-nav');
+  }
 }
 
 export const navBar = new NavBar();
