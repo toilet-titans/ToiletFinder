@@ -29,8 +29,8 @@ class AddBathroomPage {
     await testController.click(option2);
     await testController.click(dropdown3);
     await testController.click(option3);
-    await testController.click(option4);
     await testController.click(dropdown4);
+    await testController.click(option4);
     await testController.typeText('#addbathroom-review', review);
   }
 }

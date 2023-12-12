@@ -159,7 +159,7 @@ const AddBathroom = () => {
                         id="addbathroom-rating"
                       />
                     </Col>
-                    <Col><TextField name="review" /></Col>
+                    <Col><TextField name="review" id="addbathroom-review"/></Col>
                   </Row>
                   <SubmitField />
                   <ErrorsField />
