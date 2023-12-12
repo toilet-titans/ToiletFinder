@@ -73,7 +73,7 @@ const AddBathroom = () => {
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
   let fRef = null;
   return (
-    <Container className="py-3">
+    <Container className="py-3" id="addbathroom-page">
       <Row className="justify-content-center">
         <Col xs={10}>
           <Col className="text-center"><h2>Add Bathroom</h2></Col>
@@ -89,6 +89,7 @@ const AddBathroom = () => {
                       label="Building Names"
                       placeholder="Please pick a building"
                       options={building_names.map(name => ({ label: name, value: name }))}
+                      id="addbathroom-name"
                     />
                     </Col>
                     <Col>
@@ -108,6 +109,7 @@ const AddBathroom = () => {
                           { label: 8, value: 8 },
                           { label: 9, value: 9 },
                         ]}
+                        id="addbathroom-floor"
                       />
                     </Col>
                   </Row>
@@ -121,6 +123,7 @@ const AddBathroom = () => {
                         { label: 'Female', value: 'Female' },
                         { label: 'Genderless', value: 'Genderless' },
                       ]}
+                      id="addbathroom-gender"
                       // styles={{ dropdown: { maxHeight: 200, overflowY: 'auto' } }}
                     />
                     </Col>
@@ -134,6 +137,7 @@ const AddBathroom = () => {
                         { label: 'West', value: 'West' },
                         { label: 'South', value: 'South' },
                       ]}
+                      id="addbathroom-direction"
                     />
                     </Col>
                   </Row>
@@ -152,6 +156,7 @@ const AddBathroom = () => {
                           { label: 4, value: 4 },
                           { label: 5, value: 5 },
                         ]}
+                        id="addbathroom-rating"
                       />
                     </Col>
                     <Col><TextField name="review" /></Col>

@@ -57,6 +57,14 @@ body {
 }
 
 .background-img1 {
-  background-image: url("https://d1l18ops95qbzp.cloudfront.net/wp-content/2015/09/UH-manoa-McCarthy-Mall.jpg");
+  background-image: url("https://images7.alphacoders.com/423/423336.jpg");
   background-position: center;
+}
+
+.body-color1 {
+  color: navy;
+}
+
+.quick-adjust {
+  margin-top: 1000px;
 }
