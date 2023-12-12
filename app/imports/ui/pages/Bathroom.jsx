@@ -33,7 +33,7 @@ const Bathroom = () => {
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>Bathroom</h2>
+            <h2>Bathrooms</h2>
           </Col>
           {loading ? (
             <div>Loading...</div>

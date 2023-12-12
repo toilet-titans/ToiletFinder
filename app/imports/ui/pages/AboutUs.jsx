@@ -16,7 +16,7 @@ const AboutUs = () => (
       <Card className="h-100" style={{ width: '15rem', backgroundColor: '#33B3B3', color: 'navy' }}>
         <Card.Img variant="top" src="/images/jiangle.jpg" />
         <Card.Body>
-          <Card.Title>Jianle Liu?</Card.Title>
+          <Card.Title>Jianle Liu</Card.Title>
           <Card.Text>
             {/* eslint-disable-next-line max-len */}
             Backend
