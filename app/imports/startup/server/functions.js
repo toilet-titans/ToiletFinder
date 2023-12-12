@@ -50,20 +50,25 @@ export function fetch_floor(floor_id) {
  */
 export function floor_construction(building_id, base_floor, top_floor) {
   try {
-    // if floor its not existing floor in the building.
+    // if floor its na existing floor in the building.
     if (base_floor >= top_floor) {
       console.log('floor exists');
       return [];
     }
     const new_floor_id = [];
     console.log('create new floor');
-    const floor_id_str = Floor.collection.insert({
-      building_id: building_id,
-      floor_number: base_floor,
-      bathroom: [],
-    }).toString();
-    console.log(floor_id_str);
-    new_floor_id.push(floor_id_str);
+    for (
+      let new_floor = base_floor + 1;
+      new_floor <= top_floor; new_floor++
+    ) {
+      const floor_id_str = Floor.collection.insert({
+        building_id: building_id,
+        floor_number: new_floor,
+        bathroom: [],
+      }).toString();
+      console.log(floor_id_str);
+      new_floor_id.push(floor_id_str);
+    }
     return new_floor_id;
   } catch (error) {
     console.error('Error constructing floor:', error);
