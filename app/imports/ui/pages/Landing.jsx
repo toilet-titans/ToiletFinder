@@ -13,7 +13,6 @@ const Landing = () => (
         <p>Admins, log in to see what users see!</p>
         <p>I've initialized Mongo DB with your hawaii.edu email addresses.</p>
         <p>Everyone's password is: changeme1</p>
-        <p><strong>NEVER EDIT ON MAIN BRANCH.</strong> Always work on your own branch and never pull request into main without making sure nobody else will be affected.</p>
       </Col>
     </Row>
     <Row className="justify-content-center">
@@ -24,7 +23,7 @@ const Landing = () => (
             <Card.Title>Which way is up?</Card.Title>
             <Card.Text>
               {/* eslint-disable-next-line max-len */}
-              To avoid confusion, our restrooms are organized by compass direction so it is easier to differentiate where each restroom is located.  For example, a restroom located on the fourth floor of the POST building on the North side would be considered the "POST Fourth Floor Men's Restroom North Side".  A compass provided on the website efficiently allows users to locate where a restroom would be.
+              To avoid confusion, our restrooms are organized by compass direction so it is easier to differentiate where each restroom is located.  For example, a restroom located on the fourth floor of the POST building on the North side would be considered the "POST Fourth Floor Men's Restroom North Side".
             </Card.Text>
           </Card.Body>
         </Card>
