@@ -54,7 +54,7 @@ const App = () => {
           <Route path="/rating" element={<ProtectedRoute><Rating /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
-          <Route path="/add-bathroom" element={<AdminProtectedRoute ready={ready}><AddBathroom /></AdminProtectedRoute>} />
+          <Route path="/add-bathroom" element={<AddBathroom />} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
