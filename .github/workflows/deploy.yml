@@ -36,7 +36,7 @@ jobs:
       - name: Setup meteor
         run: curl https://install.meteor.com/ | sh
 
-      - name: Check metoer installation.
+      - name: Check meteor installation.
         run: meteor --version
         
       - name: Install mup and check installation.
