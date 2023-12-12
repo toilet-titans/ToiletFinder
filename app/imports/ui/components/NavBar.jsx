@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BoxArrowRight, PersonFill, PersonPlusFill, PersonCircle } from 'react-bootstrap-icons';
 
 const NavBar = () => {
@@ -15,6 +15,7 @@ const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
+        <Image roundedCircle src="/images/toileticon3.jpeg" width="50px" />
         <Navbar.Brand as={NavLink} to="/">
           <h2>Toilet Finder and Rater</h2>
         </Navbar.Brand>
@@ -23,13 +24,14 @@ const NavBar = () => {
           <Nav className="me-auto justify-content-start">
             {currentUser ? ([
               // <Nav.Link id="add-stuff-nav" as={NavLink} to="/add" key="add">Add to List</Nav.Link>,
-              <Nav.Link id="add-stuff-nav" as={NavLink} to="/directory" key="add">Directory</Nav.Link>,
+              <Nav.Link id="directory-nav" as={NavLink} to="/directory" key="directory">Directory</Nav.Link>,
+              <Nav.Link id="bathrooms-nav" as={NavLink} to="/bathrooms" key="bathrooms">Bathrooms</Nav.Link>,
+              <Nav.Link id="about-us-nav" as={NavLink} to="/aboutus" key="aboutus">About Us</Nav.Link>,
               // <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">List</Nav.Link>,
-              <Nav.Link id="add-stuff-nav" as={NavLink} to="/rating" key="rating">Temp Rating Page</Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Nav.Link id="bathroom-admin-nav" as={NavLink} to="/admin" key="admin">Bathroom Admin</Nav.Link>,
-              <Nav.Link id="add-bathroom-nav" as={NavLink} to="/add-bathroom" key="admin">Add Bathroom</Nav.Link>
+                <Nav.Link id="add-bathroom-nav" as={NavLink} to="/add-bathroom" key="admin">Add Bathroom</Nav.Link>
             ) : ''}
           </Nav>
           <Nav className="justify-content-end">
