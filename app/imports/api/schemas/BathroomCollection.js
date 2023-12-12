@@ -9,7 +9,7 @@ class BathroomCollection {
 
     // Define the schema
     this.schema = new SimpleSchema({
-      // make a auto execute function for updating this review.bathroom.id/review.bathroom.id.length
+      // make an auto execute function for updating this review.bathroom.id/review.bathroom.id.length
       rating: Array,
       'rating.$': {
         type: Number,
@@ -17,16 +17,20 @@ class BathroomCollection {
       gender: {
         type: String,
       },
-      bathroom_number: {
-        type: SimpleSchema.Integer,
-      },
       floor_id: {
         type: String,
-        unique: true,
       },
       building_id: {
         type: String,
-        unique: true,
+      },
+      review: {
+        type: String,
+      },
+      direction: {
+        type: String,
+      },
+      building_name: {
+        type: String,
       },
     });
 

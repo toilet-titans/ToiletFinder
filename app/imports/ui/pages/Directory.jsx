@@ -1,29 +1,48 @@
-import React from 'react';
-// import { Meteor } from 'meteor/meteor';
-// import { useTracker } from 'meteor/react-meteor-data';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Landing from './Landing';
-// import { Stuffs } from '../../api/stuff/Stuff';
-// import StuffItem from '../components/StuffItem';
-// import LoadingSpinner from '../components/LoadingSpinner';
+import fetchData from '../../api/query/fetch';
 
-// File copied from ListStuff.jsx
-/* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-const Directory = () => (
-  <Container className="py-3">
-    <Row className="justify-content-center">
-      <Col md={7}>
-        <Col className="text-center">
-          <h2>Buildings</h2>
+const Directory = () => {
+  const [buildings, setBuildings] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBuildings = async () => {
+      try {
+        const buildingsData = await fetchData('getBuildings');
+        setBuildings(buildingsData);
+      } catch (error) {
+        // Handle error if needed
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchBuildings();
+  }, []); // Empty dependency array ensures the effect runs once after the initial render
+
+  return (
+    <Container className="py-3">
+      <Row className="justify-content-center">
+        <Col md={7}>
+          <Col className="text-center">
+            <h2>Buildings</h2>
+          </Col>
+          {loading ? (
+            <div>Loading...</div> // Or any other loading indicator
+          ) : (
+            <ListGroup>
+              {buildings.map((building) => (
+                <Link to={`/gender/${building._id}/${encodeURIComponent(building.name)}`} key={building._id}>
+                  <ListGroupItem>{building.name}</ListGroupItem>
+                </Link>
+              ))}
+            </ListGroup>
+          )}
         </Col>
-        <ListGroup>
-          <Link to="/Page"><ListGroupItem>Moore Hall</ListGroupItem></Link>
-          <Link to="/Page"><ListGroupItem>Kuykendall Hall</ListGroupItem></Link>
-        </ListGroup>
-      </Col>
-    </Row>
-  </Container>
-);
+      </Row>
+    </Container>
+  );
+};
 
 export default Directory;

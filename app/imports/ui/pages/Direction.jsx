@@ -20,6 +20,7 @@ const Gender = () => {
         setLoading(false);
       }
     };
+
     fetchGenders();
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
@@ -36,7 +37,7 @@ const Gender = () => {
             <ListGroup>
               {genders_data.length > 0 ? (
                 genders_data.map((gender) => (
-                  <Link to={`/bathroom/${building_id}/${gender}`} key={building_id}>
+                  <Link to={`/direction/${building_id}/${gender}`} key={building_id}>
                     <ListGroupItem>{gender}</ListGroupItem>
                   </Link>
                 ))

@@ -1,29 +1,68 @@
-import React from 'react';
-// import { Meteor } from 'meteor/meteor';
-// import { useTracker } from 'meteor/react-meteor-data';
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import Landing from './Landing';
-// import { Stuffs } from '../../api/stuff/Stuff';
-// import StuffItem from '../components/StuffItem';
-// import LoadingSpinner from '../components/LoadingSpinner';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
+import { Link, useParams } from 'react-router-dom';
+import fetchData from '../../api/query/fetch';
 
-// File copied from ListStuff.jsx
-/* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-const Bathroom = () => (
-  <Container className="py-3">
-    <Row className="justify-content-center">
-      <Col md={7}>
-        <Col className="text-center">
-          <h2>Bathrooms</h2>
+const Bathroom = () => {
+
+  const { building_id, gender } = useParams();
+  const [bathroom_data, setBathroomData] = useState({});
+  const [loading, setLoading] = useState(true);
+  console.log('visited. ');
+  useEffect(() => {
+    const fetchBathrooms = async () => {
+      try {
+        const data = {
+          building_id: building_id,
+          gender: gender,
+        };
+        const bathroomList = await fetchData('getBathrooms2', data);
+        console.log('available bathrooms: ', bathroomList);
+        setBathroomData(bathroomList);
+      } catch (error) {
+        // Handle error if needed
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBathrooms();
+  }, []); // Empty dependency array ensures the effect runs once after the initial render
+  return (
+    <Container className="py-3">
+      <Row className="justify-content-center">
+        <Col md={7}>
+          <Col className="text-center">
+            <h2>Bathroom</h2>
+          </Col>
+          {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <ListGroup>
+              {bathroom_data.length > 0 ? (
+                bathroom_data.map((bathroom) => (
+                  <Row>
+                    <li>
+                      Building: {bathroom.building_name},
+                      Rating: {bathroom.rating},
+                      gender: {bathroom.gender},
+                      bathroom direction: {bathroom.direction},
+                      floor: {bathroom.floor_number},
+                      review: {bathroom.review}
+                    </li>
+                  </Row>
+                ))
+              ) : (
+                <div>
+                  No bathroom found. <Link to="/add-bathroom">Add a bathroom</Link>.
+                </div>
+              )}
+            </ListGroup>
+          )}
+          <Link to="/directory">Back to Directory</Link>
         </Col>
-        <ListGroup>
-          <Link to="/BathroomCard"><ListGroupItem>Bathroom #1</ListGroupItem></Link>
-          <Link to="/BathroomCard"><ListGroupItem>Bathroom #2</ListGroupItem></Link>
-        </ListGroup>
-      </Col>
-    </Row>
-  </Container>
-);
-
+      </Row>
+    </Container>
+  );
+};
 export default Bathroom;
