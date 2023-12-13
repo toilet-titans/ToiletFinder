@@ -48,11 +48,7 @@ jobs:
         run:  |
           cd app
           meteor npm install
-
-      - name: Run audit fix.
-        run:  |
-          npm audit fix
-          
+        
       - name: Setup mup.
         run: |
           cd app/.deploy
