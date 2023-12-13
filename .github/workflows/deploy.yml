@@ -52,7 +52,7 @@ jobs:
       - name: Run audit fix.
         run:  |
           npm audit fix
-          
+
       - name: Setup mup.
         run: |
           cd app/.deploy
